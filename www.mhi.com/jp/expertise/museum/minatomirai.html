@@ -1,0 +1,713 @@
+<!DOCTYPE html>
+<html lang="ja" dir="ltr" prefix="content: http://purl.org/rss/1.0/modules/content/  dc: http://purl.org/dc/terms/  foaf: http://xmlns.com/foaf/0.1/  og: http://ogp.me/ns#  rdfs: http://www.w3.org/2000/01/rdf-schema#  schema: http://schema.org/  sioc: http://rdfs.org/sioc/ns#  sioct: http://rdfs.org/sioc/types#  skos: http://www.w3.org/2004/02/skos/core#  xsd: http://www.w3.org/2001/XMLSchema# ">
+  
+<!-- Mirrored from www.mhi.com/jp/expertise/museum/minatomirai by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 14 Oct 2022 17:07:49 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+    <meta charset="utf-8" /><script type="text/javascript">(window.NREUM||(NREUM={})).init={ajax:{deny_list:["bam.nr-data.net"]}};(window.NREUM||(NREUM={})).loader_config={licenseKey:"3d90739b94",applicationID:"945003000"};window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){var i=e[n]={exports:{}};t[n][0].call(i.exports,function(e){var i=t[n][1][e];return r(i||e)},i,i.exports)}return e[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var i=0;i<n.length;i++)r(n[i]);return r}({1:[function(t,e,n){function r(){}function i(t,e,n,r){return function(){return s.recordSupportability("API/"+e+"/called"),o(t+e,[u.now()].concat(c(arguments)),n?null:this,r),n?void 0:this}}var o=t("handle"),a=t(9),c=t(10),f=t("ee").get("tracer"),u=t("loader"),s=t(4),d=NREUM;"undefined"==typeof window.newrelic&&(newrelic=d);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],l="api-",v=l+"ixn-";a(p,function(t,e){d[e]=i(l,e,!0,"api")}),d.addPageAction=i(l,"addPageAction",!0),d.setCurrentRouteName=i(l,"routeName",!0),e.exports=newrelic,d.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(t,e){var n={},r=this,i="function"==typeof e;return o(v+"tracer",[u.now(),t,n],r),function(){if(f.emit((i?"":"no-")+"fn-start",[u.now(),r,i],n),i)try{return e.apply(this,arguments)}catch(t){throw f.emit("fn-err",[arguments,this,t],n),t}finally{f.emit("fn-end",[u.now()],n)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(t,e){m[e]=i(v,e)}),newrelic.noticeError=function(t,e){"string"==typeof t&&(t=new Error(t)),s.recordSupportability("API/noticeError/called"),o("err",[t,u.now(),!1,e])}},{}],2:[function(t,e,n){function r(t){if(NREUM.init){for(var e=NREUM.init,n=t.split("."),r=0;r<n.length-1;r++)if(e=e[n[r]],"object"!=typeof e)return;return e=e[n[n.length-1]]}}e.exports={getConfiguration:r}},{}],3:[function(t,e,n){var r=!1;try{var i=Object.defineProperty({},"passive",{get:function(){r=!0}});window.addEventListener("testPassive",null,i),window.removeEventListener("testPassive",null,i)}catch(o){}e.exports=function(t){return r?{passive:!0,capture:!!t}:!!t}},{}],4:[function(t,e,n){function r(t,e){var n=[a,t,{name:t},e];return o("storeMetric",n,null,"api"),n}function i(t,e){var n=[c,t,{name:t},e];return o("storeEventMetrics",n,null,"api"),n}var o=t("handle"),a="sm",c="cm";e.exports={constants:{SUPPORTABILITY_METRIC:a,CUSTOM_METRIC:c},recordSupportability:r,recordCustom:i}},{}],5:[function(t,e,n){function r(){return c.exists&&performance.now?Math.round(performance.now()):(o=Math.max((new Date).getTime(),o))-a}function i(){return o}var o=(new Date).getTime(),a=o,c=t(11);e.exports=r,e.exports.offset=a,e.exports.getLastTimestamp=i},{}],6:[function(t,e,n){function r(t,e){var n=t.getEntries();n.forEach(function(t){"first-paint"===t.name?l("timing",["fp",Math.floor(t.startTime)]):"first-contentful-paint"===t.name&&l("timing",["fcp",Math.floor(t.startTime)])})}function i(t,e){var n=t.getEntries();if(n.length>0){var r=n[n.length-1];if(u&&u<r.startTime)return;var i=[r],o=a({});o&&i.push(o),l("lcp",i)}}function o(t){t.getEntries().forEach(function(t){t.hadRecentInput||l("cls",[t])})}function a(t){var e=navigator.connection||navigator.mozConnection||navigator.webkitConnection;if(e)return e.type&&(t["net-type"]=e.type),e.effectiveType&&(t["net-etype"]=e.effectiveType),e.rtt&&(t["net-rtt"]=e.rtt),e.downlink&&(t["net-dlink"]=e.downlink),t}function c(t){if(t instanceof y&&!w){var e=Math.round(t.timeStamp),n={type:t.type};a(n),e<=v.now()?n.fid=v.now()-e:e>v.offset&&e<=Date.now()?(e-=v.offset,n.fid=v.now()-e):e=v.now(),w=!0,l("timing",["fi",e,n])}}function f(t){"hidden"===t&&(u=v.now(),l("pageHide",[u]))}if(!("init"in NREUM&&"page_view_timing"in NREUM.init&&"enabled"in NREUM.init.page_view_timing&&NREUM.init.page_view_timing.enabled===!1)){var u,s,d,p,l=t("handle"),v=t("loader"),m=t(8),g=t(3),y=NREUM.o.EV;if("PerformanceObserver"in window&&"function"==typeof window.PerformanceObserver){s=new PerformanceObserver(r);try{s.observe({entryTypes:["paint"]})}catch(h){}d=new PerformanceObserver(i);try{d.observe({entryTypes:["largest-contentful-paint"]})}catch(h){}p=new PerformanceObserver(o);try{p.observe({type:"layout-shift",buffered:!0})}catch(h){}}if("addEventListener"in document){var w=!1,b=["click","keydown","mousedown","pointerdown","touchstart"];b.forEach(function(t){document.addEventListener(t,c,g(!1))})}m(f)}},{}],7:[function(t,e,n){function r(t,e){if(!i)return!1;if(t!==i)return!1;if(!e)return!0;if(!o)return!1;for(var n=o.split("."),r=e.split("."),a=0;a<r.length;a++)if(r[a]!==n[a])return!1;return!0}var i=null,o=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var c=navigator.userAgent,f=c.match(a);f&&c.indexOf("Chrome")===-1&&c.indexOf("Chromium")===-1&&(i="Safari",o=f[1])}e.exports={agent:i,version:o,match:r}},{}],8:[function(t,e,n){function r(t){function e(){t(c&&document[c]?document[c]:document[o]?"hidden":"visible")}"addEventListener"in document&&a&&document.addEventListener(a,e,i(!1))}var i=t(3);e.exports=r;var o,a,c;"undefined"!=typeof document.hidden?(o="hidden",a="visibilitychange",c="visibilityState"):"undefined"!=typeof document.msHidden?(o="msHidden",a="msvisibilitychange"):"undefined"!=typeof document.webkitHidden&&(o="webkitHidden",a="webkitvisibilitychange",c="webkitVisibilityState")},{}],9:[function(t,e,n){function r(t,e){var n=[],r="",o=0;for(r in t)i.call(t,r)&&(n[o]=e(r,t[r]),o+=1);return n}var i=Object.prototype.hasOwnProperty;e.exports=r},{}],10:[function(t,e,n){function r(t,e,n){e||(e=0),"undefined"==typeof n&&(n=t?t.length:0);for(var r=-1,i=n-e||0,o=Array(i<0?0:i);++r<i;)o[r]=t[e+r];return o}e.exports=r},{}],11:[function(t,e,n){e.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(t,e,n){function r(){}function i(t){function e(t){return t&&t instanceof r?t:t?u(t,f,a):a()}function n(n,r,i,o,a){if(a!==!1&&(a=!0),!l.aborted||o){t&&a&&t(n,r,i);for(var c=e(i),f=m(n),u=f.length,s=0;s<u;s++)f[s].apply(c,r);var p=d[w[n]];return p&&p.push([b,n,r,c]),c}}function o(t,e){h[t]=m(t).concat(e)}function v(t,e){var n=h[t];if(n)for(var r=0;r<n.length;r++)n[r]===e&&n.splice(r,1)}function m(t){return h[t]||[]}function g(t){return p[t]=p[t]||i(n)}function y(t,e){l.aborted||s(t,function(t,n){e=e||"feature",w[n]=e,e in d||(d[e]=[])})}var h={},w={},b={on:o,addEventListener:o,removeEventListener:v,emit:n,get:g,listeners:m,context:e,buffer:y,abort:c,aborted:!1};return b}function o(t){return u(t,f,a)}function a(){return new r}function c(){(d.api||d.feature)&&(l.aborted=!0,d=l.backlog={})}var f="nr@context",u=t("gos"),s=t(9),d={},p={},l=e.exports=i();e.exports.getOrSetContext=o,l.backlog=d},{}],gos:[function(t,e,n){function r(t,e,n){if(i.call(t,e))return t[e];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(t,e,{value:r,writable:!0,enumerable:!1}),r}catch(o){}return t[e]=r,r}var i=Object.prototype.hasOwnProperty;e.exports=r},{}],handle:[function(t,e,n){function r(t,e,n,r){i.buffer([t],r),i.emit(t,e,n)}var i=t("ee").get("handle");e.exports=r,r.ee=i},{}],id:[function(t,e,n){function r(t){var e=typeof t;return!t||"object"!==e&&"function"!==e?-1:t===window?0:a(t,o,function(){return i++})}var i=1,o="nr@id",a=t("gos");e.exports=r},{}],loader:[function(t,e,n){function r(){if(!M++){var t=T.info=NREUM.info,e=m.getElementsByTagName("script")[0];if(setTimeout(u.abort,3e4),!(t&&t.licenseKey&&t.applicationID&&e))return u.abort();f(x,function(e,n){t[e]||(t[e]=n)});var n=a();c("mark",["onload",n+T.offset],null,"api"),c("timing",["load",n]);var r=m.createElement("script");0===t.agent.indexOf("http://")||0===t.agent.indexOf("https:///")?r.src=t.agent:r.src=l+"://"+t.agent,e.parentNode.insertBefore(r,e)}}function i(){"complete"===m.readyState&&o()}function o(){c("mark",["domContent",a()+T.offset],null,"api")}var a=t(5),c=t("handle"),f=t(9),u=t("ee"),s=t(7),d=t(2),p=t(3),l=d.getConfiguration("ssl")===!1?"http":"https",v=window,m=v.document,g="addEventListener",y="attachEvent",h=v.XMLHttpRequest,w=h&&h.prototype,b=!1;NREUM.o={ST:setTimeout,SI:v.setImmediate,CT:clearTimeout,XHR:h,REQ:v.Request,EV:v.Event,PR:v.Promise,MO:v.MutationObserver};var E=""+location,x={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1216.min.js"},O=h&&w&&w[g]&&!/CriOS/.test(navigator.userAgent),T=e.exports={offset:a.getLastTimestamp(),now:a,origin:E,features:{},xhrWrappable:O,userAgent:s,disabled:b};if(!b){t(1),t(6),m[g]?(m[g]("DOMContentLoaded",o,p(!1)),v[g]("load",r,p(!1))):(m[y]("onreadystatechange",i),v[y]("onload",r)),c("mark",["firstbyte",a.getLastTimestamp()],null,"api");var M=0}},{}],"wrap-function":[function(t,e,n){function r(t,e){function n(e,n,r,f,u){function nrWrapper(){var o,a,s,p;try{a=this,o=d(arguments),s="function"==typeof r?r(o,a):r||{}}catch(l){i([l,"",[o,a,f],s],t)}c(n+"start",[o,a,f],s,u);try{return p=e.apply(a,o)}catch(v){throw c(n+"err",[o,a,v],s,u),v}finally{c(n+"end",[o,a,p],s,u)}}return a(e)?e:(n||(n=""),nrWrapper[p]=e,o(e,nrWrapper,t),nrWrapper)}function r(t,e,r,i,o){r||(r="");var c,f,u,s="-"===r.charAt(0);for(u=0;u<e.length;u++)f=e[u],c=t[f],a(c)||(t[f]=n(c,s?f+r:r,i,f,o))}function c(n,r,o,a){if(!v||e){var c=v;v=!0;try{t.emit(n,r,o,e,a)}catch(f){i([f,n,r,o],t)}v=c}}return t||(t=s),n.inPlace=r,n.flag=p,n}function i(t,e){e||(e=s);try{e.emit("internal-error",t)}catch(n){}}function o(t,e,n){if(Object.defineProperty&&Object.keys)try{var r=Object.keys(t);return r.forEach(function(n){Object.defineProperty(e,n,{get:function(){return t[n]},set:function(e){return t[n]=e,e}})}),e}catch(o){i([o],n)}for(var a in t)l.call(t,a)&&(e[a]=t[a]);return e}function a(t){return!(t&&t instanceof Function&&t.apply&&!t[p])}function c(t,e){var n=e(t);return n[p]=t,o(t,n,s),n}function f(t,e,n){var r=t[e];t[e]=c(r,n)}function u(){for(var t=arguments.length,e=new Array(t),n=0;n<t;++n)e[n]=arguments[n];return e}var s=t("ee"),d=t(10),p="nr@original",l=Object.prototype.hasOwnProperty,v=!1;e.exports=r,e.exports.wrapFunction=c,e.exports.wrapInPlace=f,e.exports.argsToArray=u},{}]},{},["loader"]);</script>
+<meta property="og:site_name" content="三菱重工" />
+<link rel="shortcut icon" href="https://www.mhi.com/themes/custom/mhi_base_theme/favicons/ja/favicon.ico" />
+<link rel="canonical" href="https://www.mhi.com/jp/expertise/museum/minatomirai" />
+<meta property="og:type" content="Gijutsukan Museum" />
+<meta name="description" content="三菱重工グループの技術を紹介する科学館、三菱みなとみらい技術館の公式サイトです。当館では実機や大型模型、体験型の展示物を通じて、最先端の科学技術やものづくりの秘密に触れていただくことができます。" />
+<meta property="og:url" content="https://www.mhi.com/jp/expertise/museum/minatomirai" />
+<meta name="keywords" content="三菱,みなとみらい,技術,テクノロジー,科学,科学館" />
+<meta property="og:title" content="三菱みなとみらい技術館 | 三菱みなとみらい技術館" />
+<meta property="og:description" content="三菱重工グループの技術を紹介する科学館、三菱みなとみらい技術館の公式サイトです。当館では実機や大型模型、体験型の展示物を通じて、最先端の科学技術やものづくりの秘密に触れていただくことができます。" />
+<link rel="apple-touch-icon" href="https://www.mhi.com/themes/custom/mhi_base_theme/favicons/ja/apple_touch_icon.png" />
+<meta property="og:image" content="https://www.mhi.com/themes/custom/mhi/src/img/ogp_sns.png" />
+<meta property="og:image:type" content="image/jpeg" />
+<link rel="apple-touch-icon-precomposed" href="https://www.mhi.com/themes/custom/mhi_base_theme/favicons/ja/apple_touch_icon.png" />
+<meta name="Generator" content="Drupal 9 (https://www.drupal.org)" />
+<meta name="MobileOptimized" content="width" />
+<meta name="HandheldFriendly" content="true" />
+<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+<meta name="twitter:card" content="summary_large_image" />
+<link rel="alternate" hreflang="en" href="https://www.mhi.com/expertise/museum/minatomirai" />
+<link rel="alternate" hreflang="ja" href="https://www.mhi.com/jp/expertise/museum/minatomirai" />
+<script src="https://www.mhi.com/sites/g/files/jwhtju111/files/google_tag/google_tag/mhi/google_tag.script.js?rjc08r" defer></script>
+
+    <title>三菱みなとみらい技術館</title>
+    <link rel="stylesheet" media="all" href="https://www.mhi.com/sites/g/files/jwhtju111/files/css/css_e18uF0DkYZOCQ67UrtzvP2YrKDqpzLAU7h28r8iujZc.css" />
+<link rel="stylesheet" media="all" href="https://www.mhi.com/sites/g/files/jwhtju111/files/css/css_CkI3LmNJ7q5u7vgPlbGRpHze6RUqW2r6fTiA6GvkBQo.css" />
+<link rel="stylesheet" media="print" href="https://www.mhi.com/sites/g/files/jwhtju111/files/css/css_npYYriCqvk444NEOIIcVTaL2youfsF04to-0pVnMrvo.css" />
+<link rel="stylesheet" media="all" href="https://www.mhi.com/sites/g/files/jwhtju111/files/css/css_46uAeqMyCcUJ3UYoKqzWBTmAOeej6d-Jv0ybbxSqR4Y.css" />
+
+    <script src="https://www.mhi.com/core/assets/vendor/modernizr/modernizr.min.js?v=3.11.7"></script>
+<script src="https://www.mhi.com/core/misc/modernizr-additional-tests.js?v=3.11.7"></script>
+
+          <script type="text/javascript" src="https://www.mhi.com/modules/contrib/seckit/js/seckit.document_write.js"></script>
+        <link type="text/css" rel="stylesheet" id="seckit-clickjacking-no-body" media="all" href="https://www.mhi.com/modules/contrib/seckit/css/seckit.no_body.css" />
+        <!-- stop SecKit protection -->
+        <noscript>
+        <link type="text/css" rel="stylesheet" id="seckit-clickjacking-noscript-tag" media="all" href="https://www.mhi.com/modules/contrib/seckit/css/seckit.noscript_tag.css" />
+        <div id="seckit-noscript-tag">
+          Sorry, you need to enable JavaScript to visit this website.
+        </div>
+        </noscript></head>
+  <body class="comHeaderShort comShortFt comMuseum path-node page-node-type-gijutsukan-museum">
+        <a href="#main-content" class="visually-hidden focusable skip-link">
+      メインコンテンツに移動
+    </a>
+    <noscript aria-hidden="true"><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PPKXH83" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+      <div class="dialog-off-canvas-main-canvas" data-off-canvas-main-canvas>
+    <div class="comHeaderFollow">
+    <header id="comHeader" role="banner">
+    <div id="block-sitebranding" data-block-plugin-id="system_branding_block" class="block block-system block-system-branding-block">
+  
+    
+    <div id="headLogo">
+      <a href="https://www.mhi.com/jp" title="ホーム" rel="home" class="site-logo">
+      <img src="https://www.mhi.com/themes/custom/mhi/logo_ja.svg" alt="ホーム" />
+    </a>
+        </div>
+</div>
+<div id="headGroupLogo" data-block-plugin-id="block_content:96769913-b3b8-42f7-a711-29d68ddbf08a" class="block block-block-content block-block-content96769913-b3b8-42f7-a711-29d68ddbf08a">
+  
+    
+      
+            <div class="clearfix text-formatted field field--name-body field--type-text-with-summary field--label-hidden field__item"><a href="https://www.mhi.com/jp/network/text_version.html"><img src="https://www.mhi.com/themes/custom/mhi/src/img/head_mhigroup_logo.svg" alt="MHI Group" /></a></div>
+      
+  </div>
+<div id="block-mhi-search-box" data-block-plugin-id="mhi_search_box" class="block block-mhi-marsflag block-mhi-search-box">
+  
+    
+      <div class="searchArea">
+  <form id="search_form" action="https://www.mhi.com/jp/search" onsubmit="return mysearch();">
+    <input class="searchTxt" type="text" name="q" value="" tabindex="0" placeholder="検索">
+    <input type="hidden" name="ie" value="u">
+  </form>
+</div>
+
+  </div>
+<div class="language-switcher-language-url search-container block block-language block-language-blocklanguage-interface" id="block-language-block-language-interface" role="navigation" data-block-plugin-id="language_block:language_interface">
+  
+    
+        <div class="hnav">
+    <nav class="comHeaderShortLang">
+      <p class="comHeaderShortLangTitle">LANGUAGE :</p>
+      <ul block="block-language-block-language-interface" class="comHeaderShortLangList"><li hreflang="en" data-drupal-link-system-path="node/103256" class="en">                <a id="shortHeader_EN_link" href="https://www.mhi.com/expertise/museum/minatomirai" class="">EN</a>
+              </li><li hreflang="ja" data-drupal-link-system-path="node/103256" class="ja is-active">                <a id="shortHeader_JP_link" href="https://www.mhi.com/jp/expertise/museum/minatomirai" class="current">JP</a>
+              </li></ul>
+    </nav>
+  </div>
+  </div>
+
+  </header>
+
+</div>
+
+
+  <div class="region region-secondary-menu">
+    <div class="comHeaderShortLocal">
+    <div class="comHeaderShortLocalInnr">
+      <div class="comHeaderShortLocalArea">
+        <div id="block-simple-block-gijutsukan-museum-logo" data-block-plugin-id="simple_block:gijutsukan_museum_logo" class="block block-simple-block block-simple-blockgijutsukan-museum-logo">
+  
+    
+      <div class="comHeaderShortLocalLogo"><a href="https://www.mhi.com/jp/expertise/museum/minatomirai/"><img alt="Mitsubishi Minatomirai Industrial Museum" data-entity-type="" data-entity-uuid="" id="shortHeader_logo" src="https://www.mhi.com/themes/custom/mhi/src/mhi/images/logo_minatmitai_01-jp.png" /></a></div>
+
+  </div>
+<div id="gnav">
+  <nav role="navigation" aria-labelledby="block-menu-item-fields-gijutsukan-museum-main-navi-menu" id="block-menu-item-fields-gijutsukan-museum-main-navi" data-block-plugin-id="menu_item_fields:gijutsukan-museum-main-navi" class="block block-menu navigation menu--gijutsukan-museum-main-navi block-menu-item-fields block-menu-item-fieldsgijutsukan-museum-main-navi comHeaderShortLocalNav">
+                      
+    <h2 class="visually-hidden" id="block-menu-item-fields-gijutsukan-museum-main-navi-menu">Gijutsukan Museum Main Navigation</h2>
+    
+
+              
+        <ul block="block-menu-item-fields-gijutsukan-museum-main-navi" class="menu comHeaderLocalNavList" id="shortHeaderNavigation"><li class="menu-item--collapsed menu-item"><p class="noSub"><a href="https://www.mhi.com/jp/expertise/museum/minatomirai/about_museum" title="" hreflang="ja" data-drupal-link-system-path="node/103161">ご利用案内</a></li><li class="menu-item--collapsed menu-item"><p class="noSub"><a href="https://www.mhi.com/jp/expertise/museum/minatomirai/exhibition" title="" hreflang="ja" data-drupal-link-system-path="node/103211">展示・施設情報</a></li><li class="menu-item--collapsed menu-item"><p class="noSub"><a href="https://www.mhi.com/jp/expertise/museum/minatomirai/news" title="" hreflang="ja" data-drupal-link-system-path="node/103331">お知らせ・イベント</a></li><li class="menu-item--collapsed menu-item"><p class="noSub"><a href="https://www.mhi.com/jp/expertise/museum/minatomirai/access" title="" hreflang="ja" data-drupal-link-system-path="node/103216">アクセス</a></li></ul>  
+
+
+      </nav>
+</div>
+
+      </div>
+    </div>
+  </div>
+  </div>
+
+
+
+
+  <div class="region region-highlighted">
+    <div data-drupal-messages-fallback class="hidden"></div>
+
+  </div>
+
+
+
+
+<main role="main">
+  <a id="main-content" tabindex="-1"></a>
+        <div class="region region-content">
+    <div id="block-mhi-content" data-block-plugin-id="system_main_block" class="block block-system block-system-main-block">
+  
+    
+      
+<article role="article" about="/jp/expertise/museum/minatomirai" class="node node--type-gijutsukan-museum node--view-mode-full">
+  
+  <div class="node__content">
+      <div>
+    <div id="comContent">
+              <div data-block-plugin-id="block_content:19df64ac-971a-4b1c-a99d-00330002d6d4" class="block block-block-content block-block-content19df64ac-971a-4b1c-a99d-00330002d6d4">
+  
+    
+        <input type="hidden" value="3" class="frequency" />
+
+<ul class="mhi-carousel">
+      <li>      <a href="https://www.mhi.com/jp/expertise/museum/minatomirai/about_museum">
+              
+  <div class="main__img">
+            
+<span class="comPcOnly">
+        <img src="https://www.mhi.com/sites/g/files/jwhtju111/files/2021-07/kv_01.jpg" width="1440" height="540" alt="kv_01.jpg" loading="lazy" typeof="foaf:Image" />
+
+
+  </span>
+<span class="comSpOnly">
+        <img src="https://www.mhi.com/sites/g/files/jwhtju111/files/2021-07/kv_sp01.jpg" width="640" height="440" alt="kv_sp01.jpg " loading="lazy" typeof="foaf:Image" />
+
+
+  </span>
+
+      </div>
+
+
+
+              
+              
+          </a>
+  </li>
+      <li>      <a href="https://www.mhi.com/jp/expertise/museum/minatomirai/news/200624.html">
+              
+  <div class="main__img">
+            
+<span class="comPcOnly">
+        <img src="https://www.mhi.com/sites/g/files/jwhtju111/files/2021-07/kv_02.jpg" width="1440" height="540" alt="kv_02.jpg" loading="lazy" typeof="foaf:Image" />
+
+
+  </span>
+<span class="comSpOnly">
+        <img src="https://www.mhi.com/sites/g/files/jwhtju111/files/2021-07/kv_sp02.jpg" width="640" height="440" alt="kv_sp02.jpg" loading="lazy" typeof="foaf:Image" />
+
+
+  </span>
+
+      </div>
+
+
+
+              
+              
+          </a>
+  </li>
+      <li>      <a href="https://www.mhi.com/jp/expertise/museum/minatomirai/news/event.html">
+              
+  <div class="main__img">
+            
+<span class="comPcOnly">
+        <img src="https://www.mhi.com/sites/g/files/jwhtju111/files/2021-07/kv_03.jpg" width="1440" height="540" alt="kv_03.jpg" loading="lazy" typeof="foaf:Image" />
+
+
+  </span>
+<span class="comSpOnly">
+        <img src="https://www.mhi.com/sites/g/files/jwhtju111/files/2021-07/kv_sp03.jpg" width="640" height="440" alt="kv_sp03.jpg" loading="lazy" typeof="foaf:Image" />
+
+
+  </span>
+
+      </div>
+
+
+
+              
+              
+          </a>
+  </li>
+      <li>      <a href="https://www.youtube.com/channel/UCV8qXTicSqgmHiGDqTCYqdQ">
+              
+  <div class="main__img">
+            
+<span class="comPcOnly">
+        <img src="https://www.mhi.com/sites/g/files/jwhtju111/files/2021-07/kv_04_0.jpg" width="1440" height="540" alt="kv_04.jpg" loading="lazy" typeof="foaf:Image" />
+
+
+  </span>
+<span class="comSpOnly">
+        <img src="https://www.mhi.com/sites/g/files/jwhtju111/files/2021-07/kv_sp04_0.jpg" width="640" height="440" alt="kv_sp04_0.jpg " loading="lazy" typeof="foaf:Image" />
+
+
+  </span>
+
+      </div>
+
+
+
+              
+              
+          </a>
+  </li>
+  </ul>
+  <input type="hidden" value="0.40" class="speed" />
+
+            <div class="field field--name-field-dots field--type-boolean field--label-hidden field__item">On</div>
+      
+            <div class="field field--name-field-rotation-infinite field--type-boolean field--label-hidden field__item">On</div>
+      
+  </div>
+<div data-block-plugin-id="inline_block:carousel" data-inline-block-uuid="e9a99711-4bcd-4a7c-a984-4dfbbd03af35" class="block block-layout-builder block-inline-blockcarousel">
+  
+    
+        <input type="hidden" value="6" class="frequency" />
+
+<ul class="mhi-carousel">
+      <li>      <a href="https://www.mhi.com/jp/expertise/museum/minatomirai/about_museum/opening_day.html">
+              
+  <div class="main__img">
+            
+<span class="comPcOnly">
+        <img src="https://www.mhi.com/sites/g/files/jwhtju111/files/2022-09/混雑カレンダー10月.jpg" width="1920" height="1080" alt="混雑カレンダー10月" loading="lazy" typeof="foaf:Image" />
+
+
+  </span>
+<span class="comSpOnly">
+        <img src="https://www.mhi.com/sites/g/files/jwhtju111/files/2022-09/混雑カレンダー10月_0.jpg" width="1920" height="1080" alt="混雑カレンダー10月" loading="lazy" typeof="foaf:Image" />
+
+
+  </span>
+
+      </div>
+
+
+
+              
+              
+          </a>
+  </li>
+      <li>      <a href="https://mhispmiraijuku20221029.peatix.com/">
+              
+  <div class="main__img">
+            
+<span class="comPcOnly">
+        <img src="https://www.mhi.com/sites/g/files/jwhtju111/files/2022-10/20221029特別イベント_0.jpeg" width="920" height="450" alt="20221029特別イベント" loading="lazy" typeof="foaf:Image" />
+
+
+  </span>
+<span class="comSpOnly">
+        <img src="https://www.mhi.com/sites/g/files/jwhtju111/files/2022-10/20221029特別イベント_1.jpeg" width="920" height="450" alt="20221029特別イベント mobile" loading="lazy" typeof="foaf:Image" />
+
+
+  </span>
+
+      </div>
+
+
+
+              
+              
+          </a>
+  </li>
+  </ul>
+  <input type="hidden" value="0.40" class="speed" />
+
+            <div class="field field--name-field-dots field--type-boolean field--label-hidden field__item">Off</div>
+      
+            <div class="field field--name-field-rotation-infinite field--type-boolean field--label-hidden field__item">On</div>
+      
+  </div>
+
+            <div id="comConPosi">
+        <div class="comMainConPosi">
+          <section>
+            <div class="comClm4 mmimIndex comMmrgn">
+                            <div class="inC3">
+                <div class="inClmPosi">
+                  <section>
+                    <div data-block-plugin-id="inline_block:gijutsukan_museum_notice_block" data-inline-block-uuid="8609d3ed-9b77-4835-b784-2bab1ef488cb" class="block block-layout-builder block-inline-blockgijutsukan-museum-notice-block">
+  
+    
+  <div class="h2Wrap">
+    <h2>お知らせ</h2>
+    <ul class="comLstLkNr">
+      <li><a href="https://www.mhi.com/jp/expertise/museum/minatomirai/news/topics.html">一覧</a></li>
+    </ul>
+  </div>
+      <div class="view view-gijutsukan-museum-notice-list view-id-gijutsukan_museum_notice_list view-display-id-default">
+  
+    
+      
+      <div class="view-content">
+      <div>
+  
+  <ul class="comLstLkNr NewsList">
+
+          <li>    <a href="https://www.mhi.com/jp/expertise/museum/minatomirai/news/200624.html">
+  <span class="comBdgAtn">重要なお知らせ</span>ご見学にあたってのお願い
+
+</a>
+</li>
+          <li>    <a href="https://www.mhi.com/jp/expertise/museum/minatomirai/news/kutsusufanmainoozhir.html">
+  <span class="comBdgAtn">重要なお知らせ</span>グッズ販売のお知らせ
+
+</a>
+</li>
+          <li>    <a href="https://www.mhi.com/jp/news/220801.html">
+  <span class="comBdgAtn">重要なお知らせ</span>陸ゾーンを中心に展示内容をリニューアル カーボンニュートラル社会実現に向けた三菱重工グループの取り組みなどを紹介
+
+</a>
+</li>
+    
+  </ul>
+
+</div>
+
+    </div>
+  
+          </div>
+
+  </div>
+<div data-block-plugin-id="inline_block:gijutsukan_museum_event_block" data-inline-block-uuid="6445710a-8b40-44d0-988b-25d6d38b947c" class="block block-layout-builder block-inline-blockgijutsukan-museum-event-block block-museum-top-events">
+      <div class="h2Wrap h2TitleWrap">
+      
+              <h2>イベント情報</h2>
+            <ul class="comLstLkNr">
+        <li><a href="https://www.mhi.com/jp/expertise/museum/minatomirai/news/event.html">一覧</a></li>
+      </ul>
+      
+    </div>
+    <div class="comLnkSetEvC3 TopEvents">
+      <ul>
+        
+<li role="article" about="/jp/company/museum/minatomirai/event/technolo.october.html" class="node node--type-gijutsukan-museum-event node--view-mode-museum-top-event">
+        <a href="https://www.mhi.com/jp/company/museum/minatomirai/event/technolo.october.html" target="">
+      <span class="comBdg">オンラインイベント</span><mark>おしえて！てくのろ実験隊 ＜10月開催＞</mark>      <span class="comHeldDay">
+        2022年10月の毎週日曜
+        <span>事前申込制（おみやげデータつき）＆当日先着順（おみやげデータなし)</span>
+      </span>
+    </a>
+</li>
+<li role="article" about="/jp/company/museum/minatomirai/event/mhitourist1009.html" class="node node--type-gijutsukan-museum-event node--view-mode-museum-top-event">
+        <a href="https://www.mhi.com/jp/company/museum/minatomirai/event/mhitourist1009.html" target="">
+      <span class="comBdg">オンラインイベント</span><mark>視聴者参加型ミュージアム解説ツアー「MHI通リスト」</mark>      <span class="comHeldDay">
+        2022年10月9日（日曜）
+        <span> 事前申込制[先着順]</span>
+      </span>
+    </a>
+</li>
+<li role="article" about="/jp/company/museum/minatomirai/event/troublebusters1015.html" class="node node--type-gijutsukan-museum-event node--view-mode-museum-top-event">
+        <a href="https://www.mhi.com/jp/company/museum/minatomirai/event/troublebusters1015.html" target="">
+      <span class="comBdg">オンラインイベント</span><mark>おうちdeサイエンスショー トラブルバスターズ</mark>      <span class="comHeldDay">
+        2022年10月15日（土曜）
+        <span>事前申込制[先着順]</span>
+      </span>
+    </a>
+</li>
+<li role="article" about="/jp/company/museum/minatomirai/event/20221007.html" class="node node--type-gijutsukan-museum-event node--view-mode-museum-top-event">
+        <a href="https://www.mhi.com/jp/company/museum/minatomirai/event/20221007.html" target="">
+      <span class="comBdg">オンラインイベント</span><mark>MMキッズみらい塾 第8弾! with NewsPicks for Kids 「山之内すずさんと2050年の未来予想図をつくろう！ ～みんなの未来予想をリアルタイムでイラストにします！～」</mark>      <span class="comHeldDay">
+        2022年10月29日（土曜）
+        <span>事前申込制[先着順]</span>
+      </span>
+    </a>
+</li>
+      </ul>
+    </div>
+    <ul class="comLstLkNrIlne">
+      <li></li>
+    </ul>
+  </div>
+
+                  </section>
+                </div>
+              </div>
+                                          <div class="inC1">
+                <div class="inClmPosi">
+                  <div data-block-plugin-id="inline_block:gijutsukan_museum_calendar" data-inline-block-uuid="fc3fc35c-d0ae-4200-99a6-b36f54df9201" class="block block-layout-builder block-inline-blockgijutsukan-museum-calendar">
+  
+    
+    <section id="mmimCalendar">
+    <h2>
+            <div class="clearfix text-formatted field field--name-field-formatted-title field--type-text field--label-hidden field__item">開館カレンダー</div>
+      </h2>
+    <div class="comIndexSidSet">
+      <h3>2022年10月</h3>
+      <a href="https://www.mhi.com/jp/expertise/museum/minatomirai/about_museum/opening_day.html">
+        <figure>
+          
+            <div class="field field--name-field-selected-calendar field--type-entity-reference field--label-hidden field__item">
+            <div class="field field--name-field-image field--type-entity-reference field--label-hidden field__item">  <img src="https://www.mhi.com/sites/g/files/jwhtju111/files/2022-03/2022_10.png" width="357" height="412" alt="2022‗10" loading="lazy" typeof="foaf:Image" />
+
+</div>
+      
+</div>
+      
+          <figcaption style="background-image: url('https://www.mhi.com/sites/g/files/jwhtju111/files/2020-09/index_illust_techno.png')">
+            <div><span class="calendarMark">●</span> の日：「三菱みなとみらい技術館」休館日です。</div>
+
+          </figcaption>
+        </figure>
+      </a>
+    </div>
+  </section>
+  </div>
+<div data-block-plugin-id="inline_block:carousel" data-inline-block-uuid="0a5a53fa-d827-473d-ae83-592b4f9d8e08" class="block block-layout-builder block-inline-blockcarousel">
+  
+    
+        <input type="hidden" value="6" class="frequency" />
+
+<ul class="mhi-carousel">
+      <li>      <a href="https://mmdantaiyoyaku2022.peatix.com/">
+              
+  <div class="main__img">
+            
+<span class="comPcOnly">
+        <img src="https://www.mhi.com/sites/g/files/jwhtju111/files/2022-07/dantaiyoyaku2022_0.jpg" width="1276" height="1789" alt="dantaiyoyaku2022" loading="lazy" typeof="foaf:Image" />
+
+
+  </span>
+<span class="comSpOnly">
+        <img src="https://www.mhi.com/sites/g/files/jwhtju111/files/2022-07/dantaiyoyaku2022_1.jpg" width="1276" height="1789" alt="dantaiyoyaku2022 mobile" loading="lazy" typeof="foaf:Image" />
+
+
+  </span>
+
+      </div>
+
+
+
+              
+              
+          </a>
+  </li>
+  </ul>
+  <input type="hidden" value="0.40" class="speed" />
+
+            <div class="field field--name-field-dots field--type-boolean field--label-hidden field__item">Off</div>
+      
+            <div class="field field--name-field-rotation-infinite field--type-boolean field--label-hidden field__item">On</div>
+      
+  </div>
+<div data-block-plugin-id="block_content:42718a53-afec-472b-89f0-9cf70cf5a0d1" class="block block-block-content block-block-content42718a53-afec-472b-89f0-9cf70cf5a0d1">
+  
+    
+      
+            <div class="clearfix text-formatted field field--name-body field--type-text-with-summary field--label-hidden field__item"><section id="eventPdfDwn"><h2>動画</h2>
+
+<figure><a href="https://www.youtube.com/channel/UCV8qXTicSqgmHiGDqTCYqdQ" target="_blank">
+  
+        <img src="https://www.mhi.com/jp/media/370226/download" width="620" height="723" alt="三菱みなとみらい技術館YouTube公式チャンネル" loading="lazy" class="embeded-entity file file--mime-image-jpeg file--image" title="三菱みなとみらい技術館YouTube公式チャンネル" type="image/jpeg; length=182610" target="_blank" /></a></figure></section><section id="eventPdfDwn"><figure><a href="https://www.youtube.com/user/discovermhi" target="_blank">
+  
+        <img src="https://www.mhi.com/jp/media/371891/download" width="620" height="869" alt="Discover youtube banner" loading="lazy" class="embeded-entity file file--mime-image-jpeg file--image" title="Discover youtube banner" type="image/jpeg; length=315204" target="_blank" /></a></figure></section></div>
+      
+  </div>
+
+                </div>
+              </div>
+                          </div>
+          </section>
+                          <div  data-block-plugin-id="block_content:1219969b-886d-46f0-8490-52e19efcf136" class="block block-block-content block-block-content1219969b-886d-46f0-8490-52e19efcf136 recommendLink">
+  
+    
+            <h2>おすすめコンテンツ</h2>
+        <div class='comSecLnkSetC4'>
+      <ul>
+                  
+  <li>
+          <a href="https://www.mhi.com/jp/expertise/museum/minatomirai/exhibition">
+          <img src="https://www.mhi.com/sites/g/files/jwhtju111/files/2019-08/index_rec_pic_01.png" width="560" height="240" loading="lazy" typeof="foaf:Image" />
+
+
+        <span class="inTxt">
+          <mark class="">展示・施設案内</mark>
+                                三菱みなとみらい技術館の施設案内
+                  </span>
+      </a>
+      </li>
+
+  <li>
+          <a href="https://www.mhi.com/jp/expertise/museum/minatomirai/about_museum/group_tours.html">
+          <img src="https://www.mhi.com/sites/g/files/jwhtju111/files/2019-08/index_rec_pic_02.png" width="560" height="240" loading="lazy" typeof="foaf:Image" />
+
+
+        <span class="inTxt">
+          <mark class="">団体見学お申込み</mark>
+                                団体でご見学のみなさまへのご案内
+                  </span>
+      </a>
+      </li>
+
+  <li>
+          <a href="https://www.mhi.com/jp/expertise/museum/minatomirai/about_museum/about_character.html">
+          <img src="https://www.mhi.com/sites/g/files/jwhtju111/files/2019-08/index_rec_pic_03.png" width="560" height="240" loading="lazy" typeof="foaf:Image" />
+
+
+        <span class="inTxt">
+          <mark class="">テクノくんプロフィール</mark>
+                                三菱みなとみらい技術館公式キャラクタープロフィール
+                  </span>
+      </a>
+      </li>
+
+  <li>
+          <a href="https://www.mhi.com/jp/expertise/museum/minatomirai/access">
+          <img src="https://www.mhi.com/sites/g/files/jwhtju111/files/2019-08/index_rec_pic_04-jp.png" width="560" height="240" loading="lazy" typeof="foaf:Image" />
+
+
+        <span class="inTxt">
+          <mark class="">アクセス</mark>
+                                桜木町駅、みなとみらい駅からの交通案内
+                  </span>
+      </a>
+      </li>
+
+              </ul>
+    </div>
+  </div>
+<div  data-block-plugin-id="block_content:5849add1-2137-4387-bcb6-51e268add912" class="block block-block-content block-block-content5849add1-2137-4387-bcb6-51e268add912 comLinkWrap recommendLink">
+  
+    
+            <h2>メールマガジン／SNS</h2>
+        <div class='comSecLnkSetC4'>
+      <ul>
+                  
+  <li class=>
+          <a href="https://www.facebook.com/MMgijutsukan">
+          <img src="https://www.mhi.com/sites/g/files/jwhtju111/files/2019-08/index_related_pic_01.png" width="277" height="119" loading="lazy" typeof="foaf:Image" />
+
+
+        <span class="inTxt">
+          <mark class="comNewWin">Facebook</mark>
+                            </span>
+      </a>
+      </li>
+
+  <li class=>
+          <a href="https://twitter.com/minatomiraigiju">
+          <img src="https://www.mhi.com/sites/g/files/jwhtju111/files/2019-08/index_related_pic_02.png" width="276" height="119" loading="lazy" typeof="foaf:Image" />
+
+
+        <span class="inTxt">
+          <mark class="comNewWin">Twitter</mark>
+                            </span>
+      </a>
+      </li>
+
+  <li class=>
+          <a href="https://page.line.me/vta2846v">
+          <img src="https://www.mhi.com/sites/g/files/jwhtju111/files/2019-08/index_related_pic_03.png" width="276" height="118" loading="lazy" typeof="foaf:Image" />
+
+
+        <span class="inTxt">
+          <mark class="comNewWin"><span class="__cf_email__" data-cfemail="9ed2d7d0dbde">[email&#160;protected]</span></mark>
+                            </span>
+      </a>
+      </li>
+
+  <li class=>
+          <a href="https://www.instagram.com/explore/tags/三菱みなとみらい技術館/?hl=ja">
+          <img src="https://www.mhi.com/sites/g/files/jwhtju111/files/2019-08/index_related_pic_04.png" width="276" height="118" loading="lazy" typeof="foaf:Image" />
+
+
+        <span class="inTxt">
+          <mark class="comNewWin">Instagram</mark>
+                            </span>
+      </a>
+      </li>
+
+  <li class=>
+          <a href="https://www.mhi.com/jp/mailmagazine">
+          <img src="https://www.mhi.com/sites/g/files/jwhtju111/files/2019-08/index_related_pic_05.png" width="276" height="118" loading="lazy" typeof="foaf:Image" />
+
+
+        <span class="inTxt">
+          <mark class="">メールマガジン</mark>
+                            </span>
+      </a>
+      </li>
+
+              </ul>
+    </div>
+  </div>
+
+                    </div>
+      </div>
+    </div>
+  </div>
+
+  </div>
+</article>
+
+  </div>
+
+  </div>
+
+  </main>
+
+  <footer id="comFooter" role="contentinfo">
+    
+  <div id="block-footermovetotop" class="footerMoveToTop block block-block-content block-block-content6e6aad79-adfe-4c83-816b-eac594acd83d" data-block-plugin-id="block_content:6e6aad79-adfe-4c83-816b-eac594acd83d">
+  
+    
+      
+            <div class="clearfix text-formatted field field--name-body field--type-text-with-summary field--label-hidden field__item"><div id="pageTop"><a>Go to the top of this page</a></div></div>
+      
+  </div>
+<nav role="navigation" id="footerInSiteLink" aria-labelledby="block-system-menu-block-gijutsukan-museum-footer-me-menu" id="block-system-menu-block-gijutsukan-museum-footer-me" data-block-plugin-id="system_menu_block:gijutsukan-museum-footer-me" class="block block-menu navigation menu--gijutsukan-museum-footer-me">
+            
+  <h2 class="visually-hidden" id="block-system-menu-block-gijutsukan-museum-footer-me-menu">Gijutsukan Museum Footer Menu</h2>
+  
+
+        
+              <ul block="block-system-menu-block-gijutsukan-museum-footer-me" class="menu">
+                    <li class="menu-item--active-trail menu-item">
+        <a href="https://www.mhi.com/jp/expertise/museum/minatomirai" hreflang="ja" data-drupal-link-system-path="node/103256" class="is-active">三菱みなとみらい技術館</a>
+              </li>
+                <li class="menu-item">
+        <a href="https://www.mhi.com/jp/expertise/museum/minatomirai/sitemap.html" hreflang="ja" data-drupal-link-system-path="node/107531">サイトマップ</a>
+              </li>
+        </ul>
+  
+
+
+  </nav>
+<div id="block-footer-group-logo" class="footerGroupLogo block block-block-content block-block-content96ae1c39-c05b-4e67-9ca0-3129dee83e92" data-block-plugin-id="block_content:96ae1c39-c05b-4e67-9ca0-3129dee83e92">
+  
+    
+      
+            <div class="clearfix text-formatted field field--name-body field--type-text-with-summary field--label-hidden field__item"><div id="footGroupLogo"><a href="https://www.mhi.com/jp/network/text_version.html"><img src="https://www.mhi.com/themes/custom/mhi/src/img/foot_mhigroup_logo.svg" alt="MOVE THE WORLD FORWARD MHI Group" /></a></div></div>
+      
+  </div>
+<div id="block-cookiedisclaimerpopup" data-block-plugin-id="simple_block:cookie_disclaimer_pop_up" class="block block-simple-block block-simple-blockcookie-disclaimer-pop-up">
+  
+    
+      <div class="cookieAlertBox"><div class="inner"><p>本サイト（www.mhi.com）は、お客様が再訪問された際に、最適な情報を提供するなど、快適にご利用いただくためにクッキー（Cookie）を使用しています。詳しくはサイトのご利用条件をご覧ください。本サイトをご利用になる場合、お客様はクッキーの使用に同意下さい。<br><a href="https://www.mhi.com/jp/conditions.html#cookie">サイトのご利用条件</a></p><div class="cookieApprovalBtn"><span>同意しました</span></div><div class="closeBtn"></div></div></div>
+  </div>
+<nav role="navigation" id="footerLink" aria-labelledby="block-system-menu-block-short-footer-menu" id="block-system-menu-block-short-footer" data-block-plugin-id="system_menu_block:short-footer" class="block block-menu navigation menu--short-footer">
+            
+  <h2 class="visually-hidden" id="block-system-menu-block-short-footer-menu">Short Footer</h2>
+  
+
+         <ul block="block-system-menu-block-short-footer" class="menu"><li class="menu-item"><a href="https://www.mhi.com/jp/conditions.html" hreflang="ja" data-drupal-link-system-path="node/111361">サイトのご利用条件</a></li><li class="menu-item"><a href="https://www.mhi.com/jp/privacy.html" hreflang="ja" data-drupal-link-system-path="node/111391">個人情報保護方針</a></li></ul>  </nav>
+<div id="block-block-content-7f80591d-954a-4a5e-85cc-7af69bc0faf9" data-block-plugin-id="block_content:7f80591d-954a-4a5e-85cc-7af69bc0faf9" class="block block-block-content block-block-content7f80591d-954a-4a5e-85cc-7af69bc0faf9">
+  
+    
+      
+            <div class="clearfix text-formatted field field--name-body field--type-text-with-summary field--label-hidden field__item"><p><small id="copyright">© MITSUBISHI HEAVY INDUSTRIES, LTD.</small></p></div>
+      
+  </div>
+
+
+  </footer>
+
+  </div>
+
+    
+    <script data-cfasync="false" src="https://www.mhi.com/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script type="application/json" data-drupal-selector="drupal-settings-json">{"path":{"baseUrl":"\/","scriptPath":null,"pathPrefix":"jp\/","currentPath":"node\/103256","currentPathIsAdmin":false,"isFront":false,"currentLanguage":"ja"},"pluralDelimiter":"\u0003","suppressDeprecationErrors":true,"data":{"extlink":{"extTarget":true,"extTargetNoOverride":false,"extNofollow":false,"extNoreferrer":false,"extFollowNoOverride":false,"extClass":"ext","extLabel":"(link is external)","extImgClass":false,"extSubdomains":false,"extExclude":"","extInclude":"","extCssExclude":".comNewsDetail #comMainConPosi, .product-business-contact-list, .comImportantNoticeDetail #comMainConPosi, .comContactLkWrap, .noextlink, .view-id-home_notice_list","extCssExplicit":"","extAlert":false,"extAlertText":"This link will take you to an external web site. We are not responsible for their content.","mailtoClass":"0","mailtoLabel":"(link sends email)","extUseFontAwesome":false,"extIconPlacement":"append","extFaLinkClasses":"fa fa-external-link","extFaMailtoClasses":"fa fa-envelope-o","whitelistedDomains":[]}},"mhi_base":{"outline":{"title":"\u4e09\u83f1\u91cd\u5de5\u30b0\u30eb\u30fc\u30d7\u306e\u30a2\u30a6\u30c8\u30e9\u30a4\u30f3","link":"\/jp\/company\/aboutmhi\/introduction\/","description":"\u4e09\u83f1\u91cd\u5de5\u30b0\u30eb\u30fc\u30d7\u306e\u6982\u8981\u30fb\u6d3b\u52d5\u5185\u5bb9\u306e\u3054\u7d39\u4ecb\u3067\u3059\u3002","mobile_thumb_url":"https:\/\/www.mhi.com\/sites\/g\/files\/jwhtju111\/files\/mhi-base\/bnr_introduction_3.png"}},"googlemapkey":"AIzaSyD1BlDDhdPrHa5OrOGxexsWRdwlMI5FJbY","mhi":{"mhiJS":{"theme_path":"themes\/custom\/mhi"}},"ajax":[],"user":{"uid":0,"permissionsHash":"e18ddaad7ecb67086f012a0eab07bb949fa25dbae047d062749f931dd04e0ed3"}}</script>
+<script src="https://www.mhi.com/sites/g/files/jwhtju111/files/js/js_t8YREJJiAH81CrMk6SNgB0YTcodSBSKqmW50hPL0PbY.js"></script>
+<script src="http://c.marsflag.com/mf/mfx/1.0/js/mfx-sbox.js"></script>
+<script src="https://www.mhi.com/sites/g/files/jwhtju111/files/js/js_RVN5zf4wNfm44BFiM8DO0opFS7J2A3REmsXbkzMf-o4.js"></script>
+
+  <script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"3d90739b94","applicationID":"945003000,756406217","transactionName":"M1VVZRQACBYDAkdQCwofdlISCAkLTSVBTBQFXGtUCBUPERsQRlwRAWx0XggVFAoODVZLOCFeQ1gSGDcQBxRWbC0nX1lFFA4KCQcTHgcFB1NSQhU=","queueTime":0,"applicationTime":472,"atts":"HxJWE1waGxg=","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+
+<!-- Mirrored from www.mhi.com/jp/expertise/museum/minatomirai by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 14 Oct 2022 17:07:49 GMT -->
+</html>

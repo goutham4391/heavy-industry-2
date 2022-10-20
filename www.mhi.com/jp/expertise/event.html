@@ -1,0 +1,2154 @@
+<!DOCTYPE html>
+<html lang="ja" dir="ltr" prefix="content: http://purl.org/rss/1.0/modules/content/  dc: http://purl.org/dc/terms/  foaf: http://xmlns.com/foaf/0.1/  og: http://ogp.me/ns#  rdfs: http://www.w3.org/2000/01/rdf-schema#  schema: http://schema.org/  sioc: http://rdfs.org/sioc/ns#  sioct: http://rdfs.org/sioc/types#  skos: http://www.w3.org/2004/02/skos/core#  xsd: http://www.w3.org/2001/XMLSchema# ">
+  
+<!-- Mirrored from www.mhi.com/jp/expertise/event by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 14 Oct 2022 17:07:49 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+    <meta charset="utf-8" /><script type="text/javascript">(window.NREUM||(NREUM={})).init={ajax:{deny_list:["bam.nr-data.net"]}};(window.NREUM||(NREUM={})).loader_config={licenseKey:"3d90739b94",applicationID:"945003000"};window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){var i=e[n]={exports:{}};t[n][0].call(i.exports,function(e){var i=t[n][1][e];return r(i||e)},i,i.exports)}return e[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var i=0;i<n.length;i++)r(n[i]);return r}({1:[function(t,e,n){function r(){}function i(t,e,n,r){return function(){return s.recordSupportability("API/"+e+"/called"),o(t+e,[u.now()].concat(c(arguments)),n?null:this,r),n?void 0:this}}var o=t("handle"),a=t(9),c=t(10),f=t("ee").get("tracer"),u=t("loader"),s=t(4),d=NREUM;"undefined"==typeof window.newrelic&&(newrelic=d);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],l="api-",v=l+"ixn-";a(p,function(t,e){d[e]=i(l,e,!0,"api")}),d.addPageAction=i(l,"addPageAction",!0),d.setCurrentRouteName=i(l,"routeName",!0),e.exports=newrelic,d.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(t,e){var n={},r=this,i="function"==typeof e;return o(v+"tracer",[u.now(),t,n],r),function(){if(f.emit((i?"":"no-")+"fn-start",[u.now(),r,i],n),i)try{return e.apply(this,arguments)}catch(t){throw f.emit("fn-err",[arguments,this,t],n),t}finally{f.emit("fn-end",[u.now()],n)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(t,e){m[e]=i(v,e)}),newrelic.noticeError=function(t,e){"string"==typeof t&&(t=new Error(t)),s.recordSupportability("API/noticeError/called"),o("err",[t,u.now(),!1,e])}},{}],2:[function(t,e,n){function r(t){if(NREUM.init){for(var e=NREUM.init,n=t.split("."),r=0;r<n.length-1;r++)if(e=e[n[r]],"object"!=typeof e)return;return e=e[n[n.length-1]]}}e.exports={getConfiguration:r}},{}],3:[function(t,e,n){var r=!1;try{var i=Object.defineProperty({},"passive",{get:function(){r=!0}});window.addEventListener("testPassive",null,i),window.removeEventListener("testPassive",null,i)}catch(o){}e.exports=function(t){return r?{passive:!0,capture:!!t}:!!t}},{}],4:[function(t,e,n){function r(t,e){var n=[a,t,{name:t},e];return o("storeMetric",n,null,"api"),n}function i(t,e){var n=[c,t,{name:t},e];return o("storeEventMetrics",n,null,"api"),n}var o=t("handle"),a="sm",c="cm";e.exports={constants:{SUPPORTABILITY_METRIC:a,CUSTOM_METRIC:c},recordSupportability:r,recordCustom:i}},{}],5:[function(t,e,n){function r(){return c.exists&&performance.now?Math.round(performance.now()):(o=Math.max((new Date).getTime(),o))-a}function i(){return o}var o=(new Date).getTime(),a=o,c=t(11);e.exports=r,e.exports.offset=a,e.exports.getLastTimestamp=i},{}],6:[function(t,e,n){function r(t,e){var n=t.getEntries();n.forEach(function(t){"first-paint"===t.name?l("timing",["fp",Math.floor(t.startTime)]):"first-contentful-paint"===t.name&&l("timing",["fcp",Math.floor(t.startTime)])})}function i(t,e){var n=t.getEntries();if(n.length>0){var r=n[n.length-1];if(u&&u<r.startTime)return;var i=[r],o=a({});o&&i.push(o),l("lcp",i)}}function o(t){t.getEntries().forEach(function(t){t.hadRecentInput||l("cls",[t])})}function a(t){var e=navigator.connection||navigator.mozConnection||navigator.webkitConnection;if(e)return e.type&&(t["net-type"]=e.type),e.effectiveType&&(t["net-etype"]=e.effectiveType),e.rtt&&(t["net-rtt"]=e.rtt),e.downlink&&(t["net-dlink"]=e.downlink),t}function c(t){if(t instanceof y&&!w){var e=Math.round(t.timeStamp),n={type:t.type};a(n),e<=v.now()?n.fid=v.now()-e:e>v.offset&&e<=Date.now()?(e-=v.offset,n.fid=v.now()-e):e=v.now(),w=!0,l("timing",["fi",e,n])}}function f(t){"hidden"===t&&(u=v.now(),l("pageHide",[u]))}if(!("init"in NREUM&&"page_view_timing"in NREUM.init&&"enabled"in NREUM.init.page_view_timing&&NREUM.init.page_view_timing.enabled===!1)){var u,s,d,p,l=t("handle"),v=t("loader"),m=t(8),g=t(3),y=NREUM.o.EV;if("PerformanceObserver"in window&&"function"==typeof window.PerformanceObserver){s=new PerformanceObserver(r);try{s.observe({entryTypes:["paint"]})}catch(h){}d=new PerformanceObserver(i);try{d.observe({entryTypes:["largest-contentful-paint"]})}catch(h){}p=new PerformanceObserver(o);try{p.observe({type:"layout-shift",buffered:!0})}catch(h){}}if("addEventListener"in document){var w=!1,b=["click","keydown","mousedown","pointerdown","touchstart"];b.forEach(function(t){document.addEventListener(t,c,g(!1))})}m(f)}},{}],7:[function(t,e,n){function r(t,e){if(!i)return!1;if(t!==i)return!1;if(!e)return!0;if(!o)return!1;for(var n=o.split("."),r=e.split("."),a=0;a<r.length;a++)if(r[a]!==n[a])return!1;return!0}var i=null,o=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var c=navigator.userAgent,f=c.match(a);f&&c.indexOf("Chrome")===-1&&c.indexOf("Chromium")===-1&&(i="Safari",o=f[1])}e.exports={agent:i,version:o,match:r}},{}],8:[function(t,e,n){function r(t){function e(){t(c&&document[c]?document[c]:document[o]?"hidden":"visible")}"addEventListener"in document&&a&&document.addEventListener(a,e,i(!1))}var i=t(3);e.exports=r;var o,a,c;"undefined"!=typeof document.hidden?(o="hidden",a="visibilitychange",c="visibilityState"):"undefined"!=typeof document.msHidden?(o="msHidden",a="msvisibilitychange"):"undefined"!=typeof document.webkitHidden&&(o="webkitHidden",a="webkitvisibilitychange",c="webkitVisibilityState")},{}],9:[function(t,e,n){function r(t,e){var n=[],r="",o=0;for(r in t)i.call(t,r)&&(n[o]=e(r,t[r]),o+=1);return n}var i=Object.prototype.hasOwnProperty;e.exports=r},{}],10:[function(t,e,n){function r(t,e,n){e||(e=0),"undefined"==typeof n&&(n=t?t.length:0);for(var r=-1,i=n-e||0,o=Array(i<0?0:i);++r<i;)o[r]=t[e+r];return o}e.exports=r},{}],11:[function(t,e,n){e.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(t,e,n){function r(){}function i(t){function e(t){return t&&t instanceof r?t:t?u(t,f,a):a()}function n(n,r,i,o,a){if(a!==!1&&(a=!0),!l.aborted||o){t&&a&&t(n,r,i);for(var c=e(i),f=m(n),u=f.length,s=0;s<u;s++)f[s].apply(c,r);var p=d[w[n]];return p&&p.push([b,n,r,c]),c}}function o(t,e){h[t]=m(t).concat(e)}function v(t,e){var n=h[t];if(n)for(var r=0;r<n.length;r++)n[r]===e&&n.splice(r,1)}function m(t){return h[t]||[]}function g(t){return p[t]=p[t]||i(n)}function y(t,e){l.aborted||s(t,function(t,n){e=e||"feature",w[n]=e,e in d||(d[e]=[])})}var h={},w={},b={on:o,addEventListener:o,removeEventListener:v,emit:n,get:g,listeners:m,context:e,buffer:y,abort:c,aborted:!1};return b}function o(t){return u(t,f,a)}function a(){return new r}function c(){(d.api||d.feature)&&(l.aborted=!0,d=l.backlog={})}var f="nr@context",u=t("gos"),s=t(9),d={},p={},l=e.exports=i();e.exports.getOrSetContext=o,l.backlog=d},{}],gos:[function(t,e,n){function r(t,e,n){if(i.call(t,e))return t[e];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(t,e,{value:r,writable:!0,enumerable:!1}),r}catch(o){}return t[e]=r,r}var i=Object.prototype.hasOwnProperty;e.exports=r},{}],handle:[function(t,e,n){function r(t,e,n,r){i.buffer([t],r),i.emit(t,e,n)}var i=t("ee").get("handle");e.exports=r,r.ee=i},{}],id:[function(t,e,n){function r(t){var e=typeof t;return!t||"object"!==e&&"function"!==e?-1:t===window?0:a(t,o,function(){return i++})}var i=1,o="nr@id",a=t("gos");e.exports=r},{}],loader:[function(t,e,n){function r(){if(!M++){var t=T.info=NREUM.info,e=m.getElementsByTagName("script")[0];if(setTimeout(u.abort,3e4),!(t&&t.licenseKey&&t.applicationID&&e))return u.abort();f(x,function(e,n){t[e]||(t[e]=n)});var n=a();c("mark",["onload",n+T.offset],null,"api"),c("timing",["load",n]);var r=m.createElement("script");0===t.agent.indexOf("http://")||0===t.agent.indexOf("https:///")?r.src=t.agent:r.src=l+"://"+t.agent,e.parentNode.insertBefore(r,e)}}function i(){"complete"===m.readyState&&o()}function o(){c("mark",["domContent",a()+T.offset],null,"api")}var a=t(5),c=t("handle"),f=t(9),u=t("ee"),s=t(7),d=t(2),p=t(3),l=d.getConfiguration("ssl")===!1?"http":"https",v=window,m=v.document,g="addEventListener",y="attachEvent",h=v.XMLHttpRequest,w=h&&h.prototype,b=!1;NREUM.o={ST:setTimeout,SI:v.setImmediate,CT:clearTimeout,XHR:h,REQ:v.Request,EV:v.Event,PR:v.Promise,MO:v.MutationObserver};var E=""+location,x={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1216.min.js"},O=h&&w&&w[g]&&!/CriOS/.test(navigator.userAgent),T=e.exports={offset:a.getLastTimestamp(),now:a,origin:E,features:{},xhrWrappable:O,userAgent:s,disabled:b};if(!b){t(1),t(6),m[g]?(m[g]("DOMContentLoaded",o,p(!1)),v[g]("load",r,p(!1))):(m[y]("onreadystatechange",i),v[y]("onload",r)),c("mark",["firstbyte",a.getLastTimestamp()],null,"api");var M=0}},{}],"wrap-function":[function(t,e,n){function r(t,e){function n(e,n,r,f,u){function nrWrapper(){var o,a,s,p;try{a=this,o=d(arguments),s="function"==typeof r?r(o,a):r||{}}catch(l){i([l,"",[o,a,f],s],t)}c(n+"start",[o,a,f],s,u);try{return p=e.apply(a,o)}catch(v){throw c(n+"err",[o,a,v],s,u),v}finally{c(n+"end",[o,a,p],s,u)}}return a(e)?e:(n||(n=""),nrWrapper[p]=e,o(e,nrWrapper,t),nrWrapper)}function r(t,e,r,i,o){r||(r="");var c,f,u,s="-"===r.charAt(0);for(u=0;u<e.length;u++)f=e[u],c=t[f],a(c)||(t[f]=n(c,s?f+r:r,i,f,o))}function c(n,r,o,a){if(!v||e){var c=v;v=!0;try{t.emit(n,r,o,e,a)}catch(f){i([f,n,r,o],t)}v=c}}return t||(t=s),n.inPlace=r,n.flag=p,n}function i(t,e){e||(e=s);try{e.emit("internal-error",t)}catch(n){}}function o(t,e,n){if(Object.defineProperty&&Object.keys)try{var r=Object.keys(t);return r.forEach(function(n){Object.defineProperty(e,n,{get:function(){return t[n]},set:function(e){return t[n]=e,e}})}),e}catch(o){i([o],n)}for(var a in t)l.call(t,a)&&(e[a]=t[a]);return e}function a(t){return!(t&&t instanceof Function&&t.apply&&!t[p])}function c(t,e){var n=e(t);return n[p]=t,o(t,n,s),n}function f(t,e,n){var r=t[e];t[e]=c(r,n)}function u(){for(var t=arguments.length,e=new Array(t),n=0;n<t;++n)e[n]=arguments[n];return e}var s=t("ee"),d=t(10),p="nr@original",l=Object.prototype.hasOwnProperty,v=!1;e.exports=r,e.exports.wrapFunction=c,e.exports.wrapInPlace=f,e.exports.argsToArray=u},{}]},{},["loader"]);</script>
+<meta property="og:site_name" content="三菱重工" />
+<link rel="shortcut icon" href="https://www.mhi.com/themes/custom/mhi_base_theme/favicons/ja/favicon.ico" />
+<link rel="canonical" href="https://www.mhi.com/jp/expertise/event" />
+<meta property="og:type" content="基本ページ" />
+<meta name="description" content="三菱重工が出展予定のイベント、展示会に関する最新ニュースや事前情報、過去の展示会情報をご紹介します。展示パネルや動画もご覧いただけます。" />
+<meta property="og:url" content="https://www.mhi.com/jp/expertise/event" />
+<meta name="keywords" content="イベント,展示会,最新情報,三菱,三菱重工業" />
+<meta property="og:title" content="三菱重工 | イベント・展示会情報" />
+<meta property="og:description" content="三菱重工が出展予定のイベント、展示会に関する最新ニュースや事前情報、過去の展示会情報をご紹介します。展示パネルや動画もご覧いただけます。" />
+<link rel="apple-touch-icon" href="https://www.mhi.com/themes/custom/mhi_base_theme/favicons/ja/apple_touch_icon.png" />
+<meta property="og:image" content="https://www.mhi.com/themes/custom/mhi/src/img/ogp_sns.png" />
+<meta property="og:image:type" content="image/jpeg" />
+<link rel="apple-touch-icon-precomposed" href="https://www.mhi.com/themes/custom/mhi_base_theme/favicons/ja/apple_touch_icon.png" />
+<meta name="Generator" content="Drupal 9 (https://www.drupal.org)" />
+<meta name="MobileOptimized" content="width" />
+<meta name="HandheldFriendly" content="true" />
+<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+<meta name="twitter:card" content="summary_large_image" />
+<link rel="alternate" hreflang="en" href="https://www.mhi.com/expertise/event" />
+<link rel="alternate" hreflang="ja" href="https://www.mhi.com/jp/expertise/event" />
+<script src="https://www.mhi.com/sites/g/files/jwhtju111/files/google_tag/google_tag/mhi/google_tag.script.js?rjc08r" defer></script>
+
+    <title>三菱重工 | イベント・展示会情報</title>
+    <link rel="stylesheet" media="all" href="https://www.mhi.com/sites/g/files/jwhtju111/files/css/css_1UkfDv8XDD4MS0zuEug4ZzHoDi6KBego5Fw9H6ObpVc.css" />
+<link rel="stylesheet" media="all" href="https://www.mhi.com/sites/g/files/jwhtju111/files/css/css_CkI3LmNJ7q5u7vgPlbGRpHze6RUqW2r6fTiA6GvkBQo.css" />
+<link rel="stylesheet" media="print" href="https://www.mhi.com/sites/g/files/jwhtju111/files/css/css_npYYriCqvk444NEOIIcVTaL2youfsF04to-0pVnMrvo.css" />
+<link rel="stylesheet" media="all" href="https://www.mhi.com/sites/g/files/jwhtju111/files/css/css_KGZBht4tZmi4zKyn79jopqJMoJxFGNQrP3pF8ESYOOQ.css" />
+
+    <script src="https://www.mhi.com/core/assets/vendor/modernizr/modernizr.min.js?v=3.11.7"></script>
+<script src="https://www.mhi.com/core/misc/modernizr-additional-tests.js?v=3.11.7"></script>
+
+          <script type="text/javascript" src="https://www.mhi.com/modules/contrib/seckit/js/seckit.document_write.js"></script>
+        <link type="text/css" rel="stylesheet" id="seckit-clickjacking-no-body" media="all" href="https://www.mhi.com/modules/contrib/seckit/css/seckit.no_body.css" />
+        <!-- stop SecKit protection -->
+        <noscript>
+        <link type="text/css" rel="stylesheet" id="seckit-clickjacking-noscript-tag" media="all" href="https://www.mhi.com/modules/contrib/seckit/css/seckit.noscript_tag.css" />
+        <div id="seckit-noscript-tag">
+          Sorry, you need to enable JavaScript to visit this website.
+        </div>
+        </noscript></head>
+  <body class="path-node page-node-type-page">
+        <a href="#main-content" class="visually-hidden focusable skip-link">
+      メインコンテンツに移動
+    </a>
+    <noscript aria-hidden="true"><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PPKXH83" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+      <div class="dialog-off-canvas-main-canvas" data-off-canvas-main-canvas>
+    <div class="comHeaderFollow">
+    <header id="comHeader" role="banner">
+    <div id="block-sitebranding" data-block-plugin-id="system_branding_block" class="block block-system block-system-branding-block">
+  
+    
+    <div id="headLogo">
+      <a href="https://www.mhi.com/jp" title="ホーム" rel="home" class="site-logo">
+      <img src="https://www.mhi.com/themes/custom/mhi/logo_ja.svg" alt="ホーム" />
+    </a>
+        </div>
+</div>
+<div id="headGroupLogo" data-block-plugin-id="block_content:96769913-b3b8-42f7-a711-29d68ddbf08a" class="block block-block-content block-block-content96769913-b3b8-42f7-a711-29d68ddbf08a">
+  
+    
+      
+            <div class="clearfix text-formatted field field--name-body field--type-text-with-summary field--label-hidden field__item"><a href="https://www.mhi.com/jp/network/text_version.html"><img src="https://www.mhi.com/themes/custom/mhi/src/img/head_mhigroup_logo.svg" alt="MHI Group" /></a></div>
+      
+  </div>
+<div id="block-mhi-search-box" data-block-plugin-id="mhi_search_box" class="block block-mhi-marsflag block-mhi-search-box">
+  
+    
+      <div class="searchArea">
+  <form id="search_form" action="https://www.mhi.com/jp/search" onsubmit="return mysearch();">
+    <input class="searchTxt" type="text" name="q" value="" tabindex="0" placeholder="検索">
+    <input type="hidden" name="ie" value="u">
+  </form>
+</div>
+
+  </div>
+<div role="navigation" aria-labelledby="block-headermenu-menu" id="headMenu" data-block-plugin-id="system_menu_block:header-menu" class="block block-menu navigation menu--header-menu search-container">
+            
+  <h2 class="visually-hidden" id="block-headermenu-menu">Header Menu</h2>
+  
+
+        
+        <div class="hnav">
+      <nav>
+                  <ul block="block-headermenu" class="menu">
+                                    <li class="menu-item">
+            <a href="https://www.mhi.com/jp/news" hreflang="ja" data-drupal-link-system-path="news">ニュース</a>
+                      </li>
+                            <li class="menu-item">
+            <a href="https://www.mhi.com/jp/recruit" hreflang="ja" data-drupal-link-system-path="node/107561">採用情報</a>
+                      </li>
+                            <li class="menu-item">
+            <a href="https://www.mhi.com/jp" class="lang-switch" hreflang="ja" data-drupal-link-system-path="&lt;front&gt;">GLOBAL SITE</a>
+                      </li>
+                </ul>
+      </nav>
+    </div>
+  
+
+
+  </div>
+<div id="gnav">
+  <nav role="navigation" aria-labelledby="block-mainnavigation-menu" id="block-mainnavigation" data-block-plugin-id="menu_item_fields:main" class="block block-menu navigation menu--main">
+                      
+    <h2 class="visually-hidden" id="block-mainnavigation-menu">Main navigation</h2>
+    
+
+              
+  
+      <ul block="block-mainnavigation" class="menu">
+                      <li class="menu-item--expanded menu-item">
+          <p><a href="https://www.mhi.com/jp/company" hreflang="ja" data-drupal-link-system-path="node/29551">企業情報</a></p>
+          <ul class="megaDrop" id="md">
+            <div class="inner">
+              <div class="catTl">
+                <p>企業情報</p>
+              </div>
+              <div class="detail">
+                  
+      <ul>
+                      <li class="menu-item--expanded menu-item menu-item--hide--comSubNv">
+                        <a href="https://www.mhi.com/jp/company/aboutmhi" title="" data-drupal-link-system-path="node/5486">三菱重工グループについて</a>
+                  </li>
+                      <li class="menu-item menu-item--hide--comSubNv">
+                        <a href="https://www.mhi.com/jp/company/message" title="" data-drupal-link-system-path="node/73176">社長挨拶</a>
+                  </li>
+                      <li class="menu-item--expanded menu-item menu-item--hide--comSubNv">
+                        <a href="https://www.mhi.com/jp/company/technology" title="" data-drupal-link-system-path="node/73181">技術情報</a>
+                  </li>
+                      <li class="menu-item--expanded menu-item menu-item--hide--comSubNv">
+                        <a href="https://www.mhi.com/jp/company/location" title="" data-drupal-link-system-path="node/29516">拠点一覧</a>
+                  </li>
+                      <li class="menu-item--expanded menu-item menu-item--hide--comSubNv">
+                        <a href="https://www.mhi.com/jp/company/procurement" title="" data-drupal-link-system-path="node/73186">資材調達</a>
+                  </li>
+                      <li class="menu-item--collapsed menu-item menu-item--hide--comSubNv">
+                        <a href="https://www.mhi.com/jp/company/hospital" title="" data-drupal-link-system-path="node/73291">三菱重工の病院</a>
+                  </li>
+                      <li class="menu-item--expanded menu-item">
+                        
+      <ul class="comSubNv">
+                      <li>
+            <a href="https://www.mhi.com/jp/company/aboutmhi/introduction" title="" data-drupal-link-system-path="node/29506">三菱重工グループのアウトライン</a>
+            
+  
+
+        </li>
+                      <li>
+            <a href="https://www.mhi.com/jp/company/sports" title="" data-drupal-link-system-path="node/133516">スポーツ活動</a>
+            
+  
+
+        </li>
+                      <li>
+            <a href="https://www.mhi.com/jp/recruit" title=""> 採用情報</a>
+            
+  
+
+        </li>
+          </ul>
+  
+
+                  </li>
+          </ul>
+  
+
+              </div>
+            </div>
+            <div class="close">CLOSE</div>
+          </ul>
+        </li>
+                      <li class="menu-item--active-trail menu-item--expanded menu-item">
+          <p><a href="https://www.mhi.com/jp/expertise" hreflang="ja" data-drupal-link-system-path="node/104466">実績紹介</a></p>
+          <ul class="megaDrop" id="md">
+            <div class="inner">
+              <div class="catTl">
+                <p>実績紹介</p>
+              </div>
+              <div class="detail">
+                  
+      <ul>
+                      <li class="menu-item--expanded menu-item menu-item--hide--comSubNv">
+                        <a href="https://www.mhi.com/jp/expertise#showcase" title="" data-drupal-link-system-path="node/104466">ストーリー</a>
+                  </li>
+                      <li class="menu-item--expanded menu-item menu-item--hide--comSubNv">
+                        <a href="https://www.mhi.com/jp/expertise/museum" title="" data-drupal-link-system-path="node/107546">展示施設</a>
+                  </li>
+                      <li class="menu-item--active-trail menu-item menu-item--hide--comSubNv">
+                        <a href="https://www.mhi.com/jp/expertise/event" title="" data-drupal-link-system-path="node/104726" class="is-active">イベント・展示会情報</a>
+                  </li>
+                      <li class="menu-item--expanded menu-item">
+                        
+      <ul class="comSubNv">
+                      <li>
+            <a href="https://www.mhi.com/jp/expertise/carbon-neutral" title="" data-drupal-link-system-path="node/136976">2040年カーボンニュートラル宣言</a>
+            
+  
+
+        </li>
+                      <li>
+            <a href="https://www.mhi.com/jp/expertise/museum/minatomirai" title="" data-drupal-link-system-path="node/103256">三菱みなとみらい技術館</a>
+            
+  
+
+        </li>
+          </ul>
+  
+
+                  </li>
+          </ul>
+  
+
+              </div>
+            </div>
+            <div class="close">CLOSE</div>
+          </ul>
+        </li>
+                      <li class="menu-item--expanded menu-item">
+          <p><a href="https://www.mhi.com/jp/products" hreflang="ja" data-drupal-link-system-path="node/6181">製品情報</a></p>
+          <ul class="megaDrop" id="md">
+            <div class="inner">
+              <div class="catTl">
+                <p>製品情報</p>
+              </div>
+              <div class="detail">
+                  
+      <ul>
+                      <li class="menu-item menu-item--hide--comSubNv">
+                        <a href="https://www.mhi.com/jp/products/energy" title="" data-drupal-link-system-path="taxonomy/term/1436">エネルギー</a>
+                  </li>
+                      <li class="menu-item menu-item--hide--comSubNv">
+                        <a href="https://www.mhi.com/jp/products/air" title="" data-drupal-link-system-path="taxonomy/term/1491">航空</a>
+                  </li>
+                      <li class="menu-item menu-item--hide--comSubNv">
+                        <a href="https://www.mhi.com/jp/products/space" title="" data-drupal-link-system-path="taxonomy/term/1516">宇宙開発</a>
+                  </li>
+                      <li class="menu-item menu-item--hide--comSubNv">
+                        <a href="https://www.mhi.com/jp/products/ship" title="" data-drupal-link-system-path="taxonomy/term/1561">船舶・海洋</a>
+                  </li>
+                      <li class="menu-item menu-item--hide--comSubNv">
+                        <a href="https://www.mhi.com/jp/products/transport" title="" data-drupal-link-system-path="taxonomy/term/1636">交通システム</a>
+                  </li>
+                      <li class="menu-item menu-item--hide--comSubNv">
+                        <a href="https://www.mhi.com/jp/products/material_handling" title="" data-drupal-link-system-path="taxonomy/term/1646">物流・運搬</a>
+                  </li>
+                      <li class="menu-item menu-item--hide--comSubNv">
+                        <a href="https://www.mhi.com/jp/products/environment" title="" data-drupal-link-system-path="taxonomy/term/1656">環境装置</a>
+                  </li>
+                      <li class="menu-item menu-item--hide--comSubNv">
+                        <a href="https://www.mhi.com/jp/products/automobile" title="" data-drupal-link-system-path="taxonomy/term/1686">自動車関連</a>
+                  </li>
+                      <li class="menu-item menu-item--hide--comSubNv">
+                        <a href="https://www.mhi.com/jp/products/industry" title="" data-drupal-link-system-path="taxonomy/term/1711">産業機械</a>
+                  </li>
+                      <li class="menu-item menu-item--hide--comSubNv">
+                        <a href="https://www.mhi.com/jp/products/infrastructure" title="" data-drupal-link-system-path="taxonomy/term/1806">インフラ設備</a>
+                  </li>
+                      <li class="menu-item menu-item--hide--comSubNv">
+                        <a href="https://www.mhi.com/jp/products/living" title="" data-drupal-link-system-path="taxonomy/term/1841">生活・レジャー</a>
+                  </li>
+                      <li class="menu-item menu-item--hide--comSubNv">
+                        <a href="https://www.mhi.com/jp/products/defense" title="" data-drupal-link-system-path="taxonomy/term/1856">防衛</a>
+                  </li>
+                      <li class="menu-item menu-item--hide--comSubNv">
+                        <a href="https://www.mhi.com/jp/products/engineering" title="" data-drupal-link-system-path="taxonomy/term/1891">エンジニアリング事業</a>
+                  </li>
+          </ul>
+  
+
+              </div>
+            </div>
+            <div class="close">CLOSE</div>
+          </ul>
+        </li>
+                      <li class="menu-item--expanded menu-item">
+          <p><a href="https://www.mhi.com/jp/sustainability" hreflang="ja" data-drupal-link-system-path="node/6311">サステナビリティ</a></p>
+          <ul class="megaDrop" id="md">
+            <div class="inner">
+              <div class="catTl">
+                <p>サステナビリティ</p>
+              </div>
+              <div class="detail">
+                  
+      <ul>
+                      <li class="menu-item--expanded menu-item menu-item--hide--comSubNv">
+                        <a href="https://www.mhi.com/jp/sustainability/management" title="" data-drupal-link-system-path="node/6256">マネジメント</a>
+                  </li>
+                      <li class="menu-item menu-item--hide--comSubNv">
+                        <a href="https://www.mhi.com/jp/sustainability/library" title="" data-drupal-link-system-path="node/73526">ライブラリ</a>
+                  </li>
+                      <li class="menu-item--expanded menu-item menu-item--hide--comSubNv">
+                        <a href="https://www.mhi.com/jp/sustainability/environment" title="" data-drupal-link-system-path="node/6161">環境</a>
+                  </li>
+                      <li class="menu-item--expanded menu-item menu-item--hide--comSubNv">
+                        <a href="https://www.mhi.com/jp/sustainability/social" title="" data-drupal-link-system-path="node/101">社会</a>
+                  </li>
+                      <li class="menu-item--expanded menu-item menu-item--hide--comSubNv">
+                        <a href="https://www.mhi.com/jp/sustainability/governance" title="" data-drupal-link-system-path="node/6166">ガバナンス</a>
+                  </li>
+          </ul>
+  
+
+              </div>
+            </div>
+            <div class="close">CLOSE</div>
+          </ul>
+        </li>
+                      <li class="menu-item--expanded menu-item">
+          <p><a href="https://www.mhi.com/jp/finance" hreflang="ja" data-drupal-link-system-path="node/50956">IR情報</a></p>
+          <ul class="megaDrop" id="md">
+            <div class="inner">
+              <div class="catTl">
+                <p>IR情報</p>
+              </div>
+              <div class="detail">
+                  
+      <ul>
+                      <li class="menu-item--expanded menu-item menu-item--hide--comSubNv">
+                        <a href="https://www.mhi.com/jp/finance/individual" title="" data-drupal-link-system-path="node/73261">個人投資家の皆様へ</a>
+                  </li>
+                      <li class="menu-item--expanded menu-item menu-item--hide--comSubNv">
+                        <a href="https://www.mhi.com/jp/finance/management" title="" data-drupal-link-system-path="node/50981">経営方針</a>
+                  </li>
+                      <li class="menu-item--expanded menu-item menu-item--hide--comSubNv">
+                        <a href="https://www.mhi.com/jp/finance/finance" title="" data-drupal-link-system-path="node/73271">財務・業績</a>
+                  </li>
+                      <li class="menu-item--expanded menu-item menu-item--hide--comSubNv">
+                        <a href="https://www.mhi.com/jp/finance/library" title="" data-drupal-link-system-path="node/125896">IRライブラリ</a>
+                  </li>
+                      <li class="menu-item--expanded menu-item menu-item--hide--comSubNv">
+                        <a href="https://www.mhi.com/jp/finance/stock" title="" data-drupal-link-system-path="node/73276">株式・社債</a>
+                  </li>
+                      <li class="menu-item--expanded menu-item">
+                        
+      <ul class="comSubNv">
+                      <li>
+            <a href="https://www.mhi.com/jp/finance/calendar" title="">IRカレンダー</a>
+            
+  
+
+        </li>
+                      <li>
+            <a href="https://www.mhi.com/jp/finance/publicnotice" title="" data-drupal-link-system-path="node/126166">電子公告</a>
+            
+  
+
+        </li>
+                      <li>
+            <a href="https://www.mhi.com/jp/finance/request" title="" data-drupal-link-system-path="node/126171">資料請求</a>
+            
+  
+
+        </li>
+                      <li>
+            <a href="https://www.mhi.com/jp/finance/faq" title="">よくあるご質問</a>
+            
+  
+
+        </li>
+                      <li>
+            <a href="https://www.mhi.com/jp/finance/disclaimer.html" title="" data-drupal-link-system-path="node/125911">免責事項</a>
+            
+  
+
+        </li>
+                      <li>
+            <a href="https://www.mhi.com/jp/finance/sitemap.html" title="">IRサイトマップ</a>
+            
+  
+
+        </li>
+                      <li>
+            <a href="https://www.mhi.com/jp/finance/howto" title="" data-drupal-link-system-path="node/126176">IRサイトの使い方</a>
+            
+  
+
+        </li>
+          </ul>
+  
+
+                  </li>
+          </ul>
+  
+
+              </div>
+            </div>
+            <div class="close">CLOSE</div>
+          </ul>
+        </li>
+                      <li class="menu-item--expanded menu-item">
+          <p><a href="https://www.mhi.com/jp/network" hreflang="ja" data-drupal-link-system-path="node/109476">グローバルネットワーク</a></p>
+          <ul class="megaDrop" id="md">
+            <div class="inner">
+              <div class="catTl">
+                <p>グローバルネットワーク</p>
+              </div>
+              <div class="detail">
+                  
+      <ul>
+                      <li class="menu-item menu-item--hide--comSubNv">
+                        <a href="https://www.mhi.com/jp/network" title="">地図から探す</a>
+                  </li>
+                      <li class="menu-item--expanded menu-item menu-item--hide--comSubNv">
+                        <a href="https://www.mhi.com/jp/network/area" title="" data-drupal-link-system-path="node/114001">エリア別</a>
+                  </li>
+                      <li class="menu-item--expanded menu-item menu-item--hide--comSubNv">
+                        <a href="https://www.mhi.com/jp/network/products" title="" data-drupal-link-system-path="node/113986">製品分野別</a>
+                  </li>
+                      <li class="menu-item--expanded menu-item menu-item--hide--comSubNv">
+                        <a href="https://www.mhi.com/jp/network/business" title="" data-drupal-link-system-path="node/114006">業種別</a>
+                  </li>
+                      <li class="menu-item menu-item--hide--comSubNv">
+                        <a href="https://www.mhi.com/jp/network/alphabetize" title="" data-drupal-link-system-path="node/114011">50音順</a>
+                  </li>
+          </ul>
+  
+
+              </div>
+            </div>
+            <div class="close">CLOSE</div>
+          </ul>
+        </li>
+          </ul>
+  
+
+
+
+      </nav>
+</div>
+
+  </header>
+
+</div>
+
+
+
+
+  <div class="region region-breadcrumb">
+    <div id="block-mhi-breadcrumbs" data-block-plugin-id="system_breadcrumb_block" class="block block-system block-system-breadcrumb-block">
+  
+    
+        <nav id="comBreadcrumb" role="navigation" aria-labelledby="system-breadcrumb">
+    <h2 id="system-breadcrumb" class="visually-hidden">パンくず</h2>
+    <ul id="breadcrumb"><li><a href="https://www.mhi.com/jp">Home</a>&nbsp;-&nbsp;</li><li><a href="https://www.mhi.com/jp/expertise">実績紹介</a>&nbsp;-&nbsp;</li><li>イベント・展示会情報</li></ul>
+  </nav>
+
+  </div>
+
+  </div>
+
+
+  <div class="region region-highlighted">
+    <div data-drupal-messages-fallback class="hidden"></div>
+
+  </div>
+
+
+
+
+<main role="main">
+  <a id="main-content" tabindex="-1"></a>
+        <div class="region region-content">
+    <div id="block-mhi-content" data-block-plugin-id="system_main_block" class="block block-system block-system-main-block">
+  
+    
+      
+<article role="article" about="/jp/expertise/event" class="node node--type-page node--view-mode-full">
+  
+  <div class="node__content">
+      <div>
+    <div id="comContent" class="comBasic">
+      <div id="comConPosi">
+                <div id="comMainContent">
+                              <figure class="inTxtLong block block-block-content block-block-content849b4ea0-1c3e-49ce-8516-a26a370e1a6b comKV comShareWhite" data-block-plugin-id="block_content:849b4ea0-1c3e-49ce-8516-a26a370e1a6b">
+  
+    
+        <img src="https://www.mhi.com/sites/g/files/jwhtju111/files/2019-09/related_link_facebook_en_0.png" width="936" height="320" alt="EVENTS &amp; EXHIBITIONS" loading="lazy" typeof="foaf:Image" />
+
+
+    <h1 class="comThiH1">イベント・展示会情報</h1>
+      <div data-block-plugin-id="social_sharing_block" class="block block-social-media block-social-sharing-block">
+  
+    
+      
+
+<div class="social-media-sharing">
+  <p class="snsText">
+    SHARE  </p>
+  <ul class="comHdSns">
+                    <li  class="facebook share">
+        <a    target="_blank"  href="https://www.facebook.com/share.php?u=https://www.mhi.com/jp/expertise/event&amp;title=%E3%82%A4%E3%83%99%E3%83%B3%E3%83%88%E3%83%BB%E5%B1%95%E7%A4%BA%E4%BC%9A%E6%83%85%E5%A0%B1">
+                      <img alt="Facebook" src="https://www.mhi.com/themes/custom/mhi/src/img/facebook_ico.svg">
+                  </a>
+
+      </li>
+                <li  class="twitter share">
+        <a    target="_blank"  href="https://twitter.com/intent/tweet?url=https://www.mhi.com/jp/expertise/event&amp;text=%e4%b8%89%e8%8f%b1%e9%87%8d%e5%b7%a5%20%7C%20%e3%82%a4%e3%83%99%e3%83%b3%e3%83%88%e3%83%bb%e5%b1%95%e7%a4%ba%e4%bc%9a%e6%83%85%e5%a0%b1">
+                      <img alt="Twitter" src="https://www.mhi.com/themes/custom/mhi/src/img/twitter_ico.svg">
+                  </a>
+
+      </li>
+                <li  class="linkedin share">
+        <a    target="_blank"  href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https://www.mhi.com/jp/expertise/event&amp;title=%e4%b8%89%e8%8f%b1%e9%87%8d%e5%b7%a5%20%7C%20%e3%82%a4%e3%83%99%e3%83%b3%e3%83%88%e3%83%bb%e5%b1%95%e7%a4%ba%e4%bc%9a%e6%83%85%e5%a0%b1&amp;source=https://www.mhi.com/jp/expertise/event">
+                      <img alt="Linkedin" src="https://www.mhi.com/themes/custom/mhi/src/img/linkedin_ico.svg">
+                  </a>
+
+      </li>
+      </ul>
+  <div class="snsClose"></div>
+</div>
+<div class="snsBg"></div>
+<div class="snsArrow"></div>
+
+
+  </div>
+
+
+    
+  </figure>
+
+                    <div id="comMainConPosi">
+                                                  <div class="comExpertiseEvent block block-block-content block-block-content10c6292f-dfa2-4a0a-bac5-ef4f5b97f86a" data-block-plugin-id="block_content:10c6292f-dfa2-4a0a-bac5-ef4f5b97f86a">
+  
+    
+      <div class="comDayLi view view-our-expertise-event-list view-id-our_expertise_event_list view-display-id-embed_2">
+  
+    
+    
+      <div class="view-content">
+              <h2>更新情報</h2>
+            <div>
+  
+  <ul class="comWorksSlider">
+
+          <li><div class="views-field views-field-nothing"><span class="field-content"><a href="https://www.mhi.com/jp/expertise/event/zeroemissions.html">
+    <time datetime="05Z" class="datetime">2021-12-16</time>
+
+    <span class="inTxt">
+                <span class="comTxt">ゼロエミッション火力発電EXPO 基調講演登壇</br>（開催期間：2022年3月16日（水曜日）10:30～11:30）</span>
+    </span>
+</a></span></div></li>
+          <li><div class="views-field views-field-nothing"><span class="field-content"><a href="https://www.mhi.com/jp/expertise/event/metal-japan2021.html">
+    <time datetime="42Z" class="datetime">2021-11-29</time>
+
+    <span class="inTxt">
+                  <span class="comBdg">展示会</span>
+                <span class="comTxt">第8回 メタル ジャパン（高機能 金属展）</br>（開催期間：2021年12月8日～12月10日）</span>
+    </span>
+</a></span></div></li>
+          <li><div class="views-field views-field-nothing"><span class="field-content"><a href="https://www.mhi.com/jp/expertise/event/logisnext_expo2.0.html">
+    <time datetime="31Z" class="datetime">2021-09-02</time>
+
+    <span class="inTxt">
+                <span class="comTxt">Logisnext Expo 2.0 in Online Showroom</span>
+    </span>
+</a></span></div></li>
+          <li><div class="views-field views-field-nothing"><span class="field-content"><a href="https://www.mhi.com/jp/expertise/event/wsew2021.html">
+    <time datetime="33Z" class="datetime">2021-03-03</time>
+
+    <span class="inTxt">
+                <span class="comTxt">第11回スマートグリッド EXPO</span>
+    </span>
+</a></span></div></li>
+          <li><div class="views-field views-field-nothing"><span class="field-content"><a href="https://www.mhi.com/jp/expertise/event/wsew2020.html">
+    <time datetime="41Z" class="datetime">2020-02-18</time>
+
+    <span class="inTxt">
+                <span class="comTxt">第10回スマートグリッド EXPO</span>
+    </span>
+</a></span></div></li>
+          <li><div class="views-field views-field-nothing"><span class="field-content"><a href="https://www.mhi.com/jp/expertise/event/energy_system2019.html">
+    <time datetime="00Z" class="datetime">2019-09-02</time>
+
+    <span class="inTxt">
+                <span class="comTxt">分散型エネルギーシステム普及・啓発フォーラム<br>（開催期間：2019年9月3日～4日）</span>
+    </span>
+</a></span></div></li>
+    
+  </ul>
+
+</div>
+
+    </div>
+  
+          </div>
+
+  </div>
+<div class="comExpertiseEvent block block-block-content block-block-contentbff81a66-55fb-4568-8daf-7d52a34359ed" data-block-plugin-id="block_content:bff81a66-55fb-4568-8daf-7d52a34359ed">
+  
+    
+      <div class="view view-our-expertise-event-list view-id-our_expertise_event_list view-display-id-all_japanese_events">
+  
+    
+    
+      <div class="view-content">
+                  <h2>展示会出展情報</h2>
+        <div><div class="eventBox">
+        <div class="comTtlWrap">
+          <h3 class="inTtl"><a href="https://www.mhi.com/jp/expertise/event/zeroemissions.html" hreflang="ja">ゼロエミッション火力発電EXPO 基調講演登壇</a></h3>
+        </div>
+        <table class="comTable02 comAcdInTable">
+          <colgroup>
+            <col span="1" class="w20">
+            <col span="1" class="w80">
+          </colgroup>
+          <tbody>
+                   <tr class="txtLarge">
+            <th class="alnTop">開催期間</th>
+            <td class="alnTop">2022年3月16日（水曜日）10:30～11:30</td>
+          </tr>
+                              <tr class="txtLarge">
+            <th class="alnTop">開催地</th>
+            <td class="alnTop">日本</td>
+          </tr>
+          
+                   <tr class="txtLarge">
+            <th class="alnTop">会場</th>
+            <td class="alnTop">東京ビックサイト</td>
+          </tr>
+                       <tr class="inSpcolun1">
+              <th class="alnTop">概要</th>
+              <td class="alnTop"><p>講演者：エナジードメイン エナジートランジション&amp;パワー事業本部　正田シニアフェロー（エナジートランジション総括部長）<br />
+講演タイトル：火力発電の脱炭素化 - 水素技術実証の進捗と展望</p>
+</td>
+            </tr>
+                   </tbody></table>
+      </div></div>
+        <div><div class="eventBox">
+        <div class="comTtlWrap">
+          <h3 class="inTtl"><a href="https://www.mhi.com/jp/expertise/event/metal-japan2021.html" hreflang="ja">第8回 メタル ジャパン（高機能 金属展）</a></h3>
+        </div>
+        <table class="comTable02 comAcdInTable">
+          <colgroup>
+            <col span="1" class="w20">
+            <col span="1" class="w80">
+          </colgroup>
+          <tbody>
+                   <tr class="txtLarge">
+            <th class="alnTop">開催期間</th>
+            <td class="alnTop">2021年12月8日（水曜日）～10日（金曜日）</td>
+          </tr>
+                              <tr class="txtLarge">
+            <th class="alnTop">開催地</th>
+            <td class="alnTop">日本</td>
+          </tr>
+          
+                   <tr class="txtLarge">
+            <th class="alnTop">会場</th>
+            <td class="alnTop">幕張メッセ</br>ブース番号：53-40</td>
+          </tr>
+                       <tr class="inSpcolun1">
+              <th class="alnTop">概要</th>
+              <td class="alnTop"><p>日本最大級の鉄鋼・非鉄・流通など金属産業を網羅した展示会。<br />
+三菱重工は、AM（アディティブマニュファクチァリング）に最適な高性能金属粉末及び金属粉末製造装置を開発し、これまでにない精密な造形を実現しました。独自の高強度ワイヤー製造技術による素早いワイヤー成形など、ガスタービンビジネスで培った材料技術をコアに、AM素材の開発から最終製品まで付加価値の高い製品群およびAM技術とデジタル製造の組み合わせによる強靭なサプライチェーン構築を目指す「AM-Zone®」（2021年グッドデザイン賞受賞）における複数製造ネットワークの紹介をします。</p>
+</td>
+            </tr>
+                       <tr>
+              <th class="alnTop">出展製品</th>
+              <td class="alnTop">アディティブマニュファクチァリング（エナジードメイン）</td>
+            </tr>
+                   </tbody></table>
+      </div></div>
+        <h2>過去の展示会出展情報</h2>
+      <div><div class="eventBox">
+        <div class="comTtlWrap">
+          <h3 class="inTtl"><a href="https://www.mhi.com/jp/expertise/event/logisnext_expo2.0.html" hreflang="ja">Logisnext Expo 2.0 in Online Showroom</a></h3>
+        </div>
+        <table class="comTable02 comAcdInTable">
+          <colgroup>
+            <col span="1" class="w20">
+            <col span="1" class="w80">
+          </colgroup>
+          <tbody>
+                   <tr class="txtLarge">
+            <th class="alnTop">開催期間</th>
+            <td class="alnTop">2021年8月24日（火曜日）～ 2021年9月24日（金曜日）</td>
+          </tr>
+                       
+                   <tr class="txtLarge">
+            <th class="alnTop">会場</th>
+            <td class="alnTop">オンラインショールーム</td>
+          </tr>
+                       <tr class="inSpcolun1">
+              <th class="alnTop">概要</th>
+              <td class="alnTop"><p>「最新の物流ソリューションをバーチャル空間でご紹介」<br />
+最新のソリューションや有益な情報をみなさまへお届けするために、360°見渡すことができる、バーチャル空間内の”オンラインショールーム”にて「Logisnext エキスポ 2.0 in オンラインショールーム」を開催いたします。<br />
+今回は、三菱ロジスネクストが新たに開発した無人フォークリフトの「新商品発表オンラインセミナー」をオンラインショールームと同時開催で行います。参加登録をしていただいた方限定で特別に新商品情報をご覧いただけます。さらにオンラインショールームでは環境関連機器コーナー、安全コーナーを新たに拡張いたしました。ぜひ。三菱ロジスネクストがお届けする多彩な魅力をご覧ください。</p>
+</td>
+            </tr>
+                       <tr>
+              <th class="alnTop">出展製品</th>
+              <td class="alnTop">物流・運搬</td>
+            </tr>
+                   </tbody></table>
+      </div></div>
+              <div class="eventPastList hide"><div class="eventBox">
+        <div class="comTtlWrap">
+          <h3 class="inTtl"><a href="https://www.mhi.com/jp/expertise/event/wsew2021.html" hreflang="ja">第11回スマートグリッド EXPO</a></h3>
+        </div>
+        <table class="comTable02 comAcdInTable">
+          <colgroup>
+            <col span="1" class="w20">
+            <col span="1" class="w80">
+          </colgroup>
+          <tbody>
+                   <tr class="txtLarge">
+            <th class="alnTop">開催期間</th>
+            <td class="alnTop">2021年3月3日（水曜日）～3月5日（金曜日）</td>
+          </tr>
+                              <tr class="txtLarge">
+            <th class="alnTop">開催地</th>
+            <td class="alnTop">日本　東京都江東区</td>
+          </tr>
+          
+                   <tr class="txtLarge">
+            <th class="alnTop">会場</th>
+            <td class="alnTop">東京ビッグサイト</td>
+          </tr>
+                       <tr class="inSpcolun1">
+              <th class="alnTop">概要</th>
+              <td class="alnTop"><p>スマートグリッドEXPOは、広範なエネルギー分野にわたる複合展示会であるスマートエネルギーWeek内で開催される、次世代電力システムにフォーカスした展示会です。なお、スマートエネルギーWeekは、太陽光・風力・バイオマスといった再生可能エネルギー、蓄電システム、水素・燃料電池といった脱炭素燃料、これらを組み合わせた次世代電力システムに関わる展示を行う、世界最大級のエネルギー展示会です。</p>
+
+<p>当社グループは、スマートグリッドEXPOに、「脱炭素社会を実現するエナジートランジション」をテーマに、5つのコーナーに分けて展示を行います。主な展示は、水素や再生可能エネルギーによる「クリーンエネルギーの安定供給」や、産業需要家のエネルギー利用の最適化による「産業エネルギーの脱炭素化」、これらを複合させた「エネルギーサプライチェーンのすべてに亘る脱炭素化ソリューション」、などです。また、「脱炭素社会の実現」に向けたエナジートランジション推進のキーファクターであるDX（デジタルトランスフォーメーション）への取り組みも紹介しています。</p>
+</td>
+            </tr>
+                       <tr>
+              <th class="alnTop">出展製品</th>
+              <td class="alnTop">エナジー</td>
+            </tr>
+                   </tbody></table>
+      </div></div>
+              <div class="eventPastList hide"><div class="eventBox">
+        <div class="comTtlWrap">
+          <h3 class="inTtl"><a href="https://www.mhi.com/jp/expertise/event/wsew2020.html" hreflang="ja">第10回スマートグリッド EXPO</a></h3>
+        </div>
+        <table class="comTable02 comAcdInTable">
+          <colgroup>
+            <col span="1" class="w20">
+            <col span="1" class="w80">
+          </colgroup>
+          <tbody>
+                   <tr class="txtLarge">
+            <th class="alnTop">開催期間</th>
+            <td class="alnTop">2020年2月26日（水曜日）～2月28日（金曜日）</td>
+          </tr>
+                              <tr class="txtLarge">
+            <th class="alnTop">開催地</th>
+            <td class="alnTop">日本　東京都江東区</td>
+          </tr>
+          
+                   <tr class="txtLarge">
+            <th class="alnTop">会場</th>
+            <td class="alnTop">東京ビッグサイト</td>
+          </tr>
+                       <tr class="inSpcolun1">
+              <th class="alnTop">概要</th>
+              <td class="alnTop"><p>第16回スマートエネルギーWeekが東京ビッグサイトにて開催されます。<br />
+同展示会は、世界30か国から約1,520社が出展する世界最大級のエネルギー関連の展示会となっており、当社グループはスマートグリッドEXPOに出展致します。</p>
+
+<p>三菱重工業・三菱日立パワーシステムズなど当社グループ会社が共同でブースを出展、「NEXT ENERGY」をテーマに以下4つのコーナーに分けて展示を行います。</p>
+
+<ul class="comLstAtn txtSmall"><li>POWER：脱炭素社会を実現する製品（再生可能エネルギー、燃料電池システム、水素ガス発電など）を紹介</li>
+	<li>COMMUNICATION：電力システム改革が進む社会に対応する三菱重工業の取り組みを紹介</li>
+	<li>INDUSTRY：ENERGY CLOUD® Serviceによるモノづくり現場改善に貢献する取り組みの紹介</li>
+	<li>SOLUTION：エネルギー需要家や供給事業者の課題解決事例、発電プラントの課題解決事例の紹介</li>
+</ul></td>
+            </tr>
+                       <tr>
+              <th class="alnTop">出展製品</th>
+              <td class="alnTop">エネルギー</td>
+            </tr>
+                   </tbody></table>
+      </div></div>
+              <div class="eventPastList hide"><div class="eventBox">
+        <div class="comTtlWrap">
+          <h3 class="inTtl"><a href="https://www.mhi.com/jp/expertise/event/energy_system2019.html" hreflang="ja">分散型エネルギーシステム普及・啓発フォーラム</a></h3>
+        </div>
+        <table class="comTable02 comAcdInTable">
+          <colgroup>
+            <col span="1" class="w20">
+            <col span="1" class="w80">
+          </colgroup>
+          <tbody>
+                   <tr class="txtLarge">
+            <th class="alnTop">開催期間</th>
+            <td class="alnTop">2019年9月3日（火曜日）～4日（水曜日）</td>
+          </tr>
+                              <tr class="txtLarge">
+            <th class="alnTop">開催地</th>
+            <td class="alnTop">日本　愛媛県松山市</td>
+          </tr>
+          
+                   <tr class="txtLarge">
+            <th class="alnTop">会場</th>
+            <td class="alnTop">アイテムえひめ</td>
+          </tr>
+                       <tr class="inSpcolun1">
+              <th class="alnTop">概要</th>
+              <td class="alnTop"><p>近年の集中豪雨や地震に伴う大規模停電等の災害発生状況などを踏まえると、分散型エネルギーシステムの普及が喫緊の課題となっています。<br />
+この度、分散型エネルギーシステム導入を目指すお客様に向け、常用・非常用発電装置のPRを実施いたします。</p>
+</td>
+            </tr>
+                       <tr>
+              <th class="alnTop">出展製品</th>
+              <td class="alnTop">エネルギー</td>
+            </tr>
+                   </tbody></table>
+      </div></div>
+              <div class="eventPastList hide"><div class="eventBox">
+        <div class="comTtlWrap">
+          <h3 class="inTtl"><a href="https://www.mhi.com/jp/expertise/event/cimaccongress2019.html" hreflang="ja">CIMAC Congress 2019</a></h3>
+        </div>
+        <table class="comTable02 comAcdInTable">
+          <colgroup>
+            <col span="1" class="w20">
+            <col span="1" class="w80">
+          </colgroup>
+          <tbody>
+                   <tr class="txtLarge">
+            <th class="alnTop">開催期間</th>
+            <td class="alnTop">2019年6月10日（月曜日）～14日（金曜日）</td>
+          </tr>
+                              <tr class="txtLarge">
+            <th class="alnTop">開催地</th>
+            <td class="alnTop">カナダ・バンクーバー</td>
+          </tr>
+          
+                   <tr class="txtLarge">
+            <th class="alnTop">会場</th>
+            <td class="alnTop">Vancouver Convention Centre East Building</td>
+          </tr>
+                                  <tr>
+              <th class="alnTop">出展製品</th>
+              <td class="alnTop">船舶・海洋</td>
+            </tr>
+                   </tbody></table>
+      </div></div>
+              <div class="eventPastList hide"><div class="eventBox">
+        <div class="comTtlWrap">
+          <h3 class="inTtl"><a href="https://www.mhi.com/jp/expertise/event/bariship2019.html" hreflang="ja">バリシップ2019</a></h3>
+        </div>
+        <table class="comTable02 comAcdInTable">
+          <colgroup>
+            <col span="1" class="w20">
+            <col span="1" class="w80">
+          </colgroup>
+          <tbody>
+                   <tr class="txtLarge">
+            <th class="alnTop">開催期間</th>
+            <td class="alnTop">2019年5月23日（木曜日）～25日（土曜日）</td>
+          </tr>
+                              <tr class="txtLarge">
+            <th class="alnTop">開催地</th>
+            <td class="alnTop">日本　今治市</td>
+          </tr>
+          
+                   <tr class="txtLarge">
+            <th class="alnTop">会場</th>
+            <td class="alnTop">テクスポート今治／旧今治コンピュータカレッジ／フジグラン今治</td>
+          </tr>
+                                  <tr>
+              <th class="alnTop">出展製品</th>
+              <td class="alnTop">船舶・海洋</td>
+            </tr>
+                   </tbody></table>
+      </div></div>
+              <div class="eventPastList hide"><div class="eventBox">
+        <div class="comTtlWrap">
+          <h3 class="inTtl"><a href="https://www.mhi.com/jp/expertise/event/wsew2019.html" hreflang="ja">第15回スマートエネルギーウィーク2019</a></h3>
+        </div>
+        <table class="comTable02 comAcdInTable">
+          <colgroup>
+            <col span="1" class="w20">
+            <col span="1" class="w80">
+          </colgroup>
+          <tbody>
+                   <tr class="txtLarge">
+            <th class="alnTop">開催期間</th>
+            <td class="alnTop">2019年2月27日（水曜日）～3月1日（金曜日）</td>
+          </tr>
+                              <tr class="txtLarge">
+            <th class="alnTop">開催地</th>
+            <td class="alnTop">日本　東京都江東区</td>
+          </tr>
+          
+                   <tr class="txtLarge">
+            <th class="alnTop">会場</th>
+            <td class="alnTop">東京ビッグサイト</td>
+          </tr>
+                       <tr class="inSpcolun1">
+              <th class="alnTop">概要</th>
+              <td class="alnTop"><p>第15回スマートエネルギーWeekが東京ビッグサイトにて開催されます。<br />同展示会は、世界33か国から約1,600社が出展する世界最大級のエネルギー関連の展示会となっており、当社グループは以下のとおりスマートグリッド展、次世代火力EXPO、風力発電展、水素・燃料電池展にて出展・講演を致します。</p> <p>三菱重工業が出展するスマートグリッド展では、独自のIoT技術を用いた "設備モニタリング（見える化技術）" やAI技術を用いた "将来予測（分析予測技術）" から得られるガイダンスを通じてお客様のエネルギー利用の最適化を支援するENERGY CLOUD<sup>®</sup>サービスのデモンストレーションを行います。</p> <p>三菱日立パワーシステムズが出展する次世代火力EXPOでは、CO<sub>2</sub>を排出しない水素発電技術、環境技術に優れた次世代火力発電技術、地球環境へ貢献するデジタル発電プラントソリューションであるMHPS-TOMONI<sup>®</sup>の展示を行います。</p> <p>MHI Vestas Offshore Windが出展する風力発電展では、洋上風力発電の最新技術に関する展示を行います。</p></td>
+            </tr>
+                       <tr>
+              <th class="alnTop">出展製品</th>
+              <td class="alnTop">エネルギー</td>
+            </tr>
+                   </tbody></table>
+      </div></div>
+              <div class="eventPastList hide"><div class="eventBox">
+        <div class="comTtlWrap">
+          <h3 class="inTtl"><a href="https://www.mhi.com/jp/expertise/event/jimtof2018.html" hreflang="ja">JIMTOF2018 第29回日本国際工作機械見本市</a></h3>
+        </div>
+        <table class="comTable02 comAcdInTable">
+          <colgroup>
+            <col span="1" class="w20">
+            <col span="1" class="w80">
+          </colgroup>
+          <tbody>
+                   <tr class="txtLarge">
+            <th class="alnTop">開催期間</th>
+            <td class="alnTop">2018年11月1日（木曜日）～11月6日（火曜日）</td>
+          </tr>
+                              <tr class="txtLarge">
+            <th class="alnTop">開催地</th>
+            <td class="alnTop">東京ビッグサイト（東京国際展示場）</td>
+          </tr>
+          
+                   <tr class="txtLarge">
+            <th class="alnTop">会場</th>
+            <td class="alnTop">ブース番号：E2031（東2ホール）</td>
+          </tr>
+                       <tr class="inSpcolun1">
+              <th class="alnTop">概要</th>
+              <td class="alnTop"><p>日本最大の工作機械見本市に歯車機械と大形工作機械を実機出展致します。</p></td>
+            </tr>
+                       <tr>
+              <th class="alnTop">出展製品</th>
+              <td class="alnTop">産業機械</td>
+            </tr>
+                   </tbody></table>
+      </div></div>
+              <div class="eventPastList hide"><div class="eventBox">
+        <div class="comTtlWrap">
+          <h3 class="inTtl"><a href="https://www.mhi.com/jp/expertise/event/smm2018.html" hreflang="ja">SMM2018</a></h3>
+        </div>
+        <table class="comTable02 comAcdInTable">
+          <colgroup>
+            <col span="1" class="w20">
+            <col span="1" class="w80">
+          </colgroup>
+          <tbody>
+                   <tr class="txtLarge">
+            <th class="alnTop">開催期間</th>
+            <td class="alnTop">2018年9月4日（火曜日）～9月7日（金曜日）</td>
+          </tr>
+                              <tr class="txtLarge">
+            <th class="alnTop">開催地</th>
+            <td class="alnTop">ドイツ・ハンブルグ</td>
+          </tr>
+          
+                   <tr class="txtLarge">
+            <th class="alnTop">会場</th>
+            <td class="alnTop">ハンブルグメッセ<br />A5-123</td>
+          </tr>
+                       <tr class="inSpcolun1">
+              <th class="alnTop">概要</th>
+              <td class="alnTop"><p>28回目となる「SMM2018」は世界66カ国・2200社以上の出展と、120カ国・5万人以上の来場者と過去最大規模を見込む世界最大の国際海事展です。</p>
+
+<p>期間中は過給機実機をはじめVR（Virtual Reality：仮想現実）やMR（Mixed Reality：複合現実）を使った展示、ボイラ、タービン、舵取機、フィンスタビライザ、プロペラ、デッキクレーン、甲板機械など幅広い製品及び、親環境・省エネルギーのソリューションを紹介します。<br />
+また、9月6日（木）には同会場内にてMET過給機セミナーを開催します。</p>
+
+<p><strong>【展示会】</strong></p>
+
+<ul class="comLstNum"><li>日時：2018年9月4日（火曜日）～7日（金曜日）</li>
+	<li>場所：Hall A5 Stand 123</li>
+</ul><p><strong>【セミナー】</strong></p>
+
+<ul class="comLstNum"><li>日時：2018年9月6日（木曜日）　10時00分～11時30分（受付開始　9時45分～）</li>
+	<li>会場：St. Petersburgセミナールーム（SMM展示会場内 Central Entrance 3階 2nd Floor）</li>
+</ul></td>
+            </tr>
+                       <tr>
+              <th class="alnTop">出展製品</th>
+              <td class="alnTop">船舶・海洋</td>
+            </tr>
+                   </tbody></table>
+      </div></div>
+              <div class="eventPastList hide"><div class="eventBox">
+        <div class="comTtlWrap">
+          <h3 class="inTtl"><a href="https://www.mhi.com/jp/expertise/event/smart2018.html" hreflang="ja">第8回 国際スマートグリッドEXPO</a></h3>
+        </div>
+        <table class="comTable02 comAcdInTable">
+          <colgroup>
+            <col span="1" class="w20">
+            <col span="1" class="w80">
+          </colgroup>
+          <tbody>
+                   <tr class="txtLarge">
+            <th class="alnTop">開催期間</th>
+            <td class="alnTop">2018年2月28日（水曜日）～3月2日（金曜日）</td>
+          </tr>
+                              <tr class="txtLarge">
+            <th class="alnTop">開催地</th>
+            <td class="alnTop">日本　東京都江東区</td>
+          </tr>
+          
+                   <tr class="txtLarge">
+            <th class="alnTop">会場</th>
+            <td class="alnTop">東京ビッグサイト<br />ブース番号：E1-51（東1ホール）</td>
+          </tr>
+                       <tr class="inSpcolun1">
+              <th class="alnTop">概要</th>
+              <td class="alnTop"><p>2018年1月1日エネルギー関連事業のソリューション提案力を強化するために「パワー&amp;エネルギーソリューションビジネス総括部」を設置しました。ソリューション提案の基礎となる顧客とのコミュニケーションや課題の分析において、当社グループ独自の最新ICT（情報通信技術）を駆使し、両社の新組織が互いに緊密に連携しあうことで、顧客のビジネスを幅広くサポートできる製品供給にとどまらないソリューションの提供を目指します。</p> <p>今年のスマートグリッドEXPOでは、独自のAI/IoT技術を駆使し、エネルギーの需要と供給における最適バランス化を図るソリューション提案をご提供します。当社ブースでは、AI活用事例として以下のデモンストレーションを行います。</p> <ul class="comLst"><li>電力/蒸気デマンドのAI予測システムの紹介</li> <li>モノ創り現場における独自のAI予測技術を活用したKPIのご紹介</li> <li>プラント運転におけるAIオペレーションの紹介</li> </ul></td>
+            </tr>
+                       <tr>
+              <th class="alnTop">出展製品</th>
+              <td class="alnTop">エネルギー、航空、環境装置、インフラ設備</td>
+            </tr>
+                   </tbody></table>
+      </div></div>
+              <div class="eventPastList hide"><div class="eventBox">
+        <div class="comTtlWrap">
+          <h3 class="inTtl"><a href="https://www.mhi.com/jp/expertise/event/hvacrjapan2018.html" hreflang="ja">ヒーバック&amp;アール ジャパン2018 冷凍・空調・暖房展</a></h3>
+        </div>
+        <table class="comTable02 comAcdInTable">
+          <colgroup>
+            <col span="1" class="w20">
+            <col span="1" class="w80">
+          </colgroup>
+          <tbody>
+                   <tr class="txtLarge">
+            <th class="alnTop">開催期間</th>
+            <td class="alnTop">2018年2月27日（火曜日）～3月2日（金曜日）</td>
+          </tr>
+                              <tr class="txtLarge">
+            <th class="alnTop">開催地</th>
+            <td class="alnTop">千葉市</td>
+          </tr>
+          
+                   <tr class="txtLarge">
+            <th class="alnTop">会場</th>
+            <td class="alnTop">幕張メッセ　国際展示場4～6ホール<br />E-901</td>
+          </tr>
+                       <tr class="inSpcolun1">
+              <th class="alnTop">概要</th>
+              <td class="alnTop"><p>本展示会は、前身の「国産冷凍機器展」として1956（昭和31年）にはじめて開催されて以来、国内唯一の冷凍 空調業界の専門見本市として半世紀以上にわたり、業界のPR・企業の技術開発及び新製品の発表の場など として活用され、今回で40回目を数えます。 今年は「日本最大の冷熱ビジネスチャンス」をテーマに、冷熱ビジネスの祭典として開催されます。</p></td>
+            </tr>
+                       <tr>
+              <th class="alnTop">出展製品</th>
+              <td class="alnTop">生活・レジャー</td>
+            </tr>
+                   </tbody></table>
+      </div></div>
+              <div class="eventPastList hide"><div class="eventBox">
+        <div class="comTtlWrap">
+          <h3 class="inTtl"><a href="https://www.mhi.com/jp/expertise/event/singaporeairshow.html" hreflang="ja">シンガポールエアショー</a></h3>
+        </div>
+        <table class="comTable02 comAcdInTable">
+          <colgroup>
+            <col span="1" class="w20">
+            <col span="1" class="w80">
+          </colgroup>
+          <tbody>
+                   <tr class="txtLarge">
+            <th class="alnTop">開催期間</th>
+            <td class="alnTop">2018年2月6日（火曜日）～2月11日（日曜日）<br> （但し、三菱航空機ブースの出展期間は2月6日～9日のTrade Day期間）</td>
+          </tr>
+                              <tr class="txtLarge">
+            <th class="alnTop">開催地</th>
+            <td class="alnTop">シンガポール</td>
+          </tr>
+          
+                   <tr class="txtLarge">
+            <th class="alnTop">会場</th>
+            <td class="alnTop">チャンギ エキシビジョン センター ：U01</td>
+          </tr>
+                       <tr class="inSpcolun1">
+              <th class="alnTop">概要</th>
+              <td class="alnTop"><p>三菱航空機は2018年2月6日～11日に開催されるシンガポールエアショーに出展いたします。<br /> このアジア最大級のエアショーに初出展した2010年から今回で5回連続の出展となります。<br />会場内に約230㎡のブースを構え、お客様との会議をはじめMRJメディアブリーフィングを行います。</p></td>
+            </tr>
+                       <tr>
+              <th class="alnTop">出展製品</th>
+              <td class="alnTop">交通システム</td>
+            </tr>
+                   </tbody></table>
+      </div></div>
+              <div class="eventPastList hide"><div class="eventBox">
+        <div class="comTtlWrap">
+          <h3 class="inTtl"><a href="https://www.mhi.com/jp/expertise/event/mtij2017.html" hreflang="ja">第5回鉄道技術展</a></h3>
+        </div>
+        <table class="comTable02 comAcdInTable">
+          <colgroup>
+            <col span="1" class="w20">
+            <col span="1" class="w80">
+          </colgroup>
+          <tbody>
+                   <tr class="txtLarge">
+            <th class="alnTop">開催期間</th>
+            <td class="alnTop">2017年11月29日（水曜日）～12月1日（金曜日）</td>
+          </tr>
+                              <tr class="txtLarge">
+            <th class="alnTop">開催地</th>
+            <td class="alnTop">日本　千葉市</td>
+          </tr>
+          
+                   <tr class="txtLarge">
+            <th class="alnTop">会場</th>
+            <td class="alnTop">幕張メッセ<br /> 5・6・7・8ホール及び、国際会議場<br />ブース番号:D-18 (7ホール）</td>
+          </tr>
+                       <tr class="inSpcolun1">
+              <th class="alnTop">概要</th>
+              <td class="alnTop"><p>世界7カ国16路線で活躍する当社AGTの実績と特徴を、AGTがつくる未来の都市イメージを交えてマスコミや来場者に広くアピールします。</p></td>
+            </tr>
+                       <tr>
+              <th class="alnTop">出展製品</th>
+              <td class="alnTop">交通システム</td>
+            </tr>
+                   </tbody></table>
+      </div></div>
+              <div class="eventPastList hide"><div class="eventBox">
+        <div class="comTtlWrap">
+          <h3 class="inTtl"><a href="https://www.mhi.com/jp/expertise/event/irex2017.html" hreflang="ja">2017国際ロボット展　iREX2017</a></h3>
+        </div>
+        <table class="comTable02 comAcdInTable">
+          <colgroup>
+            <col span="1" class="w20">
+            <col span="1" class="w80">
+          </colgroup>
+          <tbody>
+                   <tr class="txtLarge">
+            <th class="alnTop">開催期間</th>
+            <td class="alnTop">2017年11月29日（水曜日）～12月2日（土曜日）</td>
+          </tr>
+                              <tr class="txtLarge">
+            <th class="alnTop">開催地</th>
+            <td class="alnTop">日本　東京</td>
+          </tr>
+          
+                   <tr class="txtLarge">
+            <th class="alnTop">会場</th>
+            <td class="alnTop">東京ビッグサイト<br />東ホール 、ブースSR32</td>
+          </tr>
+                       <tr class="inSpcolun1">
+              <th class="alnTop">概要</th>
+              <td class="alnTop"><p>想定外の事故や災害に備えるため、人々や企業の安全管理意識がますます高まっています。<br /> 三菱重工は、人が立ち入ることができない、または立ち入ることで大きなリスクが伴うような極限環境向けのロボット開発を通し、お客様が抱える安全へのリスク低減といった課題に応えると共に起こりうる災害被害を最小限にとどめることで、社会に貢献していきます。<br /> 当社は、原子力分野で長年培ってきたロボット技術を応用することで、原子力以外の極限環境にも対応可能なロボットを開発しています。<br />今回の国際ロボット展では、大規模火災現場向け「消防ロボットシステム」、火災／爆発リスクの高い作業現場向け「桜II号（防爆仕様）」、重労働が伴う作業現場向けの「パワーアシストスーツ（PAS）」を展示し、ご紹介します。</p> <p><br /></p></td>
+            </tr>
+                       <tr>
+              <th class="alnTop">出展製品</th>
+              <td class="alnTop">交通システム</td>
+            </tr>
+                   </tbody></table>
+      </div></div>
+              <div class="eventPastList hide"><div class="eventBox">
+        <div class="comTtlWrap">
+          <h3 class="inTtl"><a href="https://www.mhi.com/jp/expertise/event/gearexpo2017.html" hreflang="ja">GEAR EXPO 2017</a></h3>
+        </div>
+        <table class="comTable02 comAcdInTable">
+          <colgroup>
+            <col span="1" class="w20">
+            <col span="1" class="w80">
+          </colgroup>
+          <tbody>
+                   <tr class="txtLarge">
+            <th class="alnTop">開催期間</th>
+            <td class="alnTop">2017年10月24日（火曜日）～10月26日（木曜日）</td>
+          </tr>
+                              <tr class="txtLarge">
+            <th class="alnTop">開催地</th>
+            <td class="alnTop">米国　オハイオ州</td>
+          </tr>
+          
+                   <tr class="txtLarge">
+            <th class="alnTop">会場</th>
+            <td class="alnTop">Greater Columbus Convention Center<br />ホールB 、ブース1322</td>
+          </tr>
+                       <tr class="inSpcolun1">
+              <th class="alnTop">概要</th>
+              <td class="alnTop"><p>歯車加工をトータルでサポートする三菱重工工作機械の最新技術をご紹介いたします。新型歯車研削盤ZE16C（ビデオ展示）、スーパースカイビング盤MSS300（ビデオ展示）、ホブ盤GE15（実機展示）<br />フェデラルブローチ社（グループ会社）製品のサンプル展示。</p></td>
+            </tr>
+                       <tr>
+              <th class="alnTop">出展製品</th>
+              <td class="alnTop">産業機械</td>
+            </tr>
+                   </tbody></table>
+      </div></div>
+              <div class="eventPastList hide"><div class="eventBox">
+        <div class="comTtlWrap">
+          <h3 class="inTtl"><a href="https://www.mhi.com/jp/expertise/event/emohannover2017.html" hreflang="ja">EMO Hannover2017</a></h3>
+        </div>
+        <table class="comTable02 comAcdInTable">
+          <colgroup>
+            <col span="1" class="w20">
+            <col span="1" class="w80">
+          </colgroup>
+          <tbody>
+                   <tr class="txtLarge">
+            <th class="alnTop">開催期間</th>
+            <td class="alnTop">2017年9月18日（月曜日)～9月23日（土曜日）</td>
+          </tr>
+                              <tr class="txtLarge">
+            <th class="alnTop">開催地</th>
+            <td class="alnTop">ハノーバー/ドイツ</td>
+          </tr>
+          
+                   <tr class="txtLarge">
+            <th class="alnTop">会場</th>
+            <td class="alnTop">Deutsche Messe<br /> Hall 26,stand E76</td>
+          </tr>
+                       <tr class="inSpcolun1">
+              <th class="alnTop">概要</th>
+              <td class="alnTop"><p>歯車の量産加工を実現した「スーパースカイビング盤」をはじめ、当社の歯車加工ソリューションをご紹介します。また、9月20日（水曜日）14時30分～16時には内歯車加工に関する技術セミナーを開催しますので、是非、ご来場下さい。</p></td>
+            </tr>
+                       <tr>
+              <th class="alnTop">出展製品</th>
+              <td class="alnTop">産業機械</td>
+            </tr>
+                   </tbody></table>
+      </div></div>
+              <div class="eventPastList hide"><div class="eventBox">
+        <div class="comTtlWrap">
+          <h3 class="inTtl"><a href="https://www.mhi.com/jp/expertise/event/foodfactory2017.html" hreflang="ja">フードファクトリー2017</a></h3>
+        </div>
+        <table class="comTable02 comAcdInTable">
+          <colgroup>
+            <col span="1" class="w20">
+            <col span="1" class="w80">
+          </colgroup>
+          <tbody>
+                   <tr class="txtLarge">
+            <th class="alnTop">開催期間</th>
+            <td class="alnTop">2017年9月13日（水曜日）～9月15日（金曜日）</td>
+          </tr>
+                              <tr class="txtLarge">
+            <th class="alnTop">開催地</th>
+            <td class="alnTop">東京都</td>
+          </tr>
+          
+                   <tr class="txtLarge">
+            <th class="alnTop">会場</th>
+            <td class="alnTop">東京ビッグサイト<br />東2ホール　R-37</td>
+          </tr>
+                       <tr class="inSpcolun1">
+              <th class="alnTop">概要</th>
+              <td class="alnTop"><p>私たちニチユ三菱フォークリフトは、エンジンフォークリフトからバッテリーフォークリフト、保管システム、倉庫管理システムまで、多様な産業界の物流課題を解決できる製品・サービスを提供しています。<br />今回の出展では、環境配慮型のフロアメンテナンス製品より最新のラインナップをご紹介致します。是非、ご来場下さい。</p></td>
+            </tr>
+                       <tr>
+              <th class="alnTop">出展製品</th>
+              <td class="alnTop">物流・運搬</td>
+            </tr>
+                   </tbody></table>
+      </div></div>
+              <div class="eventPastList hide"><div class="eventBox">
+        <div class="comTtlWrap">
+          <h3 class="inTtl"><a href="https://www.mhi.com/jp/expertise/event/sewerage2017.html" hreflang="ja">下水道展'17東京</a></h3>
+        </div>
+        <table class="comTable02 comAcdInTable">
+          <colgroup>
+            <col span="1" class="w20">
+            <col span="1" class="w80">
+          </colgroup>
+          <tbody>
+                   <tr class="txtLarge">
+            <th class="alnTop">開催期間</th>
+            <td class="alnTop">2017年8月1日（火曜日）～8月4日（金曜日）</td>
+          </tr>
+                              <tr class="txtLarge">
+            <th class="alnTop">開催地</th>
+            <td class="alnTop">東京都</td>
+          </tr>
+          
+                   <tr class="txtLarge">
+            <th class="alnTop">会場</th>
+            <td class="alnTop">東京ビッグサイト<br />ブース番号：6-602（東展示棟　4･5･6ホール）</td>
+          </tr>
+                       <tr class="inSpcolun1">
+              <th class="alnTop">概要</th>
+              <td class="alnTop"><p>三菱重工環境・化学エンジニアリング株式会社は、8月1日（火曜日）～8月4日（金曜日）に東京ビッグサイトで開催される「下水道展'17」において、東京都と共同開発した「エネルギー自立型汚泥焼却炉」に関する展示を行います。<br />省エネルギー・地球温暖化抑制への大きな貢献が期待できる本技術について、「熱回収」「発電」「制御」の観点から、パネル・動画を用いてご紹介致します。</p></td>
+            </tr>
+                       <tr>
+              <th class="alnTop">出展製品</th>
+              <td class="alnTop">環境装置</td>
+            </tr>
+                   </tbody></table>
+      </div></div>
+              <div class="eventPastList hide"><div class="eventBox">
+        <div class="comTtlWrap">
+          <h3 class="inTtl"><a href="https://www.mhi.com/jp/expertise/event/airshow2017.html" hreflang="ja">パリ航空ショー</a></h3>
+        </div>
+        <table class="comTable02 comAcdInTable">
+          <colgroup>
+            <col span="1" class="w20">
+            <col span="1" class="w80">
+          </colgroup>
+          <tbody>
+                   <tr class="txtLarge">
+            <th class="alnTop">開催期間</th>
+            <td class="alnTop">2017年6月19日（月曜日）～6月25日（日曜日）</td>
+          </tr>
+                              <tr class="txtLarge">
+            <th class="alnTop">開催地</th>
+            <td class="alnTop">フランス、パリ</td>
+          </tr>
+          
+                   <tr class="txtLarge">
+            <th class="alnTop">会場</th>
+            <td class="alnTop">ル・ブルジェ　コンベンションセンター<br />ブース番号：Row A 266</td>
+          </tr>
+                       <tr class="inSpcolun1">
+              <th class="alnTop">概要</th>
+              <td class="alnTop"><p>三菱航空機は第52回パリ航空ショーに出展いたします。<br /> パリ航空ショーは英国ファンボローと隔年開催される世界最大級のエアショーとして知られており、三菱航空機は2007年から数えて今年で6回目の出展となります。<br /> 会場には約900㎡のシャレーを建設、内部には会議室エリア、ダイニングエリア、展示エリアを設けお客様をおもてなしいたします。</p></td>
+            </tr>
+                       <tr>
+              <th class="alnTop">出展製品</th>
+              <td class="alnTop">交通システム、自動車関連</td>
+            </tr>
+                   </tbody></table>
+      </div></div>
+              <div class="eventPastList hide"><div class="eventBox">
+        <div class="comTtlWrap">
+          <h3 class="inTtl"><a href="https://www.mhi.com/jp/expertise/event/foomajapan2017.html" hreflang="ja">FOOMA JAPAN 2017 国際食品工業展</a></h3>
+        </div>
+        <table class="comTable02 comAcdInTable">
+          <colgroup>
+            <col span="1" class="w20">
+            <col span="1" class="w80">
+          </colgroup>
+          <tbody>
+                   <tr class="txtLarge">
+            <th class="alnTop">開催期間</th>
+            <td class="alnTop">2017年6月13日（火曜日)～6月16日（金曜日）</td>
+          </tr>
+                              <tr class="txtLarge">
+            <th class="alnTop">開催地</th>
+            <td class="alnTop">東京都</td>
+          </tr>
+          
+                   <tr class="txtLarge">
+            <th class="alnTop">会場</th>
+            <td class="alnTop">東京ビッグサイト<br>ブース番号：1C-14（東展示棟　1～8ホール）</td>
+          </tr>
+                       <tr class="inSpcolun1">
+              <th class="alnTop">概要</th>
+              <td class="alnTop">自然冷媒であるCO<sub>2</sub>を採用した業務用ノンフロン冷凍冷蔵コンデンシングユニット「HCCV1001」は、CO<sub>2</sub>二段圧縮機スクロータリーをはじめ、先進冷熱技術を活用することにより、地球環境に対する配慮と高効率を実現しています。冷凍冷蔵倉庫様向けやスーパーマーケット様などの冷凍冷蔵食品陳列ケース向けを中心に、省エネおよび環境負荷低減に対するニーズにお応えしてまいります。</td>
+            </tr>
+                       <tr>
+              <th class="alnTop">出展製品</th>
+              <td class="alnTop">エネルギー、物流・運搬、産業機械</td>
+            </tr>
+                   </tbody></table>
+      </div></div>
+              <div class="eventPastList hide"><div class="eventBox">
+        <div class="comTtlWrap">
+          <h3 class="inTtl"><a href="https://www.mhi.com/jp/expertise/event/exposition2017.html" hreflang="ja">2017NEW環境展</a></h3>
+        </div>
+        <table class="comTable02 comAcdInTable">
+          <colgroup>
+            <col span="1" class="w20">
+            <col span="1" class="w80">
+          </colgroup>
+          <tbody>
+                   <tr class="txtLarge">
+            <th class="alnTop">開催期間</th>
+            <td class="alnTop">2017年5月23日（火曜日）～5月26日（金曜日）</td>
+          </tr>
+                              <tr class="txtLarge">
+            <th class="alnTop">開催地</th>
+            <td class="alnTop">日本　東京都江東区</td>
+          </tr>
+          
+                   <tr class="txtLarge">
+            <th class="alnTop">会場</th>
+            <td class="alnTop">東京ビッグサイト 東ホール</td>
+          </tr>
+                       <tr class="inSpcolun1">
+              <th class="alnTop">概要</th>
+              <td class="alnTop">私たちニチユ三菱フォークリフトは、エンジンフォークリフトからバッテリーフォークリフト、保管システム、倉庫管理システムまで、多様な産業界の物流課題を解決できる製品・サービスを提供しています。<br /> 今回の出展では、環境配慮型のフロアメンテナンス製品より最新のラインナップをご紹介致します。<br /> 是非、ご来場下さい。</td>
+            </tr>
+                       <tr>
+              <th class="alnTop">出展製品</th>
+              <td class="alnTop">物流・運搬</td>
+            </tr>
+                   </tbody></table>
+      </div></div>
+              <div class="eventPastList hide"><div class="eventBox">
+        <div class="comTtlWrap">
+          <h3 class="inTtl"><a href="https://www.mhi.com/jp/expertise/event/smart2017.html" hreflang="ja">第7回 国際スマートグリッドEXPO</a></h3>
+        </div>
+        <table class="comTable02 comAcdInTable">
+          <colgroup>
+            <col span="1" class="w20">
+            <col span="1" class="w80">
+          </colgroup>
+          <tbody>
+                   <tr class="txtLarge">
+            <th class="alnTop">開催期間</th>
+            <td class="alnTop">2017年3月1日（水曜日）～3月3日（金曜日）</td>
+          </tr>
+                              <tr class="txtLarge">
+            <th class="alnTop">開催地</th>
+            <td class="alnTop">日本　東京都江東区</td>
+          </tr>
+          
+                   <tr class="txtLarge">
+            <th class="alnTop">会場</th>
+            <td class="alnTop">東京ビッグサイト　西ホール</td>
+          </tr>
+                       <tr class="inSpcolun1">
+              <th class="alnTop">概要</th>
+              <td class="alnTop">エネルギー自由化を迎え、エネルギーの最適運用と安定供給ニーズはますます高まってきています。<br /> 三菱重工では、電力を中心とするエネルギーのサプライチェーン全体にわたって品質・コスト・供給（QCD）の最適化を推進する提案型ソリューション・サービスとして｢ENERGY CLOUD® Service（エナジークラウドサービス）｣の提供を進めています。幅広い分野のもの創りで培ったエネルギー供給の運営実績とノウハウから、データマイニング技術を活用した、エネルギー運営の最適化ソリューションをご紹介いたします。</td>
+            </tr>
+                       <tr>
+              <th class="alnTop">出展製品</th>
+              <td class="alnTop">エネルギー</td>
+            </tr>
+                   </tbody></table>
+      </div></div>
+              <div class="eventPastList hide"><div class="eventBox">
+        <div class="comTtlWrap">
+          <h3 class="inTtl"><a href="https://www.mhi.com/jp/expertise/event/thermalpower2016.html" hreflang="ja">第1回［次世代］火力発電EXPO</a></h3>
+        </div>
+        <table class="comTable02 comAcdInTable">
+          <colgroup>
+            <col span="1" class="w20">
+            <col span="1" class="w80">
+          </colgroup>
+          <tbody>
+                   <tr class="txtLarge">
+            <th class="alnTop">開催期間</th>
+            <td class="alnTop">2017年3月1日（水曜日）～ 3月3日（金曜日）</td>
+          </tr>
+                              <tr class="txtLarge">
+            <th class="alnTop">開催地</th>
+            <td class="alnTop">日本　東京都江東区</td>
+          </tr>
+          
+                   <tr class="txtLarge">
+            <th class="alnTop">会場</th>
+            <td class="alnTop">東京ビッグサイト　西3、4ホール</td>
+          </tr>
+                       <tr class="inSpcolun1">
+              <th class="alnTop">概要</th>
+              <td class="alnTop">エネルギー、温暖化対策に関連する各種政策が策定される中で、二酸化炭素排出量の削減、発電効率など環境性能を向上させた三菱日立パワーシステムズ株式会社が取り組む次世代火力発電技術をご紹介します。</td>
+            </tr>
+                       <tr>
+              <th class="alnTop">出展製品</th>
+              <td class="alnTop">エネルギー</td>
+            </tr>
+                   </tbody></table>
+      </div></div>
+              <div class="eventPastList hide"><div class="eventBox">
+        <div class="comTtlWrap">
+          <h3 class="inTtl"><a href="https://www.mhi.com/jp/expertise/event/semicon2016jp.html" hreflang="ja">SEMICON JAPAN</a></h3>
+        </div>
+        <table class="comTable02 comAcdInTable">
+          <colgroup>
+            <col span="1" class="w20">
+            <col span="1" class="w80">
+          </colgroup>
+          <tbody>
+                   <tr class="txtLarge">
+            <th class="alnTop">開催期間</th>
+            <td class="alnTop">2016年12月14日（水曜日）～12月16日（金曜日）</td>
+          </tr>
+                              <tr class="txtLarge">
+            <th class="alnTop">開催地</th>
+            <td class="alnTop">日本　東京都</td>
+          </tr>
+          
+                   <tr class="txtLarge">
+            <th class="alnTop">会場</th>
+            <td class="alnTop">東京ビッグサイト（東京国際展示場）</td>
+          </tr>
+                       <tr class="inSpcolun1">
+              <th class="alnTop">概要</th>
+              <td class="alnTop"><p><b>三菱重工工作機械（株）は、以下の4製品を出展して皆様に微細加工のソリューションを提供します。</b></p> <p><b>（1）微細レーザ加工機 ABLASER</b></p> <p>短パルスレーザによるアブレーション加工で、熱影響の少ない極めて高品質な穴加工や溝加工を実現します。シリコンウエハ、SiC、ガラス材の加工にも適しています。</p> <p><b>（2）精密加工機 μV</b></p> <p>高剛性、低振動主軸と撮像式工具測定システムによる高品位自由曲面加工を実現します。また、従来切削加工に不向きであった、セラミックスやサファイア等の脆性材料の加工にも適しています。実機を展示しますので是非ご覧ください。</p> <p><b>（3）常温ウェーハ接合装置</b></p> <p>室温で、シリコン系材料、化合物半導体、光学材料、金属など多岐にわたる材料を強固に接合します。MEMSの真空封止、エンジニアリング基板、3D積層などに活用できます。各種材料の接合サンプルを展示しますが、特に3D積層用に5マイクロメートルまで薄化した300ミリメートルウェーハの接合サンプルが見ものです。</p> <p><b>（4）精密位置検出器 MPスケール</b></p> <p>電磁結合原理による高精度スケールです。リニアタイプとロータリタイプの2種のスケールがあります。高精度・高分解能、省スペースを実現し、かつ非常に高い耐環境性を有しています。今回の展示では、実装機、半導体プロセス装置などに最適なFA用絶対値リニアスケールを出展いたします。高速移動ステージで検出デモ実演いたしますので是非ご覧ください。</p></td>
+            </tr>
+                       <tr>
+              <th class="alnTop">出展製品</th>
+              <td class="alnTop">産業機械</td>
+            </tr>
+                   </tbody></table>
+      </div></div>
+              <div class="eventPastList hide"><div class="eventBox">
+        <div class="comTtlWrap">
+          <h3 class="inTtl"><a href="https://www.mhi.com/jp/expertise/event/jimtof2016.html" hreflang="ja">第28回　日本国際工作機械見本市（JIMTOF2016）</a></h3>
+        </div>
+        <table class="comTable02 comAcdInTable">
+          <colgroup>
+            <col span="1" class="w20">
+            <col span="1" class="w80">
+          </colgroup>
+          <tbody>
+                   <tr class="txtLarge">
+            <th class="alnTop">開催期間</th>
+            <td class="alnTop">2016年11月17日（木曜日）～11月22日（火曜日）</td>
+          </tr>
+                              <tr class="txtLarge">
+            <th class="alnTop">開催地</th>
+            <td class="alnTop">日本　東京都江東区</td>
+          </tr>
+          
+                   <tr class="txtLarge">
+            <th class="alnTop">会場</th>
+            <td class="alnTop">東京ビッグサイト（東京国際展示場）全館</td>
+          </tr>
+                       <tr class="inSpcolun1">
+              <th class="alnTop">概要</th>
+              <td class="alnTop"><p><b>「ものづくり」の革新により、新しい価値を創造</b></p><br /><p>私たちは多様な技術を進化させ、お客様の価値を生み出す製品を提供してきました。 これからも、「ものづくり」の革新をを実現するという情熱を持ち、お客様の価値創造に貢献いたします。</p>  <p><b>主な出展製品</b><br /> 【新製品】スーパースカイビング盤　MSS300<br /> 【新製品】大形高精度加工機　MVR30Fx<br /> 【新製品】微細レーザー加工機　ABLASER-DUV<br /> 【参考出品】複層レーザービーム3Dプリンタ<br /> 【参考出品】⊿（デルタ）WORKS Concept<br /> など</p></td>
+            </tr>
+                       <tr>
+              <th class="alnTop">出展製品</th>
+              <td class="alnTop">産業機械</td>
+            </tr>
+                   </tbody></table>
+      </div></div>
+              <div class="eventPastList hide"><div class="eventBox">
+        <div class="comTtlWrap">
+          <h3 class="inTtl"><a href="https://www.mhi.com/jp/expertise/event/aee2016.html" hreflang="ja">自動車技術展　人とくるまのテクノロジー展2016横浜</a></h3>
+        </div>
+        <table class="comTable02 comAcdInTable">
+          <colgroup>
+            <col span="1" class="w20">
+            <col span="1" class="w80">
+          </colgroup>
+          <tbody>
+                   <tr class="txtLarge">
+            <th class="alnTop">開催期間</th>
+            <td class="alnTop">2016年5月25日（水曜日）～27日（金曜日）</td>
+          </tr>
+                              <tr class="txtLarge">
+            <th class="alnTop">開催地</th>
+            <td class="alnTop">日本　神奈川県横浜市</td>
+          </tr>
+          
+                   <tr class="txtLarge">
+            <th class="alnTop">会場</th>
+            <td class="alnTop">パシフィコ横浜　展示ホール</td>
+          </tr>
+                       <tr class="inSpcolun1">
+              <th class="alnTop">概要</th>
+              <td class="alnTop"><p>自動車業界第一線で活躍する技術者・研究者へ三菱重工グループの幅広い製品技術を紹介。ターボチャージャ、ERP/EPSシステム、射出成形機、自動車衝突シミュレータ、環境試験装置といった製品において、出力向上、燃費向上、低騒音、軽量化、省エネ開発期間の短縮に貢献する最新技術をご紹介いたします。</p> <p> 〈展示予定〉 ターボチャージャ、ERP/EPSシステム、射出成形機、自動車衝突シミュレータ、環境試験装置</p></td>
+            </tr>
+                       <tr>
+              <th class="alnTop">出展製品</th>
+              <td class="alnTop">交通システム、産業機械</td>
+            </tr>
+                   </tbody></table>
+      </div></div>
+              <div class="eventPastList hide"><div class="eventBox">
+        <div class="comTtlWrap">
+          <h3 class="inTtl"><a href="https://www.mhi.com/jp/expertise/event/ftj2016.html" hreflang="ja">第26回 ファインテック ジャパン～フラットパネル ディスプレイ 技術展～</a></h3>
+        </div>
+        <table class="comTable02 comAcdInTable">
+          <colgroup>
+            <col span="1" class="w20">
+            <col span="1" class="w80">
+          </colgroup>
+          <tbody>
+                   <tr class="txtLarge">
+            <th class="alnTop">開催期間</th>
+            <td class="alnTop">2016年4月6日（水曜日）～4月8日（金曜日）</td>
+          </tr>
+                              <tr class="txtLarge">
+            <th class="alnTop">開催地</th>
+            <td class="alnTop">日本　東京</td>
+          </tr>
+          
+                   <tr class="txtLarge">
+            <th class="alnTop">会場</th>
+            <td class="alnTop">東京ビッグサイト</td>
+          </tr>
+                       <tr class="inSpcolun1">
+              <th class="alnTop">概要</th>
+              <td class="alnTop"><p>三菱重工工作機械は、以下の2製品を出展して皆様に微細加工のソリューションを提供します。</p> <ol class="comLstNum"><li>レーザーソリューション <ul class="comLst"><li>微細レーザ加工機 ABLASER<br />熱影響の少ない短パルスレーザーによるアブレーション加工で、極めて高品質な穴加工や溝加工を実現します。</li> <li>レーザー溶接技術<br />ハイブリッド溶接を始め、各種のレーザー加工ソリューションを展示します。</li> </ul></li> <li>常温ウェーハ接合装置 BOND MEISTER<br />室温で、シリコン系材料、化合物半導体、光学材料、金属など多岐にわたる材料を強固に接合します。MEMSの真空封止、エンジニアリング基板、3D積層などに活用できます。</li> </ol></td>
+            </tr>
+                       <tr>
+              <th class="alnTop">出展製品</th>
+              <td class="alnTop">産業機械</td>
+            </tr>
+                   </tbody></table>
+      </div></div>
+              <div class="eventPastList hide"><div class="eventBox">
+        <div class="comTtlWrap">
+          <h3 class="inTtl"><a href="https://www.mhi.com/jp/expertise/event/smart2016.html" hreflang="ja">第6回 国際スマートグリッドEXPO</a></h3>
+        </div>
+        <table class="comTable02 comAcdInTable">
+          <colgroup>
+            <col span="1" class="w20">
+            <col span="1" class="w80">
+          </colgroup>
+          <tbody>
+                   <tr class="txtLarge">
+            <th class="alnTop">開催期間</th>
+            <td class="alnTop">2016年3月2日（水曜日）～3月4日（金曜日）</td>
+          </tr>
+                              <tr class="txtLarge">
+            <th class="alnTop">開催地</th>
+            <td class="alnTop">日本　東京</td>
+          </tr>
+          
+                   <tr class="txtLarge">
+            <th class="alnTop">会場</th>
+            <td class="alnTop">東京ビッグサイト</td>
+          </tr>
+                       <tr class="inSpcolun1">
+              <th class="alnTop">概要</th>
+              <td class="alnTop">エネルギーの自由化が進む中で、コストや安定性、持続性など様々な選択肢が増えています。<br /> 当社は、長年インフラを提供する企業として国内はもとより海外を含めてさまざまな環境でエネルギーを見つめてきました。<br /> このような経験を踏まえて、豊かな生活と低炭素社会を実現するための当社の取組を、具体的な事例を交えてご紹介したいと思います。</td>
+            </tr>
+                       <tr>
+              <th class="alnTop">出展製品</th>
+              <td class="alnTop">エネルギー</td>
+            </tr>
+                   </tbody></table>
+      </div></div>
+              <div class="eventPastList hide"><div class="eventBox">
+        <div class="comTtlWrap">
+          <h3 class="inTtl"><a href="https://www.mhi.com/jp/expertise/event/3dex2016.html" hreflang="ja">3Dプリンタ活用EXPO</a></h3>
+        </div>
+        <table class="comTable02 comAcdInTable">
+          <colgroup>
+            <col span="1" class="w20">
+            <col span="1" class="w80">
+          </colgroup>
+          <tbody>
+                   <tr class="txtLarge">
+            <th class="alnTop">開催期間</th>
+            <td class="alnTop">2016年2月16日（火曜日）</td>
+          </tr>
+                              <tr class="txtLarge">
+            <th class="alnTop">開催地</th>
+            <td class="alnTop">愛知県　名古屋市</td>
+          </tr>
+          
+                   <tr class="txtLarge">
+            <th class="alnTop">会場</th>
+            <td class="alnTop">ウインクあいち8F（愛知県産業労働センター）</td>
+          </tr>
+                       <tr class="inSpcolun1">
+              <th class="alnTop">概要</th>
+              <td class="alnTop">三菱重工および三菱重工工作機械が参画する技術研究組合次世代3D積層造形技術総合開発機構（TRAFAM）で開発中の「レーザデポジション方式3D金属積層造形」試作機をパネル、加工動画、サンプルワーク等でご紹介します。この試作機の製作を三菱重工工作機械が担当しました。<br /> 本出展を通じてTRAFAMの先進的な研究開発成果を広くアピールするとともに、ユーザのニーズを収集し今後の実用化技術開発に活かしていきます。</td>
+            </tr>
+                       <tr>
+              <th class="alnTop">出展製品</th>
+              <td class="alnTop">産業機械</td>
+            </tr>
+                   </tbody></table>
+      </div></div>
+              <div class="eventPastList hide"><div class="eventBox">
+        <div class="comTtlWrap">
+          <h3 class="inTtl"><a href="https://www.mhi.com/jp/expertise/event/3dprintingexpo2016.html" hreflang="ja">3D Printing 2016</a></h3>
+        </div>
+        <table class="comTable02 comAcdInTable">
+          <colgroup>
+            <col span="1" class="w20">
+            <col span="1" class="w80">
+          </colgroup>
+          <tbody>
+                   <tr class="txtLarge">
+            <th class="alnTop">開催期間</th>
+            <td class="alnTop">2016年1月27日（水曜日）～1月29日（金曜日）</td>
+          </tr>
+                              <tr class="txtLarge">
+            <th class="alnTop">開催地</th>
+            <td class="alnTop">日本　東京</td>
+          </tr>
+          
+                   <tr class="txtLarge">
+            <th class="alnTop">会場</th>
+            <td class="alnTop">東京ビッグサイト　東6ホール&amp;会議棟</td>
+          </tr>
+                       <tr class="inSpcolun1">
+              <th class="alnTop">概要</th>
+              <td class="alnTop">三菱重工および三菱重工工作機械が参画する技術研究組合次世代3D積層造形技術総合開発機構（TRAFAM）で開発中の「レーザデポジション方式3D金属積層造形」試作機をパネル、加工動画、サンプルワーク等でご紹介します。この試作機の製作を三菱重工工作機械が担当しました。<br /> 本出展を通じてTRAFAMの先進的な研究開発成果を広くアピールするとともに、ユーザのニーズを収集し今後の実用化技術開発に活かしていきます。</td>
+            </tr>
+                       <tr>
+              <th class="alnTop">出展製品</th>
+              <td class="alnTop">産業機械</td>
+            </tr>
+                   </tbody></table>
+      </div></div>
+              <div class="eventPastList hide"><div class="eventBox">
+        <div class="comTtlWrap">
+          <h3 class="inTtl"><a href="https://www.mhi.com/jp/expertise/event/semicon2015jp.html" hreflang="ja">SEMICON Japan 2015</a></h3>
+        </div>
+        <table class="comTable02 comAcdInTable">
+          <colgroup>
+            <col span="1" class="w20">
+            <col span="1" class="w80">
+          </colgroup>
+          <tbody>
+                   <tr class="txtLarge">
+            <th class="alnTop">開催期間</th>
+            <td class="alnTop">2015年12月16日（水曜日）～12月18日（金曜日）</td>
+          </tr>
+                              <tr class="txtLarge">
+            <th class="alnTop">開催地</th>
+            <td class="alnTop">日本　東京都</td>
+          </tr>
+          
+                   <tr class="txtLarge">
+            <th class="alnTop">会場</th>
+            <td class="alnTop">東京ビッグサイト</td>
+          </tr>
+                       <tr class="inSpcolun1">
+              <th class="alnTop">概要</th>
+              <td class="alnTop"><b></b><p><b>三菱重工工作機械は、以下の4製品を出展して皆様に微細加工のソリューションを提供します。</b></p>
+
+<p><b>（1）微細レーザ加工機 ABLASER</b></p>
+
+<p>熱影響の少ない短パルスレーザによるアブレーション加工で、極めて高品質な穴加工や溝加工を実現します。</p>
+
+<p><b>（2）常温ウェーハ接合装置 BOND MEISTER</b></p>
+
+<p>室温で、シリコン系材料、化合物半導体、光学材料、金属など多岐にわたる材料を強固に接合します。MEMSの真空封止、エンジニアリング基板、3D積層などに活用できます。</p>
+
+<p><b>（3）小型精密加工機 μV1</b></p>
+
+<p>高剛性、低振動主軸と撮像式工具測定システムにより、高品位自由曲面加工を始めとする微細形状加工を実現します。</p>
+
+<p><b>（4）精密位置検出器 MPスケール</b></p>
+
+<p>電磁結合原理による高精度スケールです。高精度・高分解能、省スペースを実現し、かつ非常に高い耐環境性を有しています。</p>
+</td>
+            </tr>
+                       <tr>
+              <th class="alnTop">出展製品</th>
+              <td class="alnTop">産業機械</td>
+            </tr>
+                   </tbody></table>
+      </div></div>
+              <div class="eventPastList hide"><div class="eventBox">
+        <div class="comTtlWrap">
+          <h3 class="inTtl"><a href="https://www.mhi.com/jp/expertise/event/mmj2015.html" hreflang="ja">モノづくりマッチングJapan2015</a></h3>
+        </div>
+        <table class="comTable02 comAcdInTable">
+          <colgroup>
+            <col span="1" class="w20">
+            <col span="1" class="w80">
+          </colgroup>
+          <tbody>
+                   <tr class="txtLarge">
+            <th class="alnTop">開催期間</th>
+            <td class="alnTop">2015年12月2日（水曜日）～12月4日（金曜日）</td>
+          </tr>
+                              <tr class="txtLarge">
+            <th class="alnTop">開催地</th>
+            <td class="alnTop">日本　東京</td>
+          </tr>
+          
+                   <tr class="txtLarge">
+            <th class="alnTop">会場</th>
+            <td class="alnTop">東京ビッグサイト</td>
+          </tr>
+                       <tr class="inSpcolun1">
+              <th class="alnTop">概要</th>
+              <td class="alnTop">三菱重工および三菱重工工作機械が参画する技術研究組合次世代3D積層造形技術総合開発機構（TRAFAM）で開発中の「レーザデポジション方式3D金属積層造形」試作機を展示します。この試作機の製作を三菱重工工作機械が担当しました。<br /> 本出展を通じてTRAFAMの先進的な研究開発成果を広くアピールするとともに、ユーザのニーズを収集し今後の実用化技術開発に活かしていきます。</td>
+            </tr>
+                       <tr>
+              <th class="alnTop">出展製品</th>
+              <td class="alnTop">産業機械</td>
+            </tr>
+                   </tbody></table>
+      </div></div>
+              <div class="eventPastList hide"><div class="eventBox">
+        <div class="comTtlWrap">
+          <h3 class="inTtl"><a href="https://www.mhi.com/jp/expertise/event/wecc2015.html" hreflang="ja">世界工学会議 2015</a></h3>
+        </div>
+        <table class="comTable02 comAcdInTable">
+          <colgroup>
+            <col span="1" class="w20">
+            <col span="1" class="w80">
+          </colgroup>
+          <tbody>
+                   <tr class="txtLarge">
+            <th class="alnTop">開催期間</th>
+            <td class="alnTop">2015年11月29日（日曜日）～12月2日（水曜日）</td>
+          </tr>
+                              <tr class="txtLarge">
+            <th class="alnTop">開催地</th>
+            <td class="alnTop">日本 京都</td>
+          </tr>
+          
+                   <tr class="txtLarge">
+            <th class="alnTop">会場</th>
+            <td class="alnTop">国立京都国際会館</td>
+          </tr>
+                       <tr class="inSpcolun1">
+              <th class="alnTop">概要</th>
+              <td class="alnTop"><p><b>出展物</b><br /> AR展示手法を用いた、発電、洋上LNG、海上輸送、空港、ロケット打ち上げサービス、機械設備システム等のソリューション紹介や、レーザレーダ、放射線見える化カメラの実機、当社製品サービスのアニメーションなど</p>  <p><b>ブースの見どころ</b><br /> 当社製品サービスのソリューションが新興国のインフラに貢献することを、過去、現在、未来の時系列でビジュアルに示す。モバイルディスプレイを展示壁の製品QRコードにかざすことで、その製品のアニメーションや説明を表示するAR展示手法を採用する。</p></td>
+            </tr>
+                       <tr>
+              <th class="alnTop">出展製品</th>
+              <td class="alnTop">エネルギー、航空、宇宙開発、船舶・海洋、産業機械</td>
+            </tr>
+                   </tbody></table>
+      </div></div>
+              <div class="eventPastList hide"><div class="eventBox">
+        <div class="comTtlWrap">
+          <h3 class="inTtl"><a href="https://www.mhi.com/jp/expertise/event/mtij2015.html" hreflang="ja">第4回鉄道技術展</a></h3>
+        </div>
+        <table class="comTable02 comAcdInTable">
+          <colgroup>
+            <col span="1" class="w20">
+            <col span="1" class="w80">
+          </colgroup>
+          <tbody>
+                   <tr class="txtLarge">
+            <th class="alnTop">開催期間</th>
+            <td class="alnTop">2015年11月11日（水曜日）～11月13日（金曜日）</td>
+          </tr>
+                              <tr class="txtLarge">
+            <th class="alnTop">開催地</th>
+            <td class="alnTop">日本　千葉市</td>
+          </tr>
+          
+                   <tr class="txtLarge">
+            <th class="alnTop">会場</th>
+            <td class="alnTop">幕張メッセ　4・5・6ホール</td>
+          </tr>
+                       <tr class="inSpcolun1">
+              <th class="alnTop">概要</th>
+              <td class="alnTop"><p>三菱重工は永年の国内外の経験を生かして、ゆりかもめや日暮里・舎人ライナーなどAGT（Automated Guideway Transit）の新車両を供給しています。<br />
+鉄道技術展では、新車両の実機と当社AGTラインナップを御披露し、当社車両のデザイン・経済性・環境性能等の先進技術を御紹介いたします。</p>
+</td>
+            </tr>
+                       <tr>
+              <th class="alnTop">出展製品</th>
+              <td class="alnTop">交通システム</td>
+            </tr>
+                   </tbody></table>
+      </div></div>
+              <div class="eventPastList hide"><div class="eventBox">
+        <div class="comTtlWrap">
+          <h3 class="inTtl"><a href="https://www.mhi.com/jp/expertise/event/semicon2015.html" hreflang="ja">SEMICON West</a></h3>
+        </div>
+        <table class="comTable02 comAcdInTable">
+          <colgroup>
+            <col span="1" class="w20">
+            <col span="1" class="w80">
+          </colgroup>
+          <tbody>
+                   <tr class="txtLarge">
+            <th class="alnTop">開催期間</th>
+            <td class="alnTop">2015年7月14日（火曜日）～7月16日（木曜日）</td>
+          </tr>
+                              <tr class="txtLarge">
+            <th class="alnTop">開催地</th>
+            <td class="alnTop">アメリカ合衆国　サンフランシスコ</td>
+          </tr>
+          
+                   <tr class="txtLarge">
+            <th class="alnTop">会場</th>
+            <td class="alnTop">Moscone Center</td>
+          </tr>
+                       <tr class="inSpcolun1">
+              <th class="alnTop">概要</th>
+              <td class="alnTop">常温ウェーハ接合装置 BOND MEISTER 常温接合は、（1）完全な室温プロセスで強固な接合が可能、（2）酸化膜などを介さない完全な直接接合、（3）シリコン系材料、光学材料、化合物半導体、金属等多岐にわたる材料が接合可能、等が特徴です。本展示会では、各種の接合サンプルを展示していますが、特に10マイクロメートルの薄化300ミリメートルウェーハの接合サンプルが見ものです。</td>
+            </tr>
+                       <tr>
+              <th class="alnTop">出展製品</th>
+              <td class="alnTop">産業機械</td>
+            </tr>
+                   </tbody></table>
+      </div></div>
+              <div class="eventPastList hide"><div class="eventBox">
+        <div class="comTtlWrap">
+          <h3 class="inTtl"><a href="https://www.mhi.com/jp/expertise/event/aee2015.html" hreflang="ja">自動車技術展「人とくるまのテクノロジー展2015」</a></h3>
+        </div>
+        <table class="comTable02 comAcdInTable">
+          <colgroup>
+            <col span="1" class="w20">
+            <col span="1" class="w80">
+          </colgroup>
+          <tbody>
+                   <tr class="txtLarge">
+            <th class="alnTop">開催期間</th>
+            <td class="alnTop">2015年5月20日（水曜日）～5月22日（金曜日）</td>
+          </tr>
+                              <tr class="txtLarge">
+            <th class="alnTop">開催地</th>
+            <td class="alnTop">横浜市</td>
+          </tr>
+          
+                   <tr class="txtLarge">
+            <th class="alnTop">会場</th>
+            <td class="alnTop">パシフィコ横浜</td>
+          </tr>
+                       <tr class="inSpcolun1">
+              <th class="alnTop">概要</th>
+              <td class="alnTop">ターボチャージャ、エンジンバルブ、カーエアコン、ETC車載器、射出成形機、自動車衝突シミュレータ、エンジンバルブコントロールシステム、環境試験装置といった自動車産業向けの各種部品、機器、生産設備、試験装置を展示します。これらの製品に於いて、排ガス改善、燃費向上、低騒音、軽量化、省エネの最新技術をご紹介します。</td>
+            </tr>
+                       <tr>
+              <th class="alnTop">出展製品</th>
+              <td class="alnTop">産業機械、自動車関連</td>
+            </tr>
+                   </tbody></table>
+      </div></div>
+              <div class="eventPastList hide"><div class="eventBox">
+        <div class="comTtlWrap">
+          <h3 class="inTtl"><a href="https://www.mhi.com/jp/expertise/event/mex2015.html" hreflang="ja">MEX金沢2015（第53回 機械工業見本市金沢）</a></h3>
+        </div>
+        <table class="comTable02 comAcdInTable">
+          <colgroup>
+            <col span="1" class="w20">
+            <col span="1" class="w80">
+          </colgroup>
+          <tbody>
+                   <tr class="txtLarge">
+            <th class="alnTop">開催期間</th>
+            <td class="alnTop">2015年5月14日（木曜日）～5月16日（土曜日）</td>
+          </tr>
+                              <tr class="txtLarge">
+            <th class="alnTop">開催地</th>
+            <td class="alnTop">石川県金沢市</td>
+          </tr>
+          
+                   <tr class="txtLarge">
+            <th class="alnTop">会場</th>
+            <td class="alnTop">石川県産業展示館（3・4号館）</td>
+          </tr>
+                       <tr class="inSpcolun1">
+              <th class="alnTop">概要</th>
+              <td class="alnTop"><ul class="comLst"><li>確かな”モノ創り”への挑戦</li> <li>先進の“エネルギー制御”で確かな未来をひらく</li> </ul><p>をテーマに、こだわり製品・技術を紹介致します。<br /> 各ゾーン専門のスタッフが製品・技術の紹介をさせていただきます。</p></td>
+            </tr>
+                       <tr>
+              <th class="alnTop">出展製品</th>
+              <td class="alnTop">エネルギー、産業機械、交通システム、生活・レジャー</td>
+            </tr>
+                   </tbody></table>
+      </div></div>
+              <div class="eventPastList hide"><div class="eventBox">
+        <div class="comTtlWrap">
+          <h3 class="inTtl"><a href="https://www.mhi.com/jp/expertise/event/nanomicro2015.html" hreflang="ja">ナノ・マイクロ ビジネス展</a></h3>
+        </div>
+        <table class="comTable02 comAcdInTable">
+          <colgroup>
+            <col span="1" class="w20">
+            <col span="1" class="w80">
+          </colgroup>
+          <tbody>
+                   <tr class="txtLarge">
+            <th class="alnTop">開催期間</th>
+            <td class="alnTop">2015年4月22日（水曜日）～4月24日（金曜日）</td>
+          </tr>
+                              <tr class="txtLarge">
+            <th class="alnTop">開催地</th>
+            <td class="alnTop">横浜市</td>
+          </tr>
+          
+                   <tr class="txtLarge">
+            <th class="alnTop">会場</th>
+            <td class="alnTop">パシフィコ横浜</td>
+          </tr>
+                       <tr class="inSpcolun1">
+              <th class="alnTop">概要</th>
+              <td class="alnTop"><p>常温ウェーハ接合装置　BOND MEISTER<br /> 常温接合は、「完全な室温プロセスで強固な接合が可能」、「酸化膜などを介さない完全な直接接合」、「シリコン系材料、光学材料、化合物半導体、金属等多岐にわたる材料が接合可能」、等が特徴です。本展示会では、各種の接合サンプルを展示していますが、特に10マイクロメートルの薄化300ミリメートルウェーハの接合サンプルが見ものです。</p>  <p>微細レーザー加工機　ABLASER<br /> ABLASERは、三菱重工の先端製品で培ったレーザ加工技術と工作機械の位置決め技術を組み合わせた高精度・高能率なレーザ加工機です。本展示会では機械加工で困難なセラミック材やシリコンウェーハの加工サンプルを展示しますが、特にシリコンウェーハ加工穴の熱影響が少なくシャープなエッジ品質に注目下さい。</p></td>
+            </tr>
+                       <tr>
+              <th class="alnTop">出展製品</th>
+              <td class="alnTop">産業機械</td>
+            </tr>
+                   </tbody></table>
+      </div></div>
+              <div class="eventPastList hide"><div class="eventBox">
+        <div class="comTtlWrap">
+          <h3 class="inTtl"><a href="https://www.mhi.com/jp/expertise/event/cimt2015.html" hreflang="ja">第14回中国国際工作機械展覧会</a></h3>
+        </div>
+        <table class="comTable02 comAcdInTable">
+          <colgroup>
+            <col span="1" class="w20">
+            <col span="1" class="w80">
+          </colgroup>
+          <tbody>
+                   <tr class="txtLarge">
+            <th class="alnTop">開催期間</th>
+            <td class="alnTop">2015年4月20日（月曜日）～4月25日（土曜日）</td>
+          </tr>
+                              <tr class="txtLarge">
+            <th class="alnTop">開催地</th>
+            <td class="alnTop">中国　北京市</td>
+          </tr>
+          
+                   <tr class="txtLarge">
+            <th class="alnTop">会場</th>
+            <td class="alnTop">中国国際展覧中心（新館）</td>
+          </tr>
+                       <tr class="inSpcolun1">
+              <th class="alnTop">概要</th>
+              <td class="alnTop">エネルギー設備、自動車金型、建設機械、産業機械及び液晶テレビなどの製造メーカー様から高い評価を頂いている高精度、高効率の門形五面加工機"MVR30"を実機展示致します。 また、歯車機械では、量産型歯車研削盤"ZE24B"を展示し、三菱重工が誇る高精度・高能率歯車研削をご覧いただきます。</td>
+            </tr>
+                       <tr>
+              <th class="alnTop">出展製品</th>
+              <td class="alnTop">産業機械</td>
+            </tr>
+                   </tbody></table>
+      </div></div>
+              <div class="eventPastList hide"><div class="eventBox">
+        <div class="comTtlWrap">
+          <h3 class="inTtl"><a href="https://www.mhi.com/jp/expertise/event/intermold2015.html" hreflang="ja">INTERMOLD 2015</a></h3>
+        </div>
+        <table class="comTable02 comAcdInTable">
+          <colgroup>
+            <col span="1" class="w20">
+            <col span="1" class="w80">
+          </colgroup>
+          <tbody>
+                   <tr class="txtLarge">
+            <th class="alnTop">開催期間</th>
+            <td class="alnTop">2015年4月15日（水曜日）～4月18日（土曜日）</td>
+          </tr>
+                              <tr class="txtLarge">
+            <th class="alnTop">開催地</th>
+            <td class="alnTop">東京</td>
+          </tr>
+          
+                   <tr class="txtLarge">
+            <th class="alnTop">会場</th>
+            <td class="alnTop">東京ビッグサイト ブース番号 961</td>
+          </tr>
+                       <tr class="inSpcolun1">
+              <th class="alnTop">概要</th>
+              <td class="alnTop">小型精密加工機μV1の実機展示を行います。<br /> 本機は「高精度」「高品位」の精密加工が要求される電子デバイス等の金型製作に対応すべく徹底的な精度追求を図り、従来の加工精度から、さらに進化させた超精密加工機です。加工サンプル等の展示も御座いますので、是非三菱重工ブースにお立ち寄り下さい。</td>
+            </tr>
+                       <tr>
+              <th class="alnTop">出展製品</th>
+              <td class="alnTop">産業機械</td>
+            </tr>
+                   </tbody></table>
+      </div></div>
+
+    </div>
+  
+            <div class="view-footer">
+      <div class="comViewMore"><span>さらに表示</span></div>
+    </div>
+    </div>
+
+  </div>
+
+                      </div>
+                </div>
+                          <div id="comSide">
+            <section aria-labelledby="-menu" data-block-plugin-id="menu_item_fields:main" class="block block-menu navigation menu--main">
+  
+    
+        
+        <h2 class="comSideTitle"><a href="https://www.mhi.com/jp/expertise" hreflang="ja" data-drupal-link-system-path="node/104466">実績紹介</a></h2>
+          
+  </section>
+<section aria-labelledby="-menu" data-block-plugin-id="menu_item_fields:main" class="block block-menu navigation menu--main">
+  
+    
+        
+  
+              <ul class="menu side-menu">
+                        <li>
+                          <a href="https://www.mhi.com/jp/expertise#showcase" title="" hreflang="ja" data-drupal-link-system-path="node/104466">ストーリー</a>
+                      </li>
+                                <li>
+                          <a href="https://www.mhi.com/jp/expertise/museum" title="" hreflang="ja" data-drupal-link-system-path="node/107546">展示施設</a>
+                      </li>
+                                <li>
+                          <a href="https://www.mhi.com/jp/expertise/event" class="menu-item--active-trail is-active" title="" hreflang="ja" data-drupal-link-system-path="node/104726">イベント・展示会情報</a>
+                      </li>
+                  </ul>
+  
+
+
+
+  </section>
+
+          </div>
+              </div>
+    </div>
+  </div>
+
+  </div>
+</article>
+
+  </div>
+
+  </div>
+
+  </main>
+
+  <footer id="comFooter" role="contentinfo">
+    
+  <div id="block-footermovetotop" class="footerMoveToTop block block-block-content block-block-content6e6aad79-adfe-4c83-816b-eac594acd83d" data-block-plugin-id="block_content:6e6aad79-adfe-4c83-816b-eac594acd83d">
+  
+    
+      
+            <div class="clearfix text-formatted field field--name-body field--type-text-with-summary field--label-hidden field__item"><div id="pageTop"><a>Go to the top of this page</a></div></div>
+      
+  </div>
+<div id="block-footer-group-logo" class="footerGroupLogo block block-block-content block-block-content96ae1c39-c05b-4e67-9ca0-3129dee83e92" data-block-plugin-id="block_content:96ae1c39-c05b-4e67-9ca0-3129dee83e92">
+  
+    
+      
+            <div class="clearfix text-formatted field field--name-body field--type-text-with-summary field--label-hidden field__item"><div id="footGroupLogo"><a href="https://www.mhi.com/jp/network/text_version.html"><img src="https://www.mhi.com/themes/custom/mhi/src/img/foot_mhigroup_logo.svg" alt="MOVE THE WORLD FORWARD MHI Group" /></a></div></div>
+      
+  </div>
+<div id="block-cookiedisclaimerpopup" data-block-plugin-id="simple_block:cookie_disclaimer_pop_up" class="block block-simple-block block-simple-blockcookie-disclaimer-pop-up">
+  
+    
+      <div class="cookieAlertBox"><div class="inner"><p>本サイト（www.mhi.com）は、お客様が再訪問された際に、最適な情報を提供するなど、快適にご利用いただくためにクッキー（Cookie）を使用しています。詳しくはサイトのご利用条件をご覧ください。本サイトをご利用になる場合、お客様はクッキーの使用に同意下さい。<br><a href="https://www.mhi.com/jp/conditions.html#cookie">サイトのご利用条件</a></p><div class="cookieApprovalBtn"><span>同意しました</span></div><div class="closeBtn"></div></div></div>
+  </div>
+<div id="block-footer-social-media" data-block-plugin-id="fixed_block_content:footer_social_media" class="block block-fixed-block-content block-fixed-block-contentfooter-social-media">
+  
+    
+      
+            <div class="clearfix text-formatted field field--name-body field--type-text-with-summary field--label-hidden field__item"><div id="followUs">
+<p>FOLLOW US<span class="inFtFollowColon"> :</span></p>
+
+<div class="youtube"><a href="https://www.youtube.com/user/DiscoverMHI" target="_blank"><img alt="YouTube" data-entity-type="" data-entity-uuid="" height="18" src="https://www.mhi.com/themes/custom/mhi/src/img/youtube_ico.svg" width="23" /></a></div>
+
+<div class="linkedin"><a href="https://www.linkedin.com/company/mitsubishi-heavy-industries" target="_blank"><img alt="Linkedin" data-entity-type="" data-entity-uuid="" height="18" src="https://www.mhi.com/themes/custom/mhi/src/img/linkedin_ico.svg" /></a></div>
+
+<div class="linkedin"><a href="https://twitter.com/MHI_GroupJP" target="_blank"><img alt="RSS" data-entity-type="" data-entity-uuid="" height="15" src="https://www.mhi.com/themes/custom/mhi/src/img/twitter_ico.svg" width="20" /></a></div>
+
+<div class="feed"><a href="https://www.mhi.com/jp/rss/" target="_blank"><img alt="RSS" data-entity-type="" data-entity-uuid="" height="15" src="https://www.mhi.com/themes/custom/mhi/src/img/feed_ico.svg" width="15" /></a></div>
+</div>
+</div>
+      
+  </div>
+<nav role="navigation" id="footerLink" aria-labelledby="block-footer-menu" id="block-footer" data-block-plugin-id="system_menu_block:footer" class="block block-menu navigation menu--footer">
+            
+  <h2 class="visually-hidden" id="block-footer-menu">Footer</h2>
+  
+
+        
+        <ul block="block-footer" class="menu"><li class="menu-item"><a href="https://www.mhi.com/jp/sitemap.html" hreflang="ja" data-drupal-link-system-path="node/107566">サイトマップ</a></li><li class="menu-item"><a href="https://www.mhi.com/jp/conditions.html" hreflang="ja" data-drupal-link-system-path="node/111361">サイトのご利用条件</a></li><li class="menu-item"><a href="https://www.mhi.com/jp/privacy.html" hreflang="ja" data-drupal-link-system-path="node/111391">個人情報保護方針</a></li><li class="menu-item"><a href="https://www.mhi.com/jp/inquiry" hreflang="ja" data-drupal-link-system-path="node/104561">お問い合わせ</a></li><li class="menu-item"><a href="https://spectra.mhi.com/" hreflang="ja">SPECTRA(英語)</a></li></ul>  
+
+
+  </nav>
+<div id="block-footer-copyright" data-block-plugin-id="block_content:7f80591d-954a-4a5e-85cc-7af69bc0faf9" class="footer-copyright block block-block-content block-block-content7f80591d-954a-4a5e-85cc-7af69bc0faf9">
+  
+    
+      
+            <div class="clearfix text-formatted field field--name-body field--type-text-with-summary field--label-hidden field__item"><p><small id="copyright">© MITSUBISHI HEAVY INDUSTRIES, LTD.</small></p></div>
+      
+  </div>
+
+
+  </footer>
+
+  </div>
+
+    
+    <script type="application/json" data-drupal-selector="drupal-settings-json">{"path":{"baseUrl":"\/","scriptPath":null,"pathPrefix":"jp\/","currentPath":"node\/104726","currentPathIsAdmin":false,"isFront":false,"currentLanguage":"ja"},"pluralDelimiter":"\u0003","suppressDeprecationErrors":true,"data":{"extlink":{"extTarget":true,"extTargetNoOverride":false,"extNofollow":false,"extNoreferrer":false,"extFollowNoOverride":false,"extClass":"ext","extLabel":"(link is external)","extImgClass":false,"extSubdomains":false,"extExclude":"","extInclude":"","extCssExclude":".comNewsDetail #comMainConPosi, .product-business-contact-list, .comImportantNoticeDetail #comMainConPosi, .comContactLkWrap, .noextlink, .view-id-home_notice_list","extCssExplicit":"","extAlert":false,"extAlertText":"This link will take you to an external web site. We are not responsible for their content.","mailtoClass":"0","mailtoLabel":"(link sends email)","extUseFontAwesome":false,"extIconPlacement":"append","extFaLinkClasses":"fa fa-external-link","extFaMailtoClasses":"fa fa-envelope-o","whitelistedDomains":[]}},"mhi_base":{"outline":{"title":"\u4e09\u83f1\u91cd\u5de5\u30b0\u30eb\u30fc\u30d7\u306e\u30a2\u30a6\u30c8\u30e9\u30a4\u30f3","link":"\/jp\/company\/aboutmhi\/introduction\/","description":"\u4e09\u83f1\u91cd\u5de5\u30b0\u30eb\u30fc\u30d7\u306e\u6982\u8981\u30fb\u6d3b\u52d5\u5185\u5bb9\u306e\u3054\u7d39\u4ecb\u3067\u3059\u3002","mobile_thumb_url":"https:\/\/www.mhi.com\/sites\/g\/files\/jwhtju111\/files\/mhi-base\/bnr_introduction_3.png"}},"googlemapkey":"AIzaSyD1BlDDhdPrHa5OrOGxexsWRdwlMI5FJbY","mhi":{"mhiJS":{"theme_path":"themes\/custom\/mhi"}},"ajax":[],"user":{"uid":0,"permissionsHash":"e18ddaad7ecb67086f012a0eab07bb949fa25dbae047d062749f931dd04e0ed3"}}</script>
+<script src="https://www.mhi.com/sites/g/files/jwhtju111/files/js/js_t8YREJJiAH81CrMk6SNgB0YTcodSBSKqmW50hPL0PbY.js"></script>
+<script src="http://c.marsflag.com/mf/mfx/1.0/js/mfx-sbox.js"></script>
+<script src="https://www.mhi.com/sites/g/files/jwhtju111/files/js/js_xsxlqMO56JBwyKDi901Y0qIR39OQ4rWnhbgLwPzdREg.js"></script>
+
+  <script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"3d90739b94","applicationID":"945003000,756406217","transactionName":"M1VVZRQACBYDAkdQCwofdlISCAkLTSVBTBQFXGtfCQUDOSEOXU0WC1xbVBQ9KAoGBGVQARNzWF8SEwkJDgRBFFoSWVJG","queueTime":0,"applicationTime":5558,"atts":"HxJWE1waGxg=","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+
+<!-- Mirrored from www.mhi.com/jp/expertise/event by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 14 Oct 2022 17:07:49 GMT -->
+</html>

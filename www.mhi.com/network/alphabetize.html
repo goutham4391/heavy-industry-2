@@ -1,0 +1,3100 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" prefix="content: http://purl.org/rss/1.0/modules/content/  dc: http://purl.org/dc/terms/  foaf: http://xmlns.com/foaf/0.1/  og: http://ogp.me/ns#  rdfs: http://www.w3.org/2000/01/rdf-schema#  schema: http://schema.org/  sioc: http://rdfs.org/sioc/ns#  sioct: http://rdfs.org/sioc/types#  skos: http://www.w3.org/2004/02/skos/core#  xsd: http://www.w3.org/2001/XMLSchema# ">
+  
+<!-- Mirrored from www.mhi.com/network/alphabetize by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 14 Oct 2022 17:07:46 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+    <meta charset="utf-8" /><script type="text/javascript">(window.NREUM||(NREUM={})).init={ajax:{deny_list:["bam.nr-data.net"]}};(window.NREUM||(NREUM={})).loader_config={licenseKey:"3d90739b94",applicationID:"945003000"};window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){var i=e[n]={exports:{}};t[n][0].call(i.exports,function(e){var i=t[n][1][e];return r(i||e)},i,i.exports)}return e[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var i=0;i<n.length;i++)r(n[i]);return r}({1:[function(t,e,n){function r(){}function i(t,e,n,r){return function(){return s.recordSupportability("API/"+e+"/called"),o(t+e,[u.now()].concat(c(arguments)),n?null:this,r),n?void 0:this}}var o=t("handle"),a=t(9),c=t(10),f=t("ee").get("tracer"),u=t("loader"),s=t(4),d=NREUM;"undefined"==typeof window.newrelic&&(newrelic=d);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],l="api-",v=l+"ixn-";a(p,function(t,e){d[e]=i(l,e,!0,"api")}),d.addPageAction=i(l,"addPageAction",!0),d.setCurrentRouteName=i(l,"routeName",!0),e.exports=newrelic,d.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(t,e){var n={},r=this,i="function"==typeof e;return o(v+"tracer",[u.now(),t,n],r),function(){if(f.emit((i?"":"no-")+"fn-start",[u.now(),r,i],n),i)try{return e.apply(this,arguments)}catch(t){throw f.emit("fn-err",[arguments,this,t],n),t}finally{f.emit("fn-end",[u.now()],n)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(t,e){m[e]=i(v,e)}),newrelic.noticeError=function(t,e){"string"==typeof t&&(t=new Error(t)),s.recordSupportability("API/noticeError/called"),o("err",[t,u.now(),!1,e])}},{}],2:[function(t,e,n){function r(t){if(NREUM.init){for(var e=NREUM.init,n=t.split("."),r=0;r<n.length-1;r++)if(e=e[n[r]],"object"!=typeof e)return;return e=e[n[n.length-1]]}}e.exports={getConfiguration:r}},{}],3:[function(t,e,n){var r=!1;try{var i=Object.defineProperty({},"passive",{get:function(){r=!0}});window.addEventListener("testPassive",null,i),window.removeEventListener("testPassive",null,i)}catch(o){}e.exports=function(t){return r?{passive:!0,capture:!!t}:!!t}},{}],4:[function(t,e,n){function r(t,e){var n=[a,t,{name:t},e];return o("storeMetric",n,null,"api"),n}function i(t,e){var n=[c,t,{name:t},e];return o("storeEventMetrics",n,null,"api"),n}var o=t("handle"),a="sm",c="cm";e.exports={constants:{SUPPORTABILITY_METRIC:a,CUSTOM_METRIC:c},recordSupportability:r,recordCustom:i}},{}],5:[function(t,e,n){function r(){return c.exists&&performance.now?Math.round(performance.now()):(o=Math.max((new Date).getTime(),o))-a}function i(){return o}var o=(new Date).getTime(),a=o,c=t(11);e.exports=r,e.exports.offset=a,e.exports.getLastTimestamp=i},{}],6:[function(t,e,n){function r(t,e){var n=t.getEntries();n.forEach(function(t){"first-paint"===t.name?l("timing",["fp",Math.floor(t.startTime)]):"first-contentful-paint"===t.name&&l("timing",["fcp",Math.floor(t.startTime)])})}function i(t,e){var n=t.getEntries();if(n.length>0){var r=n[n.length-1];if(u&&u<r.startTime)return;var i=[r],o=a({});o&&i.push(o),l("lcp",i)}}function o(t){t.getEntries().forEach(function(t){t.hadRecentInput||l("cls",[t])})}function a(t){var e=navigator.connection||navigator.mozConnection||navigator.webkitConnection;if(e)return e.type&&(t["net-type"]=e.type),e.effectiveType&&(t["net-etype"]=e.effectiveType),e.rtt&&(t["net-rtt"]=e.rtt),e.downlink&&(t["net-dlink"]=e.downlink),t}function c(t){if(t instanceof y&&!w){var e=Math.round(t.timeStamp),n={type:t.type};a(n),e<=v.now()?n.fid=v.now()-e:e>v.offset&&e<=Date.now()?(e-=v.offset,n.fid=v.now()-e):e=v.now(),w=!0,l("timing",["fi",e,n])}}function f(t){"hidden"===t&&(u=v.now(),l("pageHide",[u]))}if(!("init"in NREUM&&"page_view_timing"in NREUM.init&&"enabled"in NREUM.init.page_view_timing&&NREUM.init.page_view_timing.enabled===!1)){var u,s,d,p,l=t("handle"),v=t("loader"),m=t(8),g=t(3),y=NREUM.o.EV;if("PerformanceObserver"in window&&"function"==typeof window.PerformanceObserver){s=new PerformanceObserver(r);try{s.observe({entryTypes:["paint"]})}catch(h){}d=new PerformanceObserver(i);try{d.observe({entryTypes:["largest-contentful-paint"]})}catch(h){}p=new PerformanceObserver(o);try{p.observe({type:"layout-shift",buffered:!0})}catch(h){}}if("addEventListener"in document){var w=!1,b=["click","keydown","mousedown","pointerdown","touchstart"];b.forEach(function(t){document.addEventListener(t,c,g(!1))})}m(f)}},{}],7:[function(t,e,n){function r(t,e){if(!i)return!1;if(t!==i)return!1;if(!e)return!0;if(!o)return!1;for(var n=o.split("."),r=e.split("."),a=0;a<r.length;a++)if(r[a]!==n[a])return!1;return!0}var i=null,o=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var c=navigator.userAgent,f=c.match(a);f&&c.indexOf("Chrome")===-1&&c.indexOf("Chromium")===-1&&(i="Safari",o=f[1])}e.exports={agent:i,version:o,match:r}},{}],8:[function(t,e,n){function r(t){function e(){t(c&&document[c]?document[c]:document[o]?"hidden":"visible")}"addEventListener"in document&&a&&document.addEventListener(a,e,i(!1))}var i=t(3);e.exports=r;var o,a,c;"undefined"!=typeof document.hidden?(o="hidden",a="visibilitychange",c="visibilityState"):"undefined"!=typeof document.msHidden?(o="msHidden",a="msvisibilitychange"):"undefined"!=typeof document.webkitHidden&&(o="webkitHidden",a="webkitvisibilitychange",c="webkitVisibilityState")},{}],9:[function(t,e,n){function r(t,e){var n=[],r="",o=0;for(r in t)i.call(t,r)&&(n[o]=e(r,t[r]),o+=1);return n}var i=Object.prototype.hasOwnProperty;e.exports=r},{}],10:[function(t,e,n){function r(t,e,n){e||(e=0),"undefined"==typeof n&&(n=t?t.length:0);for(var r=-1,i=n-e||0,o=Array(i<0?0:i);++r<i;)o[r]=t[e+r];return o}e.exports=r},{}],11:[function(t,e,n){e.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(t,e,n){function r(){}function i(t){function e(t){return t&&t instanceof r?t:t?u(t,f,a):a()}function n(n,r,i,o,a){if(a!==!1&&(a=!0),!l.aborted||o){t&&a&&t(n,r,i);for(var c=e(i),f=m(n),u=f.length,s=0;s<u;s++)f[s].apply(c,r);var p=d[w[n]];return p&&p.push([b,n,r,c]),c}}function o(t,e){h[t]=m(t).concat(e)}function v(t,e){var n=h[t];if(n)for(var r=0;r<n.length;r++)n[r]===e&&n.splice(r,1)}function m(t){return h[t]||[]}function g(t){return p[t]=p[t]||i(n)}function y(t,e){l.aborted||s(t,function(t,n){e=e||"feature",w[n]=e,e in d||(d[e]=[])})}var h={},w={},b={on:o,addEventListener:o,removeEventListener:v,emit:n,get:g,listeners:m,context:e,buffer:y,abort:c,aborted:!1};return b}function o(t){return u(t,f,a)}function a(){return new r}function c(){(d.api||d.feature)&&(l.aborted=!0,d=l.backlog={})}var f="nr@context",u=t("gos"),s=t(9),d={},p={},l=e.exports=i();e.exports.getOrSetContext=o,l.backlog=d},{}],gos:[function(t,e,n){function r(t,e,n){if(i.call(t,e))return t[e];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(t,e,{value:r,writable:!0,enumerable:!1}),r}catch(o){}return t[e]=r,r}var i=Object.prototype.hasOwnProperty;e.exports=r},{}],handle:[function(t,e,n){function r(t,e,n,r){i.buffer([t],r),i.emit(t,e,n)}var i=t("ee").get("handle");e.exports=r,r.ee=i},{}],id:[function(t,e,n){function r(t){var e=typeof t;return!t||"object"!==e&&"function"!==e?-1:t===window?0:a(t,o,function(){return i++})}var i=1,o="nr@id",a=t("gos");e.exports=r},{}],loader:[function(t,e,n){function r(){if(!M++){var t=T.info=NREUM.info,e=m.getElementsByTagName("script")[0];if(setTimeout(u.abort,3e4),!(t&&t.licenseKey&&t.applicationID&&e))return u.abort();f(x,function(e,n){t[e]||(t[e]=n)});var n=a();c("mark",["onload",n+T.offset],null,"api"),c("timing",["load",n]);var r=m.createElement("script");0===t.agent.indexOf("http://")||0===t.agent.indexOf("https:///")?r.src=t.agent:r.src=l+"://"+t.agent,e.parentNode.insertBefore(r,e)}}function i(){"complete"===m.readyState&&o()}function o(){c("mark",["domContent",a()+T.offset],null,"api")}var a=t(5),c=t("handle"),f=t(9),u=t("ee"),s=t(7),d=t(2),p=t(3),l=d.getConfiguration("ssl")===!1?"http":"https",v=window,m=v.document,g="addEventListener",y="attachEvent",h=v.XMLHttpRequest,w=h&&h.prototype,b=!1;NREUM.o={ST:setTimeout,SI:v.setImmediate,CT:clearTimeout,XHR:h,REQ:v.Request,EV:v.Event,PR:v.Promise,MO:v.MutationObserver};var E=""+location,x={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1216.min.js"},O=h&&w&&w[g]&&!/CriOS/.test(navigator.userAgent),T=e.exports={offset:a.getLastTimestamp(),now:a,origin:E,features:{},xhrWrappable:O,userAgent:s,disabled:b};if(!b){t(1),t(6),m[g]?(m[g]("DOMContentLoaded",o,p(!1)),v[g]("load",r,p(!1))):(m[y]("onreadystatechange",i),v[y]("onload",r)),c("mark",["firstbyte",a.getLastTimestamp()],null,"api");var M=0}},{}],"wrap-function":[function(t,e,n){function r(t,e){function n(e,n,r,f,u){function nrWrapper(){var o,a,s,p;try{a=this,o=d(arguments),s="function"==typeof r?r(o,a):r||{}}catch(l){i([l,"",[o,a,f],s],t)}c(n+"start",[o,a,f],s,u);try{return p=e.apply(a,o)}catch(v){throw c(n+"err",[o,a,v],s,u),v}finally{c(n+"end",[o,a,p],s,u)}}return a(e)?e:(n||(n=""),nrWrapper[p]=e,o(e,nrWrapper,t),nrWrapper)}function r(t,e,r,i,o){r||(r="");var c,f,u,s="-"===r.charAt(0);for(u=0;u<e.length;u++)f=e[u],c=t[f],a(c)||(t[f]=n(c,s?f+r:r,i,f,o))}function c(n,r,o,a){if(!v||e){var c=v;v=!0;try{t.emit(n,r,o,e,a)}catch(f){i([f,n,r,o],t)}v=c}}return t||(t=s),n.inPlace=r,n.flag=p,n}function i(t,e){e||(e=s);try{e.emit("internal-error",t)}catch(n){}}function o(t,e,n){if(Object.defineProperty&&Object.keys)try{var r=Object.keys(t);return r.forEach(function(n){Object.defineProperty(e,n,{get:function(){return t[n]},set:function(e){return t[n]=e,e}})}),e}catch(o){i([o],n)}for(var a in t)l.call(t,a)&&(e[a]=t[a]);return e}function a(t){return!(t&&t instanceof Function&&t.apply&&!t[p])}function c(t,e){var n=e(t);return n[p]=t,o(t,n,s),n}function f(t,e,n){var r=t[e];t[e]=c(r,n)}function u(){for(var t=arguments.length,e=new Array(t),n=0;n<t;++n)e[n]=arguments[n];return e}var s=t("ee"),d=t(10),p="nr@original",l=Object.prototype.hasOwnProperty,v=!1;e.exports=r,e.exports.wrapFunction=c,e.exports.wrapInPlace=f,e.exports.argsToArray=u},{}]},{},["loader"]);</script>
+<meta property="og:site_name" content="Mitsubishi Heavy Industries, Ltd." />
+<link rel="shortcut icon" href="https://www.mhi.com/themes/custom/mhi_base_theme/favicons/en/favicon.ico" />
+<link rel="canonical" href="https://www.mhi.com/network/alphabetize" />
+<meta property="og:type" content="Basic page" />
+<meta name="description" content="Information about Procurement : Including &quot;Message from President&quot;,&quot;Procurement policy&quot;,&quot;Procurement network&quot;,&quot;Amount and Sources of procurement&quot;." />
+<meta property="og:url" content="https://www.mhi.com/network/alphabetize" />
+<meta name="keywords" content="Procurement,Partner,Office,Supplier,Amount" />
+<meta property="og:title" content="Mitsubishi Heavy Industries, Ltd. Global Website | Alphabetical Order" />
+<meta property="og:description" content="Information about Procurement : Including &quot;Message from President&quot;,&quot;Procurement policy&quot;,&quot;Procurement network&quot;,&quot;Amount and Sources of procurement&quot;." />
+<link rel="apple-touch-icon" href="https://www.mhi.com/themes/custom/mhi_base_theme/favicons/en/apple_touch_icon.png" />
+<meta property="og:image" content="https://www.mhi.com/themes/custom/mhi/src/img/ogp_sns.png" />
+<meta property="og:image:type" content="image/jpeg" />
+<link rel="apple-touch-icon-precomposed" href="https://www.mhi.com/themes/custom/mhi_base_theme/favicons/en/apple_touch_icon.png" />
+<meta name="Generator" content="Drupal 9 (https://www.drupal.org)" />
+<meta name="MobileOptimized" content="width" />
+<meta name="HandheldFriendly" content="true" />
+<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+<meta name="twitter:card" content="summary_large_image" />
+<link rel="alternate" hreflang="en" href="https://www.mhi.com/network/alphabetize" />
+<link rel="alternate" hreflang="ja" href="https://www.mhi.com/jp/network/alphabetize" />
+<script src="https://www.mhi.com/sites/g/files/jwhtju111/files/google_tag/google_tag/mhi/google_tag.script.js?rjc08r" defer></script>
+
+    <title>Mitsubishi Heavy Industries, Ltd. Global Website | Alphabetical Order</title>
+    <link rel="stylesheet" media="all" href="https://www.mhi.com/sites/g/files/jwhtju111/files/css/css_1UkfDv8XDD4MS0zuEug4ZzHoDi6KBego5Fw9H6ObpVc.css" />
+<link rel="stylesheet" media="all" href="https://www.mhi.com/sites/g/files/jwhtju111/files/css/css_CkI3LmNJ7q5u7vgPlbGRpHze6RUqW2r6fTiA6GvkBQo.css" />
+<link rel="stylesheet" media="print" href="https://www.mhi.com/sites/g/files/jwhtju111/files/css/css_npYYriCqvk444NEOIIcVTaL2youfsF04to-0pVnMrvo.css" />
+<link rel="stylesheet" media="all" href="https://www.mhi.com/sites/g/files/jwhtju111/files/css/css_OWsRpFuNLpSm6-I6XZN1veEhZmSrbxQ1BRex4EE_n8E.css" />
+
+    <script src="https://www.mhi.com/core/assets/vendor/modernizr/modernizr.min.js?v=3.11.7"></script>
+<script src="https://www.mhi.com/core/misc/modernizr-additional-tests.js?v=3.11.7"></script>
+
+          <script type="text/javascript" src="https://www.mhi.com/modules/contrib/seckit/js/seckit.document_write.js"></script>
+        <link type="text/css" rel="stylesheet" id="seckit-clickjacking-no-body" media="all" href="https://www.mhi.com/modules/contrib/seckit/css/seckit.no_body.css" />
+        <!-- stop SecKit protection -->
+        <noscript>
+        <link type="text/css" rel="stylesheet" id="seckit-clickjacking-noscript-tag" media="all" href="https://www.mhi.com/modules/contrib/seckit/css/seckit.noscript_tag.css" />
+        <div id="seckit-noscript-tag">
+          Sorry, you need to enable JavaScript to visit this website.
+        </div>
+        </noscript></head>
+  <body class="path-node page-node-type-page">
+        <a href="#main-content" class="visually-hidden focusable skip-link">
+      Skip to main content
+    </a>
+    <noscript aria-hidden="true"><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PPKXH83" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+      <div class="dialog-off-canvas-main-canvas" data-off-canvas-main-canvas>
+    <div class="comHeaderFollow">
+    <header id="comHeader" role="banner">
+    <div id="block-sitebranding" data-block-plugin-id="system_branding_block" class="block block-system block-system-branding-block">
+  
+    
+    <div id="headLogo">
+      <a href="https://www.mhi.com/" title="Home" rel="home" class="site-logo">
+      <img src="https://www.mhi.com/themes/custom/mhi/logo_en.svg" alt="Home" />
+    </a>
+        </div>
+</div>
+<div id="headGroupLogo" data-block-plugin-id="block_content:96769913-b3b8-42f7-a711-29d68ddbf08a" class="block block-block-content block-block-content96769913-b3b8-42f7-a711-29d68ddbf08a">
+  
+    
+      
+            <div class="clearfix text-formatted field field--name-body field--type-text-with-summary field--label-hidden field__item"><p><a href="https://www.mhi.com/network/text_version.html"><img alt="MHI Group" src="https://www.mhi.com/themes/custom/mhi/src/img/head_mhigroup_logo.svg" /></a></p>
+</div>
+      
+  </div>
+<div id="block-mhi-search-box" data-block-plugin-id="mhi_search_box" class="block block-mhi-marsflag block-mhi-search-box">
+  
+    
+      <div class="searchArea">
+  <form id="search_form" action="https://www.mhi.com/search" onsubmit="return mysearch();">
+    <input class="searchTxt" type="text" name="q" value="" tabindex="0" placeholder="Search">
+    <input type="hidden" name="ie" value="u">
+  </form>
+</div>
+
+  </div>
+<div role="navigation" aria-labelledby="block-headermenu-menu" id="headMenu" data-block-plugin-id="system_menu_block:header-menu" class="block block-menu navigation menu--header-menu search-container">
+            
+  <h2 class="visually-hidden" id="block-headermenu-menu">Header Menu</h2>
+  
+
+        
+        <div class="hnav">
+      <nav>
+                  <ul block="block-headermenu" class="menu">
+                                    <li class="menu-item">
+            <a href="https://www.mhi.com/news" hreflang="en" data-drupal-link-system-path="news">NEWS</a>
+                      </li>
+                            <li class="menu-item">
+            <a href="https://www.mhi.com/recruit" hreflang="en" data-drupal-link-system-path="node/107561">CAREERS</a>
+                      </li>
+                            <li class="menu-item">
+            <a href="https://www.mhi.com/" class="lang-switch" hreflang="en" data-drupal-link-system-path="&lt;front&gt;">JAPANESE CORPORATE SITE</a>
+                      </li>
+                </ul>
+      </nav>
+    </div>
+  
+
+
+  </div>
+<div id="gnav">
+  <nav role="navigation" aria-labelledby="block-mainnavigation-menu" id="block-mainnavigation" data-block-plugin-id="menu_item_fields:main" class="block block-menu navigation menu--main">
+                      
+    <h2 class="visually-hidden" id="block-mainnavigation-menu">Main navigation</h2>
+    
+
+              
+  
+      <ul block="block-mainnavigation" class="menu">
+                      <li class="menu-item--expanded menu-item">
+          <p><a href="https://www.mhi.com/company" hreflang="en" data-drupal-link-system-path="node/29551">About US</a></p>
+          <ul class="megaDrop" id="md">
+            <div class="inner">
+              <div class="catTl">
+                <p>About US</p>
+              </div>
+              <div class="detail">
+                  
+      <ul>
+                      <li class="menu-item--expanded menu-item menu-item--hide--comSubNv">
+                        <a href="https://www.mhi.com/company/aboutmhi" title="" data-drupal-link-system-path="node/5486">About MHI group</a>
+                  </li>
+                      <li class="menu-item menu-item--hide--comSubNv">
+                        <a href="https://www.mhi.com/company/message" title="" data-drupal-link-system-path="node/73176">CEO Message</a>
+                  </li>
+                      <li class="menu-item--expanded menu-item menu-item--hide--comSubNv">
+                        <a href="https://www.mhi.com/company/technology" title="" data-drupal-link-system-path="node/73181">Technology</a>
+                  </li>
+                      <li class="menu-item--expanded menu-item menu-item--hide--comSubNv">
+                        <a href="https://www.mhi.com/company/location" title="" data-drupal-link-system-path="node/29516">NETWORK</a>
+                  </li>
+                      <li class="menu-item--expanded menu-item menu-item--hide--comSubNv">
+                        <a href="https://www.mhi.com/company/procurement" title="" data-drupal-link-system-path="node/73186">PROCUREMENT</a>
+                  </li>
+                      <li class="menu-item--expanded menu-item menu-item--hide--comSubNv">
+                        <a href="https://www.mhi.com/company/regions" title="" data-drupal-link-system-path="node/50986">REGIONS</a>
+                  </li>
+                      <li class="menu-item--expanded menu-item">
+                        
+      <ul class="comSubNv">
+                      <li>
+            <a href="https://www.mhi.com/company/aboutmhi/introduction" title="" data-drupal-link-system-path="node/29506">OUTLINE OF MHI GROUP</a>
+            
+  
+
+        </li>
+                      <li>
+            <a href="https://www.mhi.com/recruit" title="">Careers</a>
+            
+  
+
+        </li>
+          </ul>
+  
+
+                  </li>
+          </ul>
+  
+
+              </div>
+            </div>
+            <div class="close">CLOSE</div>
+          </ul>
+        </li>
+                      <li class="menu-item--expanded menu-item">
+          <p><a href="https://www.mhi.com/expertise" hreflang="en" data-drupal-link-system-path="node/104466">Our Expertise</a></p>
+          <ul class="megaDrop" id="md">
+            <div class="inner">
+              <div class="catTl">
+                <p>Our Expertise</p>
+              </div>
+              <div class="detail">
+                  
+      <ul>
+                      <li class="menu-item--expanded menu-item menu-item--hide--comSubNv">
+                        <a href="https://www.mhi.com/expertise#showcase" title="" data-drupal-link-system-path="node/104466">Stories</a>
+                  </li>
+                      <li class="menu-item--expanded menu-item menu-item--hide--comSubNv">
+                        <a href="https://www.mhi.com/expertise/museum" title="" data-drupal-link-system-path="node/107546">Exhibition Facilities</a>
+                  </li>
+                      <li class="menu-item menu-item--hide--comSubNv">
+                        <a href="https://www.mhi.com/expertise/event" title="" data-drupal-link-system-path="node/104726">Event &amp; Exhibition</a>
+                  </li>
+                      <li class="menu-item--expanded menu-item">
+                        
+      <ul class="comSubNv">
+                      <li>
+            <a href="https://www.mhi.com/expertise/carbon-neutral" title="" data-drupal-link-system-path="node/136976">MHI Group’s Declaration to achieve Carbon Neutral by 2040</a>
+            
+  
+
+        </li>
+                      <li>
+            <a href="https://www.mhi.com/expertise/museum/minatomirai" title="" data-drupal-link-system-path="node/103256">MITSUBISHI MINATOMIRAI INDUSTRIAL MUSEUM</a>
+            
+  
+
+        </li>
+          </ul>
+  
+
+                  </li>
+          </ul>
+  
+
+              </div>
+            </div>
+            <div class="close">CLOSE</div>
+          </ul>
+        </li>
+                      <li class="menu-item--expanded menu-item">
+          <p><a href="https://www.mhi.com/products" hreflang="en" data-drupal-link-system-path="node/6181">Products</a></p>
+          <ul class="megaDrop" id="md">
+            <div class="inner">
+              <div class="catTl">
+                <p>Products</p>
+              </div>
+              <div class="detail">
+                  
+      <ul>
+                      <li class="menu-item menu-item--hide--comSubNv">
+                        <a href="https://www.mhi.com/products/energy" title="" data-drupal-link-system-path="taxonomy/term/1436">Energy</a>
+                  </li>
+                      <li class="menu-item menu-item--hide--comSubNv">
+                        <a href="https://www.mhi.com/products/air" title="" data-drupal-link-system-path="taxonomy/term/1491"> Aircraft</a>
+                  </li>
+                      <li class="menu-item menu-item--hide--comSubNv">
+                        <a href="https://www.mhi.com/products/space" title="" data-drupal-link-system-path="taxonomy/term/1516">Space</a>
+                  </li>
+                      <li class="menu-item menu-item--hide--comSubNv">
+                        <a href="https://www.mhi.com/products/ship" title="" data-drupal-link-system-path="taxonomy/term/1561">Ship &amp; Ocean</a>
+                  </li>
+                      <li class="menu-item menu-item--hide--comSubNv">
+                        <a href="https://www.mhi.com/products/transport" title="" data-drupal-link-system-path="taxonomy/term/1636">Transportation</a>
+                  </li>
+                      <li class="menu-item menu-item--hide--comSubNv">
+                        <a href="https://www.mhi.com/products/material_handling" title="" data-drupal-link-system-path="taxonomy/term/1646">Material handling</a>
+                  </li>
+                      <li class="menu-item menu-item--hide--comSubNv">
+                        <a href="https://www.mhi.com/products/environment" title="" data-drupal-link-system-path="taxonomy/term/1656">Environment</a>
+                  </li>
+                      <li class="menu-item menu-item--hide--comSubNv">
+                        <a href="https://www.mhi.com/products/automobile" title="" data-drupal-link-system-path="taxonomy/term/1686"> Automotive</a>
+                  </li>
+                      <li class="menu-item menu-item--hide--comSubNv">
+                        <a href="https://www.mhi.com/products/industry" title="" data-drupal-link-system-path="taxonomy/term/1711">Industrial machinery</a>
+                  </li>
+                      <li class="menu-item menu-item--hide--comSubNv">
+                        <a href="https://www.mhi.com/products/infrastructure" title="" data-drupal-link-system-path="taxonomy/term/1806">Infrastructure</a>
+                  </li>
+                      <li class="menu-item menu-item--hide--comSubNv">
+                        <a href="https://www.mhi.com/products/living" title="" data-drupal-link-system-path="taxonomy/term/1841">Living &amp; leisure</a>
+                  </li>
+                      <li class="menu-item menu-item--hide--comSubNv">
+                        <a href="https://www.mhi.com/products/defense" title="" data-drupal-link-system-path="taxonomy/term/1856">Defense</a>
+                  </li>
+                      <li class="menu-item menu-item--hide--comSubNv">
+                        <a href="https://www.mhi.com/products/engineering" title="" data-drupal-link-system-path="taxonomy/term/1891">Engineering</a>
+                  </li>
+          </ul>
+  
+
+              </div>
+            </div>
+            <div class="close">CLOSE</div>
+          </ul>
+        </li>
+                      <li class="menu-item--expanded menu-item">
+          <p><a href="https://www.mhi.com/sustainability" hreflang="en" data-drupal-link-system-path="node/6311"><span class="hypher">SUSTAINABILITY</span></a></p>
+          <ul class="megaDrop" id="md">
+            <div class="inner">
+              <div class="catTl">
+                <p><span class="hypher">SUSTAINABILITY</span></p>
+              </div>
+              <div class="detail">
+                  
+      <ul>
+                      <li class="menu-item--expanded menu-item menu-item--hide--comSubNv">
+                        <a href="https://www.mhi.com/sustainability/management" title="" data-drupal-link-system-path="node/6256">Management</a>
+                  </li>
+                      <li class="menu-item menu-item--hide--comSubNv">
+                        <a href="https://www.mhi.com/sustainability/library" title="" data-drupal-link-system-path="node/73526">Library</a>
+                  </li>
+                      <li class="menu-item--expanded menu-item menu-item--hide--comSubNv">
+                        <a href="https://www.mhi.com/sustainability/environment" title="" data-drupal-link-system-path="node/6161">Environment</a>
+                  </li>
+                      <li class="menu-item--expanded menu-item menu-item--hide--comSubNv">
+                        <a href="https://www.mhi.com/sustainability/social" title="" data-drupal-link-system-path="node/101">Society</a>
+                  </li>
+                      <li class="menu-item--expanded menu-item menu-item--hide--comSubNv">
+                        <a href="https://www.mhi.com/sustainability/governance" title="" data-drupal-link-system-path="node/6166">Governance</a>
+                  </li>
+          </ul>
+  
+
+              </div>
+            </div>
+            <div class="close">CLOSE</div>
+          </ul>
+        </li>
+                      <li class="menu-item--expanded menu-item">
+          <p><a href="https://www.mhi.com/finance" hreflang="en" data-drupal-link-system-path="node/50956">Investors</a></p>
+          <ul class="megaDrop" id="md">
+            <div class="inner">
+              <div class="catTl">
+                <p>Investors</p>
+              </div>
+              <div class="detail">
+                  
+      <ul>
+                      <li class="menu-item--expanded menu-item menu-item--hide--comSubNv">
+                        <a href="https://www.mhi.com/finance/management" title="" data-drupal-link-system-path="node/50981">Management Policy</a>
+                  </li>
+                      <li class="menu-item--expanded menu-item menu-item--hide--comSubNv">
+                        <a href="https://www.mhi.com/finance/finance" title="" data-drupal-link-system-path="node/73271">Financial Data</a>
+                  </li>
+                      <li class="menu-item--expanded menu-item menu-item--hide--comSubNv">
+                        <a href="https://www.mhi.com/finance/library" title="" data-drupal-link-system-path="node/125896">IR Library</a>
+                  </li>
+                      <li class="menu-item--expanded menu-item menu-item--hide--comSubNv">
+                        <a href="https://www.mhi.com/finance/stock" title="" data-drupal-link-system-path="node/73276">Stock and Bond Information</a>
+                  </li>
+                      <li class="menu-item--expanded menu-item">
+                        
+      <ul class="comSubNv">
+                      <li>
+            <a href="https://www.mhi.com/finance/calendar" title="">IR Calendar</a>
+            
+  
+
+        </li>
+                      <li>
+            <a href="https://www.mhi.com/finance/faq" title="">FAQs</a>
+            
+  
+
+        </li>
+                      <li>
+            <a href="https://www.mhi.com/finance/disclaimer.html" title="" data-drupal-link-system-path="node/125911">IR INFORMATION DISCLAIMER</a>
+            
+  
+
+        </li>
+                      <li>
+            <a href="https://www.mhi.com/finance/sitemap.html" title="">IR Sitemap</a>
+            
+  
+
+        </li>
+          </ul>
+  
+
+                  </li>
+          </ul>
+  
+
+              </div>
+            </div>
+            <div class="close">CLOSE</div>
+          </ul>
+        </li>
+                      <li class="menu-item--active-trail menu-item--expanded menu-item">
+          <p><a href="https://www.mhi.com/network" hreflang="en" data-drupal-link-system-path="node/109476">Global Network</a></p>
+          <ul class="megaDrop" id="md">
+            <div class="inner">
+              <div class="catTl">
+                <p>Global Network</p>
+              </div>
+              <div class="detail">
+                  
+      <ul>
+                      <li class="menu-item menu-item--hide--comSubNv">
+                        <a href="https://www.mhi.com/network" title="">Global Network Map</a>
+                  </li>
+                      <li class="menu-item--expanded menu-item menu-item--hide--comSubNv">
+                        <a href="https://www.mhi.com/network/area" title="" data-drupal-link-system-path="node/114001">Region</a>
+                  </li>
+                      <li class="menu-item--expanded menu-item menu-item--hide--comSubNv">
+                        <a href="https://www.mhi.com/network/products" title="" data-drupal-link-system-path="node/113986">Products</a>
+                  </li>
+                      <li class="menu-item--expanded menu-item menu-item--hide--comSubNv">
+                        <a href="https://www.mhi.com/network/business" title="" data-drupal-link-system-path="node/114006">Business</a>
+                  </li>
+                      <li class="menu-item--active-trail menu-item menu-item--hide--comSubNv">
+                        <a href="https://www.mhi.com/network/alphabetize" title="" data-drupal-link-system-path="node/114011" class="is-active">Alphabetical Order</a>
+                  </li>
+          </ul>
+  
+
+              </div>
+            </div>
+            <div class="close">CLOSE</div>
+          </ul>
+        </li>
+          </ul>
+  
+
+
+
+      </nav>
+</div>
+
+  </header>
+
+</div>
+
+
+
+
+  <div class="region region-breadcrumb">
+    <div id="block-mhi-breadcrumbs" data-block-plugin-id="system_breadcrumb_block" class="block block-system block-system-breadcrumb-block">
+  
+    
+        <nav id="comBreadcrumb" role="navigation" aria-labelledby="system-breadcrumb">
+    <h2 id="system-breadcrumb" class="visually-hidden">Breadcrumb</h2>
+    <ul id="breadcrumb"><li><a href="https://www.mhi.com/">Home</a>&nbsp;-&nbsp;</li><li><a href="https://www.mhi.com/network">Global Network</a>&nbsp;-&nbsp;</li><li>Alphabetical Order</li></ul>
+  </nav>
+
+  </div>
+
+  </div>
+
+
+  <div class="region region-highlighted">
+    <div data-drupal-messages-fallback class="hidden"></div>
+
+  </div>
+
+
+
+
+<main role="main">
+  <a id="main-content" tabindex="-1"></a>
+        <div class="region region-content">
+    <div id="block-mhi-content" data-block-plugin-id="system_main_block" class="block block-system block-system-main-block">
+  
+    
+      
+<article role="article" about="/network/alphabetize" class="node node--type-page node--view-mode-full">
+  
+  <div class="node__content">
+      <div>
+    <div id="comContent" class="comBasic">
+      <div id="comConPosi">
+                <div id="comMainContent">
+                            <div id="comMainConPosi">
+                          <div class="comH1">
+                                <div data-block-plugin-id="field_block:node:page:title" class="block block-layout-builder block-field-blocknodepagetitle">
+  
+    
+      <h1>
+     <span class="field field--name-title field--type-string field--label-hidden">Alphabetical Order</span>
+
+    </h1>
+  </div>
+<div data-block-plugin-id="field_block:node:page:field_enable_social_sharing" class="block block-layout-builder block-field-blocknodepagefield-enable-social-sharing">
+  
+    
+      
+            <div class="field field--name-field-enable-social-sharing field--type-social-media field--label-hidden field__item"><div data-block-plugin-id="social_sharing_block" class="block block-social-media block-social-sharing-block">
+  
+    
+      
+
+<div class="social-media-sharing">
+  <p class="snsText">
+    SHARE  </p>
+  <ul class="comHdSns">
+                    <li  class="facebook share">
+        <a    target="_blank"  href="https://www.facebook.com/share.php?u=https://www.mhi.com/network/alphabetize&amp;title=Alphabetical%20Order">
+                      <img alt="Facebook" src="https://www.mhi.com/themes/custom/mhi/src/img/facebook_ico.svg">
+                  </a>
+
+      </li>
+                <li  class="twitter share">
+        <a    target="_blank"  href="https://twitter.com/intent/tweet?url=https://www.mhi.com/network/alphabetize&amp;text=Mitsubishi%20Heavy%20Industries,%20Ltd.%20Global%20Website%20%7C%20Alphabetical%20Order">
+                      <img alt="Twitter" src="https://www.mhi.com/themes/custom/mhi/src/img/twitter_ico.svg">
+                  </a>
+
+      </li>
+                <li  class="linkedin share">
+        <a    target="_blank"  href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https://www.mhi.com/network/alphabetize&amp;title=Mitsubishi%20Heavy%20Industries,%20Ltd.%20Global%20Website%20%7C%20Alphabetical%20Order&amp;source=https://www.mhi.com/network/alphabetize">
+                      <img alt="Linkedin" src="https://www.mhi.com/themes/custom/mhi/src/img/linkedin_ico.svg">
+                  </a>
+
+      </li>
+      </ul>
+  <div class="snsClose"></div>
+</div>
+<div class="snsBg"></div>
+<div class="snsArrow"></div>
+
+
+  </div>
+</div>
+      
+  </div>
+
+                <!-- if text size or print btn shows up in basic page content type, move it to inRight div by js -->
+                <div class="inRight">
+                  <ul class="comFontPrintLnkBtn">
+                  </ul>
+                </div>
+              </div>
+                                                  <div data-block-plugin-id="block_content:5da5c295-4b65-45be-abf2-1caa207356d1" class="block block-block-content block-block-content5da5c295-4b65-45be-abf2-1caa207356d1">
+  
+    
+      
+            <div class="clearfix text-formatted field field--name-body field--type-text-with-summary field--label-hidden field__item"><ul class="comLstLkNrR">
+  <li><a href="https://www.mhi.com/network/">Map Version</a></li>
+</ul></div>
+      
+  </div>
+<div class="views-element-container block block-views block-views-blockglobal-network-alphabet-order-anchor-links" data-block-plugin-id="views_block:global_network_alphabet_order-anchor_links">
+  
+    
+      <div><div class="view view-global-network-alphabet-order view-id-global_network_alphabet_order view-display-id-anchor_links js-view-dom-id-dabef37c8a9ccb0316ac7cbb461c06ba940bfbb64a5a7d7179b1a192dc642554">
+  
+    
+      
+      <div class="view-content">
+      <div class="comInSdLnkC4">
+  
+  <ul>
+
+          <li><div class="views-field views-field-name"><span class="field-content"><a href="#a-l"><span>A - L</span></a>
+</span></div></li>
+          <li><div class="views-field views-field-name"><span class="field-content"><a href="#ma-mh"><span>MA - MH</span></a>
+</span></div></li>
+          <li><div class="views-field views-field-name"><span class="field-content"><a href="#mi-mz"><span>MI - MZ</span></a>
+</span></div></li>
+          <li><div class="views-field views-field-name"><span class="field-content"><a href="#n-z"><span>N - Z</span></a>
+</span></div></li>
+    
+  </ul>
+
+</div>
+
+    </div>
+  
+          </div>
+</div>
+
+  </div>
+<div class="views-element-container block block-views block-views-blockglobal-network-group-company-alphabet-order-top-page" data-block-plugin-id="views_block:global_network_group_company-alphabet_order_top_page">
+  
+    
+      <div><div class="view view-global-network-group-company view-id-global_network_group_company view-display-id-alphabet_order_top_page js-view-dom-id-f9766095d09c9e71f1a5ba78103f2bfbb3fa8b011b049d3e2cb829e6ef432b42">
+  
+    
+      
+      <div class="view-content">
+      <section>
+  <h2 id="a-l">A - L</h3>
+    <h3>Company subject to consolidation</h3>
+
+<div><span><dl class="comDlstAtn">
+<dt>CBC Industrias Pesadas S.A.</dt>
+<dd>
+Address: Rodovia Dom Gabriel Paulino Bueno Couto,Km.68-Medeiros CEP 13212-240 Jundiai SP Brazil<br />
+Telephone: 55-11-4431-3900<br />
+Facsimile: 55-11-4525-0874<br />
+URL: <a href="http://www.cbcsa.com.br/">http://www.cbcsa.com.br/</a><br />
+Business Activities: <br>Desidn and manufacturing of boiler, heat exchanger, pressure vessels, and environmental protection equipment.<br />
+</dd>
+</dl></span></div><div><span><dl class="comDlstAtn">
+<dt>Chiba Eco-Creation Co., Ltd.</dt>
+<dd>
+Address: 727-1, Sankaku-cho, Hanamigawa-ku, Chiba, 262-0011, Japan<br />
+Telephone: 81-43-286-3932<br />
+Facsimile: 81-43-286-3933<br />
+Business Activities: <br>Overall activities for the operation management, maintenance management, environmental control, and information control for the facilities and equipment of the North Waste Disposal Plant of Chiba City.<br />
+</dd>
+</dl></span></div><div><span><dl class="comDlstAtn">
+<dt>Churyo Engineering Co., Ltd.</dt>
+<dd>
+Address: 3-18-1, Sakae, Naka-ku, Nagoya, 460-0008, Japan<br />
+Telephone: 81-52-8665-9800<br />
+Facsimile: 81-52-265-6023<br />
+Business Activities: <br>Design of aircrafts, space equipment, etc.<br />
+</dd>
+</dl></span></div><div><span><dl class="comDlstAtn">
+<dt>Concast(India) Ltd.</dt>
+<dd>
+Address: 47-48,Jolly Maker Chambers II,Nariman Point,Mumbai-400021<br />
+Telephone: 91-22-2202-0414<br />
+Facsimile: 91-22-2285-0480<br />
+URL: <a href="http://www.concastindia.com/">http://www.concastindia.com/</a><br />
+</dd>
+</dl></span></div><div><span><dl class="comDlstAtn">
+<dt>Crystal Mover Services, Inc. (CMSI)</dt>
+<dd>
+Address: 815 N.W. 57th Avenue, Suite 222 Miami, FL 33126, U.S.A.<br />
+Telephone: 1-786-476-5985<br />
+Facsimile: 1-786-476-6056<br />
+URL: <a href="https://www.mhi.com/group/cms/">https://www.mhi.com/group/cms/</a><br />
+Business Activities: <br>Operations and maintenance of Automated People Mover systems.<br />
+</dd>
+</dl></span></div><div><span><dl class="comDlstAtn">
+<dt>Daily Equipment Company</dt>
+<dd>
+Address: I-20 East at Airport Exit P.O. Box 98209 Jackson, MS 39298-8209<br />
+Telephone: 601-932-6011<br />
+Facsimile: 601-932-2311<br />
+URL: <a href="http://www.dailyeq.com/index.php">http://www.dailyeq.com/index.php</a><br />
+</dd>
+</dl></span></div><div><span><dl class="comDlstAtn">
+<dt>Daiya Building Service Co., Ltd.</dt>
+<dd>
+Address: 11-1, Shiba 4-chome, Minato-ku, Tokyo, 108-0014, Japan<br />
+Telephone: 81-3-3454-2761<br />
+Facsimile: 81-3-3454-2784<br />
+Business Activities: <br>Technical management, maintenance operation, cleaning, and security and guard activities for buildings and facilities.<br />
+</dd>
+</dl></span></div><div><span><dl class="comDlstAtn">
+<dt>Daiya Logistics Co., Ltd.</dt>
+<dd>
+Address: 26-12, Sakuragi-cho 5-chome, Nishi-ku, Yokohama, 220-0021, Japan<br />
+Telephone: 81-45-201-3732<br />
+Facsimile: 81-45-201-3807<br />
+Business Activities: <br>Transport of products, members, etc. for Mitsubishi Heavy Industries.<br />
+</dd>
+</dl></span></div><div><span><dl class="comDlstAtn">
+<dt>Dia Ecotech Hiroshima Co., Ltd.</dt>
+<dd>
+Address: 5-1, Ebaoki-machi, Naka-ku, Hiroshima, 730-0837, Japan<br />
+Telephone: 81-82-235-3058<br />
+Facsimile: 81-82-235-3057<br />
+Business Activities: <br>Sorting, compression, packaging and storage activities for PET bottles and plastic containers and packaging.<br />
+</dd>
+</dl></span></div><div><span><dl class="comDlstAtn">
+<dt>Diamond F.C. Partners, Co., Ltd.</dt>
+<dd>
+Address: 2-3, Marunouchi 3-chome, Chiyoda-ku, Tokyo, 100-8332, Japan<br />
+Telephone: 81-50-3826-7440<br />
+Facsimile: 81-50-6275-6474<br />
+</dd>
+</dl></span></div><div><span><dl class="comDlstAtn">
+<dt>Diamond Office Service Co., Ltd.</dt>
+<dd>
+Address: 17-12, Shibaura 3-chome, Minato-ku, Tokyo, 108-0023, Japan<br />
+Telephone: 81-3-5427-5611<br />
+Facsimile: 81-3-3457-7255<br />
+Business Activities: <br>Office services, Buisness Products services<br />
+</dd>
+</dl></span></div><div><span><dl class="comDlstAtn">
+<dt>Diamond WTG Engineering &amp; Services, Inc.</dt>
+<dd>
+Address: Riviera Plaza Suite 500 1618 SW 1st Ave. Portland, OR 97201, USA<br />
+Telephone: 1-949-856-8400<br />
+URL: <a href="https://www.mhi.com/group/dwes">https://www.mhi.com/group/dwes</a><br />
+Business Activities: <br>Provides maintenance services, engineering support and parts supply for wind turbine generators.<br />
+</dd>
+</dl></span></div><div><span><dl class="comDlstAtn">
+<dt>E-Techno Ltd.</dt>
+<dd>
+Address: 1-1, Wadasaki-cho 1-chome, Hyogo-ku, Kobe, 652-8585, Japan<br />
+Telephone: 81-78-672-4050<br />
+Facsimile: 81-78-672-4052<br />
+Business Activities: <br>Development of technologies related to non-destructive examinations for components, pipes, etc. installed in nuclear power generating facilities, and the introduction of overseas technologies.<br />
+</dd>
+</dl></span></div><div><span><dl class="comDlstAtn">
+<dt>Eléctrica de Río Escondido, S.A. de C.V.</dt>
+<dd>
+Address: Paseo de la Reforma No.265, Piso 18, Col.Cuauhtemoc, C.P.06500 Ciudad de Mexico, MEXICO<br />
+Telephone: 52-55-5511-4193<br />
+Facsimile: 52-55-5511-3425<br />
+</dd>
+</dl></span></div><div><span><dl class="comDlstAtn">
+<dt>Energy Services LLC</dt>
+<dd>
+Address: 628 Hebron Avenue, Suite 400, Glastonbury, CT 06033 <br />
+Telephone: 1-860-677-1618<br />
+URL: <a href="http://www.energy-usa.com/">http://www.energy-usa.com/</a><br />
+Business Activities: <br>Energy Services LLC is a comprehensive Engineering, Procurement, and Construction (EPC) company. Since our inception in 1974, Energy Services LLC has been keenly aware of the importance of supporting our customers throughout the entire life cycle of a project. Energy Services’  nucleus of experienced, multidisciplinary professionals is committed to providing a full spectrum of services that provide value to our customers from project inception, through definition, design, construction, commissioning and training, on through to operation and maintenance.<br />
+</dd>
+</dl></span></div><div><span><dl class="comDlstAtn">
+<dt>FMS Equipment Rental Inc. (FMS)</dt>
+<dd>
+Address: 2121 W. Sam Houston Pkwy. N. Houston, TX 77043-2305 U.S.A.<br />
+Telephone: 1-713-365-1000<br />
+Facsimile: 1-713-365-1868<br />
+Business Activities: <br>Takeover, resale, and leasing of second-hand forklifts.<br />
+</dd>
+</dl></span></div><div><span><dl class="comDlstAtn">
+<dt>Global Component Technologies Corporation</dt>
+<dd>
+Address: 1-15-9, Osaki, Shinagawa-ku, Tokyo, 141-0032<br />
+Telephone: 81-3-6636-9000<br />
+</dd>
+</dl></span></div><div><span><dl class="comDlstAtn">
+<dt>Intercontinental Jet Service Corporation</dt>
+<dd>
+Address: 3322 N.74th E. AVE. HANGER 27 TULSA OK 74115 U.S.A.<br />
+Telephone: 1-918-834-8888<br />
+Facsimile: 1-918-834-1751<br />
+URL: <a href="http://www.ijetservice.com/">http://www.ijetservice.com</a><br />
+Business Activities: <br>Maintenance, repair, and modification of commercial aircraft. Maintenance and repair of engines.<br />
+</dd>
+</dl></span></div><div><span><dl class="comDlstAtn">
+<dt>JR West Properties Co., Ltd.</dt>
+<dd>
+Address: 34-6, Shiba 5-chome, Minato-ku, Tokyo, 108-0014, Japan<br />
+Telephone: 81-3-6686-9380<br />
+Facsimile: 81-3-3451-3359<br />
+</dd>
+</dl></span></div><div><span><dl class="comDlstAtn">
+<dt>Jukan Operation Co., Ltd.</dt>
+<dd>
+Address: 2-21, Kozenmachi, Nagasaki, Nagasaki,<br />
+ 850-0032, Japan<br />
+Telephone: 81-95-825-6381<br />
+Facsimile: 81-95-825-6381<br />
+Business Activities: <br>Operation and maintenance management services for environmental equipment such as waste incineration facilities, human-waste-treatment facilities, sewage-treatment facilities, etc.<br />
+</dd>
+</dl></span></div><div><span><dl class="comDlstAtn">
+<dt>Jyuukan Urban Facilities Service Co., Ltd.</dt>
+<dd>
+Address: 4-1, Wadamiya-dori 5-chome, Hyogo-ku, Kobe, 652-0863, Japan<br />
+Telephone: 81-78-686-1060<br />
+Facsimile: 81-78-686-1061<br />
+Business Activities: <br>Operation and management services for various types of machinery, electrical equipment, air conditioners, generators, boiler, water supply and drainage, transport, disaster prevention, etc.<br />
+</dd>
+</dl></span></div><div><span><dl class="comDlstAtn">
+<dt>Kaliakra Wind Power (KWP)</dt>
+<dd>
+Address: Bulgaria, Sofia 1527, Sofia District, 114 Vasil Levski Blvd.<br />
+Telephone: 359-2-946-19-30<br />
+Facsimile: 359-2-943-44-84<br />
+URL: <a href="https://www.kwp.bg/en/">https://www.kwp.bg/en/</a><br />
+Business Activities: <br>Wind power generation business.<br />
+</dd>
+</dl></span></div><div><span><dl class="comDlstAtn">
+<dt>Kowa Kogyo Co., Ltd.</dt>
+<dd>
+Address: 1-14, Dejima-machi, Nagasaki, 850-0862, Japan<br />
+Telephone: 81-95-824-3638<br />
+Facsimile: 81-95-827-5416<br />
+Business Activities: <br>Tug work, etc. pertinent to ships built by Mitsubishi Heavy Industries.<br />
+</dd>
+</dl></span></div><div><span><dl class="comDlstAtn">
+<dt>Logisnext UniCarriers Co., Ltd.</dt>
+<dd>
+Address: 35-2 Dainichihigashimachi, Moriguchi-shi, Osaka-fu, 570-0016, JAPAN<br />
+Telephone: 81-6-6902-1133<br />
+Facsimile: 81-6-6902-1131<br />
+</dd>
+</dl></span></div><div><span><dl class="comDlstAtn">
+<dt>Logisnext Hokkaido Co.,Ltd.</dt>
+<dd>
+Address: 6-3-1 Ryutsu Center, Shiroishi-ku, Sapporo-shi, Hokkaido 003-0030<br />
+Telephone: 81-11-892-4149<br />
+Facsimile: 81-11-892-3410<br />
+</dd>
+</dl></span></div><div><span><dl class="comDlstAtn">
+<dt>Logisnext Tohoku Co.,Ltd.</dt>
+<dd>
+Address: 3-2-8 Oroshimachi-Higashi, Wakabayashi-ku, Sendai-shi, Miyagi 984-0002<br />
+Telephone: 81-22-288-0911<br />
+Facsimile: 81-22-288-0915<br />
+</dd>
+</dl></span></div><div><span><dl class="comDlstAtn">
+<dt>Logisnext Tokyo Co.,Ltd.</dt>
+<dd>
+Address: 6-1-1 Heiwajima, Ota-ku, Tokyo 143-0006<br />
+Telephone: 81-3-3767-3381<br />
+Facsimile: 81-3-3767-3385<br />
+</dd>
+</dl></span></div><div><span><dl class="comDlstAtn">
+<dt>Logisnext Shinetsu Co.,Ltd.</dt>
+<dd>
+Address: 1-8-19 Akebono-cho, Konan-ku, Niigata 950-0134<br />
+Telephone: 81-25-381-1081<br />
+Facsimile: 81-25-381-1088<br />
+</dd>
+</dl></span></div><div><span><dl class="comDlstAtn">
+<dt>Logisnext Shizuoka Co.,Ltd.</dt>
+<dd>
+Address: 400-1 Nishisawada, Numazu, Shizuoka, 410-0007<br />
+Telephone: 81-55-922-4400<br />
+Facsimile: 81-55-924-1548<br />
+</dd>
+</dl></span></div><div><span><dl class="comDlstAtn">
+<dt>Logisnext Chubu Co.,Ltd.</dt>
+<dd>
+Address: 1-52 Shinyoshi-cho, Nakagawa-ku, Nagoya-shi, Aichi 454-0822<br />
+Telephone: 81-52-369-0558<br />
+Facsimile: 81-52-369-0600<br />
+</dd>
+</dl></span></div><div><span><dl class="comDlstAtn">
+<dt>Logisnext Kinki Co.,Ltd.</dt>
+<dd>
+Address: 2-3-13 Chibune, Nishiyodogawa-ku, Osaka 555-0013<br />
+Telephone: 81-6-6477-5584<br />
+Facsimile: 81-6-6477-5658<br />
+</dd>
+</dl></span></div><div><span><dl class="comDlstAtn">
+<dt>Logisnext Chugoku Co.,Ltd.</dt>
+<dd>
+Address: 1-20-24 Kanonshinmachi, Nishi-ku, Hiroshima-shi, Hiroshima 733-0036<br />
+Telephone: 81-82-503-2342<br />
+Facsimile: 81-82-503-2340<br />
+</dd>
+</dl></span></div><div><span><dl class="comDlstAtn">
+<dt>Logisnext Shikoku Co.,Ltd.</dt>
+<dd>
+Address: 1645-1 Mimaya-cho, Takamatsu-shi, Kagawa 761-8042<br />
+Telephone: 81-87-813-5252<br />
+Facsimile: 81-87-885-6300<br />
+</dd>
+</dl></span></div><div><span><dl class="comDlstAtn">
+<dt>Logisnext Kyushu Co.,Ltd.</dt>
+<dd>
+Address: 1-38-24 Kanenokuma, Hakata-ku, Fukuoka-shi, Fukuoka 812-0863<br />
+Telephone: 81-92-503-3310<br />
+Facsimile: 81-92-503-3392<br />
+</dd>
+</dl></span></div><div><span><dl class="comDlstAtn">
+<dt>Logisnext Manufacturing (Thailand) Co., Ltd. </dt>
+<dd>
+Address: 7/353Moo 6, Amata City Industrial Estate, Temboi Map Yang Phon,Amphur Pluak Daeng<br />
+Telephone: 66-3865-0961<br />
+Facsimile: 66-3865-0968<br />
+</dd>
+</dl></span></div>  <h3>Company not subject to consolidation</h3>
+
+<div><span><dl class="comDlstAtn">
+<dt>Amagasaki Kenko No Mori Co., Ltd.</dt>
+<dd>
+</dd>
+</dl></span></div><div><span><dl class="comDlstAtn">
+<dt>Aomori Eco-Creation Co., Ltd.</dt>
+<dd>
+Telephone: 81-17-757-8260<br />
+Facsimile: 81-17-757-8261<br />
+</dd>
+</dl></span></div><div><span><dl class="comDlstAtn">
+<dt>Artemis Intelligent Power Ltd. (AIP)</dt>
+<dd>
+Address: Unit 3 Edgefield Industrial Estate, Loanhead, Midlothian EH20 9TB, UK<br />
+Telephone: 44 131 440 6260<br />
+Facsimile: 44 131 448 0005<br />
+</dd>
+</dl></span></div><div><span><dl class="comDlstAtn">
+<dt>Central Iwate Eco-Creation Co., Ltd.</dt>
+<dd>
+Telephone: 81-197-71-7277<br />
+Facsimile: 81-197-71-7278<br />
+</dd>
+</dl></span></div><div><span><dl class="comDlstAtn">
+<dt>Diamond Air Service, Ltd.</dt>
+<dd>
+Address: 1, Toyoba, Toyoyama-cho, Aichi Prefecture, 480-0293, Japan<br />
+Telephone: 81-568-29-0020<br />
+Facsimile: 81-568-29-0021<br />
+URL: <a href="http://www.das.co.jp/en/">http://www.das.co.jp/en/</a><br />
+Business Activities: <br>Servicing of the products manufactured by Mitsubishi Heavy Industries.<br />
+</dd>
+</dl></span></div><div><span><dl class="comDlstAtn">
+<dt>Kouza Eco-Creation Co., Ltd.</dt>
+<dd>
+Address: 3-8-10, Kokubuminami, Ebina-shi, Kanagawa, 243-0405, Japan<br />
+Telephone: 81-46-231-0235<br />
+</dd>
+</dl></span></div><div><span><dl class="comDlstAtn">
+<dt>Osaki Eco-Creation Co., Ltd.</dt>
+<dd>
+Telephone: 81-229-24-2281<br />
+</dd>
+</dl></span></div>
+</section>
+<section>
+  <h2 id="ma-mh">MA - MH</h3>
+    <h3>Company subject to consolidation</h3>
+
+<div><span><dl class="comDlstAtn">
+<dt>MCF Forklift Shanghai Co.Ltd.</dt>
+<dd>
+Telephone: 86-21-6841-5625<br />
+Facsimile: 86-21-6841-5638<br />
+URL: <a href="http://www.mitforklift.com.cn/">http://www.mitforklift.com.cn/</a><br />
+</dd>
+</dl></span></div><div><span><dl class="comDlstAtn">
+<dt>MH Power Systems Korea, Ltd.</dt>
+<dd>
+Address: 20F, D1, D-Tower, 17, Jong-ro 3-gil, Jongno-gu, Seoul, 03155, KOREA<br />
+Telephone: 82-2-2187-0200<br />
+Facsimile: 82-2-2187-0280<br />
+Business Activities: <br>Sales and service of thermal power generation products<br />
+</dd>
+</dl></span></div><div><span><dl class="comDlstAtn">
+<dt>MH Power Systems Middle East,LLC</dt>
+<dd>
+Address: PO Box: 52309, Industrial City of Abu Dhabi III, Plot 96NR27, Emirate of Abu Dhabi, United Arab Emirates<br />
+Telephone: 971-2-550-1504<br />
+Facsimile: 971-2-550-1596<br />
+Business Activities: <br>Maintenance of rotors of small to large size equipment such as gas turbines, steam turbines, compressors, pumps, generators, etc. and Hot gas path parts of gas turbine.<br />
+</dd>
+</dl></span></div><div><span><dl class="comDlstAtn">
+<dt>MHCG, Inc.</dt>
+<dd>
+Address: 5895 Windward Pkwy Alpharetta, GA 30005, United States of America, Georgia<br />
+Telephone: 1-262-372-4515<br />
+Facsimile: 1-262-372-4815<br />
+</dd>
+</dl></span></div><div><span><dl class="comDlstAtn">
+<dt>MHI Aero Engine Service Co., Ltd.</dt>
+<dd>
+Address: 1200, Higashi-tanaka, Komaki, Aichi Prefecture, 485-0826, Japan<br />
+Telephone: 81-568-78-0300<br />
+Facsimile: 81-568-78-0764<br />
+URL: <a href="https://www.mhi.com/group/mesco/">https://www.mhi.com/group/mesco/</a><br />
+Business Activities: <br>Repair of various types of fuselages, engines and parts, components and devices, etc. for aircraft, etc. Sales of parts and components.<br />
+</dd>
+</dl></span></div><div><span><dl class="comDlstAtn">
+<dt>MHI Aerospace Production, Ltd.</dt>
+<dd>
+Address: 10, Oye-cho, Minato-ku, Nagoya, 455-0024, Japan<br />
+Telephone: 81-52-611-9591<br />
+Facsimile: 81-52-611-9598<br />
+Business Activities: <br>Production engineering, surface treatment, painting, sheet-metal processing, assembly and inspection of aircrafts, space equipment, etc.<br />
+</dd>
+</dl></span></div><div><span><dl class="comDlstAtn">
+<dt>MHI Aerospace Systems Corp.</dt>
+<dd>
+Address: 10, Oye-cho, Minato-ku, Nagoya, 455-8515, Japan<br />
+Telephone: 81-52-614-2488<br />
+Facsimile: 81-52-613-0356<br />
+</dd>
+</dl></span></div><div><span><dl class="comDlstAtn">
+<dt>MHI Aerospace Vietnam Co.,Ltd. (MHIVA)</dt>
+<dd>
+Address: Plot No. N-8, Thang Long Industrial Park, Vong La Commune, Dong Anh District, Hanoi City, Vietnam<br />
+Telephone: 84-24-3959-0130<br />
+Facsimile: 84-24-3955-0217<br />
+</dd>
+</dl></span></div><div><span><dl class="comDlstAtn">
+<dt>MHI Airport Environment Co., Ltd.</dt>
+<dd>
+Address: 1, Senshu Kuko-minami, Sennan, Osaka, 549-0021, Japan<br />
+Telephone: 81-72-456-6185<br />
+Facsimile: 81-72-456-6186<br />
+Business Activities: <br>Collection, transportation, sorting, shredding, incineration treatment, and recycled resource delivery for municipal solid waste generated in Kansai International Airport.<br />
+</dd>
+</dl></span></div><div><span><dl class="comDlstAtn">
+<dt>MHI Automotive Climate Control (Thailand) (MCCT)</dt>
+<dd>
+Address: 33/5 Moo 21, Suwintawong Road, Saladaeng Bangnumprieo, Chachoengsao 24000, Thailand<br />
+Telephone: 66-(0)38-592-600<br />
+Facsimile: 66-(0)38-592-601<br />
+</dd>
+</dl></span></div><div><span><dl class="comDlstAtn">
+<dt>MHI Business Risk Support, Ltd.</dt>
+<dd>
+Address: 34-6, Shiba 5-chome, Minato-ku, Tokyo, 108-0014, Japan<br />
+Telephone: 81-3-5443-9824<br />
+Facsimile: 81-3-5443-9822<br />
+</dd>
+</dl></span></div><div><span><dl class="comDlstAtn">
+<dt>MHI Canada Aerospace, Inc. (MHICA)</dt>
+<dd>
+Address: 6390 Northwest Drive, Mississauga, Ontario, Canada L4V 1S1<br />
+Telephone: 1-905-612-8131<br />
+Facsimile: 1-905-673-6160<br />
+Business Activities: <br>Assembly of aircraft parts.<br />
+</dd>
+</dl></span></div><div><span><dl class="comDlstAtn">
+<dt>MHI Capital America, Inc.</dt>
+<dd>
+Address: 20 East Greenway Plaza, Suite 830, Houston, TX 77046 U.S.A.<br />
+Telephone: 1-346-308-8871<br />
+</dd>
+</dl></span></div><div><span><dl class="comDlstAtn">
+<dt>MHI Capital Asia Pacific Pte.Ltd.</dt>
+<dd>
+Address: 150 BEACH ROAD #29-00 GATEWAY WEST SINGAPORE (189720)<br />
+Telephone: 65-6305-5200<br />
+</dd>
+</dl></span></div><div><span><dl class="comDlstAtn">
+<dt>MHI Energy &amp; Environment (Malaysia) SDN. BHD.</dt>
+<dd>
+Address: SUITE 49-C, LEVEL 49, VISTA TOWER THE INTERMARK, 348 JALAN TUN RAZAK 50400 KUALA LUMPUR<br />
+</dd>
+</dl></span></div><div><span><dl class="comDlstAtn">
+<dt>MHI Engine System China Co., Ltd.</dt>
+<dd>
+Address: No.19 Tongjiang North Road, Changzhou New District, 213000,Changzhou, China<br />
+Telephone: 0519-68190636<br />
+</dd>
+</dl></span></div><div><span><dl class="comDlstAtn">
+<dt>MHI Engine System Middle East (FZE) (MHIES-ME)</dt>
+<dd>
+Address: Q4-44, Sharjah Airport International Free Zone (SAIF ZONE), P.O.Box 121801, Sharjah, UAE<br />
+Telephone: 971-6-548-9295<br />
+Facsimile: 971-6-548-9294<br />
+URL: <a href="https://www.mhi.com/group/mhiesme/">https://www.mhi.com/group/mhiesme/</a><br />
+Business Activities: <br>Sales, servicing, and parts sales for diesel power generation sets.<br />
+</dd>
+</dl></span></div><div><span><dl class="comDlstAtn">
+<dt>MHI Engine System Philippines, Inc. (MHIES-P)</dt>
+<dd>
+Address: Warehouse 4C，Sunblest Compound，KM23 West Service Road, Barangay Cupang，Muntinlupa City, Metro Manila Philippines<br />
+Telephone: 63-2-775-0209<br />
+Facsimile: 63-2-775-0310<br />
+Business Activities: <br>Sales, installation work, after-sales service, and parts sales for diesel power generating equipment and power generation installation.<br />
+</dd>
+</dl></span></div><div><span><dl class="comDlstAtn">
+<dt>MHI Engine System Vietnam Co., Ltd. (MHIES-V)</dt>
+<dd>
+Address: 39 Huu Nghi, Vietnam-Singapore Industrial Park, Binh Hoa, Thuan an, Binh Duong, Vietnam<br />
+Telephone: 84-274-3769251<br />
+Facsimile: 84-274-3769262<br />
+Business Activities: <br>Sales and after-sales service for diesel power generation sets.<br />
+</dd>
+</dl></span></div><div><span><dl class="comDlstAtn">
+<dt>MHI Equipment Alsace S.A.S (MEA)</dt>
+<dd>
+Address: 26, rue Francois Spoerry, 68100 MULHOUSE, FRANCE<br />
+Telephone: 33-3-8936-6565<br />
+Facsimile: 33-3-8936-6566<br />
+Business Activities: <br>Manufacturing and sales of diesel engines. Processing of diesel engine parts.<br />
+</dd>
+</dl></span></div><div><span><dl class="comDlstAtn">
+<dt>MHI Equipment and Services Africa S.A. (MESA)</dt>
+<dd>
+Address: Rufisque (Senegal), 12Cite Millionnaire<br />
+Telephone: 221-33-836-8490<br />
+Business Activities: <br>Operation and maintenance of the 67.5 MW Diesel Power Plant of Kounoue Power.<br />
+</dd>
+</dl></span></div><div><span><dl class="comDlstAtn">
+<dt>MHI Executive Experts Co. Ltd.</dt>
+<dd>
+Address: 4-36, Hon-machi, Naka-ku, Yokohama, Kanagawa Prefecture, 231-0005, Japan<br />
+Telephone: 81-45-222-7628<br />
+Facsimile: 81-45-222-7629<br />
+Business Activities: <br>General Worker Dispatch Undertakings such as engineering service, etc.<br />
+</dd>
+</dl></span></div><div><span><dl class="comDlstAtn">
+<dt>MHI FINANCIAL Ltd.</dt>
+<dd>
+Address: 14-8, Uchikanda 1-chome, Chiyoda-ku, Tokyo, 101-0047, Japan<br />
+Telephone: 81-70-4354-4578<br />
+Facsimile: 81-3-6870-2512<br />
+Business Activities: <br>Cash management of MHI group companies, shared service of financial transactions, financial supportfor business of MHI group companies, and contracting of accounting service for MHI group companies.<br />
+</dd>
+</dl></span></div><div><span><dl class="comDlstAtn">
+<dt>MHI Facility Service Co., Ltd.</dt>
+<dd>
+Address: 34-6, Shiba 5-chome, Minato-ku, Tokyo, 108-0014, Japan<br />
+Telephone: 81-3-3451-1172<br />
+Facsimile: 81-3-3451-1171<br />
+</dd>
+</dl></span></div><div><span><dl class="comDlstAtn">
+<dt>MHI HASEG CO., LTD</dt>
+<dd>
+Address: 261 Yamanobe, Katori, Chiba, Tokyo, 287-0042, Japan<br />
+Telephone: 81-478-58-5333<br />
+Facsimile: 81-478-50-9022<br />
+</dd>
+</dl></span></div><div><span><dl class="comDlstAtn">
+<dt>MHI Holding Denmark Aps</dt>
+<dd>
+Address: c/o Kromann Reumert Sundkrogsgade 5 DK-2100 Copenhagen Denmark<br />
+Telephone: 45-7012-1211<br />
+</dd>
+</dl></span></div><div><span><dl class="comDlstAtn">
+<dt>MHI International Investment B.V.(MII)</dt>
+<dd>
+Address: Splijtbakweg 115, 1333 HJ Almere, The Netherlands<br />
+Telephone: 31368000015<br />
+Facsimile: 31368000001<br />
+Business Activities: <br>Holding company for various types of evolving businesses of Mitsubishi Heavy Industries.<br />
+</dd>
+</dl></span></div><div><span><dl class="comDlstAtn">
+<dt>MHI Logitec Company Limited</dt>
+<dd>
+Address: 1200, Higashi-tanaka, Komaki, Aichi Prefecture, 485-0826, Japan<br />
+Telephone: 81-568-79-0710<br />
+Facsimile: 81-568-78-0245<br />
+</dd>
+</dl></span></div><div><span><dl class="comDlstAtn">
+<dt>MHI Marine Engineering, Ltd.</dt>
+<dd>
+Address: 6th Floor, Tamachi Center Bldg., 34-7, Shiba 5-chome, Minato-ku, Tokyo, 108-0014, Japan<br />
+Telephone: 81-3-3798-5941<br />
+Facsimile: 81-3-3798-5943<br />
+URL: <a href="https://www.mhi.com/group/mhime/">https://www.mhi.com/group/mhime/</a><br />
+Business Activities: <br>After-sales service, technical service, and consulting for ships in service.<br />
+</dd>
+</dl></span></div><div><span><dl class="comDlstAtn">
+<dt>MHI Maritech, Co., Ltd.</dt>
+<dd>
+Address: 1-1, Akunoura-machi, Nagasaki, 850-8610, Japan<br />
+Telephone: 81-95-828-7782<br />
+Facsimile: 81-95-828-7792<br />
+Business Activities: <br>Ship design, planning, design, adjustment and testing of various types of control systems, and development, sales, and maintenance of software.<br />
+</dd>
+</dl></span></div><div><span><dl class="comDlstAtn">
+<dt>MHI NS Engineering Co., Ltd.</dt>
+<dd>
+Address: 7-1-14, Wadamiyadori, Hyogo-ku, Kobe 652-0863, Japan<br />
+Telephone: 81-78-671-2321<br />
+Facsimile: 81-78-672-4469<br />
+URL: <a href="https://www.mhi.com/group/mhinseng/">https://www.mhi.com/group/mhinseng/</a><br />
+</dd>
+</dl></span></div><div><span><dl class="comDlstAtn">
+<dt>MHI Oceanincs Co., Ltd.</dt>
+<dd>
+Address: 53 Tsukuba-machi, 6-chome, Isahaya City, Nagasaki, 854-0065, Japan<br />
+Telephone: 81-958-28-7110<br />
+Facsimile: 81-95-725-0849<br />
+</dd>
+</dl></span></div><div><span><dl class="comDlstAtn">
+<dt>MHI Personnel, Ltd</dt>
+<dd>
+Address: 3-1, Minatomirai 3-chome, Nishi-ku, Yokohama, Kanagawa, 220-0012, Japan<br />
+Telephone: 81-45-200-7400<br />
+Facsimile: 81-45-200-7452<br />
+Business Activities: <br>Control of personnel information/data of Mitsubishi Heavy Industries, and services related to service rating/payroll accounting, travel expenses, welfare, etc.<br />
+</dd>
+</dl></span></div><div><span><dl class="comDlstAtn">
+<dt>Mitsubishi Heavy Industries Transportation and Construction Engineering,Ltd. </dt>
+<dd>
+Address: Mitsubishijuko Yokohama Bldg., 3-1, Minatomirai 3-chome, Nishi-ku, Yokohama<br />
+Telephone: 81-45-200-9800<br />
+Facsimile: 81-45-200-9983<br />
+</dd>
+</dl></span></div><div><span><dl class="comDlstAtn">
+<dt>MHI Power Control Systems Co., Ltd.</dt>
+<dd>
+Address: 12, Nishiki-cho, Naka-ku, Yokohama, 231-8715, Japan<br />
+Telephone: 81-45-285-0114<br />
+Facsimile: 81-45-623-5389<br />
+URL: <a href="https://power.mhi.com/group/cs/">https://power.mhi.com/group/cs/</a><br />
+Business Activities: <br>Design, production, installation service, and after-sales service of control systems for power plants, ships, and environmental equipments, etc.<br />
+</dd>
+</dl></span></div><div><span><dl class="comDlstAtn">
+<dt>MHI Power Dalian Electricity Equipment Co., Ltd.</dt>
+<dd>
+Address: Room 1101, Block A, Zhongnan Building, No.18 West China Road, Ganjingzi District, Dalian, Liaoning Province, China.<br />
+Telephone: +86-411-8495-1690<br />
+Business Activities: <br>Manufacturing, sales and service of thermal power generation products<br />
+</dd>
+</dl></span></div><div><span><dl class="comDlstAtn">
+<dt>MHI Power Engineering Co., Ltd.</dt>
+<dd>
+Address: 12, Nishiki-cho, Naka-ku, Yokohama, 231-8715, Japan<br />
+Telephone: 81-45-285-0120<br />
+Facsimile: 81-45-285-0140<br />
+</dd>
+</dl></span></div><div><span><dl class="comDlstAtn">
+<dt>MHI Power Puerto Rico LLC</dt>
+<dd>
+Address: 654 Plaza Suite 1130, 654 Munoz Ricera Avenue, San Juan, PR 00918-4123 USA<br />
+Business Activities: <br>After-sales service.<br />
+</dd>
+</dl></span></div><div><span><dl class="comDlstAtn">
+<dt>MHI Power Romania SRL</dt>
+<dd>
+Address: 18-20 Marius Emanoil Buteica Street 031823, Sector 3, Bucuresti, Romania<br />
+Telephone: 40-314-370-629<br />
+Business Activities: <br>Service of steam turbine products<br />
+</dd>
+</dl></span></div><div><span><dl class="comDlstAtn">
+<dt>MHI Power Technical Services Corporation</dt>
+<dd>
+Address: 27th floor, Robinsons Cybergate Center Tower 3 Pioneer Street, Mandaluyong City 1550, Philippines<br />
+Telephone: 63-2-794-0220<br />
+Facsimile: 63-2-794-0202<br />
+URL: <a href="http://www.mts.mhps.com/">http://www.mts.mhps.com/</a><br />
+Business Activities: <br>Activities related to design and drawings for thermal power plant, chemical plants, etc.<br />
+</dd>
+</dl></span></div><div><span><dl class="comDlstAtn">
+<dt>MHI Power de Venezuela, C.A.</dt>
+<dd>
+Business Activities: <br>Sales and service of thermal power generation products<br />
+</dd>
+</dl></span></div><div><span><dl class="comDlstAtn">
+<dt>MHI Residential Air-conditioners (Shanghai) Co.,Ltd.</dt>
+<dd>
+Address: 2299 Yan An Xi Lu, HongQiao, Changning Qu, Shanghai Shi<br />
+Telephone: 86-21-6236-3030<br />
+Facsimile: 86-21-5877-7330<br />
+</dd>
+</dl></span></div><div><span><dl class="comDlstAtn">
+<dt>MHI Sagami High-tech Ltd.</dt>
+<dd>
+Address: 3000, Tana, Chuo-ku, Sagamihara, Kanagawa, 252-5293, Japan<br />
+Telephone: 81-42-762-3906<br />
+Facsimile: 81-42-761-2198<br />
+Business Activities: <br>Design, experimentation, and after-sales service for construction machinery, material-handling equipment such as forklifts, etc., engines and related components, turbochargers, and special-purpose vehicles.<br />
+</dd>
+</dl></span></div><div><span><dl class="comDlstAtn">
+<dt>MHI Shenyang Pump Engineering Co., Ltd. (MSPE)</dt>
+<dd>
+Address: 408 Room Feng Da Building, Yin Zun No. 19-1, Huahai Road, Economic &amp; Technical Development Area, Shenyang, China<br />
+Telephone: 86-24-2580-0788<br />
+Facsimile: 86-24-2580-1789<br />
+Business Activities: <br>Order-receiving tasks for pumps used for thermal power plants, and flue-gas desulfurization plants.<br />
+</dd>
+</dl></span></div><div><span><dl class="comDlstAtn">
+<dt>MHI Shimonoseki Engineering Co.,Ltd.</dt>
+<dd>
+Address: 16-1, Hikoshima Enoura-cho 6-chome, Shimonoseki City, Yamaguchi, 750-8505, Japan<br />
+Telephone: 81-83-267-1903<br />
+Facsimile: 81-83-267-5465<br />
+Business Activities: <br>Repair of small and middle-size ships, maintenance and repair of factory equipment. Design and drawing for Mitsubishi Heavy Industries.<br />
+</dd>
+</dl></span></div><div><span><dl class="comDlstAtn">
+<dt>MHI Solution Technologies Co., Ltd.</dt>
+<dd>
+Address: 1-1, Shinhama, 2-chome, Arai-cho, Takasago City, Hyogo 676-8686<br />
+Telephone: 81-79-445-6786<br />
+Facsimile: 81-79-442-5963<br />
+Business Activities: <br>Provision of services related to R&amp;D, design, and commissioning of products and technologies of Mitsubishi Heavy Industries.<br />
+</dd>
+</dl></span></div><div><span><dl class="comDlstAtn">
+<dt>MHI Special Vehicles Parts Supply &amp; Technical Service Co., Ltd.</dt>
+<dd>
+Address: 4-3, Kata-machi, Shinjuku, Tokyo, 160-0001, Japan<br />
+Telephone: 81-3-3226-5191<br />
+Facsimile: 81-3-3226-7118<br />
+</dd>
+</dl></span></div><div><span><dl class="comDlstAtn">
+<dt>MHI Technologies S.A.E</dt>
+<dd>
+Address: Building 72, 2nd floor, North 90th street, 5th Settlement, New Cairo, Egypt<br />
+</dd>
+</dl></span></div><div><span><dl class="comDlstAtn">
+<dt>MHI Transportation Systems Brasil Ltda.</dt>
+<dd>
+Address: Av. Ermano Marchetti 909 Augua Branca Sao Paulo-SP Brazil<br />
+</dd>
+</dl></span></div><div><span><dl class="comDlstAtn">
+<dt>MHIEC Environment (Beijing) Co., Ltd. (MHIECC)</dt>
+<dd>
+Address: Room No. 1516, Pacific Century Tower A, No. 2A Workers Stadium, North Road, Chaoyang District, Beijing 100027, China<br />
+Telephone: 86-10-6539-3296<br />
+Facsimile: 86-010-6539-3297<br />
+Business Activities: <br>MHIECC is responsible for sales of environmental eqiupment products in China and assistance in procuremnet of equipment for the Japanese market.<br />
+</dd>
+</dl></span></div><div><span><dl class="comDlstAtn">
+<dt>MHIRJ Aviation GmbH</dt>
+<dd>
+Address: Sonnenstraße 32, 80331 München<br />
+Business Activities: <br>The national and international import, sale, distribution, repair, maintenance, overhaul and technical
+Advice on aircraft, aircraft equipment and other aircraft and their parts or components
+and all other related activities.<br />
+</dd>
+</dl></span></div><div><span><dl class="comDlstAtn">
+<dt>MHIRJ Aviation INC Bridgeport</dt>
+<dd>
+Address: 2400 Aviation Way, Bridgeport, WV 26330<br />
+Telephone:  1 304-8426300<br />
+Facsimile: 1-304-848-5159<br />
+URL: <a href="https://mhirj.com/">https://mhirj.com/</a><br />
+Business Activities: <br>With the largest installed base of regional aircraft in the world, with over 1,300 aircraft flying, MHIRJ offers a wide-ranging Aftermarket and Support services with facilities servicing CRJ family aircraft in Bridgeport, West Virginia and Tuscon, Arizona. <br />
+</dd>
+</dl></span></div><div><span><dl class="comDlstAtn">
+<dt>MHIRJ Aviation INC Tucson</dt>
+<dd>
+Address: 1555 E. Aero Park Blvd.,Tucson, AZ,85756<br />
+Telephone: 1-520-434-7911<br />
+URL: <a href="https://mhirj.com/">https://mhirj.com/</a><br />
+Business Activities: <br>With the largest installed base of regional aircraft in the world, with over 1,300 aircraft flying, MHIRJ offers a wide-ranging Aftermarket and Support services with facilities servicing CRJ family aircraft in Bridgeport, West Virginia and Tuscon, Arizona. <br />
+</dd>
+</dl></span></div><div><span><dl class="comDlstAtn">
+<dt>MHIRJ Aviation ULC HQ</dt>
+<dd>
+Address: 3655 Avenue des Grandes Tourelles, Suite 110 Boisbriand, Quebec J7H 0E2 CANADA<br />
+Telephone: +1-450-497-0555<br />
+URL: <a href="https://mhirj.com/">https://mhirj.com/</a><br />
+Business Activities: <br>With the largest installed base of regional aircraft in the world, with over 1,300 aircraft flying, MHIRJ offers a wide-ranging Aftermarket and Support services with facilities servicing CRJ family aircraft in Bridgeport, West Virginia and Tuscon, Arizona. <br />
+</dd>
+</dl></span></div><div><span><dl class="comDlstAtn">
+<dt>MHIRJ Aviation ULC Toronto office</dt>
+<dd>
+Address: 6390 Northwest Drive, Mississauga, Ontario L4V 1S1 CANADA<br />
+URL: <a href="https://mhirj.com/">https://mhirj.com/</a><br />
+Business Activities: <br>With the largest installed base of regional aircraft in the world, with over 1,300 aircraft flying, MHIRJ offers a wide-ranging Aftermarket and Support services with facilities servicing CRJ family aircraft in Bridgeport, West Virginia and Tuscon, Arizona. <br />
+</dd>
+</dl></span></div><div><span><dl class="comDlstAtn">
+<dt>MHPHILS REALTY CORPORATION</dt>
+<dd>
+Address: AG&amp;P Special Economic Zone, Barangay San Roque, Bauan, Batangas, Philippines 4201<br />
+Telephone: 63-43-727-1117<br />
+</dd>
+</dl></span></div><div><span><dl class="comDlstAtn">
+<dt>Masuda Eco Creation</dt>
+<dd>
+Address: 1082-7, Tada-cho, Masuda, Shimane, 698-0031, Japan<br />
+Telephone: 81-856-31-4153<br />
+Business Activities: <br>Treatment business for collected waste and carried-in combustible waste, recycle plaza residue, sludge, etc.<br />
+</dd>
+</dl></span></div><div><span><dl class="comDlstAtn">
+<dt>Mechanical Dynamics &amp; Analysis LLC</dt>
+<dd>
+Address: 19 British America Blvd. Latham, NY 12110 USA<br />
+Telephone: 1-518-399-3616<br />
+Facsimile: 1-518-399-3929 <br />
+URL: <a href="http://www.mdaturbines.com/">http://www.mdaturbines.com/</a><br />
+Business Activities: <br>Service of thermal power generation products<br />
+</dd>
+</dl></span></div><div><span><dl class="comDlstAtn">
+<dt>Meeraner Dampfkesselbau GmbH</dt>
+<dd>
+Address: Zwickauer Str. 94, 08393 Meerane, Germany<br />
+Telephone: 49-3764-53-281<br />
+URL: <a href="http://www.mdkb.de/">http://www.mdkb.de/</a><br />
+Business Activities: <br>Manufacturing of boiler pressure parts and burner<br />
+</dd>
+</dl></span></div><div><span><dl class="comDlstAtn">
+<dt>Mitsubishi Heavy Industries Engine System Asia Pte. Ltd. (MHIES-A)</dt>
+<dd>
+Address: No.3 Tuas Avenue 12, Singapore 639024, Singapore<br />
+Telephone: 65-6862-2202<br />
+Facsimile: 65-6862-5728<br />
+URL: <a href="http://www.mhiesa.com.sg/">http://www.mhiesa.com.sg/</a><br />
+Business Activities: <br>Engineering, assembly, operation, and sales of diesel power generation sets.<br />
+</dd>
+</dl></span></div><div><span><dl class="comDlstAtn">
+<dt>Mitsubishi Heavy Industries Forklift (Dalian) Co., Ltd. (MFD)</dt>
+<dd>
+Address: No.99 Tianshou Jie, Dalian Development Area 116630,China<br />
+Telephone: 86-411-3921-3030<br />
+Facsimile: 86-411-3922-2000<br />
+Business Activities: <br>Manufacturing and sales of forklifts.<br />
+</dd>
+</dl></span></div><div><span><dl class="comDlstAtn">
+<dt>Mitsubishi Nuclear Fuel Co., Ltd.</dt>
+<dd>
+Address: 622-1, Funaishikawa, Tokai-mura, Naka-gun, Ibaraki, 319-1197<br />
+Telephone: 81-29-282-2011<br />
+Facsimile: 81-29-287-8885<br />
+URL: <a href="https://www.mhi.com/group/mnf/">https://www.mhi.com/group/mnf/</a><br />
+</dd>
+</dl></span></div><div><span><dl class="comDlstAtn">
+<dt>Mitsubishi Power (Hangzhou) Environmental Equipment Co., Ltd.</dt>
+<dd>
+Address: No.367 XingZhong Rd, Yuhang Economic and Technical Development Zone, Yuhang District, Hangzhou, Zhejiang, PRC<br />
+Telephone: 86-571-8927-2255<br />
+Business Activities: <br>Manufacturing of environmental equipment<br />
+</dd>
+</dl></span></div><div><span><dl class="comDlstAtn">
+<dt>Mitsubishi Power (Philippines) Inc.</dt>
+<dd>
+Address: AG&amp;P Special Economic Zone, Barangay San Roque, Bauan, Batangas, Philippines 4201<br />
+Telephone: 63-43-727-1117<br />
+Business Activities: <br>Manufacturing, sales and service of thermal power generation products<br />
+</dd>
+</dl></span></div><div><span><dl class="comDlstAtn">
+<dt>Mitsubishi Power Saudi Arabia Limited, Co.</dt>
+<dd>
+Address: Dammam 2nd Industrial City, Street No. 95,P.O. Box. 9222, Dammam, KSA<br />
+Telephone: 966-13-814-1114<br />
+Facsimile: 966-13-814-8020<br />
+</dd>
+</dl></span></div><div><span><dl class="comDlstAtn">
+<dt>Mitsubishi Power South America EIRELI</dt>
+<dd>
+Address: Alameda Santos, 415, 6 andar, Conj.62, Cerqueira Cesar, São Paulo – SP, CEP:01419-913 BRAZIL<br />
+Telephone: 55-11-3386-3500<br />
+URL: <a href="https://power.mhi.com/regions/amer/company">https://power.mhi.com/regions/amer/company</a><br />
+Business Activities: <br>Mitsubishi Power product sales, project management and after-sales service.<br />
+</dd>
+</dl></span></div><div><span><dl class="comDlstAtn">
+<dt>Mitsubishi Turbocharger and Engine Europe B.V.</dt>
+<dd>
+Address: Damsluisweg 2, 1332 EC, Almere, The Netherlands<br />
+Telephone: 31-36-538-8311<br />
+Facsimile: 31-36-538-8200<br />
+URL: <a href="https://www.mhi.com/group/mtee">https://www.mhi.com/group/mtee</a><br />
+Business Activities: <br>Outfitting, sales and servicing of land-use and marine-use engines. Sales, installation, and servicing of power generation sets. Production and sales of turbos for cars.<br />
+</dd>
+</dl></span></div>  <h3>Company not subject to consolidation</h3>
+
+<div><span><dl class="comDlstAtn">
+<dt>MCO Saudi Arabia Limited</dt>
+<dd>
+Address: P.O. Box 3782, Al-Khobar 31952 Kingdom of Saudi Arabia<br />
+Telephone: 966-13-896-5354<br />
+Facsimile: 966-13-896-5358<br />
+</dd>
+</dl></span></div><div><span><dl class="comDlstAtn">
+<dt>MEIKI GIANT Co.,Ltd.</dt>
+<dd>
+Address: 中国江蘇省昆山開発区順帆南路1号<br />
+Telephone: 0512-57027515<br />
+</dd>
+</dl></span></div><div><span><dl class="comDlstAtn">
+<dt>MHI Automotive Capital.LLC</dt>
+<dd>
+Address: 16-5, Konan 2-chome, Minato-ku, Tokyo, 108-0075, Japan<br />
+Telephone: 81-3-6716-2030<br />
+Facsimile: 81-3-6716-5805<br />
+</dd>
+</dl></span></div><div><span><dl class="comDlstAtn">
+<dt>MHI Bingshan Refrigeration (Dalian) Ltd.</dt>
+<dd>
+Telephone: 86-41185890420<br />
+Facsimile: 86-41185890426<br />
+</dd>
+</dl></span></div><div><span><dl class="comDlstAtn">
+<dt>MHI Compressor Korea, Ltd.</dt>
+<dd>
+Address: 15F, Gran Seoul Tower 1,33, Jong-ro, Jongno-gu, Seoul, 03159, Korea<br />
+Telephone: 82-2-753-7712<br />
+Facsimile: 82-2-753-7713<br />
+</dd>
+</dl></span></div><div><span><dl class="comDlstAtn">
+<dt>MHI Compressor do Brazil Ltda</dt>
+<dd>
+Address: Avenida Doutor Morato 190, sala 1, Vila Rezende, CEP 13405-260,  Piracicaba,  Sao Paulo<br />
+Telephone: 55-19-2534-2003<br />
+URL: <a href="https://www.mhi.com/group/mco/location/mco-b">https://www.mhi.com/group/mco/location/mco-b</a><br />
+</dd>
+</dl></span></div><div><span><dl class="comDlstAtn">
+<dt>MHI Engineering and Industrial Projects India Private Limited (MEIP)</dt>
+<dd>
+Address: Unit# 907, Unitech Signature Towers Tower-B, 9th Floor, South City-1 GURGAON, Haryana 122001, India<br />
+Telephone: 91-1244-989013<br />
+Facsimile: 91-124-498-9001<br />
+URL: <a href="http://www.mhieip.co.in/">http://www.mhieip.co.in</a><br />
+</dd>
+</dl></span></div><div><span><dl class="comDlstAtn">
+<dt>MHI Power Middle East LLC</dt>
+<dd>
+Address: PO Box: 52309, Industrial City of Abu Dhabi III, Plot 96NR27, Emirate of Abu Dhabi, United Arab Emirates<br />
+Telephone: +971-2-550-1504<br />
+Facsimile: +971-2-550-1596<br />
+</dd>
+</dl></span></div><div><span><dl class="comDlstAtn">
+<dt>MHI Power Middle East for Manufacturing Parts and Machinery, LLC</dt>
+<dd>
+Address: PO Box: 52309, Industrial City of Abu Dhabi III, Plot 96NR27, Emirate of Abu Dhabi, United Arab Emirates<br />
+Telephone: 971-2-550-1504<br />
+Facsimile: 971-2-550-1596<br />
+</dd>
+</dl></span></div><div><span><dl class="comDlstAtn">
+<dt>MHI Power Project (Thailand) Co., Ltd.</dt>
+<dd>
+Address: 87/2 CRC Tower, All Seasons Place, 45th Floor, Wireless Road, Lumpini, Pathumwan, Bangkok 10330<br />
+Telephone: 66-2251-6201<br />
+Facsimile: 66-2251-6200<br />
+</dd>
+</dl></span></div><div><span><dl class="comDlstAtn">
+<dt>MHI Russia LLC</dt>
+<dd>
+Address: Office 1602, 12 Krasnopresnenskaya nab., Moscow, Russia 123610<br />
+Telephone: 7-495-258-14-71<br />
+Facsimile: 7-495-258-14-68<br />
+Business Activities: <br>Market research, PR and marketing for the products of Mitsubishi Heavy Industries Group companies.<br />
+</dd>
+</dl></span></div><div><span><dl class="comDlstAtn">
+<dt>MHI Shared Services Americas, Inc.</dt>
+<dd>
+Address: 20 Greenway Plaza, Suite 830, Houston, Texas, 77046, USA<br />
+Business Activities: <br>MHI Shared Services Americas, Inc. is the regional Shared Service company for the Americas.<br />
+</dd>
+</dl></span></div><div><span><dl class="comDlstAtn">
+<dt>Mitsubishi Heavy Industries Australia, Pty. Ltd.</dt>
+<dd>
+Address: Level 29, Chifley Tower, 2 Chifley Square, Sydney, NSW 2000, Australia<br />
+Telephone: 61-2-9238-8078<br />
+</dd>
+</dl></span></div>
+</section>
+<section>
+  <h2 id="mi-mz">MI - MZ</h3>
+    <h3>Company subject to consolidation</h3>
+
+<div><span><dl class="comDlstAtn">
+<dt>MHI PLANT CORPORATION Co, LTD.</dt>
+<dd>
+Address: 6-22, Kan-on-shin-machi 4-chome, Nishi-ku, Hiroshima, 733-0036, Japan<br />
+Telephone: 81-82-294-5111<br />
+Facsimile: 81-82-294-5119<br />
+Business Activities: <br>Site construction, supervisors, commissioning and after-sales services of Steel and metal production machinery, Compressors, Drive-steam turbines, and Environmental machines. Design, prefabrication and on-site welding construction of Pipe prefabrication. Development, design, production, sell and after-sales services of Soot blower.<br />
+</dd>
+</dl></span></div><div><span><dl class="comDlstAtn">
+<dt>MHI Power Jieneng (Qingdao) Steam Turbine Co., Limited </dt>
+<dd>
+Address: 16F D&amp;D Cai fu Building, No.182-6 Haier Road, Laoshan-District, Qingdao, China, 266100<br />
+Telephone: 86-532-55730797<br />
+Facsimile: 86-532-55730797 <br />
+Business Activities: <br>Design and sales of steam turbine<br />
+</dd>
+</dl></span></div><div><span><dl class="comDlstAtn">
+<dt>MHI-EMEA Brussels Liaison Office</dt>
+<dd>
+Address: 1st floor, 95 Rue Froissart, 1040 Brussels, Belgium<br />
+</dd>
+</dl></span></div><div><span><dl class="comDlstAtn">
+<dt>MHI-EMEA Duisburg Branch</dt>
+<dd>
+Address: Schifferstraẞe 80 47059 Duisburg,Germany<br />
+Telephone: 49-203-8038-0<br />
+</dd>
+</dl></span></div><div><span><dl class="comDlstAtn">
+<dt>MITSUBISHI HEAVY INDUSTRIES-VST DIESEL ENGINES PRIVATE LIMITED (MVDE)</dt>
+<dd>
+Address: Plot No. 305, Hebbal Industrial Area, Metagalli, Mysore-570 016, India<br />
+Telephone: 91-821-4003400<br />
+Facsimile: 91-821-4003499<br />
+URL: <a href="https://www.mhi.com/group/mvde/">https://www.mhi.com/group/mvde/</a><br />
+Business Activities: <br>Manufacturing, sales, and servicing of diesel engines.<br />
+</dd>
+</dl></span></div><div><span><dl class="comDlstAtn">
+<dt>MMTK Construccion SA DE CV</dt>
+<dd>
+Address: Calle 204 Zona Urbana Rio Tijuana, BC, Mexico<br />
+</dd>
+</dl></span></div><div><span><dl class="comDlstAtn">
+<dt>MTEA Franklin Plant</dt>
+<dd>
+Address: 1200 North Mitsubishi Parkway, Franklin, IN 46131, U.S.A.<br />
+Telephone: 1-317-346-5000<br />
+Facsimile: 1-317-346-6170<br />
+</dd>
+</dl></span></div><div><span><dl class="comDlstAtn">
+<dt>Mitsubishi Aircraft Corporation</dt>
+<dd>
+Address: Nagoya Airport, Toyoyama-cho, Nishikasugai-gun, Aichi 480-0287, JAPAN<br />
+Telephone: 81-568-39-2100<br />
+Facsimile: 81-568-39-2217<br />
+URL: <a href="https://www.mhi.com/group/mitac/">https://www.mhi.com/group/mitac/</a><br />
+Business Activities: <br>Development, manufacturing, sales, and after-sales service for aircraft.<br />
+</dd>
+</dl></span></div><div><span><dl class="comDlstAtn">
+<dt>Mitsubishi FBR Systems, Inc.</dt>
+<dd>
+Address: 34-17, Jingu-mae 2-chome, Shibuya-ku, Tokyo, 150-0001, Japan<br />
+Telephone: 81-3-6439-4333<br />
+Facsimile: 81-3-6439-4399<br />
+URL: <a href="https://www.mhi.com/group/mfbr/">https://www.mhi.com/group/mfbr/</a><br />
+Business Activities: <br>R&amp;D, design, and engineering activities for the fast breeder reactor.<br />
+</dd>
+</dl></span></div><div><span><dl class="comDlstAtn">
+<dt>Mitsubishi Heavy Industries, Ltd.</dt>
+<dd>
+Address: 2-3, Marunouchi 3-chome, Chiyoda-ku, Tokyo, 100-8332, Japan<br />
+Telephone: 81-3-6275-6200<br />
+URL: <a href="https://www.mhi.com/">http://www.mhi.com/</a><br />
+Business Activities: <br>Engineering, manufacture and sale of ships, environmental improvement equipment, industrial machinery, aircraft, space systems, air-conditioner, etc.<br />
+</dd>
+</dl></span></div><div><span><dl class="comDlstAtn">
+<dt>Mitsubishi Heavy Industries Aero Engines, Ltd. </dt>
+<dd>
+Address: 1200 Higashi-tanaka, Komaki City, Aichi Prefecture, 485-8561, Japan<br />
+Telephone: 81-568-79-4123<br />
+Facsimile: 81-568-79-4348<br />
+URL: <a href="https://www.mhi.com/group/mhiael/">https://www.mhi.com/group/mhiael/</a><br />
+Business Activities: <br>Engineering, manufacturing, marketing , maintenance, repair and overhaul of commercial aero engines<br />
+</dd>
+</dl></span></div><div><span><dl class="comDlstAtn">
+<dt>Mitsubishi Heavy Industries Air-Conditioners Australia, Pty. Ltd. (MHIAA)</dt>
+<dd>
+Address: Block E, 391 Park Road, Regents Park NSW 2143, Australia<br />
+Telephone: 61-2-8774-7500<br />
+Facsimile: 61-2-8774-7501<br />
+URL: <a href="http://www.mhiaa.com.au/">http://www.mhiaa.com.au/</a><br />
+Business Activities: <br>Import sales and servicing for household-use and business-use air conditioners under Mitsubishi Heavy Industries brand.<br />
+</dd>
+</dl></span></div><div><span><dl class="comDlstAtn">
+<dt>Mitsubishi Heavy Industries Air-conditioners (Shanghai) Co.,Ltd. (MHIAS)</dt>
+<dd>
+Address: 2903-2906, Shanghaimart, 2299 Yan An Road West, Shanghai, China 200336<br />
+Telephone: 86-21-6236-3030<br />
+Facsimile: 86-21-5877-7330 <br />
+URL: <a href="http://www.mhi-ac.com/">http://www.mhi-ac.com/</a><br />
+</dd>
+</dl></span></div><div><span><dl class="comDlstAtn">
+<dt>Mitsubishi Heavy Industries Air-Conditioning Europe, Ltd. (MHIAE)</dt>
+<dd>
+Address: 5 The Square, Stockley Park, Uxbridge UB11 1ET, United Kingdom<br />
+Telephone: 44-0-20-8756-4200<br />
+Facsimile: 44-0-20-8756-4201<br />
+URL: <a href="http://www.mhiae.com/">http://www.mhiae.com/</a><br />
+Business Activities: <br>Sales and after-sales service for air conditioners and heat pump <br />
+</dd>
+</dl></span></div><div><span><dl class="comDlstAtn">
+<dt>Mitsubishi Heavy Industries Air-Conditioning &amp; Refrigeration Corporation</dt>
+<dd>
+Address: 15th Floor, Igarashi Building, 2-11-5, Shibaura, Minato-ku, Tokyo, 108-0023, Japan<br />
+Telephone: 81-3-6891-4440<br />
+Facsimile: 81-3-6891-4474<br />
+Business Activities: <br>Sales, installation work, and after-sales service for products for air conditioning, heating, freezing, refrigerating,and large freezing machines.<br />
+</dd>
+</dl></span></div><div><span><dl class="comDlstAtn">
+<dt>Mitsubishi Heavy Industries America, Inc. (MHIA)</dt>
+<dd>
+Address: 20 Greenway Plaza, Suite 600, Houston, TX 77046 U.S.A<br />
+Telephone: 1-346-308-8800<br />
+Facsimile: 1-346-308-8787<br />
+URL: <a href="https://www.mhi.com/company/regions/amer">https://www.mhi.com/company/regions/amer</a><br />
+Business Activities: <br>Market research, PR, material procurement, assembly, sales, installation, and after-sales service for the products of Mitsubishi Heavy Industries.<br />
+</dd>
+</dl></span></div><div><span><dl class="comDlstAtn">
+<dt>MHIA Engineered Systems Division</dt>
+<dd>
+Address: 20 Greenway Plaza, Suite 600, Houston, TX 77046<br />
+Telephone: 1-713-351-6400<br />
+Facsimile: 1-713-351-6450<br />
+URL: <a href="https://www.mhi.com/company/regions/amer">https://www.mhi.com/company/regions/amer</a><br />
+</dd>
+</dl></span></div><div><span><dl class="comDlstAtn">
+<dt>MHIA Car Air Conditioning Division</dt>
+<dd>
+Address: 6555 18 Mile Road, Sterling Heights, MI 48314<br />
+Telephone: 1-586-685-1400<br />
+Facsimile:  1-586-685-1499<br />
+</dd>
+</dl></span></div><div><span><dl class="comDlstAtn">
+<dt>MHIA Tire Machinery Division</dt>
+<dd>
+Address: 600 Cherry Fork Ave. Leetonia, OH 44431, U.S.A.<br />
+Telephone: 1-330-427-8900<br />
+Facsimile: 1-330-427-8909<br />
+URL: <a href="https://www.mhi.com/company/regions/amer">https://www.mhi.com/company/regions/amer</a><br />
+</dd>
+</dl></span></div><div><span><dl class="comDlstAtn">
+<dt>MHIA Aircraft Product Support Division</dt>
+<dd>
+Address: 17304 Preston Road, Suite 1270, Dallas, TX 75252 U.S.A<br />
+Telephone: 1-972-934-5480<br />
+Facsimile: 1-972-934-5488<br />
+URL: <a href="https://www.mhi.com/company/regions/amer">https://www.mhi.com/company/regions/amer</a><br />
+</dd>
+</dl></span></div><div><span><dl class="comDlstAtn">
+<dt>MHIA Corrugating Machinery Division</dt>
+<dd>
+Address: 11204 McCormick Road, Hunt Valley MD 21031-1101, U.S.A.<br />
+Telephone: 1-410-584-7990<br />
+Facsimile: 1-410-584-1252<br />
+URL: <a href="https://www.mhi.com/company/regions/amer">https://www.mhi.com/company/regions/amer</a><br />
+</dd>
+</dl></span></div><div><span><dl class="comDlstAtn">
+<dt>MHIA Machine Tool Division</dt>
+<dd>
+Address: 46992 Liberty Drive, Wixom, MI 48393<br />
+Telephone: 1-248-669-6136<br />
+Facsimile: 1-248-669-0614<br />
+</dd>
+</dl></span></div><div><span><dl class="comDlstAtn">
+<dt>MHIA Los Angeles Office</dt>
+<dd>
+Address: 100 Bayview Circle Suite 300, Newport Beach, CA 92660, U.S.A.<br />
+Telephone: 1-949-856-8500<br />
+Facsimile: 1-949-856-4469<br />
+URL: <a href="https://www.mhi.com/company/regions/amer">https://www.mhi.com/company/regions/amer</a><br />
+</dd>
+</dl></span></div><div><span><dl class="comDlstAtn">
+<dt>MHIA Dallas Office</dt>
+<dd>
+Address: 4951 Airport Parkway, Suite 530, Addison, TX 75001, U.S.A.<br />
+Telephone: 1-972-934-5480<br />
+Facsimile: 1-972-934-5488<br />
+</dd>
+</dl></span></div><div><span><dl class="comDlstAtn">
+<dt>MHIA Seattle Office</dt>
+<dd>
+Address: c/o The Boeing Company, P.O. Box 3707 M/S 03-EH, Seattle, WA 98124, U.S.A.<br />
+Telephone: 1-425-266-2922<br />
+Facsimile: 1-425-342-5234<br />
+URL: <a href="https://www.mhi.com/company/regions/amer">https://www.mhi.com/company/regions/amer</a><br />
+</dd>
+</dl></span></div><div><span><dl class="comDlstAtn">
+<dt>MHIA Boston Office</dt>
+<dd>
+Address: c/o Raytheon Company, TN32819 836 North Street, Building 400 Tewksbury MA 01876<br />
+Telephone: 1-978-863-3650<br />
+Facsimile: 1-978-470-7690<br />
+URL: <a href="https://www.mhi.com/company/regions/amer">https://www.mhi.com/company/regions/amer</a><br />
+</dd>
+</dl></span></div><div><span><dl class="comDlstAtn">
+<dt>MHIA Hartford Office</dt>
+<dd>
+Address: 111 Founders Plaza Suite 1203 East Hartford, CT, 06108, U.S.A.<br />
+Telephone: 1-860-289-8487<br />
+Facsimile: 1-860-289-8407<br />
+URL: <a href="https://www.mhi.com/company/regions/amer">https://www.mhi.com/company/regions/amer</a><br />
+</dd>
+</dl></span></div><div><span><dl class="comDlstAtn">
+<dt>MHIA Tucson Office</dt>
+<dd>
+Address: Raytheon Missiles &amp; Defense Bldg808, M/S6, 1151 East Hermans Road, Tucson, AZ 85756 U.S.A<br />
+Telephone: 1-520-794-8723<br />
+URL: <a href="https://www.mhi.com/company/regions/amer">https://www.mhi.com/company/regions/amer</a><br />
+</dd>
+</dl></span></div><div><span><dl class="comDlstAtn">
+<dt>MHIA Washington Office</dt>
+<dd>
+Address: 1025 Connecticut Avenue, N.W. Suite 1208, Washington D.C., 20036, U.S.A<br />
+Telephone: 1-202-838-3333<br />
+Facsimile: 1-202-730-3582<br />
+URL: <a href="https://www.mhi.com/company/regions/amer">https://www.mhi.com/company/regions/amer</a><br />
+</dd>
+</dl></span></div><div><span><dl class="comDlstAtn">
+<dt>MHIA Fort Worth Office</dt>
+<dd>
+Address: One Lockheed Blvd, Fort Worth, TX 76108, U.S.A.<br />
+Telephone: 1-817-763-3381<br />
+Facsimile: 1-817-777-9817<br />
+URL: <a href="https://www.mhi.com/company/regions/amer">https://www.mhi.com/company/regions/amer</a><br />
+</dd>
+</dl></span></div><div><span><dl class="comDlstAtn">
+<dt>MHIA Woburn Office</dt>
+<dd>
+Address: 400 Tradecenter Drive, Suite 7800, Woburn, MA 01801<br />
+URL: <a href="https://www.mhi.com/company/regions/amer">https://www.mhi.com/company/regions/amer</a><br />
+</dd>
+</dl></span></div><div><span><dl class="comDlstAtn">
+<dt>Mitsubishi Heavy Industries Asia Pacific Pte. Ltd. (MHI-AP)</dt>
+<dd>
+Address: 150 Beach Road, #29-00 GATEWAY WEST, Singapore 189720, Republic of Singapore<br />
+Telephone: 65-6305-5200<br />
+Facsimile: 65-6396-5871<br />
+URL: <a href="https://www.mhi.com/company/regions/apac">https://www.mhi.com/company/regions/apac</a><br />
+Business Activities: <br>New project development, marketing, engineering, procurement, construction, parts sales, and after-sales service work for the products of Mitsubishi Heavy Industries, e.g. CO2 recovery systems, gas/oil production facilities, chemical plants, power plants, whole prime mover products, material handling and water treatment systems and equipment.<br />
+</dd>
+</dl></span></div><div><span><dl class="comDlstAtn">
+<dt>Mitsubishi Heavy Industries (China) Co., Ltd. (MHIC)</dt>
+<dd>
+Address: 6th Floor, Beijing Changfugong No. 6008 Office Building No. 26 Jian Guo Men Wai Avenue, Beijing, China 100022<br />
+Telephone: 86-10-6512-4321<br />
+Facsimile: 86-10-6505-1222<br />
+URL: <a href="http://www.mhi.com.cn/">http://www.mhi.com.cn/</a><br />
+Business Activities: <br>Marketing assistance in the Chinese market, and management assistance for group companies in China.<br />
+</dd>
+</dl></span></div><div><span><dl class="comDlstAtn">
+<dt>MHIC Shanghai Branch</dt>
+<dd>
+Address: 26th Floor, HSBC Tower, 1000 Lujiazui Ring Road, Pudong New Area, Shanghai, 200120 China<br />
+Telephone: 86-21-5879-3030<br />
+Facsimile: 86-21-6841-0048<br />
+URL: <a href="http://www.mhi.com.cn/">http://www.mhi.com.cn/</a><br />
+</dd>
+</dl></span></div><div><span><dl class="comDlstAtn">
+<dt>Mitsubishi Heavy Industries Climate Control Inc. (MCC)</dt>
+<dd>
+Address: 1200 N.Mitsubishi Parkway Franklin, IN 46131, U.S.A.<br />
+Telephone: 1-317-346-5000<br />
+Facsimile: 1-317-346-6170<br />
+Business Activities: <br>Assembly and sales of car air conditioner/engine cooling systems.<br />
+</dd>
+</dl></span></div><div><span><dl class="comDlstAtn">
+<dt>Mitsubishi Heavy Industries Compressor Corporation</dt>
+<dd>
+Address: 6-22, Kan-on-shin-machi 4-chome, Nishi-ku, Hiroshima, 733-0036, Japan<br />
+Telephone: 81-82-291-2200<br />
+Facsimile: 81-82-294-0345<br />
+URL: <a href="https://www.mhi.com/group/mco/">https://www.mhi.com/group/mco/</a><br />
+Business Activities: <br>Design, sales and engineering for compressors, mechanical turbines, speed-up/down gear, and relevant machinery, equipment and control system.<br />
+</dd>
+</dl></span></div><div><span><dl class="comDlstAtn">
+<dt>Mitsubishi Heavy Industries Compressor International Corporation(MCO-I)</dt>
+<dd>
+Address: 14888 Kirby Dr., Pearland, TX 77047, USA<br />
+Telephone: 1-832-710-4700<br />
+Facsimile: 1-832-710-4600<br />
+URL: <a href="https://www.mhi.com/group/mcoi/">https://www.mhi.com/group/mcoi/</a><br />
+Business Activities: <br>Design &amp; engineering, sales &amp; marketing, manufacturing and after-service for compressors, mechanical drive steam turbines.<br />
+</dd>
+</dl></span></div><div><span><dl class="comDlstAtn">
+<dt>Mitsubishi Heavy Industries Dongfang Gas Turbine (Guangzhou) Co., Ltd.</dt>
+<dd>
+Address: No.52, Guangxing Road, Nansha District, Guangzhou, 511458 China<br />
+Telephone: 86-20-8498-9430<br />
+Facsimile: 86-20-8498-9030<br />
+Business Activities: <br>Manufacturing, sales, and repair of high-temperature parts (combustors, moving blades, and stationary blades) of gas turbines.<br />
+</dd>
+</dl></span></div><div><span><dl class="comDlstAtn">
+<dt>Mitsubishi Heavy Industries EMEA, Ltd.</dt>
+<dd>
+Address: Building 11, Chiswick Park, 566 Chiswick High Road, London, W4 5YA, United Kingdom<br />
+Telephone: 44-020-3480-7500<br />
+Facsimile: 44-020-3480-7501<br />
+URL: <a href="https://www.mhi.com/company/regions/emea/">https://www.mhi.com/company/regions/emea/</a><br />
+</dd>
+</dl></span></div><div><span><dl class="comDlstAtn">
+<dt>Mitsubishi Heavy Industries Engine &amp; Turbocharger, Ltd.</dt>
+<dd>
+Address: 3000, Tana, Chuo-ku, Sagamihara, Kanagawa, 252-5293, Japan<br />
+Telephone: 81-42-862-0701<br />
+Facsimile: 81-42-763-0800<br />
+URL: <a href="https://www.mhi.com/group/mhiet/">https://www.mhi.com/group/mhiet/</a><br />
+Business Activities: <br>Design, Manufacture, Procurement, Quality Assurance, Construction, Sales and Servicing of Engines. Power System (Engineering and EMS*).    *EMS:Enegy Management Service Lease and Rental of Generator Sets. Design, Manufacture, Procurement, Quality Assurance, Sales and Servicing of Turbochargers.<br />
+</dd>
+</dl></span></div><div><span><dl class="comDlstAtn">
+<dt>Mitsubishi Heavy Industries Engine Systems Co., Ltd.</dt>
+<dd>
+Address: 6-21, Nishi-gotanda 3-chome, Shinagawa-ku, Tokyo, 141-0031, Japan<br />
+Telephone: 81-3-5745-8850<br />
+Facsimile: 81-3-5745-8856<br />
+Business Activities: <br>Sales, installation, and servicing activities for diesel and gas engine power generation systems, industrial-use engines, marine-use engines, etc. manufactured by Mitsubishi Heavy Industries.<br />
+</dd>
+</dl></span></div><div><span><dl class="comDlstAtn">
+<dt>Mitsubishi Heavy Industries Engineering, Ltd.</dt>
+<dd>
+Address: Mitsubishijuko Yokohama Bldg., 3-1, Minatomirai 3-chome, Nishi-ku, Yokohama<br />
+Telephone: 81-45-200-9600<br />
+Facsimile: 81-45-200-8914<br />
+URL: <a href="https://www.mhi.com/group/mhieng/">https://www.mhi.com/group/mhieng/</a><br />
+Business Activities: <br>Engineering, manufacture, procurement, construction, marketing and after-sale servicing of chemical plants, transportation systems and products, environmental products, etc., including ancillary businesses.<br />
+</dd>
+</dl></span></div><div><span><dl class="comDlstAtn">
+<dt>Mitsubishi Heavy Industries Environmental &amp; Chemical Engineering Co., Ltd.</dt>
+<dd>
+Address: 17th floor Yokohama Blue Avenue Building, 4-2, Minatomirai 4-chome, Nishi-ku, Yokohama, Kanagawa, 220-0012, Japan<br />
+Telephone: 81-45-227-1280<br />
+Facsimile: 81-45-227-1293<br />
+Business Activities: <br>Design, manufacturing, installation, and engineering of various types of environmental devices and various types of equipment in the field of petrochemical plants.<br />
+</dd>
+</dl></span></div><div><span><dl class="comDlstAtn">
+<dt>Mitsubishi Heavy Industries France S.A.S. (MHIF)</dt>
+<dd>
+Address: 32, rue de Monceau 75008 Paris, France<br />
+Telephone: 33-1-42-67-60-75<br />
+Facsimile: 33-1-42-67-90-11<br />
+URL: <a href="http://www.mhifr.com/">http://www.mhifr.com/</a><br />
+Business Activities: <br>Market research, PR, marketing, overseas procurement, and after-sales service for the products of Mitsubishi Heavy Industries.<br />
+</dd>
+</dl></span></div><div><span><dl class="comDlstAtn">
+<dt>MHI-EMEA Corrugating &amp; Printing Machinery Division</dt>
+<dd>
+Address: Splijtbakweg 115, 1333 HJ Almere, The Netherlands<br />
+Telephone: 31-36-8000000<br />
+Facsimile: 31-36-8000001<br />
+</dd>
+</dl></span></div><div><span><dl class="comDlstAtn">
+<dt>MHI-EMEA Munich Branch</dt>
+<dd>
+Address: Sonnenstr. 32IV, 80331 Munich, Germany<br />
+Telephone: 49-89-211079-0<br />
+Facsimile: 49-89-211079-33<br />
+URL: <a href="https://www.mhi.com/company/regions/emea/">https://www.mhi.com/company/regions/emea/</a><br />
+</dd>
+</dl></span></div><div><span><dl class="comDlstAtn">
+<dt>MHI-EMEA Erlangen Branch</dt>
+<dd>
+Address: Hauptstr. 40, 91054 Erlangen, Germany<br />
+URL: <a href="https://www.mhi.com/company/regions/emea/">https://www.mhi.com/company/regions/emea/</a><br />
+</dd>
+</dl></span></div><div><span><dl class="comDlstAtn">
+<dt>MHI-EMEA Derby Office</dt>
+<dd>
+Address: c/o ROLLS-ROYCE PLC. Mail Code ML-55, P.O. Box 31, Derby, DE24 8BJ, United Kingdom<br />
+Telephone: 44-1332-249733<br />
+Facsimile: 44-133-224-5654<br />
+</dd>
+</dl></span></div><div><span><dl class="comDlstAtn">
+<dt>Mitsubishi Heavy Industries-Haier (Qingdao) Air-Conditioners Co., Ltd. (MHAQ)</dt>
+<dd>
+Address: No157-1 Tianshan 2nd Road Jimo Qingdao China<br />
+Telephone: 86-532-8893-8520<br />
+Facsimile: 86-532-8789-8634<br />
+URL: <a href="http://www.mhaq.cn/">http://www.mhaq.cn</a><br />
+Business Activities: <br>Production and sales of business-use air conditioners.<br />
+</dd>
+</dl></span></div><div><span><dl class="comDlstAtn">
+<dt>Mitsubishi Heavy Industries, (Hong Kong) Ltd. (MHIH)</dt>
+<dd>
+Address: Suite 706, 7/F, Tower 2, The Gateway, Harbour City, Tsim Sha Tsui, Kowloon, Hong Kong, China<br />
+Telephone: 852-2525-5262<br />
+Facsimile: 852-2868-1469<br />
+Business Activities: <br>Sales and procurement support activities for the products of Mitsubishi Heavy Industries and group companies.<br />
+</dd>
+</dl></span></div><div><span><dl class="comDlstAtn">
+<dt>Mitsubishi Heavy Industries India Private Ltd. (MHII)</dt>
+<dd>
+Address: 402,4th Floor,Worldmark 2,Asset Area8,Aerocity,Hospitality District,New Delhi-110037,India<br />
+Telephone: 91-11-4102-1234<br />
+Facsimile: 91-11-4102-5150<br />
+Business Activities: <br>Marketing, procurement, parts sales, and after-sales service work for the products of Mitsubishi Heavy Industries.<br />
+</dd>
+</dl></span></div><div><span><dl class="comDlstAtn">
+<dt>MHII Mumbai Office</dt>
+<dd>
+Address: 403/404, Madhava Building, Bandra-Kurla Complex, Bandra (E) Mumbai - 400 051 (India)<br />
+Telephone: 91-22-3068-1823<br />
+Facsimile: 91-22-3068-1821<br />
+</dd>
+</dl></span></div><div><span><dl class="comDlstAtn">
+<dt>Bangalore Office</dt>
+<dd>
+Address: Unit Nos. 105-108, 1st Floor, Phoenix Pinnacle, No. 46, Ulsoor Road, Bengaluru - 560 042, Karnataka, India<br />
+Telephone: 91-80-67475900<br />
+</dd>
+</dl></span></div><div><span><dl class="comDlstAtn">
+<dt>Coimbatore Office</dt>
+<dd>
+</dd>
+</dl></span></div><div><span><dl class="comDlstAtn">
+<dt>Mitsubishi Heavy Industries-Jinling Air-Conditioners Company, Ltd. (MJA)</dt>
+<dd>
+Address: No.162 Jiangcui Road, Hushan, Jianghai District, Jiangmen City, Guangdong Province, China<br />
+Telephone: 86-750-389-0011<br />
+Facsimile: 86-750-381-4721<br />
+URL: <a href="http://www.mja.com.cn/">http://www.mja.com.cn</a><br />
+Business Activities: <br>Manufacturing, sales, and servicing of air-conditioning equipment, mainly household-use air conditioners.<br />
+</dd>
+</dl></span></div><div><span><dl class="comDlstAtn">
+<dt>Mitsubishi Heavy Industries Machinery Systems, Ltd.</dt>
+<dd>
+Address: 1-1, Wadasaki-cho 1-chome, Hyogo-ku, Kobe 652-8585, Japan<br />
+Telephone: 81-78-672-4600<br />
+Facsimile: 81-78-672-4609<br />
+URL: <a href="https://www.mhi.com/group/mhims/">https://www.mhi.com/group/mhims/</a><br />
+Business Activities: <br>Design and fabrication for various types of equipment related to pollution prevention, environment improvement, and industrial-use and general-use equipment.<br />
+</dd>
+</dl></span></div><div><span><dl class="comDlstAtn">
+<dt>Mitsubishi Heavy Industries Machinery Technology Corporation</dt>
+<dd>
+Address: 6-22,Kan-on-shin-machi, 4-Chome,Nishi-ku,Hiroshima,733-8553,Japan<br />
+Telephone: 81-82-294-2339<br />
+Facsimile: 81-82-294-0375<br />
+Business Activities: <br>Development,technical service,manufacturing contract,equipment maintenance of general industrial machinery<br />
+</dd>
+</dl></span></div><div><span><dl class="comDlstAtn">
+<dt>Mitsubishi Heavy Industries-Mahajak Air Conditioners Co., Ltd. (MACO)</dt>
+<dd>
+Address: 220 Soi Chalongkrung 31, Kwang Lamplatiew, Khet Lad Krabang , Bangkok 10520, Thailand<br />
+Telephone: 66-2-326-0401<br />
+Facsimile: 66-2-326-0419<br />
+URL: <a href="https://www.mhi.com/group/maco/">https://www.mhi.com/group/maco/</a><br />
+Business Activities: <br>Production and sales of small-size air conditioners and business-use air conditioners.<br />
+</dd>
+</dl></span></div><div><span><dl class="comDlstAtn">
+<dt>Mitsubishi Heavy Industries Marine Machinery &amp; Equipment Co., Ltd.</dt>
+<dd>
+Address: 1-1, Akunoura-machi, Nagasaki City, Nagasaki, 850-8610, Japan<br />
+Telephone: 81-50-3848-4200<br />
+Facsimile: 81-95-828-6633<br />
+URL: <a href="https://www.mhi.com/group/mhimme/">https://www.mhi.com/group/mhimme/</a><br />
+Business Activities: <br>MET Turbochargers, Propellers, Boilers, Turbines, Fin Stabilizers, Steering Gears Consignment sales: Deck Cranes, Deck Machinery,Water-Jet<br />
+</dd>
+</dl></span></div><div><span><dl class="comDlstAtn">
+<dt>Mitsubishi Heavy Industries Maritime Systems Co., Ltd.</dt>
+<dd>
+</dd>
+</dl></span></div><div><span><dl class="comDlstAtn">
+<dt>Mitsubishi Heavy Industries Meiki Engines Co., Ltd.</dt>
+<dd>
+Address: 23 Shimokomori, Kabutocho, Tsushima, Aichi 496-0023, Japan<br />
+Telephone: 81-567-69-7800<br />
+Facsimile: 81-567-69-7813<br />
+</dd>
+</dl></span></div><div><span><dl class="comDlstAtn">
+<dt>Mitsubishi Heavy Industries Philippines, Inc. (MHIP)</dt>
+<dd>
+Address: 3rd Floor, Republic Glass Building, 196 Salcedo Street, Legaspi Village, Makati City, Philippines 1229<br />
+Telephone: 63-2-889-3500<br />
+Business Activities: <br>Marketing, procurement, and after-sales service work for the products of Mitsubishi Heavy Industries.<br />
+</dd>
+</dl></span></div><div><span><dl class="comDlstAtn">
+<dt>Mitsubishi Heavy Industries Power Environmental Solutions, Ltd.</dt>
+<dd>
+Address: 1-8, Sakuragi-cho 1-chome, Naka-ku, Yokohama<br />
+Telephone: 81-45-232-4948<br />
+URL: <a href="https://power.mhi.com/group/es/">https://power.mhi.com/group/es/</a><br />
+</dd>
+</dl></span></div><div><span><dl class="comDlstAtn">
+<dt>Mitsubishi Heavy Industries Power IDS Co., Ltd.</dt>
+<dd>
+Address: KDX Yokohama Kannai Bldg. 3-56-1, Aioi-cho, Naka-ku, Yokohama, 231-0012, Japan<br />
+Telephone: 81-45-227-4950<br />
+Facsimile: 81-45-227-7569<br />
+Business Activities: <br>From General design to Detailed Design, Supply, installation work and trial operation of Industrial Boiler and Industrial Thermal Power Generation Plant. Reconstruction work, preservation work and maintenance work for existing plant. Design and manufacture of mechatronics and computer control system.<br />
+</dd>
+</dl></span></div><div><span><dl class="comDlstAtn">
+<dt>Mitsubishi Heavy Industries Power Inspection Technologies, Ltd.</dt>
+<dd>
+Address: 12, Nishiki-cho, Naka-ku, Yokohama, 231-8715, Japan<br />
+Telephone: 81-45-629-1269<br />
+Facsimile: 81-45-629-1270<br />
+Business Activities: <br>Inspection and measurement services.<br />
+</dd>
+</dl></span></div><div><span><dl class="comDlstAtn">
+<dt>Mitsubishi Heavy Industries Power Maintenance Service Co., Ltd.</dt>
+<dd>
+Address: 8-25 Shinhama,2-chome, Arai-cho, Takasago City, Hyogo 676-0008<br />
+Telephone: 81-79-445-9810<br />
+Facsimile: 81-79-445-9951<br />
+URL: <a href="https://power.mhi.com/group/msc/">https://power.mhi.com/group/msc/</a><br />
+Business Activities: <br>Service of thermal power generation products<br />
+</dd>
+</dl></span></div><div><span><dl class="comDlstAtn">
+<dt>Mitsubishi Heavy Industries Power Precision Casting.Ltd.</dt>
+<dd>
+Address: 1-17, Hiraide Industrial Park, Utsunomiya-shi, Tochigi Prefecture 321-0905<br />
+Telephone: 81-28-661-4151<br />
+Facsimile: 81-28-661-4483<br />
+URL: <a href="https://power.mhi.com/group/pc/">https://power.mhi.com/group/pc/</a><br />
+Business Activities: <br>Design, manufacturing and sales of precision casting products for prime movers, aircraft and various kinds of machines<br />
+</dd>
+</dl></span></div><div><span><dl class="comDlstAtn">
+<dt>Mitsubishi Heavy Industries (Shanghai) Co., Ltd. (MHISH)</dt>
+<dd>
+Address: 26th Floor, HSBC Tower, 1000 Lujiazui Ring Road, Pudong New Area, Shanghai, 200120, China.<br />
+Telephone: 86-21-6841-3030<br />
+Facsimile: 86-21-6841-5222<br />
+Business Activities: <br>Marketing, procurement, parts sales, and after-sales service work for the products of Mitsubishi Heavy Industries.<br />
+</dd>
+</dl></span></div><div><span><dl class="comDlstAtn">
+<dt>MHISH Guangzhou Office</dt>
+<dd>
+Address: Room 2603, 26 Floor, Jiaye Building, 318 Mid Dongfeng RD, Guangzhou, Guangdong 510030, China <br />
+Telephone: 86-20-8363-6728<br />
+Facsimile: 86-20-8363-0718<br />
+</dd>
+</dl></span></div><div><span><dl class="comDlstAtn">
+<dt>MHISH Beijing Office</dt>
+<dd>
+Address: Rm 805 No. 4, Beijingguoji Center (Jingguangqiaodongbeijiao) 38 Hujialoubei Chaoyangqu Beijing 100026, China<br />
+Telephone: 86-10-8587-9273<br />
+Facsimile: 86-10-8587-9274<br />
+</dd>
+</dl></span></div><div><span><dl class="comDlstAtn">
+<dt>MHISH Nanjing Office</dt>
+<dd>
+Address: 1st floor, Donglai Business Center, 30 middle Longpan Road, Nanjiang, Jiangsu 210005, China <br />
+Telephone: 86-25-8481-8030<br />
+Facsimile: 86-25-8481-7030<br />
+</dd>
+</dl></span></div><div><span><dl class="comDlstAtn">
+<dt>MHISH Shen Zhen Office</dt>
+<dd>
+Address: Room 2009, International Chamber of Commerce Tower Fuhua Rd, 3, CBD, Futian District, Shenzhen, Guangdong 518048 China <br />
+Telephone: 86-755-8831-3530<br />
+Facsimile: 86-755-8831-3510<br />
+</dd>
+</dl></span></div><div><span><dl class="comDlstAtn">
+<dt>MHISH South Wanping Road Office</dt>
+<dd>
+Address: Rm 3&#039;201, JiaAn Mansion No.420. Wanping Rd(S). Shanghai China<br />
+Telephone: 86-21-54249580<br />
+Facsimile: 86-21-54249581<br />
+</dd>
+</dl></span></div><div><span><dl class="comDlstAtn">
+<dt>MHISH Guanghou Yueken Road Office</dt>
+<dd>
+Address: Rm 1204-06 GuangKen Commercial Plaza. 38. Yueken Road, Tianhe District Guangzhou 510507, China <br />
+Telephone: 86-20-87294751/2<br />
+Facsimile: 86-20-87292218<br />
+</dd>
+</dl></span></div><div><span><dl class="comDlstAtn">
+<dt>MHISH Hangzhou Office</dt>
+<dd>
+Address: Rm 1008 Guangli Mansion 136 Qingchun Rd Hangzhou 310003, China <br />
+Telephone: 86-571-8779-5330<br />
+Facsimile: 86-571-8779-9730<br />
+</dd>
+</dl></span></div><div><span><dl class="comDlstAtn">
+<dt>MHISH Jinan Office</dt>
+<dd>
+Address: Rm 701 C Donghuan Guo ji Tower, No.3966 Jinan erthuan East Road, Jinan 250100, China <br />
+Telephone: 86-531-8353-1830<br />
+Facsimile: 86-531-8353-1130<br />
+</dd>
+</dl></span></div><div><span><dl class="comDlstAtn">
+<dt>MHISH Chengdu Office</dt>
+<dd>
+Address: Rm2, 11th floor, Huaminhanzunguoji Mansion 1 Fuxingjie Jinjiangqu Chengdu 610000 China<br />
+Telephone: 86-28-8670-3430<br />
+Facsimile: 86-28-8670-3080<br />
+</dd>
+</dl></span></div><div><span><dl class="comDlstAtn">
+<dt>Mitsubishi Heavy Industries (Thailand) Ltd. (MHIT)</dt>
+<dd>
+Address: 173/31,173/34 ASIA CENTRE Building,25th Fl. South Sathorn Rd.,Thungmahamek,Sathorn, Bangkok 10120,Thailand<br />
+Telephone: 66-2-679-0600<br />
+Facsimile: 66-2-679-0601<br />
+URL: <a href="http://www.mhit.co.th/">http://www.mhit.co.th/</a><br />
+Business Activities: <br>Sales, after-sales service, and local procurement for the products of Mitsubishi Heavy Industries.<br />
+</dd>
+</dl></span></div><div><span><dl class="comDlstAtn">
+<dt>Mitsubishi Heavy Industries Thermal Systems, Ltd.</dt>
+<dd>
+Address: 2-3, Marunouchi 3-chome, Chiyoda-ku, Tokyo, 100-8332, Japan<br />
+Telephone: 81-3-6275-6330<br />
+Facsimile: 81-3-6275-6335<br />
+URL: <a href="http://www.mhi-mth.co.jp/en/index.html">http://www.mhi-mth.co.jp/en/index.html</a><br />
+</dd>
+</dl></span></div><div><span><dl class="comDlstAtn">
+<dt>Mitsubishi Heavy Industries Thermal Transport  Europe GmbH</dt>
+<dd>
+Address: Hannoversche Straße 49 49084 Osnabrück, Germany<br />
+Telephone: 49-541-80005-0<br />
+Facsimile: 49-541-80005-250<br />
+URL: <a href="https://mhi-tte.com/">https://mhi-tte.com/</a><br />
+Business Activities: <br>Sales and service of transport refrigerator products in Europe.<br />
+</dd>
+</dl></span></div><div><span><dl class="comDlstAtn">
+<dt>Mitsubishi Heavy Industries, Ltd. Hanoi Liaison Office</dt>
+<dd>
+Address: R907-908, 9th Floor, Pacific Place, 83B Ly Thuong Kiet Str., Hanoi, Socialist Republic of Viet Nam<br />
+Telephone: 84-24-3933-3941<br />
+Facsimile: 84-24-3933-3947<br />
+</dd>
+</dl></span></div><div><span><dl class="comDlstAtn">
+<dt>Mitsubishi Heavy Industries, Ltd. Ho Chi Minh City Liaison Office</dt>
+<dd>
+Address: Room 2006, 20th Floor, Sun Wah Tower, 115 Nguyen Hue Boulevard, District 1, Ho Chi Minh City, Socialist Republic of Vietnam<br />
+Telephone: 84-28-3824-3279, 3280<br />
+Facsimile: 84-28-3824-2874<br />
+</dd>
+</dl></span></div><div><span><dl class="comDlstAtn">
+<dt>Mitsubishi Heavy Industries, Ltd. Kuala Lumpur Office</dt>
+<dd>
+Address: Suite 49C, Level 49 of Vista Tower, The Intermark,348 Jalan Tun Razak, 50400 Kuala Lumpur, Malaysia<br />
+Telephone: 60-3-2161-6250<br />
+Facsimile: 60-3-2161-6251<br />
+</dd>
+</dl></span></div><div><span><dl class="comDlstAtn">
+<dt>Mitsubishi Heavy Industries, Ltd. Middle East Office</dt>
+<dd>
+Address: Phase 8WB, Office 227, DAFZA P.O. Box 293626, Dubai, UAE<br />
+Telephone: 971-4-299-3329<br />
+Facsimile: 971-4-299-3320<br />
+</dd>
+</dl></span></div><div><span><dl class="comDlstAtn">
+<dt>Mitsubishi Heavy Industries, Ltd. Taipei Office</dt>
+<dd>
+Address: 6F-1, No.100, Songren Rd, Xinyi Dist, Taipei City 11073, Taiwan<br />
+Telephone: 886-2-2720-5230<br />
+Facsimile: 886-2-2720-5236<br />
+</dd>
+</dl></span></div><div><span><dl class="comDlstAtn">
+<dt>Mitsubishi Heavy Industries, Ltd. Turkey Liaison Office</dt>
+<dd>
+Address: Adnan Saygun Cad. No:3, Akmerkez Residence, K:13, D:2, 34340, Etiler, Istanbul, Turkey<br />
+Telephone: 90-212-279-2535<br />
+Facsimile: 90-212-279-2603<br />
+URL: <a href="http://www.mhi.com.tr/">http://www.mhi.com.tr/</a><br />
+</dd>
+</dl></span></div><div><span><dl class="comDlstAtn">
+<dt>Mitsubishi Industrias Pesadas do Brasil Ltda. (MHIB)</dt>
+<dd>
+Address: Rua Pamplona,145, 10ﾟandar, Cjs1004, CEP:01405-900, São Paulo-SP, Brasil<br />
+Telephone: 55-11-3170-9201<br />
+Facsimile: 55-11-3170-9200<br />
+Business Activities: <br>Sales and procurement-support activities for the products of Mitsubishi Heavy Industries and group companies.<br />
+</dd>
+</dl></span></div><div><span><dl class="comDlstAtn">
+<dt>Mitsubishi Logisnext
+Europe S.A.</dt>
+<dd>
+Address: Calle Soto Grande,s/n 31110 Noáin (Navarra),Spain<br />
+Business Activities: <br>Manufacturing Internal combustion and electric forklifts. <br />
+</dd>
+</dl></span></div><div><span><dl class="comDlstAtn">
+<dt>Mitsubishi Logisnext Americas (Houston) Inc.</dt>
+<dd>
+Address: 2121 W. Sam Houston Pkwy. N. Houston, TX 77043-2305, U.S.A.<br />
+Telephone: 1-713-365-1000<br />
+Facsimile: 1-713-365-1818<br />
+URL: <a href="https://www.logisnextamericas.com/en/logisnext">https://www.logisnextamericas.com/en/logisnext</a><br />
+Business Activities: <br>Manufacturing, sales, and servicing of forklifts (engine type and electrical type).<br />
+</dd>
+</dl></span></div><div><span><dl class="comDlstAtn">
+<dt>Mitsubishi Logisnext Americas Inc.</dt>
+<dd>
+Address: 2121 W.Sam Houston Pkwy. N.Houston, TX 77043-2305, U.S.A.<br />
+Telephone: 1-713-365-1000<br />
+Facsimile: 65-6897-7562<br />
+</dd>
+</dl></span></div><div><span><dl class="comDlstAtn">
+<dt>Mitsubishi Logisnext Asia Pacific Pte.Ltd.</dt>
+<dd>
+Address: No.1, Tuas West Street, Singapore 637444 Republic of Singapore<br />
+Telephone: 65-6571-6237<br />
+Facsimile: 65-6897-7562<br />
+Business Activities: <br>Manufacturing, sales, and servicing of forklifts (engine type and electrical type).<br />
+</dd>
+</dl></span></div><div><span><dl class="comDlstAtn">
+<dt>Mitsubishi Logisnext Co., Ltd.</dt>
+<dd>
+Address: 1-1, Higashi-kotari 2-chome, Nagaokakyo, Kyoto, 617-8585, Japan<br />
+Telephone: 81-75-951-7171<br />
+Facsimile: 81-75-955-3797<br />
+URL: <a href="http://www.logisnext.com/en/">http://www.logisnext.com/en/</a><br />
+Business Activities: <br>Development, design, manufacture and sales of electric and engine-powered forklifts, transportation robots, automated warehouses, LAN and other logistics equipment and systems, electric vehicles, and monorails.<br />
+</dd>
+</dl></span></div><div><span><dl class="comDlstAtn">
+<dt>Mitsubishi Logisnext Europe (MLE)</dt>
+<dd>
+Address: Hefbrugweg 77, 1332 AM, Almere The Netherlands &lt;Mailing Address&gt; P.O. Box 30171, 1303 AC, Almere The Netherlands<br />
+Telephone: 31-36-549-4400<br />
+Facsimile: 31-36-549-4691<br />
+URL: <a href="https://www.logisnext.eu/">https://www.logisnext.eu/</a><br />
+Business Activities: <br>Forklifts, AGVs and
+warehouse equipment. Sales, marketing, R&amp;D, manufacturing, material handling solutions, servicing,
+financing.<br />
+</dd>
+</dl></span></div><div><span><dl class="comDlstAtn">
+<dt>Mitsubishi Logisnext Europe AB</dt>
+<dd>
+Address: Metallvagen 9 435 82 Mölnlycke<br />
+Telephone: 46-31-98-40-00<br />
+</dd>
+</dl></span></div><div><span><dl class="comDlstAtn">
+<dt>Mitsubishi Logisnext Europe Oy</dt>
+<dd>
+Address: Jampankatu 2, 04440 Järvenpää, Finland<br />
+Telephone: 358-20-77811<br />
+URL: <a href="https://www.mitsubishilogisnexteurope.fi/">https://www.mitsubishilogisnexteurope.fi/</a><br />
+Business Activities: <br>R&amp;D, design, manufacturing of electric counterbalance forklifts, AGVs and warehouse
+equipment. Sales AGVs and Logisnext Solutions. <br />
+</dd>
+</dl></span></div><div><span><dl class="comDlstAtn">
+<dt>Mitsubishi Nuclear Energy Systems, Inc. (MNES)</dt>
+<dd>
+Address: 6210 Ardrey Kell Road, Suite 350 Charlotte, North Carolina 28277<br />
+Telephone: 1-704-945-2621<br />
+URL: <a href="http://www.mnes-us.com/">http://www.mnes-us.com/</a><br />
+Business Activities: <br>Marketing of US-APWR and maintenance services and large replacement components<br />
+</dd>
+</dl></span></div><div><span><dl class="comDlstAtn">
+<dt>Mitsubishi Power (China) Co., Ltd.</dt>
+<dd>
+Address: 22nd floor, Office Tower1, Raffles City Changning, No.1133 Changning Road, Changning District, Shanghai<br />
+Telephone: 86-21-5492-3222<br />
+URL: <a href="http://www.chn.powermhi.com/">http://www.chn.powermhi.com/</a><br />
+Business Activities: <br>Sales and service of thermal power generation products<br />
+</dd>
+</dl></span></div><div><span><dl class="comDlstAtn">
+<dt>Mitsubishi Power (Thailand) Ltd.</dt>
+<dd>
+Address: 87/2 CRC Tower, All Seasons Place, 45th Floor, Wireless Road, Lumpini, Pathumwan, Bangkok 10330, Thailand<br />
+Telephone: 66-2654-3380<br />
+Facsimile: 66-2654-3379<br />
+URL: <a href="https://power.mhi.com/regions/thai/">https://power.mhi.com/regions/thai/</a><br />
+Business Activities: <br>Sales and service of thermal power generation products.<br />
+</dd>
+</dl></span></div><div><span><dl class="comDlstAtn">
+<dt>Mitsubishi Power Africa (Pty) Ltd</dt>
+<dd>
+Address: Building 30, The Woodlands Office Park, 20 Woodlands Drive, Woodmead, Sandton, Gauteng, 2191, Republic of SouthAfrica<br />
+Telephone:  27-11-260-4300<br />
+Facsimile: 27-11-656-3609 <br />
+URL: <a href="https://power.mhi.com/regions/afr">https://power.mhi.com/regions/afr</a><br />
+Business Activities: <br>Sales and service of thermal power generation products<br />
+</dd>
+</dl></span></div><div><span><dl class="comDlstAtn">
+<dt>Mitsubishi Power Americas, Inc.</dt>
+<dd>
+Address: 400 Colonial Center Pkwy, Lake Mary, FL 32746, U.S.A.<br />
+Telephone: 1-407-688-6100<br />
+Facsimile: 1-407-688-6480<br />
+URL: <a href="https://power.mhi.com/regions/amer/">https://power.mhi.com/regions/amer/</a><br />
+Business Activities: <br>Sales of whole prime mover products.<br />
+</dd>
+</dl></span></div><div><span><dl class="comDlstAtn">
+<dt>Mitsubishi Power Australia Pty. Ltd.</dt>
+<dd>
+Address: Level 29, Chifley Tower, 2 Chifley Square, Sydney, NSW 2000, Australia<br />
+Telephone: 61-2-9238-8078<br />
+URL: <a href="https://power.mhi.com/">https://power.mhi.com/</a><br />
+Business Activities: <br>Sales and service of thermal power generation products<br />
+</dd>
+</dl></span></div><div><span><dl class="comDlstAtn">
+<dt>Mitsubishi Power Canada, Ltd.</dt>
+<dd>
+Address: 460-10655 Southport Road S. W.Calgary, AB Canada T2W 4Y1<br />
+Telephone: 1-403-278-1881<br />
+Facsimile: 1-403-278-1810<br />
+URL: <a href="https://power.mhi.com/regions/amer/company">https://power.mhi.com/regions/amer/company</a><br />
+Business Activities: <br>Manufacturing, sales and service of thermal power generation products<br />
+</dd>
+</dl></span></div><div><span><dl class="comDlstAtn">
+<dt>Mitsubishi Power Egypt, L.L.C.</dt>
+<dd>
+Address: 2nd Floor egID Building, Block 72 off 90 Axis, City Center, 5th Settlement, New Cairo<br />
+Telephone: 202-26145045<br />
+Facsimile: 202-26145046<br />
+Business Activities: <br>Maintenance of gas turbine in Egypt<br />
+</dd>
+</dl></span></div><div><span><dl class="comDlstAtn">
+<dt>Mitsubishi Power Europe GmbH</dt>
+<dd>
+Address: Schifferstraẞe 80 47059 Duisburg, Germany<br />
+Telephone: 49-203-8038-0<br />
+Facsimile: 49-203-8038-1809 <br />
+Business Activities: <br>The worldwide planning and erection of thermal plants in the field of the energy and environmental technology, the monitoring of the erection and the commissioning of such plants as well as the provision of associated services.<br />
+</dd>
+</dl></span></div><div><span><dl class="comDlstAtn">
+<dt>Mitsubishi Power Europe GmbH Turkey</dt>
+<dd>
+Address: Levent Loft II Esentepe Mahallesi Otoçıkmazı Sk.No.4 K.2 D.10 Şişli/İstanbul<br />
+Telephone: +90-212- 2696364<br />
+URL: <a href="https://power.mhi.com/regions/emea/">https://power.mhi.com/regions/emea/</a><br />
+Business Activities: <br>The worldwide planning and erection of thermal plants in the field of the energy and environmental technology, the monitoring of the erection and the commissioning of such plants as well as the provision of associated services.<br />
+</dd>
+</dl></span></div><div><span><dl class="comDlstAtn">
+<dt>Mitsubishi Power Europe, Ltd.</dt>
+<dd>
+Address: 5th Floor, 14 New Street, London, EC2M 4TR, UK<br />
+Telephone: 44-207-535-0513<br />
+URL: <a href="https://power.mhi.com/regions/emea/">https://power.mhi.com/regions/emea/</a><br />
+Business Activities: <br>Sales and service of thermal power generation products.<br />
+</dd>
+</dl></span></div><div><span><dl class="comDlstAtn">
+<dt>Mitsubishi Power Europe, Ltd. Turkey</dt>
+<dd>
+Address: Odunluk Mah.Akademi Cad.Zeno Business Cente C Blok Kat:7 No:28 Nilufer/Bursa, Turkey<br />
+Telephone: +90-224-451 32-01<br />
+URL: <a href="https://power.mhi.com/regions/emea/">https://power.mhi.com/regions/emea/</a><br />
+Business Activities: <br>Sales and service of thermal power generation products.<br />
+</dd>
+</dl></span></div><div><span><dl class="comDlstAtn">
+<dt>Mitsubishi Power Gas Turbine Engineering Technology (Nanjing) Co., Ltd.</dt>
+<dd>
+Address: 16F No.3 Building, No. 68 Aoti Street, New Town SCI-Tech. Park, Jianye District Nanjing, Jiangsu Province, P.R.C<br />
+Telephone: 86-25-83242711<br />
+Facsimile: 86-25-83242715<br />
+Business Activities: <br>Servicing work contact activities related to the China BFG Fired Gas Turbine.<br />
+</dd>
+</dl></span></div><div><span><dl class="comDlstAtn">
+<dt>Mitsubishi Power de Mexico, S.A. de C.V.</dt>
+<dd>
+Address: Paseo de la Reforma No.265, Piso 18, Col. Cuauhtemoc, C.P.06500 Mexico D.F., MEXICO<br />
+Telephone: 52-55-5511-4193<br />
+Facsimile: 52-55-5511-3425<br />
+URL: <a href="https://power.mhi.com/regions/amer/">https://power.mhi.com/regions/amer/</a><br />
+Business Activities: <br>Sales and service of thermal power generation products<br />
+</dd>
+</dl></span></div><div><span><dl class="comDlstAtn">
+<dt>Mitsubishi Power, Ltd.</dt>
+<dd>
+Address: Mitsubishijuko Yokohama Bldg., 3-1, Minatomirai 3-chome, Nishi-ku, Yokohama<br />
+Telephone: 81-45-200-6100<br />
+Facsimile: 81-45-200-7989<br />
+URL: <a href="https://power.mhi.com/">https://power.mhi.com/</a><br />
+</dd>
+</dl></span></div><div><span><dl class="comDlstAtn">
+<dt>Mitsubishi Shipbuilding Co., Ltd.</dt>
+<dd>
+Address: Mitsubishijuko Yokohama Bldg., 3-1, Minatomirai 3-chome, Nishi-ku, Yokohama<br />
+Telephone: 81-45-200-6611<br />
+Facsimile: 81-45-211-3905<br />
+URL: <a href="https://www.mhi.com/group/mhimsb/">https://www.mhi.com/group/mhimsb/</a><br />
+Business Activities: <br>Ship engineering Design, manufacture and repair of ferries, cargo and passenger ships, RO/RO ships, special-purpose vessels, patrol vessels, etc.<br />
+</dd>
+</dl></span></div><div><span><dl class="comDlstAtn">
+<dt>Mitsubishi Turbocharger Asia Co., Ltd. (MTA)</dt>
+<dd>
+Address: 700/803 Moo1, T. Panthong A. Panthong Chonburi 20160, Thailand<br />
+Telephone: 66-38-932-800<br />
+Facsimile: 66-38-932-849<br />
+Business Activities: <br>Production and sales of turbocharger and major parts.<br />
+</dd>
+</dl></span></div><div><span><dl class="comDlstAtn">
+<dt>Mitsubishi Turbocharger and Engine America, Inc. (MTEA)</dt>
+<dd>
+Address: Two Pierce Place, 11th Floor, Itasca, IL 60143 U.S.A.<br />
+Telephone: 1-630-268-0750<br />
+Facsimile: 1-630-268-9293<br />
+URL: <a href="https://www.mtea-us.com/">https://www.mtea-us.com/</a><br />
+Business Activities: <br>Sales, servicing, and parts supply for engines and turbochargers.<br />
+</dd>
+</dl></span></div><div><span><dl class="comDlstAtn">
+<dt>Mohawk Labor Services, LLC</dt>
+<dd>
+Address: 82 Rotterdam Industrial Park, Schenectady, NY 12306 USA<br />
+Telephone: 1-518-831-1090<br />
+Facsimile: 1-518-785-8177<br />
+URL: <a href="https://mohawklaborservices.com/">https://mohawklaborservices.com/</a><br />
+Business Activities: <br>Labour service for assembly/disassembly of equipments<br />
+</dd>
+</dl></span></div><div><span><dl class="comDlstAtn">
+<dt>New Gencoat,Inc</dt>
+<dd>
+Address: N53 W24900 South Corporate Circle Sussex, WI 53089 United States of America, Wisconsin<br />
+Telephone: 262-372-4515<br />
+Facsimile: 262-372-4815<br />
+</dd>
+</dl></span></div><div><span><dl class="comDlstAtn">
+<dt>Primetals Technologies (Shanhai), Inc.</dt>
+<dd>
+Address: Room 1707, Tower A, 69 Dongfang Road, Shanghai, China 200120<br />
+Telephone: 86-21-6859-8835<br />
+Facsimile: 86-21-6859-8830<br />
+Business Activities: <br>Wholesaling, export/import, technical service, and after-sales service for iron and steel production machinery/equipment, non-ferrous metal equipment, and accessory equipment.<br />
+</dd>
+</dl></span></div>  <h3>Company not subject to consolidation</h3>
+
+<div><span><dl class="comDlstAtn">
+<dt>MI LNG Company,LTD.</dt>
+<dd>
+Address: 5-1, Shinbashi 4-chome, Minato-ku, Tokyo, 105-0004, Japan<br />
+Telephone: 81-3-5733-2006<br />
+Facsimile: 81-3-3431-1202<br />
+</dd>
+</dl></span></div><div><span><dl class="comDlstAtn">
+<dt>Mitsubishi Heavy Industries Automotive Climate Control (Shanghai) Co., Ltd.</dt>
+<dd>
+Telephone: 86-(0)21-5899-6686<br />
+Facsimile: 86-(0)21-5899-6329<br />
+</dd>
+</dl></span></div><div><span><dl class="comDlstAtn">
+<dt>Mitsubishi Heavy Industries Mexicana, S.A. de C.V. (MHI-MEX)</dt>
+<dd>
+Address: Paseo de la Reforma No.265, Piso18, Col. Cuauhtemoc, 06500 Mexico, D.F., Mexico<br />
+Telephone: 52-55-5511-4193<br />
+Facsimile: 52-55-5511-3425<br />
+Business Activities: <br>Market research, PR, sales, and after-sales service for the products of Mitsubishi Heavy Industries.<br />
+</dd>
+</dl></span></div><div><span><dl class="comDlstAtn">
+<dt>Mitsubishi Power Asia Pacific Pte. Ltd.</dt>
+<dd>
+Address: 150 BEACH ROAD #33-03/04 GATEWAY WEST, SINGAPORE 189720<br />
+Telephone: 65-6293-5352<br />
+Facsimile: 65-6293-5361<br />
+URL: <a href="https://power.mhi.com/regions/apac/">https://power.mhi.com/regions/apac/</a><br />
+</dd>
+</dl></span></div><div><span><dl class="comDlstAtn">
+<dt>Mitsubishi Power India Private Limited</dt>
+<dd>
+Address: Suite No.3, Ground Floor, Level 2, Atelier, Worldmark-2, Asset Area 8, Aerocity, Hospitality District, New Delhi - 110037, INDIA<br />
+Telephone: 91-11-4982-4400<br />
+Facsimile: 91-11-49824450<br />
+URL: <a href="https://power.mhi.com/regions/ind/">https://power.mhi.com/regions/ind/</a><br />
+Business Activities: <br>Sales and service of thermal power generation products<br />
+</dd>
+</dl></span></div>
+</section>
+<section>
+  <h2 id="n-z">N - Z</h3>
+    <h3>Company subject to consolidation</h3>
+
+<div><span><dl class="comDlstAtn">
+<dt>MHI NUSEC, Ltd.</dt>
+<dd>
+Address: 1-1, Wadasaki-cho 1-chome, Hyogo-ku, Kobe, 652-8585, Japan<br />
+Telephone: 81-78-672-4180<br />
+Facsimile: 81-78-672-4139<br />
+Business Activities: <br>Work planning, schedule planning, design, dispatch of technical supervisors, and work execution related to site work for periodical inspections, repairs, and modifications of nuclear plant.<br />
+</dd>
+</dl></span></div><div><span><dl class="comDlstAtn">
+<dt>MHI Nuclear Development</dt>
+<dd>
+Address: 622-12, Funaishikawa, Tokai-mura, Ibaraki Prefecture, 319-1111, Japan<br />
+Telephone: 81-29-282-9111<br />
+Facsimile: 81-29-282-0035<br />
+URL: <a href="https://www.mhi.com/group/ndc/">https://www.mhi.com/group/ndc/</a><br />
+Business Activities: <br>Research, development, and testing of nuclear fuels and relevant equipment. Development of inspection and testing technologies for nuclear fuel.<br />
+</dd>
+</dl></span></div><div><span><dl class="comDlstAtn">
+<dt>MHI Power (Beijing) Management and Consulting Ltd</dt>
+<dd>
+Address: Room D11, 21/F, Tower 1, Xihuan Plaza, No.1 Xizhimenwai Street, Beijing 100044, China<br />
+Telephone: 86-10-5830-1089<br />
+</dd>
+</dl></span></div><div><span><dl class="comDlstAtn">
+<dt>MHI Power Aero Argentina S.R.L.</dt>
+<dd>
+Address: Juana Manso 555, Piso 5, Oficina E, C1107CBK Buenos Aires, Argentina<br />
+Telephone: 54-11-4517-0074<br />
+</dd>
+</dl></span></div><div><span><dl class="comDlstAtn">
+<dt>MHI Power Aero Energy CIS LLC</dt>
+<dd>
+Address: 7, Gasheka Street, Building #1, Moscow, 123056 RUSSIA<br />
+Telephone: 7495-7558385<br />
+Facsimile: 7-495-755-83-86<br />
+</dd>
+</dl></span></div><div><span><dl class="comDlstAtn">
+<dt>MHI Power Aero Europe SRL</dt>
+<dd>
+Address: Tour &amp; Taxis Building Havenlaan 86c box 204, 1000 Brussels, Belgium<br />
+</dd>
+</dl></span></div><div><span><dl class="comDlstAtn">
+<dt>MHI Power Aero International LLC</dt>
+<dd>
+Address: 628 Hebron Avenue, Suite 400, Glastonbury CT 06033, USA<br />
+Telephone: 1-860-368-5900<br />
+</dd>
+</dl></span></div><div><span><dl class="comDlstAtn">
+<dt>MHI Sagami Logistics &amp; Services Co., Ltd.</dt>
+<dd>
+Address: 3000, Tana, Chuo-ku, Sagamihara, Kanagawa, 252-5293, Japan<br />
+Telephone: 81-42-761-4733<br />
+Facsimile: 81-42-761-8844<br />
+Business Activities: <br>Logistics service for conveyance, delivery, etc. of the product of Mitsubishi Heavy Industries and parts.<br />
+</dd>
+</dl></span></div><div><span><dl class="comDlstAtn">
+<dt>Mitsubishi Logisnext Forklift(Shanghai) Co., Ltd.</dt>
+<dd>
+Address: 11F., Hua Du Bldg, No.838 Zhang Yang Rd., Pudong Shanghai, 200122 P.R.China<br />
+Telephone: 86-21-5058-8600<br />
+Facsimile: 86-21-5058-8606<br />
+</dd>
+</dl></span></div><div><span><dl class="comDlstAtn">
+<dt>Mitsubishi Power Aero LLC</dt>
+<dd>
+Address: 628 Hebron Avenue, Suite 400, Glastonbury, CT 06033<br />
+Telephone: 1-860-368-5900<br />
+URL: <a href="https://power.mhi.com/group/aero/">https://power.mhi.com/group/aero/</a><br />
+Business Activities: <br>Mitsubishi Power Aero LLC is a world leader in developing and manufacturing energy solutions for power generation. The Mitsubishi Power Aero gas turbine engine portfolio offers competitive, efficient and flexible products from 30 MW to 140 MW of power. The company is committed to providing high-quality solutions for the distributed energy market.<br />
+</dd>
+</dl></span></div><div><span><dl class="comDlstAtn">
+<dt>Nichiyu Business Service Co.,Ltd.</dt>
+<dd>
+Telephone: 81-75-956-8664<br />
+Facsimile: 81-75-953-2482<br />
+</dd>
+</dl></span></div><div><span><dl class="comDlstAtn">
+<dt>Nichiyu Forklift (Thailand) Co., Ltd.</dt>
+<dd>
+Address: 7/353Moo 6, Amata City Industrial Estate, Temboi Map Yang Phon,Amphur Pluak Daeng<br />
+Telephone: 66-3865-0961<br />
+Facsimile: 66-3865-0968<br />
+</dd>
+</dl></span></div><div><span><dl class="comDlstAtn">
+<dt>Nichiyu Hong Kong Co., Ltd.</dt>
+<dd>
+Address: No.5 19/Floor. Remington Center, No.23 Hung To Road Kwun Tong Kowloon Hong Kong<br />
+Telephone: 852-2719-9202<br />
+Facsimile: 852-2719-9212<br />
+</dd>
+</dl></span></div><div><span><dl class="comDlstAtn">
+<dt>Nichiyu Machinery Co.,Ltd.</dt>
+<dd>
+Telephone: 81-748-46-6880<br />
+Facsimile: 81-748-46-6879<br />
+</dd>
+</dl></span></div><div><span><dl class="comDlstAtn">
+<dt>Nuclear Power Training Center, Ltd.</dt>
+<dd>
+Address: 129-1-1 Kutsumi, Tsuruga-shi, Fukui Prefecture, 914-0823, Japan<br />
+Telephone: 81-770-23-9090<br />
+Facsimile: 81-770-22-5662<br />
+URL: <a href="https://www.mhi.com/group/ntc/">https://www.mhi.com/group/ntc/</a><br />
+Business Activities: <br>Education and training of nuclear power plant operating technicians using the products of Mitsubishi Heavy Industries.<br />
+</dd>
+</dl></span></div><div><span><dl class="comDlstAtn">
+<dt>PRIMETALS TECHNOLOGIES, LIMITED</dt>
+<dd>
+Address: Primetals Technologies Limited,Building No. 11 Chiswick Park, 566 Chiswick High Road, W4 5YA London, Great Britain<br />
+Telephone: 44-208-996-4300<br />
+URL: <a href="http://primetals.com/">http://primetals.com/</a><br />
+Business Activities: <br>Manufacturing, sales, and sales-related engineering for hot and cold rolling equipment and process equipment.<br />
+</dd>
+</dl></span></div><div><span><dl class="comDlstAtn">
+<dt>PT. MHI Engine System Indonesia (MHIES-I)</dt>
+<dd>
+Address: #302 Bld. Cilandak Commercial Estate P.O. Box 7510 CCE, Cilandak, Jakarta, Indonesia<br />
+Telephone: 62-21-7890191<br />
+Facsimile: 62-21-7890278<br />
+Business Activities: <br>Sales, installation work, after-sales service, and parts sales for diesel power generating equipment and power generation installation.<br />
+</dd>
+</dl></span></div><div><span><dl class="comDlstAtn">
+<dt>PT. Mitsubishi Heavy Industries Indonesia</dt>
+<dd>
+Address: 12th Floor, Sentral Senayan II Jl. Asia Afrika No.8, Gelora Bung Karno, Senayan Jakarta 10270, Indonesia<br />
+Telephone: +62-21-5797-4430<br />
+</dd>
+</dl></span></div><div><span><dl class="comDlstAtn">
+<dt>PT. Mitsubishi Heavy Industries Indonesia</dt>
+<dd>
+Address: 12th Floor, Sentral Senayan II Jl. Asia Afrika No.8, Gelora Bung Karno, Senayan Jakarta 10270, Indonesia<br />
+Telephone: +62-21-5797-4430<br />
+</dd>
+</dl></span></div><div><span><dl class="comDlstAtn">
+<dt>PT. Mitsubishi Power Indonesia</dt>
+<dd>
+Address: Sentral Senayan II, 12th Floor, JL. Asia Afrika No. 8, Senayan, Gelora Bung Karno, Jakarta Pusat, 10270, Indonesia<br />
+Telephone: 62-21-5797-4441<br />
+Facsimile: 62-21-5797-4450<br />
+Business Activities: <br>Sales and service of thermal power generation products.<br />
+</dd>
+</dl></span></div><div><span><dl class="comDlstAtn">
+<dt>Power Generation Services, Inc.</dt>
+<dd>
+Address: 2719 37th St. NW, Mandan, ND 58554 USA<br />
+Telephone: 1-701-663-6736<br />
+Facsimile: 1-701-663-9521<br />
+URL: <a href="https://powergensvc.com/">https://powergensvc.com/</a><br />
+Business Activities: <br>Service of thermal power generation products<br />
+</dd>
+</dl></span></div><div><span><dl class="comDlstAtn">
+<dt>Primetals International Trading (Shanghai) Ltd. Inc.</dt>
+<dd>
+Address: 369 Shenfu Road, Xinzhuang Industrial Park, Minhang District,Shanghai 201108, China<br />
+Telephone: 86-21-6196-8688<br />
+Facsimile: 86-21-6196-8686<br />
+Business Activities: <br>Primetals Technologies offers its customers solutions for the entire value chain in iron, steel, and nonferrous production that extends from technologies for the treatment of raw materials to processing and finishing at the end of the production process, including the related lifecycle services.<br />
+</dd>
+</dl></span></div><div><span><dl class="comDlstAtn">
+<dt>Primetals Tangshan Technology Services Ltd.</dt>
+<dd>
+Address: Gangchang Road South, Lubei District, Tangshan 63000, China<br />
+Business Activities: <br>Primetals Technologies offers its customers solutions for the entire value chain in iron, steel, and nonferrous production that extends from technologies for the treatment of raw materials to processing and finishing at the end of the production process, including the related lifecycle services.<br />
+</dd>
+</dl></span></div><div><span><dl class="comDlstAtn">
+<dt>Primetals Technologies (China) Ltd.</dt>
+<dd>
+Address: 369 Shenfu Road, Xinzhuang Industrial Park, Minhang District, 201108 Shanghai,China<br />
+Telephone: 86-21-6196-8688<br />
+Facsimile: 86-21-6196-8686<br />
+Business Activities: <br>Primetals Technologies offers its customers solutions for the entire value chain in iron, steel, and nonferrous production that extends from technologies for the treatment of raw materials to processing and finishing at the end of the production process, including the related lifecycle services.<br />
+</dd>
+</dl></span></div><div><span><dl class="comDlstAtn">
+<dt>Primetals Technologies Austria GmbH</dt>
+<dd>
+Address: Turmstraße 44, 4031 Linz, Austria<br />
+Telephone: 43-732-6592-0<br />
+URL: <a href="https://power.mhi.com/regions/amer/company">https://power.mhi.com/regions/amer/company</a><br />
+Business Activities: <br>Primetals Technologies offers its customers solutions for the entire value chain in iron, steel, and nonferrous production that extends from technologies for the treatment of raw materials to processing and finishing at the end of the production process, including the related lifecycle services.<br />
+</dd>
+</dl></span></div><div><span><dl class="comDlstAtn">
+<dt>Primetals Technologies Belgium S.A./N.V.</dt>
+<dd>
+Address: W.A. Mozartlaan 4, Building Amadeus 4, 1620 Drogenbos, Belgium<br />
+Telephone: 32-2-363-45-45<br />
+Facsimile: 32-2-363-45-48<br />
+Business Activities: <br>Primetals Technologies offers its customers solutions for the entire value chain in iron, steel, and nonferrous production that extends from technologies for the treatment of raw materials to processing and finishing at the end of the production process, including the related lifecycle services.<br />
+</dd>
+</dl></span></div><div><span><dl class="comDlstAtn">
+<dt>Primetals Technologies Brazil Ltda.</dt>
+<dd>
+Address: Primetals Techologies Brazil Ltda., Avenida João XXIII s/n - Santa Cruz 23560-352,Rio de Janeiro, Brazil<br />
+Telephone: 55-21-3198-4700<br />
+URL: <a href="https://www.primetals.com/">https://www.primetals.com/</a><br />
+Business Activities: <br>Primetals Technologies offers its customers solutions for the entire value chain in iron, steel, and nonferrous production that extends from technologies for the treatment of raw materials to processing and finishing at the end of the production process, including the related lifecycle services.<br />
+</dd>
+</dl></span></div><div><span><dl class="comDlstAtn">
+<dt>Primetals Technologies Czech Republic s.r.o.</dt>
+<dd>
+Address: Primetals Technologies Czech Republic s.r.o., 28.rijna 2663/150, 702 00 Ostrava, Czech Republic<br />
+Telephone: 420-597-400-660<br />
+Facsimile: 420-597-400-669<br />
+Business Activities: <br>Primetals Technologies offers its customers solutions for the entire value chain in iron, steel, and nonferrous production that extends from technologies for the treatment of raw materials to processing and finishing at the end of the production process, including the related lifecycle services.<br />
+</dd>
+</dl></span></div><div><span><dl class="comDlstAtn">
+<dt>Primetals Technologies Financial Services Ltd.</dt>
+<dd>
+Address: Building No. 11 Chiswick Park, 566 Chiswick High Road London W4 5YA Great Britain<br />
+Telephone: 44-208-996-4300<br />
+Business Activities: <br>Primetals Technologies offers its customers solutions for the entire value chain in iron, steel, and nonferrous production that extends from technologies for the treatment of raw materials to processing and finishing at the end of the production process, including the related lifecycle services.<br />
+</dd>
+</dl></span></div><div><span><dl class="comDlstAtn">
+<dt>Primetals Technologies Finland OY</dt>
+<dd>
+Address: Primetals Technologies Finland Oy, Oulu c/o Asianajotoimisto Ferenda Norde, Hallituskatu 11 A 7, 90100 , Finland<br />
+Business Activities: <br>Primetals Technologies offers its customers solutions for the entire value chain in iron, steel, and nonferrous production that extends from technologies for the treatment of raw materials to processing and finishing at the end of the production process, including the related lifecycle services.<br />
+</dd>
+</dl></span></div><div><span><dl class="comDlstAtn">
+<dt>Primetals Technologies France S.A.S.</dt>
+<dd>
+Address: Primetals Technologies France S.A.S.- 41, Route de Feurs - BP 99 - 42600 Savigneux - France<br />
+Telephone: 33-4-77-96-63-00<br />
+Facsimile: 33-4-77-96-63-63<br />
+Business Activities: <br>Primetals Technologies offers its customers solutions for the entire value chain in iron, steel, and nonferrous production that extends from technologies for the treatment of raw materials to processing and finishing at the end of the production process, including the related lifecycle services.<br />
+</dd>
+</dl></span></div><div><span><dl class="comDlstAtn">
+<dt>Primetals Technologies Germany GmbH</dt>
+<dd>
+Address: Bunsenstraße 43, Erlangen ,91058, Germany<br />
+Telephone: 49-9131-7-0<br />
+Facsimile: 49-9131-7-23960<br />
+URL: <a href="http://www.primetals.com/">http://www.primetals.com </a><br />
+Business Activities: <br>Primetals Technologies offers its customers solutions for the entire value chain in iron, steel, and nonferrous production that extends from technologies for the treatment of raw materials to processing and finishing at the end of the production process, including the related lifecycle services.<br />
+</dd>
+</dl></span></div><div><span><dl class="comDlstAtn">
+<dt>Primetals Technologies India Private Ltd.</dt>
+<dd>
+Address: Godrej Waterside, Tower-II, 7th Floor, Unit Nos.706 &amp; 707, Plot No.5, Block DP, Sector -V, Salt Lake City, West Bengal, Kolkata 700091 ,India<br />
+Telephone: 91-33-6629-1000<br />
+Facsimile: 91-33-6629-1300,1301<br />
+Business Activities: <br>Primetals Technologies offers its customers solutions for the entire value chain in iron, steel, and nonferrous production that extends from technologies for the treatment of raw materials to processing and finishing at the end of the production process, including the related lifecycle services.<br />
+</dd>
+</dl></span></div><div><span><dl class="comDlstAtn">
+<dt>Primetals Technologies Italy S.r.l.</dt>
+<dd>
+Address: Primetals Technologies Italy S.r.l., Via Luigi Pomini 92, 21053 Marnate, Italy<br />
+Telephone: 39-0331-741211<br />
+Facsimile: 39-0331-741386<br />
+Business Activities: <br>Primetals Technologies offers its customers solutions for the entire value chain in iron, steel, and nonferrous production that extends from technologies for the treatment of raw materials to processing and finishing at the end of the production process, including the related lifecycle services.<br />
+</dd>
+</dl></span></div><div><span><dl class="comDlstAtn">
+<dt>Primetals Technologies Japan, Ltd</dt>
+<dd>
+Address: 6-22, Kannon Shinmachi, 4-Chome, Nishi-ku, Hiroshima-shi, 733-8553 Japan<br />
+Telephone: 81-82-291-2181<br />
+Business Activities: <br>Manufacturing, sales, and sales-related engineering for hot and cold rolling equipment and process equipment.<br />
+</dd>
+</dl></span></div><div><span><dl class="comDlstAtn">
+<dt>Primetals Technologies Korea Limited</dt>
+<dd>
+Address: Primetals Technolgies Korea Limited, JAEHWA Square 16th Floor, 311, Dongmak-ro, Mapo-gu, Seoul, 04156 Korea<br />
+Telephone: 82-2-3450-1990<br />
+Facsimile: 82-2-3450-1992<br />
+Business Activities: <br>Primetals Technologies offers its customers solutions for the entire value chain in iron, steel, and nonferrous production that extends from technologies for the treatment of raw materials to processing and finishing at the end of the production process, including the related lifecycle services.<br />
+</dd>
+</dl></span></div><div><span><dl class="comDlstAtn">
+<dt>Primetals Technologies Mexico, S.R.L. de C.V.</dt>
+<dd>
+Address: Primetals Technologies Mexico S.R.L. de C.V., Carretera Miguel Aleman Km 26, 66637 Apodaca, Mexico<br />
+Telephone: 52-81-96-09-09<br />
+Business Activities: <br>Primetals Technologies offers its customers solutions for the entire value chain in iron, steel, and nonferrous production that extends from technologies for the treatment of raw materials to processing and finishing at the end of the production process, including the related lifecycle services.<br />
+</dd>
+</dl></span></div><div><span><dl class="comDlstAtn">
+<dt>Primetals Technologies Poland Sp. z o.o.</dt>
+<dd>
+Address: Primetals Technologies Poland Sp. z o.o., ul. Stefana Korbonskiego 14, Cracow 30-443, Poland<br />
+Telephone: 48-12-211-4300<br />
+Facsimile: 48-12-211-4390<br />
+Business Activities: <br>Primetals Technologies offers its customers solutions for the entire value chain in iron, steel, and nonferrous production that extends from technologies for the treatment of raw materials to processing and finishing at the end of the production process, including the related lifecycle services.<br />
+</dd>
+</dl></span></div><div><span><dl class="comDlstAtn">
+<dt>Primetals Technologies Russia LLC</dt>
+<dd>
+Address: Primetals Technologies Russia LLC, Gilyarovskogo Str., 10, bld.1, floor 4, 129090 Moscow, Russia<br />
+Telephone: 7-495-114-55-18<br />
+Business Activities: <br>Primetals Technologies offers its customers solutions for the entire value chain in iron, steel, and nonferrous production that extends from technologies for the treatment of raw materials to processing and finishing at the end of the production process, including the related lifecycle services.<br />
+</dd>
+</dl></span></div><div><span><dl class="comDlstAtn">
+<dt>Primetals Technologies Treasury GmbH</dt>
+<dd>
+Address: Primetals Technologies Treasury GmbH,Turmstraße 44, 4031 Linz, Austria<br />
+Telephone: 43-732-6592-0<br />
+</dd>
+</dl></span></div><div><span><dl class="comDlstAtn">
+<dt>Primetals Technologies USA LLC</dt>
+<dd>
+Address: Primetals Technologies USA LLC, 5895 Windward Pkwy Alpharetta, GA 30005,United States of America, Georgia<br />
+Telephone: 1-770-740-3799<br />
+Business Activities: <br>Primetals Technologies offers its customers solutions for the entire value chain in iron, steel, and nonferrous production that extends from technologies for the treatment of raw materials to processing and finishing at the end of the production process, including the related lifecycle services.<br />
+</dd>
+</dl></span></div><div><span><dl class="comDlstAtn">
+<dt>Primetals Technologies Ukraine LLC</dt>
+<dd>
+Address: Primetals Technologies Ukraine LLC, 4-B Mykoly Hrinchenka Str., 3038 Kyiv, Ukraine<br />
+Telephone: 38-044-233-7200<br />
+Business Activities: <br>Primetals Technologies offers its customers solutions for the entire value chain in iron, steel, and nonferrous production that extends from technologies for the treatment of raw materials to processing and finishing at the end of the production process, including the related lifecycle services.<br />
+</dd>
+</dl></span></div><div><span><dl class="comDlstAtn">
+<dt>Primetals Teknoloji Sanayi ve Ticaret A.S.</dt>
+<dd>
+Address: Primetals Teknoloji Sanayi ve Ticaret A.S. , Yakacik Cad. No: 111, 34870 Kartal, Istanbul, Turkey<br />
+Telephone: 90-216-459-3160<br />
+Facsimile: 90-216-459-3486<br />
+Business Activities: <br>Primetals Technologies offers its customers solutions for the entire value chain in iron, steel, and nonferrous production that extends from technologies for the treatment of raw materials to processing and finishing at the end of the production process, including the related lifecycle services.<br />
+</dd>
+</dl></span></div><div><span><dl class="comDlstAtn">
+<dt>Rapidparts Inc. (Rapidparts-A)</dt>
+<dd>
+Address: 2950 Walkent Court, N.W., Grand Rapids, MI 49544 U.S.A.<br />
+Telephone: 1-616-647-2500<br />
+Facsimile: 1-616-647-3040<br />
+URL: <a href="http://www.rpionline.com/">http://www.rpionline.com/</a><br />
+Business Activities: <br>Sales of interchangeable parts for forklifts.<br />
+</dd>
+</dl></span></div><div><span><dl class="comDlstAtn">
+<dt>RedsLand Corporation</dt>
+<dd>
+Address: 1771 Shimookubo, Saitamashisakura-ku, Saitama-ken, 338-0825, JAPAN<br />
+Telephone: 81-48-840-1541<br />
+</dd>
+</dl></span></div><div><span><dl class="comDlstAtn">
+<dt>Rokkasho Reprocessing Plant Maintenance Service Co., Ltd.</dt>
+<dd>
+Address: 1-45, Obuchi-aza-iyasakadaira, Rokkasyo-mura, Aomori Prefecture, 039-3212, Japan<br />
+Telephone: 81-175-73-3050<br />
+Facsimile: 81-175-73-3051<br />
+Business Activities: <br>Supply of operation- and maintenance-related technologies, service, etc. to the Rokkasho-Mura Spent Fuel Reprocessing Plant.<br />
+</dd>
+</dl></span></div><div><span><dl class="comDlstAtn">
+<dt>Ryoju  Co.LTD</dt>
+<dd>
+Address: 3-1, Minatomirai 3-chome, Nishi-ku, Yokohama, Kanagawa, 220-0012, Japan<br />
+Telephone: 81-45-200-9736<br />
+Facsimile: 81-45-200-9737<br />
+</dd>
+</dl></span></div><div><span><dl class="comDlstAtn">
+<dt>Ryoju Cold Chain Co., Ltd.</dt>
+<dd>
+Address: 5-4, Uchikanda 1-chome, Chiyoda-ku, Tokyo, 101-0047, Japan<br />
+Telephone: 81-3-5259-2051<br />
+Facsimile: 81-3-5259-2057<br />
+Business Activities: <br>Sales, rental, installation, and servicing of freezing equipment for transportation. Design and work execution for stationary freezing, refrigerating, and cooling equipment.<br />
+</dd>
+</dl></span></div><div><span><dl class="comDlstAtn">
+<dt>SARL MHI Power Aero Algeria</dt>
+<dd>
+Address: c/o PW Power Systems 04 Rue Abderezak Belidem, Hydra, Alger 16035 ALGERIA<br />
+</dd>
+</dl></span></div><div><span><dl class="comDlstAtn">
+<dt>Saudi VOEST-ALPINE GmbH</dt>
+<dd>
+Address: Primetals Technologies Austria GmbH, Turmstraße 44, 4031 Linz, Austria<br />
+Telephone: 43-732-6592-0<br />
+Business Activities: <br>Primetals Technologies offers its customers solutions for the entire value chain in iron, steel, and nonferrous production that extends from technologies for the treatment of raw materials to processing and finishing at the end of the production process, including the related lifecycle services.<br />
+</dd>
+</dl></span></div><div><span><dl class="comDlstAtn">
+<dt>Shanghai MHI Turbocharger Co.,Ltd. (SMTC)</dt>
+<dd>
+Address: Block A34, No.5399 Wai Qing Song Road, Qing Pu District, Shanghai 201707, China <br />
+Telephone: 86-21-6921-0030<br />
+Facsimile: 86-21-6921-0825<br />
+URL: <a href="http://www.smtc.sh.cn/">http://www.smtc.sh.cn</a><br />
+Business Activities: <br>Design, manufacturing, sales, and after-sales service for turbochargers.<br />
+</dd>
+</dl></span></div><div><span><dl class="comDlstAtn">
+<dt>Shanghai Nichiyu Forklift Manufacturing Co., Ltd.</dt>
+<dd>
+Address: No.150,Xun Ye Road,Sheshan Branch,Songjiang Industrial Zone,Shanghai, 201602 P.R.China<br />
+Telephone: 86-21-5779-2111<br />
+Facsimile: 86-21-5779-2200<br />
+</dd>
+</dl></span></div><div><span><dl class="comDlstAtn">
+<dt>Southern California Material Handling Inc. (SCMH)</dt>
+<dd>
+Address: 8314E. .Slauson Ave. Pico Rivera, California 90660, U.S.A<br />
+Telephone: 1-562-949-1000<br />
+Facsimile: 1-562-949-5984<br />
+URL: <a href="http://www.scmh.com/">http://www.scmh.com/</a><br />
+Business Activities: <br>Sales of forklifts and the takeover, resale, and leasing of second-hand forklifts.<br />
+</dd>
+</dl></span></div><div><span><dl class="comDlstAtn">
+<dt>Tamachi Building Co., Ltd.</dt>
+<dd>
+Address: 34-7, Shiba 5-chome, Minato-ku, Tokyo, 108-0014, Japan<br />
+Telephone: 81-3-3451-1131<br />
+Facsimile: 81-3-3451-1561<br />
+Business Activities: <br>Rental, management, and sale/purchase of real estate.<br />
+</dd>
+</dl></span></div><div><span><dl class="comDlstAtn">
+<dt>Thai Compressor Manufacturing Co., Ltd. (THACOM)</dt>
+<dd>
+Address: 33/3 Moo 21, Suwintawong Road, Saladang, Bangnumprieo, Chachoengsao 24000, Thailand<br />
+Telephone: 66-38-593-062<br />
+Facsimile: 66-38-593-067<br />
+Business Activities: <br>Production and sales of rotary compressors for air conditioners and freezing machines.<br />
+</dd>
+</dl></span></div><div><span><dl class="comDlstAtn">
+<dt>Tokiwa Machinery Works Ltd.</dt>
+<dd>
+Address: 3000, Tana, Chuo-ku, Sagamihara, Kanagawa, 252-9253, Japan<br />
+Telephone: 81-42-763-0807<br />
+Facsimile: 81-42-763-1952<br />
+Business Activities: <br>Manufacturing of the Mitsubishi Turbocharger, and Mitsubishi Diesel Engine.<br />
+</dd>
+</dl></span></div><div><span><dl class="comDlstAtn">
+<dt>Tokyo Environment Operation Ltd.</dt>
+<dd>
+Address: 2-2-66 uminomori, Koto-ku, Tokyo, 135-0064, Japan<br />
+Telephone: 81-3-3527-5755<br />
+Facsimile: 81-3-5531-5020<br />
+Business Activities: <br>Operation, maintenance, and inspection of the Tokyo PCB Waste-Treatment Plant.<br />
+</dd>
+</dl></span></div><div><span><dl class="comDlstAtn">
+<dt>Turboden S.p.A.</dt>
+<dd>
+Address: Turboden S.p.A. - C.F./P.I. 02582620981, Via Cernaia, 10 - 25124 - Brescia - Italy<br />
+Telephone: 39-030-3552001<br />
+Facsimile: 39-030-3552011<br />
+URL: <a href="https://www.turboden.com/">https://www.turboden.com/</a><br />
+Business Activities: <br>Turboden is specialized in the applications of Organic Rankine Cycle technology, a technology which allows to produce electric power efficiently and in a user friendly way, from low temperature and/or low power heat sources.<br />
+</dd>
+</dl></span></div><div><span><dl class="comDlstAtn">
+<dt>Turboden Turkey ORC Turbo Jeneratör Sanayi Anonim Şirketi</dt>
+<dd>
+Address: Barbaros Mahallesi Billur Sk. No. 23/8 /C I Çankaya / Ankara I Türkiye<br />
+URL: <a href="https://www.turboden.com.tr/">https://www.turboden.com.tr/</a><br />
+Business Activities: <br>Turboden is specialized in the applications of Organic Rankine Cycle technology, a technology which allows to produce electric power efficiently and in a user friendly way, from low temperature and/or low power heat sources.<br />
+</dd>
+</dl></span></div><div><span><dl class="comDlstAtn">
+<dt>UniCarriers Forklift(Anhui) Co., Ltd.</dt>
+<dd>
+Address: 158 Woyun Rd., Hefei Economic &amp; Technological Development Area, Hefei,Anhui, China 230601 <br />
+Telephone: 86-551-6-368-0660<br />
+</dd>
+</dl></span></div><div><span><dl class="comDlstAtn">
+<dt>Urawa Red Diamonds Co., Ltd.</dt>
+<dd>
+Address: 2-1, Nakanoda, Midori-ku Saitama-shi, Saitama<br />
+Telephone: 81-48-812-1001<br />
+</dd>
+</dl></span></div>  <h3>Company not subject to consolidation</h3>
+
+<div><span><dl class="comDlstAtn">
+<dt>Nagasaki Nishi Eco-Creation Co., Ltd.</dt>
+<dd>
+Address: 3-526-23, Kaminoshimamachi, Nagasaki-shi, Nagasaki, 850-0078, Japan<br />
+Telephone: 81-95-865-9753<br />
+Facsimile: 81-95-865-9752<br />
+</dd>
+</dl></span></div><div><span><dl class="comDlstAtn">
+<dt>New Energy Developments B.V.</dt>
+<dd>
+Address: Herikerbergweg 238, Luna ArenA, 1101CM Amsterdam,the Netherlands<br />
+Telephone: 31205755600<br />
+</dd>
+</dl></span></div><div><span><dl class="comDlstAtn">
+<dt>Nichiyu Forklifts India Pvt. Ltd.</dt>
+<dd>
+Address: Ground Floor.LAS.Towers No.61 Velachery Road, Little Mount, Saidapet, Chennai-600 015 INDIA<br />
+Telephone: 91-44-22354214<br />
+Facsimile: 91-44-22354215<br />
+</dd>
+</dl></span></div><div><span><dl class="comDlstAtn">
+<dt>Sanjo Eco-Creation Co., Ltd.</dt>
+<dd>
+Telephone: 81-256-34-4555 <br />
+</dd>
+</dl></span></div><div><span><dl class="comDlstAtn">
+<dt>Sen Fuji Auto</dt>
+<dd>
+Address: 50, Senjyu-Hashido-cho, Adachi-ku, Tokyo, 120-0038, Japan<br />
+Telephone: 81-3-3879-2810<br />
+Facsimile: 81-3-3879-1860<br />
+</dd>
+</dl></span></div><div><span><dl class="comDlstAtn">
+<dt>TOYO CR SDN.BHD.</dt>
+<dd>
+Address: No.16,Jalan Serendah 26/41,Seksyen 26,40400 Shah Alam,Selangor.<br />
+Telephone: +60-3-5192-0788<br />
+Facsimile: 001-60-3-5192-0790<br />
+</dd>
+</dl></span></div><div><span><dl class="comDlstAtn">
+<dt>Tarumi Golf Co.,LTD.</dt>
+<dd>
+Address: 2-1 Shiomigaoka, 2-chome, Tarumi-ku, Kobe City, Hyogo 665-0005<br />
+Telephone: 81-78-672-4718<br />
+Facsimile: 81-78-672-4892<br />
+</dd>
+</dl></span></div><div><span><dl class="comDlstAtn">
+<dt>TES Philippines, Inc. (TESP)</dt>
+<dd>
+Address: 207 Meriton One Building, 1668 Quezon Avenue, Quezon City, Philippines 1103<br />
+Telephone: 63-2-332-5489<br />
+Facsimile: 63-2-920-0173<br />
+Business Activities: <br>Maintenance of transportation systems.<br />
+</dd>
+</dl></span></div><div><span><dl class="comDlstAtn">
+<dt>Tomas</dt>
+<dd>
+Address: 8-1, Chuorinkan 7-chome, Yamato, Kanagawa, 242-0007, Japan<br />
+Telephone: 81-46-277-4311<br />
+Facsimile: 81-46-277-4321<br />
+</dd>
+</dl></span></div><div><span><dl class="comDlstAtn">
+<dt>Tsukamoto Syouten</dt>
+<dd>
+Address: 20, Kuzenakakuzecho 4-chome, Kyoto Minami-ku, Kyoto, 617-8585, Japan<br />
+Telephone: 81-75-932-8227<br />
+Facsimile: 81-22-288-0915<br />
+</dd>
+</dl></span></div><div><span><dl class="comDlstAtn">
+<dt>Yamagata Eco-Creation Co., Ltd.</dt>
+<dd>
+Address: 11-19, Matsumicho, Yamagata-shi, Yamagata, 990-2431, Japan<br />
+Telephone: 81-23-674-8510<br />
+Facsimile: 81-23-674-8512<br />
+</dd>
+</dl></span></div>
+</section>
+
+    </div>
+  
+          </div>
+</div>
+
+  </div>
+
+                      </div>
+                </div>
+                          <div id="comSide">
+            <section aria-labelledby="-menu" data-block-plugin-id="menu_item_fields:main" class="block block-menu navigation menu--main">
+  
+    
+        
+                <h2 class="comSideTitle"><a href="https://www.mhi.com/network" hreflang="en" data-drupal-link-system-path="node/109476">Global Network</a></h2>
+  
+  </section>
+<section aria-labelledby="-menu" data-block-plugin-id="menu_item_fields:main" class="block block-menu navigation menu--main">
+  
+    
+        
+  
+              <ul class="menu side-menu">
+                        <li>
+                          <a href="https://www.mhi.com/network/text_version.html" title="" hreflang="en" data-drupal-link-system-path="node/118536">Text Version</a>
+                      </li>
+                                <li>
+                          <a href="https://www.mhi.com/network/area" title="" hreflang="en" data-drupal-link-system-path="node/114001">Region</a>
+                      </li>
+                                <li>
+                          <a href="https://www.mhi.com/network/products" title="" hreflang="en" data-drupal-link-system-path="node/113986">Products</a>
+                      </li>
+                                <li>
+                          <a href="https://www.mhi.com/network/business" title="" hreflang="en" data-drupal-link-system-path="node/114006">Business</a>
+                      </li>
+                                <li>
+                          <a href="https://www.mhi.com/network/alphabetize" class="menu-item--active-trail is-active" title="" hreflang="en" data-drupal-link-system-path="node/114011">Alphabetical Order</a>
+                      </li>
+                  </ul>
+  
+
+
+
+  </section>
+
+          </div>
+              </div>
+    </div>
+  </div>
+
+  </div>
+</article>
+
+  </div>
+
+  </div>
+
+  </main>
+
+  <footer id="comFooter" role="contentinfo">
+    
+  <div id="block-footermovetotop" class="footerMoveToTop block block-block-content block-block-content6e6aad79-adfe-4c83-816b-eac594acd83d" data-block-plugin-id="block_content:6e6aad79-adfe-4c83-816b-eac594acd83d">
+  
+    
+      
+            <div class="clearfix text-formatted field field--name-body field--type-text-with-summary field--label-hidden field__item"><div id="pageTop"><a>Go to the top of this page</a></div></div>
+      
+  </div>
+<div id="block-footer-group-logo" class="footerGroupLogo block block-block-content block-block-content96ae1c39-c05b-4e67-9ca0-3129dee83e92" data-block-plugin-id="block_content:96ae1c39-c05b-4e67-9ca0-3129dee83e92">
+  
+    
+      
+            <div class="clearfix text-formatted field field--name-body field--type-text-with-summary field--label-hidden field__item"><div id="footGroupLogo"><a href="https://www.mhi.com/network/text_version.html"><img src="https://www.mhi.com/themes/custom/mhi/src/img/foot_mhigroup_logo.svg" alt="MOVE THE WORLD FORWARD MHI Group" /></a></div>
+</div>
+      
+  </div>
+<div id="block-cookiedisclaimerpopup" data-block-plugin-id="simple_block:cookie_disclaimer_pop_up" class="block block-simple-block block-simple-blockcookie-disclaimer-pop-up">
+  
+    
+      <div class="cookieAlertBox"><div class="inner"><p>This site (www.mhi.com) uses cookies in order to improve your experience and to provide content of your interest upon revisiting the site. For more information about the use of cookies on this site, please review our cookie policy in our Terms of Use. And please confirm that you agree to use of cookies by clicking Yes.<br><a href="https://www.mhi.com/conditions.html#cookie">Terms of Use</a></p><div class="cookieApprovalBtn"><span>Yes</span></div><div class="closeBtn"></div></div></div>
+  </div>
+<div id="block-footer-social-media" data-block-plugin-id="fixed_block_content:footer_social_media" class="block block-fixed-block-content block-fixed-block-contentfooter-social-media">
+  
+    
+      
+            <div class="clearfix text-formatted field field--name-body field--type-text-with-summary field--label-hidden field__item"><div id="followUs">
+<p>FOLLOW US<span class="inFtFollowColon"> :</span></p>
+
+<div class="youtube"><a href="https://www.youtube.com/user/DiscoverMHI" target="_blank"><img alt="YouTube" data-entity-type="" data-entity-uuid="" height="18" src="https://www.mhi.com/themes/custom/mhi/src/img/youtube_ico.svg" width="23" /></a></div>
+
+<div class="linkedin"><a href="https://www.linkedin.com/company/mitsubishi-heavy-industries" target="_blank"><img alt="Linkedin" data-entity-type="" data-entity-uuid="" height="18" src="https://www.mhi.com/themes/custom/mhi/src/img/linkedin_ico.svg" width="18" /></a></div>
+
+<div class="linkedin"><a href="https://twitter.com/MHI_Group" target="_blank"><img alt="twitter" data-entity-type="" data-entity-uuid="" src="https://www.mhi.com/themes/custom/mhi/src/img/twitter_ico.svg" width="18" /></a></div>
+
+<div class="feed"><a href="https://www.mhi.com/rss/" target="_blank"><img alt="RSS" data-entity-type="" data-entity-uuid="" height="15" src="https://www.mhi.com/themes/custom/mhi/src/img/feed_ico.svg" width="15" /></a></div>
+</div>
+</div>
+      
+  </div>
+<nav role="navigation" id="footerLink" aria-labelledby="block-footer-menu" id="block-footer" data-block-plugin-id="system_menu_block:footer" class="block block-menu navigation menu--footer">
+            
+  <h2 class="visually-hidden" id="block-footer-menu">Footer</h2>
+  
+
+        
+        <ul block="block-footer" class="menu"><li class="menu-item"><a href="https://www.mhi.com/sitemap.html" hreflang="en" data-drupal-link-system-path="node/107566">SITE MAP</a></li><li class="menu-item"><a href="https://www.mhi.com/conditions.html" hreflang="en" data-drupal-link-system-path="node/111361">TERMS OF USE</a></li><li class="menu-item"><a href="https://www.mhi.com/privacy.html" hreflang="en" data-drupal-link-system-path="node/111391">PRIVACY POLICY</a></li><li class="menu-item"><a href="https://www.mhi.com/inquiry" hreflang="en" data-drupal-link-system-path="node/104561">CONTACT</a></li><li class="menu-item"><a href="https://spectra.mhi.com/" hreflang="en">SPECTRA</a></li></ul>  
+
+
+  </nav>
+<div id="block-footer-copyright" data-block-plugin-id="block_content:7f80591d-954a-4a5e-85cc-7af69bc0faf9" class="footer-copyright block block-block-content block-block-content7f80591d-954a-4a5e-85cc-7af69bc0faf9">
+  
+    
+      
+            <div class="clearfix text-formatted field field--name-body field--type-text-with-summary field--label-hidden field__item"><p><small id="copyright">© MITSUBISHI HEAVY INDUSTRIES, LTD.</small></p></div>
+      
+  </div>
+
+
+  </footer>
+
+  </div>
+
+    
+    <script type="application/json" data-drupal-selector="drupal-settings-json">{"path":{"baseUrl":"\/","scriptPath":null,"pathPrefix":"","currentPath":"node\/114011","currentPathIsAdmin":false,"isFront":false,"currentLanguage":"en"},"pluralDelimiter":"\u0003","suppressDeprecationErrors":true,"data":{"extlink":{"extTarget":true,"extTargetNoOverride":false,"extNofollow":false,"extNoreferrer":false,"extFollowNoOverride":false,"extClass":"ext","extLabel":"(link is external)","extImgClass":false,"extSubdomains":false,"extExclude":"","extInclude":"","extCssExclude":".comNewsDetail #comMainConPosi, .product-business-contact-list, .comImportantNoticeDetail #comMainConPosi, .comContactLkWrap, .noextlink, .view-id-home_notice_list","extCssExplicit":"","extAlert":false,"extAlertText":"This link will take you to an external web site. We are not responsible for their content.","mailtoClass":"0","mailtoLabel":"(link sends email)","extUseFontAwesome":false,"extIconPlacement":"append","extFaLinkClasses":"fa fa-external-link","extFaMailtoClasses":"fa fa-envelope-o","whitelistedDomains":[]}},"mhi_base":{"outline":{"title":"Outline of MHI GROUP","link":"\/company\/aboutmhi\/introduction\/","description":"Find out how we bring people and businesses around the globe together to pave the way to a future of shared success.","mobile_thumb_url":"https:\/\/www.mhi.com\/sites\/g\/files\/jwhtju111\/files\/mhi-base\/bnr_introduction_3.png"}},"googlemapkey":"AIzaSyD1BlDDhdPrHa5OrOGxexsWRdwlMI5FJbY","mhi":{"mhiJS":{"theme_path":"themes\/custom\/mhi"}},"ajax":[],"user":{"uid":0,"permissionsHash":"e18ddaad7ecb67086f012a0eab07bb949fa25dbae047d062749f931dd04e0ed3"}}</script>
+<script src="https://www.mhi.com/sites/g/files/jwhtju111/files/js/js_vcTYZZIBOXmI2qEu2L3tD_u8o7D_kR2zeIh08kxLPi4.js"></script>
+<script src="http://c.marsflag.com/mf/mfx/1.0/js/mfx-sbox.js"></script>
+<script src="https://www.mhi.com/sites/g/files/jwhtju111/files/js/js_vP7hGGqFR3B-tul9xV7bNbHG36hr4teVOMG4-WnNULY.js"></script>
+
+  <script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"3d90739b94","applicationID":"945003000,756406217","transactionName":"M1VVZRQACBYDAkdQCwofdlISCAkLTSVBTBQFXGtUCBUPERsQRlwRAWx0XggVFAoODVZLOCFeQ1gSGDcQBxRWbC0nX1lFFA4KCQcTHgcFB1NSQhU=","queueTime":0,"applicationTime":295,"atts":"HxJWE1waGxg=","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+
+<!-- Mirrored from www.mhi.com/network/alphabetize by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 14 Oct 2022 17:07:46 GMT -->
+</html>

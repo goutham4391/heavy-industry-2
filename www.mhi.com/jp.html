@@ -1,0 +1,866 @@
+<!DOCTYPE html>
+<html lang="ja" dir="ltr" prefix="content: http://purl.org/rss/1.0/modules/content/  dc: http://purl.org/dc/terms/  foaf: http://xmlns.com/foaf/0.1/  og: http://ogp.me/ns#  rdfs: http://www.w3.org/2000/01/rdf-schema#  schema: http://schema.org/  sioc: http://rdfs.org/sioc/ns#  sioct: http://rdfs.org/sioc/types#  skos: http://www.w3.org/2004/02/skos/core#  xsd: http://www.w3.org/2001/XMLSchema# ">
+  
+<!-- Mirrored from www.mhi.com/jp by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 14 Oct 2022 17:06:03 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+    <meta charset="utf-8" /><script type="text/javascript">(window.NREUM||(NREUM={})).init={ajax:{deny_list:["bam.nr-data.net"]}};(window.NREUM||(NREUM={})).loader_config={licenseKey:"3d90739b94",applicationID:"945003000"};window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){var i=e[n]={exports:{}};t[n][0].call(i.exports,function(e){var i=t[n][1][e];return r(i||e)},i,i.exports)}return e[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var i=0;i<n.length;i++)r(n[i]);return r}({1:[function(t,e,n){function r(){}function i(t,e,n,r){return function(){return s.recordSupportability("API/"+e+"/called"),o(t+e,[u.now()].concat(c(arguments)),n?null:this,r),n?void 0:this}}var o=t("handle"),a=t(9),c=t(10),f=t("ee").get("tracer"),u=t("loader"),s=t(4),d=NREUM;"undefined"==typeof window.newrelic&&(newrelic=d);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],l="api-",v=l+"ixn-";a(p,function(t,e){d[e]=i(l,e,!0,"api")}),d.addPageAction=i(l,"addPageAction",!0),d.setCurrentRouteName=i(l,"routeName",!0),e.exports=newrelic,d.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(t,e){var n={},r=this,i="function"==typeof e;return o(v+"tracer",[u.now(),t,n],r),function(){if(f.emit((i?"":"no-")+"fn-start",[u.now(),r,i],n),i)try{return e.apply(this,arguments)}catch(t){throw f.emit("fn-err",[arguments,this,t],n),t}finally{f.emit("fn-end",[u.now()],n)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(t,e){m[e]=i(v,e)}),newrelic.noticeError=function(t,e){"string"==typeof t&&(t=new Error(t)),s.recordSupportability("API/noticeError/called"),o("err",[t,u.now(),!1,e])}},{}],2:[function(t,e,n){function r(t){if(NREUM.init){for(var e=NREUM.init,n=t.split("."),r=0;r<n.length-1;r++)if(e=e[n[r]],"object"!=typeof e)return;return e=e[n[n.length-1]]}}e.exports={getConfiguration:r}},{}],3:[function(t,e,n){var r=!1;try{var i=Object.defineProperty({},"passive",{get:function(){r=!0}});window.addEventListener("testPassive",null,i),window.removeEventListener("testPassive",null,i)}catch(o){}e.exports=function(t){return r?{passive:!0,capture:!!t}:!!t}},{}],4:[function(t,e,n){function r(t,e){var n=[a,t,{name:t},e];return o("storeMetric",n,null,"api"),n}function i(t,e){var n=[c,t,{name:t},e];return o("storeEventMetrics",n,null,"api"),n}var o=t("handle"),a="sm",c="cm";e.exports={constants:{SUPPORTABILITY_METRIC:a,CUSTOM_METRIC:c},recordSupportability:r,recordCustom:i}},{}],5:[function(t,e,n){function r(){return c.exists&&performance.now?Math.round(performance.now()):(o=Math.max((new Date).getTime(),o))-a}function i(){return o}var o=(new Date).getTime(),a=o,c=t(11);e.exports=r,e.exports.offset=a,e.exports.getLastTimestamp=i},{}],6:[function(t,e,n){function r(t,e){var n=t.getEntries();n.forEach(function(t){"first-paint"===t.name?l("timing",["fp",Math.floor(t.startTime)]):"first-contentful-paint"===t.name&&l("timing",["fcp",Math.floor(t.startTime)])})}function i(t,e){var n=t.getEntries();if(n.length>0){var r=n[n.length-1];if(u&&u<r.startTime)return;var i=[r],o=a({});o&&i.push(o),l("lcp",i)}}function o(t){t.getEntries().forEach(function(t){t.hadRecentInput||l("cls",[t])})}function a(t){var e=navigator.connection||navigator.mozConnection||navigator.webkitConnection;if(e)return e.type&&(t["net-type"]=e.type),e.effectiveType&&(t["net-etype"]=e.effectiveType),e.rtt&&(t["net-rtt"]=e.rtt),e.downlink&&(t["net-dlink"]=e.downlink),t}function c(t){if(t instanceof y&&!w){var e=Math.round(t.timeStamp),n={type:t.type};a(n),e<=v.now()?n.fid=v.now()-e:e>v.offset&&e<=Date.now()?(e-=v.offset,n.fid=v.now()-e):e=v.now(),w=!0,l("timing",["fi",e,n])}}function f(t){"hidden"===t&&(u=v.now(),l("pageHide",[u]))}if(!("init"in NREUM&&"page_view_timing"in NREUM.init&&"enabled"in NREUM.init.page_view_timing&&NREUM.init.page_view_timing.enabled===!1)){var u,s,d,p,l=t("handle"),v=t("loader"),m=t(8),g=t(3),y=NREUM.o.EV;if("PerformanceObserver"in window&&"function"==typeof window.PerformanceObserver){s=new PerformanceObserver(r);try{s.observe({entryTypes:["paint"]})}catch(h){}d=new PerformanceObserver(i);try{d.observe({entryTypes:["largest-contentful-paint"]})}catch(h){}p=new PerformanceObserver(o);try{p.observe({type:"layout-shift",buffered:!0})}catch(h){}}if("addEventListener"in document){var w=!1,b=["click","keydown","mousedown","pointerdown","touchstart"];b.forEach(function(t){document.addEventListener(t,c,g(!1))})}m(f)}},{}],7:[function(t,e,n){function r(t,e){if(!i)return!1;if(t!==i)return!1;if(!e)return!0;if(!o)return!1;for(var n=o.split("."),r=e.split("."),a=0;a<r.length;a++)if(r[a]!==n[a])return!1;return!0}var i=null,o=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var c=navigator.userAgent,f=c.match(a);f&&c.indexOf("Chrome")===-1&&c.indexOf("Chromium")===-1&&(i="Safari",o=f[1])}e.exports={agent:i,version:o,match:r}},{}],8:[function(t,e,n){function r(t){function e(){t(c&&document[c]?document[c]:document[o]?"hidden":"visible")}"addEventListener"in document&&a&&document.addEventListener(a,e,i(!1))}var i=t(3);e.exports=r;var o,a,c;"undefined"!=typeof document.hidden?(o="hidden",a="visibilitychange",c="visibilityState"):"undefined"!=typeof document.msHidden?(o="msHidden",a="msvisibilitychange"):"undefined"!=typeof document.webkitHidden&&(o="webkitHidden",a="webkitvisibilitychange",c="webkitVisibilityState")},{}],9:[function(t,e,n){function r(t,e){var n=[],r="",o=0;for(r in t)i.call(t,r)&&(n[o]=e(r,t[r]),o+=1);return n}var i=Object.prototype.hasOwnProperty;e.exports=r},{}],10:[function(t,e,n){function r(t,e,n){e||(e=0),"undefined"==typeof n&&(n=t?t.length:0);for(var r=-1,i=n-e||0,o=Array(i<0?0:i);++r<i;)o[r]=t[e+r];return o}e.exports=r},{}],11:[function(t,e,n){e.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(t,e,n){function r(){}function i(t){function e(t){return t&&t instanceof r?t:t?u(t,f,a):a()}function n(n,r,i,o,a){if(a!==!1&&(a=!0),!l.aborted||o){t&&a&&t(n,r,i);for(var c=e(i),f=m(n),u=f.length,s=0;s<u;s++)f[s].apply(c,r);var p=d[w[n]];return p&&p.push([b,n,r,c]),c}}function o(t,e){h[t]=m(t).concat(e)}function v(t,e){var n=h[t];if(n)for(var r=0;r<n.length;r++)n[r]===e&&n.splice(r,1)}function m(t){return h[t]||[]}function g(t){return p[t]=p[t]||i(n)}function y(t,e){l.aborted||s(t,function(t,n){e=e||"feature",w[n]=e,e in d||(d[e]=[])})}var h={},w={},b={on:o,addEventListener:o,removeEventListener:v,emit:n,get:g,listeners:m,context:e,buffer:y,abort:c,aborted:!1};return b}function o(t){return u(t,f,a)}function a(){return new r}function c(){(d.api||d.feature)&&(l.aborted=!0,d=l.backlog={})}var f="nr@context",u=t("gos"),s=t(9),d={},p={},l=e.exports=i();e.exports.getOrSetContext=o,l.backlog=d},{}],gos:[function(t,e,n){function r(t,e,n){if(i.call(t,e))return t[e];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(t,e,{value:r,writable:!0,enumerable:!1}),r}catch(o){}return t[e]=r,r}var i=Object.prototype.hasOwnProperty;e.exports=r},{}],handle:[function(t,e,n){function r(t,e,n,r){i.buffer([t],r),i.emit(t,e,n)}var i=t("ee").get("handle");e.exports=r,r.ee=i},{}],id:[function(t,e,n){function r(t){var e=typeof t;return!t||"object"!==e&&"function"!==e?-1:t===window?0:a(t,o,function(){return i++})}var i=1,o="nr@id",a=t("gos");e.exports=r},{}],loader:[function(t,e,n){function r(){if(!M++){var t=T.info=NREUM.info,e=m.getElementsByTagName("script")[0];if(setTimeout(u.abort,3e4),!(t&&t.licenseKey&&t.applicationID&&e))return u.abort();f(x,function(e,n){t[e]||(t[e]=n)});var n=a();c("mark",["onload",n+T.offset],null,"api"),c("timing",["load",n]);var r=m.createElement("script");0===t.agent.indexOf("http://")||0===t.agent.indexOf("https:///")?r.src=t.agent:r.src=l+"://"+t.agent,e.parentNode.insertBefore(r,e)}}function i(){"complete"===m.readyState&&o()}function o(){c("mark",["domContent",a()+T.offset],null,"api")}var a=t(5),c=t("handle"),f=t(9),u=t("ee"),s=t(7),d=t(2),p=t(3),l=d.getConfiguration("ssl")===!1?"http":"https",v=window,m=v.document,g="addEventListener",y="attachEvent",h=v.XMLHttpRequest,w=h&&h.prototype,b=!1;NREUM.o={ST:setTimeout,SI:v.setImmediate,CT:clearTimeout,XHR:h,REQ:v.Request,EV:v.Event,PR:v.Promise,MO:v.MutationObserver};var E=""+location,x={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1216.min.js"},O=h&&w&&w[g]&&!/CriOS/.test(navigator.userAgent),T=e.exports={offset:a.getLastTimestamp(),now:a,origin:E,features:{},xhrWrappable:O,userAgent:s,disabled:b};if(!b){t(1),t(6),m[g]?(m[g]("DOMContentLoaded",o,p(!1)),v[g]("load",r,p(!1))):(m[y]("onreadystatechange",i),v[y]("onload",r)),c("mark",["firstbyte",a.getLastTimestamp()],null,"api");var M=0}},{}],"wrap-function":[function(t,e,n){function r(t,e){function n(e,n,r,f,u){function nrWrapper(){var o,a,s,p;try{a=this,o=d(arguments),s="function"==typeof r?r(o,a):r||{}}catch(l){i([l,"",[o,a,f],s],t)}c(n+"start",[o,a,f],s,u);try{return p=e.apply(a,o)}catch(v){throw c(n+"err",[o,a,v],s,u),v}finally{c(n+"end",[o,a,p],s,u)}}return a(e)?e:(n||(n=""),nrWrapper[p]=e,o(e,nrWrapper,t),nrWrapper)}function r(t,e,r,i,o){r||(r="");var c,f,u,s="-"===r.charAt(0);for(u=0;u<e.length;u++)f=e[u],c=t[f],a(c)||(t[f]=n(c,s?f+r:r,i,f,o))}function c(n,r,o,a){if(!v||e){var c=v;v=!0;try{t.emit(n,r,o,e,a)}catch(f){i([f,n,r,o],t)}v=c}}return t||(t=s),n.inPlace=r,n.flag=p,n}function i(t,e){e||(e=s);try{e.emit("internal-error",t)}catch(n){}}function o(t,e,n){if(Object.defineProperty&&Object.keys)try{var r=Object.keys(t);return r.forEach(function(n){Object.defineProperty(e,n,{get:function(){return t[n]},set:function(e){return t[n]=e,e}})}),e}catch(o){i([o],n)}for(var a in t)l.call(t,a)&&(e[a]=t[a]);return e}function a(t){return!(t&&t instanceof Function&&t.apply&&!t[p])}function c(t,e){var n=e(t);return n[p]=t,o(t,n,s),n}function f(t,e,n){var r=t[e];t[e]=c(r,n)}function u(){for(var t=arguments.length,e=new Array(t),n=0;n<t;++n)e[n]=arguments[n];return e}var s=t("ee"),d=t(10),p="nr@original",l=Object.prototype.hasOwnProperty,v=!1;e.exports=r,e.exports.wrapFunction=c,e.exports.wrapInPlace=f,e.exports.argsToArray=u},{}]},{},["loader"]);</script>
+<link rel="shortlink" href="jp.html" />
+<meta property="og:site_name" content="Mitsubishi Heavy Industries, Ltd." />
+<link rel="shortcut icon" href="themes/custom/mhi_base_theme/favicons/ja/favicon.ico" />
+<link rel="canonical" href="jp.html" />
+<meta property="og:type" content="三菱重工" />
+<meta name="description" content="三菱重工の公式ウェブサイトです。三菱重工は、エネルギー・環境をはじめとする技術に立脚するものづくり企業として、全地球規模の多様なニーズに応え、人々の安心・安全で豊かな生活と確かな未来を提供していきます。" />
+<meta property="og:url" content="https://www.mhi.com/jp" />
+<meta name="keywords" content="三菱重工,三菱重工業,重工,MHI,MITSUBISHI HEAVY INDUSTRIES" />
+<meta property="og:title" content="Mitsubishi Heavy Industries, Ltd." />
+<meta property="og:description" content="三菱重工の公式ウェブサイトです。三菱重工は、エネルギー・環境をはじめとする技術に立脚するものづくり企業として、全地球規模の多様なニーズに応え、人々の安心・安全で豊かな生活と確かな未来を提供していきます。" />
+<link rel="apple-touch-icon" href="themes/custom/mhi_base_theme/favicons/ja/apple_touch_icon.png" />
+<meta property="og:image" content="https://www.mhi.com/themes/custom/mhi/src/img/ogp_sns.png" />
+<meta property="og:image:type" content="image/jpeg" />
+<link rel="apple-touch-icon-precomposed" href="themes/custom/mhi_base_theme/favicons/ja/apple_touch_icon.png" />
+<meta name="Generator" content="Drupal 9 (https://www.drupal.org)" />
+<meta name="MobileOptimized" content="width" />
+<meta name="HandheldFriendly" content="true" />
+<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+<meta name="twitter:card" content="summary_large_image" />
+<link rel="alternate" hreflang="en" href="index.html" />
+<link rel="alternate" hreflang="ja" href="jp.html" />
+<script src="sites/g/files/jwhtju111/files/google_tag/google_tag/mhi/google_tag.scriptd59e.js?rjc08r" defer></script>
+
+    <title>三菱重工</title>
+    <link rel="stylesheet" media="all" href="sites/g/files/jwhtju111/files/css/css_oxLWOZayK1TRecSwaYwm049a-ZpK6d1rB76v-ns4hZo.css" />
+<link rel="stylesheet" media="all" href="sites/g/files/jwhtju111/files/css/css_CkI3LmNJ7q5u7vgPlbGRpHze6RUqW2r6fTiA6GvkBQo.css" />
+<link rel="stylesheet" media="print" href="sites/g/files/jwhtju111/files/css/css_npYYriCqvk444NEOIIcVTaL2youfsF04to-0pVnMrvo.css" />
+<link rel="stylesheet" media="all" href="sites/g/files/jwhtju111/files/css/css_KGZBht4tZmi4zKyn79jopqJMoJxFGNQrP3pF8ESYOOQ.css" />
+
+    <script src="core/assets/vendor/modernizr/modernizr.minad3d.js?v=3.11.7"></script>
+<script src="core/misc/modernizr-additional-testsad3d.js?v=3.11.7"></script>
+
+          <script type="text/javascript" src="modules/contrib/seckit/js/seckit.document_write.js"></script>
+        <link type="text/css" rel="stylesheet" id="seckit-clickjacking-no-body" media="all" href="modules/contrib/seckit/css/seckit.no_body.css" />
+        <!-- stop SecKit protection -->
+        <noscript>
+        <link type="text/css" rel="stylesheet" id="seckit-clickjacking-noscript-tag" media="all" href="modules/contrib/seckit/css/seckit.noscript_tag.css" />
+        <div id="seckit-noscript-tag">
+          Sorry, you need to enable JavaScript to visit this website.
+        </div>
+        </noscript></head>
+  <body class="path-frontpage page-node-type-page">
+        <a href="#main-content" class="visually-hidden focusable skip-link">
+      メインコンテンツに移動
+    </a>
+    <noscript aria-hidden="true"><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PPKXH83" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+      <div class="dialog-off-canvas-main-canvas" data-off-canvas-main-canvas>
+    <div class="comHeaderFollow">
+    <header id="comHeader" role="banner">
+    <div id="block-sitebranding" data-block-plugin-id="system_branding_block" class="block block-system block-system-branding-block">
+  
+    
+    <div id="headLogo">
+      <a href="jp.html" title="ホーム" rel="home" class="site-logo">
+      <img src="themes/custom/mhi/logo_ja.svg" alt="ホーム" />
+    </a>
+        </div>
+</div>
+<div id="headGroupLogo" data-block-plugin-id="block_content:96769913-b3b8-42f7-a711-29d68ddbf08a" class="block block-block-content block-block-content96769913-b3b8-42f7-a711-29d68ddbf08a">
+  
+    
+      
+            <div class="clearfix text-formatted field field--name-body field--type-text-with-summary field--label-hidden field__item"><a href="jp/network/text_version.html"><img src="themes/custom/mhi/src/img/head_mhigroup_logo.svg" alt="MHI Group" /></a></div>
+      
+  </div>
+<div id="block-mhi-search-box" data-block-plugin-id="mhi_search_box" class="block block-mhi-marsflag block-mhi-search-box">
+  
+    
+      <div class="searchArea">
+  <form id="search_form" action="https://www.mhi.com/jp/search" onsubmit="return mysearch();">
+    <input class="searchTxt" type="text" name="q" value="" tabindex="0" placeholder="検索">
+    <input type="hidden" name="ie" value="u">
+  </form>
+</div>
+
+  </div>
+<div role="navigation" aria-labelledby="block-headermenu-menu" id="headMenu" data-block-plugin-id="system_menu_block:header-menu" class="block block-menu navigation menu--header-menu search-container">
+            
+  <h2 class="visually-hidden" id="block-headermenu-menu">Header Menu</h2>
+  
+
+        
+        <div class="hnav">
+      <nav>
+                  <ul block="block-headermenu" class="menu">
+                                    <li class="menu-item">
+            <a href="jp/news.html" hreflang="ja" data-drupal-link-system-path="news">ニュース</a>
+                      </li>
+                            <li class="menu-item">
+            <a href="jp/recruit.html" hreflang="ja" data-drupal-link-system-path="node/107561">採用情報</a>
+                      </li>
+                            <li class="menu-item">
+            <a href="jp.html" class="lang-switch is-active" hreflang="ja" data-drupal-link-system-path="&lt;front&gt;">GLOBAL SITE</a>
+                      </li>
+                </ul>
+      </nav>
+    </div>
+  
+
+
+  </div>
+<div id="gnav">
+  <nav role="navigation" aria-labelledby="block-mainnavigation-menu" id="block-mainnavigation" data-block-plugin-id="menu_item_fields:main" class="block block-menu navigation menu--main">
+                      
+    <h2 class="visually-hidden" id="block-mainnavigation-menu">Main navigation</h2>
+    
+
+              
+  
+      <ul block="block-mainnavigation" class="menu">
+                      <li class="menu-item--expanded menu-item">
+          <p><a href="jp/company.html" hreflang="ja" data-drupal-link-system-path="node/29551">企業情報</a></p>
+          <ul class="megaDrop" id="md">
+            <div class="inner">
+              <div class="catTl">
+                <p>企業情報</p>
+              </div>
+              <div class="detail">
+                  
+      <ul>
+                      <li class="menu-item--expanded menu-item menu-item--hide--comSubNv">
+                        <a href="jp/company/aboutmhi.html" title="" data-drupal-link-system-path="node/5486">三菱重工グループについて</a>
+                  </li>
+                      <li class="menu-item menu-item--hide--comSubNv">
+                        <a href="jp/company/message.html" title="" data-drupal-link-system-path="node/73176">社長挨拶</a>
+                  </li>
+                      <li class="menu-item--expanded menu-item menu-item--hide--comSubNv">
+                        <a href="jp/company/technology.html" title="" data-drupal-link-system-path="node/73181">技術情報</a>
+                  </li>
+                      <li class="menu-item--expanded menu-item menu-item--hide--comSubNv">
+                        <a href="jp/company/location.html" title="" data-drupal-link-system-path="node/29516">拠点一覧</a>
+                  </li>
+                      <li class="menu-item--expanded menu-item menu-item--hide--comSubNv">
+                        <a href="jp/company/procurement.html" title="" data-drupal-link-system-path="node/73186">資材調達</a>
+                  </li>
+                      <li class="menu-item--collapsed menu-item menu-item--hide--comSubNv">
+                        <a href="jp/company/hospital.html" title="" data-drupal-link-system-path="node/73291">三菱重工の病院</a>
+                  </li>
+                      <li class="menu-item--expanded menu-item">
+                        
+      <ul class="comSubNv">
+                      <li>
+            <a href="jp/company/aboutmhi/introduction.html" title="" data-drupal-link-system-path="node/29506">三菱重工グループのアウトライン</a>
+            
+  
+
+        </li>
+                      <li>
+            <a href="jp/company/sports.html" title="" data-drupal-link-system-path="node/133516">スポーツ活動</a>
+            
+  
+
+        </li>
+                      <li>
+            <a href="jp/recruit.html" title=""> 採用情報</a>
+            
+  
+
+        </li>
+          </ul>
+  
+
+                  </li>
+          </ul>
+  
+
+              </div>
+            </div>
+            <div class="close">CLOSE</div>
+          </ul>
+        </li>
+                      <li class="menu-item--expanded menu-item">
+          <p><a href="jp/expertise.html" hreflang="ja" data-drupal-link-system-path="node/104466">実績紹介</a></p>
+          <ul class="megaDrop" id="md">
+            <div class="inner">
+              <div class="catTl">
+                <p>実績紹介</p>
+              </div>
+              <div class="detail">
+                  
+      <ul>
+                      <li class="menu-item--expanded menu-item menu-item--hide--comSubNv">
+                        <a href="jp/expertise.html#showcase" title="" data-drupal-link-system-path="node/104466">ストーリー</a>
+                  </li>
+                      <li class="menu-item--expanded menu-item menu-item--hide--comSubNv">
+                        <a href="jp/expertise/museum.html" title="" data-drupal-link-system-path="node/107546">展示施設</a>
+                  </li>
+                      <li class="menu-item menu-item--hide--comSubNv">
+                        <a href="jp/expertise/event.html" title="" data-drupal-link-system-path="node/104726">イベント・展示会情報</a>
+                  </li>
+                      <li class="menu-item--expanded menu-item">
+                        
+      <ul class="comSubNv">
+                      <li>
+            <a href="jp/expertise/carbon-neutral.html" title="" data-drupal-link-system-path="node/136976">2040年カーボンニュートラル宣言</a>
+            
+  
+
+        </li>
+                      <li>
+            <a href="jp/expertise/museum/minatomirai.html" title="" data-drupal-link-system-path="node/103256">三菱みなとみらい技術館</a>
+            
+  
+
+        </li>
+          </ul>
+  
+
+                  </li>
+          </ul>
+  
+
+              </div>
+            </div>
+            <div class="close">CLOSE</div>
+          </ul>
+        </li>
+                      <li class="menu-item--expanded menu-item">
+          <p><a href="jp/products.html" hreflang="ja" data-drupal-link-system-path="node/6181">製品情報</a></p>
+          <ul class="megaDrop" id="md">
+            <div class="inner">
+              <div class="catTl">
+                <p>製品情報</p>
+              </div>
+              <div class="detail">
+                  
+      <ul>
+                      <li class="menu-item menu-item--hide--comSubNv">
+                        <a href="jp/products/energy.html" title="" data-drupal-link-system-path="taxonomy/term/1436">エネルギー</a>
+                  </li>
+                      <li class="menu-item menu-item--hide--comSubNv">
+                        <a href="jp/products/air.html" title="" data-drupal-link-system-path="taxonomy/term/1491">航空</a>
+                  </li>
+                      <li class="menu-item menu-item--hide--comSubNv">
+                        <a href="jp/products/space.html" title="" data-drupal-link-system-path="taxonomy/term/1516">宇宙開発</a>
+                  </li>
+                      <li class="menu-item menu-item--hide--comSubNv">
+                        <a href="jp/products/ship.html" title="" data-drupal-link-system-path="taxonomy/term/1561">船舶・海洋</a>
+                  </li>
+                      <li class="menu-item menu-item--hide--comSubNv">
+                        <a href="jp/products/transport.html" title="" data-drupal-link-system-path="taxonomy/term/1636">交通システム</a>
+                  </li>
+                      <li class="menu-item menu-item--hide--comSubNv">
+                        <a href="jp/products/material_handling.html" title="" data-drupal-link-system-path="taxonomy/term/1646">物流・運搬</a>
+                  </li>
+                      <li class="menu-item menu-item--hide--comSubNv">
+                        <a href="jp/products/environment.html" title="" data-drupal-link-system-path="taxonomy/term/1656">環境装置</a>
+                  </li>
+                      <li class="menu-item menu-item--hide--comSubNv">
+                        <a href="jp/products/automobile.html" title="" data-drupal-link-system-path="taxonomy/term/1686">自動車関連</a>
+                  </li>
+                      <li class="menu-item menu-item--hide--comSubNv">
+                        <a href="jp/products/industry.html" title="" data-drupal-link-system-path="taxonomy/term/1711">産業機械</a>
+                  </li>
+                      <li class="menu-item menu-item--hide--comSubNv">
+                        <a href="jp/products/infrastructure.html" title="" data-drupal-link-system-path="taxonomy/term/1806">インフラ設備</a>
+                  </li>
+                      <li class="menu-item menu-item--hide--comSubNv">
+                        <a href="jp/products/living.html" title="" data-drupal-link-system-path="taxonomy/term/1841">生活・レジャー</a>
+                  </li>
+                      <li class="menu-item menu-item--hide--comSubNv">
+                        <a href="jp/products/defense.html" title="" data-drupal-link-system-path="taxonomy/term/1856">防衛</a>
+                  </li>
+                      <li class="menu-item menu-item--hide--comSubNv">
+                        <a href="jp/products/engineering.html" title="" data-drupal-link-system-path="taxonomy/term/1891">エンジニアリング事業</a>
+                  </li>
+          </ul>
+  
+
+              </div>
+            </div>
+            <div class="close">CLOSE</div>
+          </ul>
+        </li>
+                      <li class="menu-item--expanded menu-item">
+          <p><a href="jp/sustainability.html" hreflang="ja" data-drupal-link-system-path="node/6311">サステナビリティ</a></p>
+          <ul class="megaDrop" id="md">
+            <div class="inner">
+              <div class="catTl">
+                <p>サステナビリティ</p>
+              </div>
+              <div class="detail">
+                  
+      <ul>
+                      <li class="menu-item--expanded menu-item menu-item--hide--comSubNv">
+                        <a href="jp/sustainability/management.html" title="" data-drupal-link-system-path="node/6256">マネジメント</a>
+                  </li>
+                      <li class="menu-item menu-item--hide--comSubNv">
+                        <a href="jp/sustainability/library.html" title="" data-drupal-link-system-path="node/73526">ライブラリ</a>
+                  </li>
+                      <li class="menu-item--expanded menu-item menu-item--hide--comSubNv">
+                        <a href="jp/sustainability/environment.html" title="" data-drupal-link-system-path="node/6161">環境</a>
+                  </li>
+                      <li class="menu-item--expanded menu-item menu-item--hide--comSubNv">
+                        <a href="jp/sustainability/social.html" title="" data-drupal-link-system-path="node/101">社会</a>
+                  </li>
+                      <li class="menu-item--expanded menu-item menu-item--hide--comSubNv">
+                        <a href="jp/sustainability/governance.html" title="" data-drupal-link-system-path="node/6166">ガバナンス</a>
+                  </li>
+          </ul>
+  
+
+              </div>
+            </div>
+            <div class="close">CLOSE</div>
+          </ul>
+        </li>
+                      <li class="menu-item--expanded menu-item">
+          <p><a href="jp/finance.html" hreflang="ja" data-drupal-link-system-path="node/50956">IR情報</a></p>
+          <ul class="megaDrop" id="md">
+            <div class="inner">
+              <div class="catTl">
+                <p>IR情報</p>
+              </div>
+              <div class="detail">
+                  
+      <ul>
+                      <li class="menu-item--expanded menu-item menu-item--hide--comSubNv">
+                        <a href="jp/finance/individual.html" title="" data-drupal-link-system-path="node/73261">個人投資家の皆様へ</a>
+                  </li>
+                      <li class="menu-item--expanded menu-item menu-item--hide--comSubNv">
+                        <a href="jp/finance/management.html" title="" data-drupal-link-system-path="node/50981">経営方針</a>
+                  </li>
+                      <li class="menu-item--expanded menu-item menu-item--hide--comSubNv">
+                        <a href="jp/finance/finance.html" title="" data-drupal-link-system-path="node/73271">財務・業績</a>
+                  </li>
+                      <li class="menu-item--expanded menu-item menu-item--hide--comSubNv">
+                        <a href="jp/finance/library.html" title="" data-drupal-link-system-path="node/125896">IRライブラリ</a>
+                  </li>
+                      <li class="menu-item--expanded menu-item menu-item--hide--comSubNv">
+                        <a href="jp/finance/stock.html" title="" data-drupal-link-system-path="node/73276">株式・社債</a>
+                  </li>
+                      <li class="menu-item--expanded menu-item">
+                        
+      <ul class="comSubNv">
+                      <li>
+            <a href="jp/finance/calendar.html" title="">IRカレンダー</a>
+            
+  
+
+        </li>
+                      <li>
+            <a href="jp/finance/publicnotice.html" title="" data-drupal-link-system-path="node/126166">電子公告</a>
+            
+  
+
+        </li>
+                      <li>
+            <a href="jp/finance/request.html" title="" data-drupal-link-system-path="node/126171">資料請求</a>
+            
+  
+
+        </li>
+                      <li>
+            <a href="jp/finance/faq.html" title="">よくあるご質問</a>
+            
+  
+
+        </li>
+                      <li>
+            <a href="jp/finance/disclaimer.html" title="" data-drupal-link-system-path="node/125911">免責事項</a>
+            
+  
+
+        </li>
+                      <li>
+            <a href="jp/finance/sitemap.html" title="">IRサイトマップ</a>
+            
+  
+
+        </li>
+                      <li>
+            <a href="jp/finance/howto.html" title="" data-drupal-link-system-path="node/126176">IRサイトの使い方</a>
+            
+  
+
+        </li>
+          </ul>
+  
+
+                  </li>
+          </ul>
+  
+
+              </div>
+            </div>
+            <div class="close">CLOSE</div>
+          </ul>
+        </li>
+                      <li class="menu-item--expanded menu-item">
+          <p><a href="jp/network.html" hreflang="ja" data-drupal-link-system-path="node/109476">グローバルネットワーク</a></p>
+          <ul class="megaDrop" id="md">
+            <div class="inner">
+              <div class="catTl">
+                <p>グローバルネットワーク</p>
+              </div>
+              <div class="detail">
+                  
+      <ul>
+                      <li class="menu-item menu-item--hide--comSubNv">
+                        <a href="jp/network.html" title="">地図から探す</a>
+                  </li>
+                      <li class="menu-item--expanded menu-item menu-item--hide--comSubNv">
+                        <a href="jp/network/area.html" title="" data-drupal-link-system-path="node/114001">エリア別</a>
+                  </li>
+                      <li class="menu-item--expanded menu-item menu-item--hide--comSubNv">
+                        <a href="jp/network/products.html" title="" data-drupal-link-system-path="node/113986">製品分野別</a>
+                  </li>
+                      <li class="menu-item--expanded menu-item menu-item--hide--comSubNv">
+                        <a href="jp/network/business.html" title="" data-drupal-link-system-path="node/114006">業種別</a>
+                  </li>
+                      <li class="menu-item menu-item--hide--comSubNv">
+                        <a href="jp/network/alphabetize.html" title="" data-drupal-link-system-path="node/114011">50音順</a>
+                  </li>
+          </ul>
+  
+
+              </div>
+            </div>
+            <div class="close">CLOSE</div>
+          </ul>
+        </li>
+          </ul>
+  
+
+
+
+      </nav>
+</div>
+
+  </header>
+
+</div>
+
+
+
+
+
+
+  <div class="region region-highlighted">
+    <div data-drupal-messages-fallback class="hidden"></div>
+
+  </div>
+
+
+
+
+<main role="main">
+  <a id="main-content" tabindex="-1"></a>
+        <div class="region region-content">
+    <div id="block-mhi-content" data-block-plugin-id="system_main_block" class="block block-system block-system-main-block">
+  
+    
+      
+<article role="article" about="/jp/node/12" class="node node--type-page node--view-mode-full">
+  
+  <div class="node__content">
+      <div>
+
+  <div id="comContent" class="comTop" >
+    <div data-block-plugin-id="block_content:f3c743bb-4f62-42db-b66b-f4c831f1e117" class="block block-block-content block-block-contentf3c743bb-4f62-42db-b66b-f4c831f1e117">
+  
+    
+        <input type="hidden" value="6" class="frequency" />
+
+<ul class="mhi-carousel">
+      <li>      <a href="jp/expertise/carbon-neutral.html">
+              
+  <div class="main__img">
+            
+<span class="comPcOnly">
+        <img src="sites/g/files/jwhtju111/files/2022-03/HP_landing-image_JP_0.jpg" width="1440" height="540" alt="HP_landing-image_JP" loading="lazy" typeof="foaf:Image" />
+
+
+  </span>
+<span class="comSpOnly">
+        <img src="sites/g/files/jwhtju111/files/2022-03/Mobile_CEO-CTO_JP_2.jpg" width="640" height="440" alt="Mobile_CEO-CTO_JP" loading="lazy" typeof="foaf:Image" />
+
+
+  </span>
+
+      </div>
+
+
+
+              
+              
+          </a>
+  </li>
+      <li>      <a href="https://www.youtube.com/watch?v=_8KKwCgPJJM">
+              
+  <div class="main__img">
+            
+<span class="comPcOnly">
+        <img src="sites/g/files/jwhtju111/files/2021-05/index_cvideo_kvj_2.jpg" width="1440" height="540" alt="index_cvideo_kvj.jpg" loading="lazy" typeof="foaf:Image" />
+
+
+  </span>
+<span class="comSpOnly">
+        <img src="sites/g/files/jwhtju111/files/2021-05/index_cvideo_kvj_sp_0.jpg" width="640" height="440" alt="index_cvideo_kvj_sp.jpg " loading="lazy" typeof="foaf:Image" />
+
+
+  </span>
+
+      </div>
+
+
+
+              
+              
+          </a>
+  </li>
+      <li>      <a href="jp/sustainability/management/stakeholder_dialogue01.html">
+              
+  <div class="main__img">
+            
+<span class="comPcOnly">
+        <img src="sites/g/files/jwhtju111/files/2022-04/index_csrturtle_kvJ_pc.jpg" width="1440" height="540" alt="ndex_csrturtle_kvJ_pc" loading="lazy" typeof="foaf:Image" />
+
+
+  </span>
+<span class="comSpOnly">
+        <img src="sites/g/files/jwhtju111/files/2022-04/index_csrturtle_kvJ_sp.jpg" width="640" height="440" alt="index_csrturtle_kvJ_sp" loading="lazy" typeof="foaf:Image" />
+
+
+  </span>
+
+      </div>
+
+
+
+              
+              
+          </a>
+  </li>
+  </ul>
+  <input type="hidden" value="0.50" class="speed" />
+
+            <div class="field field--name-field-dots field--type-boolean field--label-hidden field__item">On</div>
+      
+            <div class="field field--name-field-rotation-infinite field--type-boolean field--label-hidden field__item">On</div>
+      
+  </div>
+
+    <div class="comConPosi">
+      <div class="comMainConPosi">
+        <section>
+          
+
+
+
+<div class="external-rss external-rss--storage--mhi-spectra-stories-ja external-rss--items-per-row--3 block block-rss-external-entities block-external-rss mhi-spectra-stories" data-block-plugin-id="external_rss">
+  
+      <h2>最新の SPECTRA ストーリー</h2>
+    
+  
+  <div class="comLnkSetC3">
+    <ul>
+<li>
+  <a href="https://spectra.mhi.com/jp/innovation-through-co-creation-mhis-yokohama-hardtech-hub">
+    <img src="../images.ctfassets.net/7tzggpdkjdtg/6WdKKfaddGG5yGJ9eSW5xK/0ce3a1c19dbc3d54c77287882a852aa3/YHH-entrance.jpg" />
+    <span class="inTxt">
+      <mark>共創がイノベーションを生む、「三菱重工Yokohama Hardtech Hub」</mark>
+    </span>
+  </a>
+</li>
+
+<li>
+  <a href="https://spectra.mhi.com/jp/why-compact-co-capture-systems-are-key-to-decarbonization">
+    <img src="../images.ctfassets.net/7tzggpdkjdtg/VJNdFEyiHg7Vy7IpYGbbP/0a39cd9578881eac58f443dc23e4f3e0/imageedit_316_2052760346.jpg" />
+    <span class="inTxt">
+      <mark>脱炭素化の鍵となる小型CO2回収システム</mark>
+    </span>
+  </a>
+</li>
+
+<li>
+  <a href="https://spectra.mhi.com/jp/hydrogen-rainbow-the-colors-of-decarbonization">
+    <img src="../images.ctfassets.net/7tzggpdkjdtg/6Vkh7PeDQXb92zaZLEM9qo/2777722183b0f13ab519bb424a0bf0c5/imageedit_6_5734543633.jpg" />
+    <span class="inTxt">
+      <mark>脱炭素化の切り札：彩り豊かな水素</mark>
+    </span>
+  </a>
+</li>
+</ul>
+  </div>
+</div>
+<div data-block-plugin-id="inline_block:component" data-inline-block-uuid="ae5813e8-30b9-4026-91a1-001f2fc8772b" class="block block-layout-builder block-inline-blockcomponent">
+  
+    
+      
+      <div class="field field--name-field-paragraph field--type-entity-reference-revisions field--label-hidden field__items">
+              <div class="mhi__view_list field__item">
+
+
+
+
+  <div class="paragraph paragraph--type--mhi-paragraph-view-list paragraph--view-mode--default comDayLi comViewList">
+           <h2>
+        <p class="en"><a href="jp/news.html">ニュース</a></p>
+      </h2>
+              
+  <div class="view view-news view-id-news view-display-id-rich_news_list">
+  
+    
+      
+      <div class="view-content">
+      <div class="comDayLi">
+  
+  <ul class="richNewsList">
+
+          <li>  
+      
+  
+
+  
+<a href="jp/news/22101302.html"><div class="newsItem"><div class="newsThumbnail">
+<img src="jp/media/392351/img_sam_22101302.jpg" />
+</div><span class="inTxt"><time datetime="00Z" class="datetime">2022-10-13</time>
+<span class='comGrpName'>三菱重工業株式会社<span class='newsCategoryWrapper newsExclusion'> <span>[ <span class="newsCategory">プレスリリース</span> ]</span><span>[ <span class="newsCategory">船舶・海洋</span> ]</span> </span><br /></span> 三菱造船、大島商船高等専門学校向け練習船「大島丸」の命名・進水式を下関で実施</span></div></a></li>
+          <li>  
+      
+  
+
+  
+<a href="jp/news/22101301.html"><div class="newsItem"><div class="newsThumbnail">
+<img src="jp/media/392341/img_sam_22101301.jpg" />
+</div><span class="inTxt"><time datetime="00Z" class="datetime">2022-10-13</time>
+<span class='comGrpName'>三菱重工業株式会社<span class='newsCategoryWrapper newsExclusion'> <span>[ <span class="newsCategory">プレスリリース</span> ]</span><span>[ <span class="newsCategory">カーボンニュートラル</span> ]</span><span>[ <span class="newsCategory">エネルギー</span> ]</span> </span><br /></span> 豪州・南オーストラリア州政府と水素開発事業に関する共同声明に署名　クリーンエネルギーへの移行と水素経済の発展目指す</span></div></a></li>
+          <li>  
+      
+  
+
+  
+<a href="jp/news/221012.html"><div class="newsItem"><div class="newsThumbnail">
+<img src="jp/media/392331/img_sam_221012.jpg" />
+</div><span class="inTxt"><time datetime="00Z" class="datetime">2022-10-12</time>
+<span class='comGrpName'>三菱重工業株式会社<span class='newsCategoryWrapper newsExclusion'> <span>[ <span class="newsCategory">プレスリリース</span> ]</span><span>[ <span class="newsCategory">防衛</span> ]</span> </span><br /></span> 防衛省向け3,000トン型潜水艦「じんげい」の命名式・進水式を神戸造船所で実施　現行潜水艦の後継に当たる「たいげい」型3番艦</span></div></a></li>
+          <li>  
+      
+  
+
+  
+<a href="jp/news/22100702.html"><div class="newsItem"><div class="newsThumbnail">
+<img src="jp/media/392291/img_sam_22100702.jpg" />
+</div><span class="inTxt"><time datetime="00Z" class="datetime">2022-10-07</time>
+<span class='comGrpName'>三菱重工業株式会社<span class='newsCategoryWrapper newsExclusion'> <span>[ <span class="newsCategory">プレスリリース</span> ]</span><span>[ <span class="newsCategory">カーボンニュートラル</span> ]</span><span>[ <span class="newsCategory">エナジートランジション</span> ]</span><span>[ <span class="newsCategory">船舶・海洋</span> ]</span> </span><br /></span> 三菱造船、CCUSを目的とした液化CO<sub>2</sub>船舶輸送の実証試験船の起工式を下関で実施</span></div></a></li>
+          <li>  
+      
+  
+
+  
+<a href="jp/news/22100701.html"><div class="newsItem"><div class="newsThumbnail">
+<img src="jp/media/392251/img_sam_22100701.jpg" />
+</div><span class="inTxt"><time datetime="00Z" class="datetime">2022-10-07</time>
+<span class='comGrpName'>三菱重工業株式会社<span class='newsCategoryWrapper newsExclusion'> <span>[ <span class="newsCategory">プレスリリース</span> ]</span><span>[ <span class="newsCategory">原子力関連</span> ]</span> </span><br /></span> プラント自動巡回点検防爆ロボット「EX ROVR」“ASCENT”が「2022年度グッドデザイン・ベスト100」を受賞</span></div></a></li>
+    
+  </ul>
+
+</div>
+
+    </div>
+  
+          </div>
+
+
+      </div>
+</div>
+          </div>
+  
+  </div>
+<div data-block-plugin-id="block_content:8cde0f2c-2bf0-42b8-8577-e2bcf2bbf103" class="block block-block-content block-block-content8cde0f2c-2bf0-42b8-8577-e2bcf2bbf103">
+  
+    
+      
+<div class="comDayLi">
+      <h2><a href="jp/notice.html">重要なお知らせ</a></h2>
+  </div>
+<div class="view view-home-notice-list view-id-home_notice_list view-display-id-default">
+  
+    
+      
+      <div class="view-content">
+      <div class="comDayLi">
+  
+  <ul>
+
+          <li>  
+<a href="jp/notice/notice_220930.html"><time datetime="00Z" class="datetime">2022-09-30</time>
+ <span class="inTxt">(開示事項の変更)特定子会社の異動に関するお知らせ</span></a>
+</li>
+          <li>  
+<a href="https://www.mhi-mth.co.jp/important/220728/"><time datetime="00Z" class="datetime">2022-07-28</time>
+ <span class="inTxt">【三菱重工サーマルシステムズ株式会社・三菱重工冷熱株式会社】<br />全空気式床ふく射冷暖房システム「ユカリラ」の製品カタログ等における誤表示等について</span></a>
+</li>
+          <li>  
+<a href="jp/notice/notice_220428.html"><time datetime="00Z" class="datetime">2022-04-28</time>
+ <span class="inTxt">第2回 三菱原子力安全・保全推進委員会　ステアリングコミッティ議事録</span></a>
+</li>
+    
+  </ul>
+
+</div>
+
+    </div>
+  
+          </div>
+
+  </div>
+
+        </section>
+      </div>
+    </div>
+    
+<div class="comConPosi">
+  <div class="comMainConPosi">
+    <section>
+      <div data-block-plugin-id="block_content:b046a5f9-50cd-44ad-b512-815fda484916" class="block block-block-content block-block-contentb046a5f9-50cd-44ad-b512-815fda484916 comTopCareers" 
+                  style = "background-image: url(/sites/g/files/jwhtju111/files/2019-05/index_careers_bg_0.jpg)"
+            >
+        
+                
+                    
+  <h2>採用情報</h2>
+
+  <p>陸・海・空、そして宇宙に、あなたの力を発揮できる舞台があります。</p>
+
+            <div class="field field--name-field-more-link field--type-link field--label-hidden field__item"><a href="jp/recruit.html">詳しく見る</a></div>
+      
+  <div class="highlight-block-image" attr-url=/sites/g/files/jwhtju111/files/2019-05/index_careers_bg_0.jpg></div>
+
+              </div>
+    </section>
+  </div>
+</div>
+
+<section>
+  <div data-block-plugin-id="block_content:da5017f3-6e49-45a8-ae13-7e9ed01f17ab" class="block block-block-content block-block-contentda5017f3-6e49-45a8-ae13-7e9ed01f17ab comTopGn" 
+      style = "background-image: url(/sites/g/files/jwhtju111/files/2019-05/index_gn_bg.jpg)"
+    >
+    
+        
+            
+  <h2>グローバルネットワーク</h2>
+
+  <p>世界300社以上のグループ会社、陸・海・空、そして宇宙で、活動しています。</p>
+
+            <div class="field field--name-field-more-link field--type-link field--label-hidden field__item"><a href="jp/network.html">詳しく見る</a></div>
+      
+  <div class="highlight-block-image" attr-url=/sites/g/files/jwhtju111/files/2019-05/index_gn_bg.jpg></div>
+
+      </div>
+</section>
+
+<div class="comConPosi">
+  <div class="comMainConPosi">
+    <section>
+      <div data-block-plugin-id="block_content:b6478ce6-211d-4c8c-a724-3ee9943015bd" class="block block-block-content block-block-contentb6478ce6-211d-4c8c-a724-3ee9943015bd comTopAbout">
+        
+                
+                    
+  <h2>三菱重工グループについて</h2>
+
+  <p>三菱重工グループは、エンジニアリングとものづくりのグローバルリーダーとして、<br />
+民間航空、輸送、発電所、ガスタービン、機械、インフラから防衛・宇宙システムにいたる幅広い産業で、<br />
+最先端の技術や高いインテグレーション能力により、<br />
+様々な高い技術力で統合したソリューションを提供しています。</p>
+
+            <div class="field field--name-field-more-link field--type-link field--label-hidden field__item"><a href="jp/company.html">詳しく見る</a></div>
+      
+              </div>
+    </section>
+  </div>
+</div>
+
+  </div>
+  </div>
+
+  </div>
+</article>
+
+  </div>
+
+  </div>
+
+  </main>
+
+  <footer id="comFooter" role="contentinfo">
+    
+  <div id="block-footermovetotop" class="footerMoveToTop block block-block-content block-block-content6e6aad79-adfe-4c83-816b-eac594acd83d" data-block-plugin-id="block_content:6e6aad79-adfe-4c83-816b-eac594acd83d">
+  
+    
+      
+            <div class="clearfix text-formatted field field--name-body field--type-text-with-summary field--label-hidden field__item"><div id="pageTop"><a>Go to the top of this page</a></div></div>
+      
+  </div>
+<div id="block-footer-group-logo" class="footerGroupLogo block block-block-content block-block-content96ae1c39-c05b-4e67-9ca0-3129dee83e92" data-block-plugin-id="block_content:96ae1c39-c05b-4e67-9ca0-3129dee83e92">
+  
+    
+      
+            <div class="clearfix text-formatted field field--name-body field--type-text-with-summary field--label-hidden field__item"><div id="footGroupLogo"><a href="jp/network/text_version.html"><img src="themes/custom/mhi/src/img/foot_mhigroup_logo.svg" alt="MOVE THE WORLD FORWARD MHI Group" /></a></div></div>
+      
+  </div>
+<div id="block-cookiedisclaimerpopup" data-block-plugin-id="simple_block:cookie_disclaimer_pop_up" class="block block-simple-block block-simple-blockcookie-disclaimer-pop-up">
+  
+    
+      <div class="cookieAlertBox"><div class="inner"><p>本サイト（www.mhi.com）は、お客様が再訪問された際に、最適な情報を提供するなど、快適にご利用いただくためにクッキー（Cookie）を使用しています。詳しくはサイトのご利用条件をご覧ください。本サイトをご利用になる場合、お客様はクッキーの使用に同意下さい。<br><a href="jp/conditions.html#cookie">サイトのご利用条件</a></p><div class="cookieApprovalBtn"><span>同意しました</span></div><div class="closeBtn"></div></div></div>
+  </div>
+<div id="block-footer-social-media" data-block-plugin-id="fixed_block_content:footer_social_media" class="block block-fixed-block-content block-fixed-block-contentfooter-social-media">
+  
+    
+      
+            <div class="clearfix text-formatted field field--name-body field--type-text-with-summary field--label-hidden field__item"><div id="followUs">
+<p>FOLLOW US<span class="inFtFollowColon"> :</span></p>
+
+<div class="youtube"><a href="https://www.youtube.com/user/DiscoverMHI" target="_blank"><img alt="YouTube" data-entity-type="" data-entity-uuid="" height="18" src="themes/custom/mhi/src/img/youtube_ico.svg" width="23" /></a></div>
+
+<div class="linkedin"><a href="https://www.linkedin.com/company/mitsubishi-heavy-industries" target="_blank"><img alt="Linkedin" data-entity-type="" data-entity-uuid="" height="18" src="themes/custom/mhi/src/img/linkedin_ico.svg" /></a></div>
+
+<div class="linkedin"><a href="https://twitter.com/MHI_GroupJP" target="_blank"><img alt="RSS" data-entity-type="" data-entity-uuid="" height="15" src="themes/custom/mhi/src/img/twitter_ico.svg" width="20" /></a></div>
+
+<div class="feed"><a href="jp/rss/index.html" target="_blank"><img alt="RSS" data-entity-type="" data-entity-uuid="" height="15" src="themes/custom/mhi/src/img/feed_ico.svg" width="15" /></a></div>
+</div>
+</div>
+      
+  </div>
+<nav role="navigation" id="footerLink" aria-labelledby="block-footer-menu" id="block-footer" data-block-plugin-id="system_menu_block:footer" class="block block-menu navigation menu--footer">
+            
+  <h2 class="visually-hidden" id="block-footer-menu">Footer</h2>
+  
+
+        
+        <ul block="block-footer" class="menu"><li class="menu-item"><a href="jp/sitemap.html" hreflang="ja" data-drupal-link-system-path="node/107566">サイトマップ</a></li><li class="menu-item"><a href="jp/conditions.html" hreflang="ja" data-drupal-link-system-path="node/111361">サイトのご利用条件</a></li><li class="menu-item"><a href="jp/privacy.html" hreflang="ja" data-drupal-link-system-path="node/111391">個人情報保護方針</a></li><li class="menu-item"><a href="jp/inquiry.html" hreflang="ja" data-drupal-link-system-path="node/104561">お問い合わせ</a></li><li class="menu-item"><a href="https://spectra.mhi.com/" hreflang="ja">SPECTRA(英語)</a></li></ul>  
+
+
+  </nav>
+<div id="block-footer-copyright" data-block-plugin-id="block_content:7f80591d-954a-4a5e-85cc-7af69bc0faf9" class="footer-copyright block block-block-content block-block-content7f80591d-954a-4a5e-85cc-7af69bc0faf9">
+  
+    
+      
+            <div class="clearfix text-formatted field field--name-body field--type-text-with-summary field--label-hidden field__item"><p><small id="copyright">© MITSUBISHI HEAVY INDUSTRIES, LTD.</small></p></div>
+      
+  </div>
+
+
+  </footer>
+
+  </div>
+
+    
+    <script type="application/json" data-drupal-selector="drupal-settings-json">{"path":{"baseUrl":"\/","scriptPath":null,"pathPrefix":"jp\/","currentPath":"node\/12","currentPathIsAdmin":false,"isFront":true,"currentLanguage":"ja"},"pluralDelimiter":"\u0003","suppressDeprecationErrors":true,"data":{"extlink":{"extTarget":true,"extTargetNoOverride":false,"extNofollow":false,"extNoreferrer":false,"extFollowNoOverride":false,"extClass":"ext","extLabel":"(link is external)","extImgClass":false,"extSubdomains":false,"extExclude":"","extInclude":"","extCssExclude":".comNewsDetail #comMainConPosi, .product-business-contact-list, .comImportantNoticeDetail #comMainConPosi, .comContactLkWrap, .noextlink, .view-id-home_notice_list","extCssExplicit":"","extAlert":false,"extAlertText":"This link will take you to an external web site. We are not responsible for their content.","mailtoClass":"0","mailtoLabel":"(link sends email)","extUseFontAwesome":false,"extIconPlacement":"append","extFaLinkClasses":"fa fa-external-link","extFaMailtoClasses":"fa fa-envelope-o","whitelistedDomains":[]}},"mhi_base":{"outline":{"title":"\u4e09\u83f1\u91cd\u5de5\u30b0\u30eb\u30fc\u30d7\u306e\u30a2\u30a6\u30c8\u30e9\u30a4\u30f3","link":"\/jp\/company\/aboutmhi\/introduction\/","description":"\u4e09\u83f1\u91cd\u5de5\u30b0\u30eb\u30fc\u30d7\u306e\u6982\u8981\u30fb\u6d3b\u52d5\u5185\u5bb9\u306e\u3054\u7d39\u4ecb\u3067\u3059\u3002","mobile_thumb_url":"https:\/\/www.mhi.com\/sites\/g\/files\/jwhtju111\/files\/mhi-base\/bnr_introduction_3.png"}},"googlemapkey":"AIzaSyD1BlDDhdPrHa5OrOGxexsWRdwlMI5FJbY","mhi":{"mhiJS":{"theme_path":"themes\/custom\/mhi"}},"ajax":[],"user":{"uid":0,"permissionsHash":"e18ddaad7ecb67086f012a0eab07bb949fa25dbae047d062749f931dd04e0ed3"}}</script>
+<script src="sites/g/files/jwhtju111/files/js/js_ENytsrpV9z3-8k_ILPKTKAAxTLhzA0DZDF8qmlqDFsY.js"></script>
+<script src="../c.marsflag.com/mf/mfx/1.0/js/mfx-sbox.js"></script>
+<script src="sites/g/files/jwhtju111/files/js/js_xsxlqMO56JBwyKDi901Y0qIR39OQ4rWnhbgLwPzdREg.js"></script>
+
+  <script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"3d90739b94","applicationID":"945003000,756406217","transactionName":"M1VVZRQACBYDAkdQCwofdlISCAkLTSVBTBQFXGtfCQUDOSEOXU0WC1xbVBQ9KAoGBGVQARNzWF8SEwkJDgRBFFoSWVJG","queueTime":0,"applicationTime":609,"atts":"HxJWE1waGxg=","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+
+<!-- Mirrored from www.mhi.com/jp by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 14 Oct 2022 17:06:45 GMT -->
+</html>

@@ -1,0 +1,711 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" prefix="content: http://purl.org/rss/1.0/modules/content/  dc: http://purl.org/dc/terms/  foaf: http://xmlns.com/foaf/0.1/  og: http://ogp.me/ns#  rdfs: http://www.w3.org/2000/01/rdf-schema#  schema: http://schema.org/  sioc: http://rdfs.org/sioc/ns#  sioct: http://rdfs.org/sioc/types#  skos: http://www.w3.org/2004/02/skos/core#  xsd: http://www.w3.org/2001/XMLSchema# ">
+  
+<!-- Mirrored from www.mhi.com/network by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 14 Oct 2022 17:07:46 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+    <meta charset="utf-8" /><script type="text/javascript">(window.NREUM||(NREUM={})).init={ajax:{deny_list:["bam.nr-data.net"]}};(window.NREUM||(NREUM={})).loader_config={licenseKey:"3d90739b94",applicationID:"945003000"};window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){var i=e[n]={exports:{}};t[n][0].call(i.exports,function(e){var i=t[n][1][e];return r(i||e)},i,i.exports)}return e[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var i=0;i<n.length;i++)r(n[i]);return r}({1:[function(t,e,n){function r(){}function i(t,e,n,r){return function(){return s.recordSupportability("API/"+e+"/called"),o(t+e,[u.now()].concat(c(arguments)),n?null:this,r),n?void 0:this}}var o=t("handle"),a=t(9),c=t(10),f=t("ee").get("tracer"),u=t("loader"),s=t(4),d=NREUM;"undefined"==typeof window.newrelic&&(newrelic=d);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],l="api-",v=l+"ixn-";a(p,function(t,e){d[e]=i(l,e,!0,"api")}),d.addPageAction=i(l,"addPageAction",!0),d.setCurrentRouteName=i(l,"routeName",!0),e.exports=newrelic,d.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(t,e){var n={},r=this,i="function"==typeof e;return o(v+"tracer",[u.now(),t,n],r),function(){if(f.emit((i?"":"no-")+"fn-start",[u.now(),r,i],n),i)try{return e.apply(this,arguments)}catch(t){throw f.emit("fn-err",[arguments,this,t],n),t}finally{f.emit("fn-end",[u.now()],n)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(t,e){m[e]=i(v,e)}),newrelic.noticeError=function(t,e){"string"==typeof t&&(t=new Error(t)),s.recordSupportability("API/noticeError/called"),o("err",[t,u.now(),!1,e])}},{}],2:[function(t,e,n){function r(t){if(NREUM.init){for(var e=NREUM.init,n=t.split("."),r=0;r<n.length-1;r++)if(e=e[n[r]],"object"!=typeof e)return;return e=e[n[n.length-1]]}}e.exports={getConfiguration:r}},{}],3:[function(t,e,n){var r=!1;try{var i=Object.defineProperty({},"passive",{get:function(){r=!0}});window.addEventListener("testPassive",null,i),window.removeEventListener("testPassive",null,i)}catch(o){}e.exports=function(t){return r?{passive:!0,capture:!!t}:!!t}},{}],4:[function(t,e,n){function r(t,e){var n=[a,t,{name:t},e];return o("storeMetric",n,null,"api"),n}function i(t,e){var n=[c,t,{name:t},e];return o("storeEventMetrics",n,null,"api"),n}var o=t("handle"),a="sm",c="cm";e.exports={constants:{SUPPORTABILITY_METRIC:a,CUSTOM_METRIC:c},recordSupportability:r,recordCustom:i}},{}],5:[function(t,e,n){function r(){return c.exists&&performance.now?Math.round(performance.now()):(o=Math.max((new Date).getTime(),o))-a}function i(){return o}var o=(new Date).getTime(),a=o,c=t(11);e.exports=r,e.exports.offset=a,e.exports.getLastTimestamp=i},{}],6:[function(t,e,n){function r(t,e){var n=t.getEntries();n.forEach(function(t){"first-paint"===t.name?l("timing",["fp",Math.floor(t.startTime)]):"first-contentful-paint"===t.name&&l("timing",["fcp",Math.floor(t.startTime)])})}function i(t,e){var n=t.getEntries();if(n.length>0){var r=n[n.length-1];if(u&&u<r.startTime)return;var i=[r],o=a({});o&&i.push(o),l("lcp",i)}}function o(t){t.getEntries().forEach(function(t){t.hadRecentInput||l("cls",[t])})}function a(t){var e=navigator.connection||navigator.mozConnection||navigator.webkitConnection;if(e)return e.type&&(t["net-type"]=e.type),e.effectiveType&&(t["net-etype"]=e.effectiveType),e.rtt&&(t["net-rtt"]=e.rtt),e.downlink&&(t["net-dlink"]=e.downlink),t}function c(t){if(t instanceof y&&!w){var e=Math.round(t.timeStamp),n={type:t.type};a(n),e<=v.now()?n.fid=v.now()-e:e>v.offset&&e<=Date.now()?(e-=v.offset,n.fid=v.now()-e):e=v.now(),w=!0,l("timing",["fi",e,n])}}function f(t){"hidden"===t&&(u=v.now(),l("pageHide",[u]))}if(!("init"in NREUM&&"page_view_timing"in NREUM.init&&"enabled"in NREUM.init.page_view_timing&&NREUM.init.page_view_timing.enabled===!1)){var u,s,d,p,l=t("handle"),v=t("loader"),m=t(8),g=t(3),y=NREUM.o.EV;if("PerformanceObserver"in window&&"function"==typeof window.PerformanceObserver){s=new PerformanceObserver(r);try{s.observe({entryTypes:["paint"]})}catch(h){}d=new PerformanceObserver(i);try{d.observe({entryTypes:["largest-contentful-paint"]})}catch(h){}p=new PerformanceObserver(o);try{p.observe({type:"layout-shift",buffered:!0})}catch(h){}}if("addEventListener"in document){var w=!1,b=["click","keydown","mousedown","pointerdown","touchstart"];b.forEach(function(t){document.addEventListener(t,c,g(!1))})}m(f)}},{}],7:[function(t,e,n){function r(t,e){if(!i)return!1;if(t!==i)return!1;if(!e)return!0;if(!o)return!1;for(var n=o.split("."),r=e.split("."),a=0;a<r.length;a++)if(r[a]!==n[a])return!1;return!0}var i=null,o=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var c=navigator.userAgent,f=c.match(a);f&&c.indexOf("Chrome")===-1&&c.indexOf("Chromium")===-1&&(i="Safari",o=f[1])}e.exports={agent:i,version:o,match:r}},{}],8:[function(t,e,n){function r(t){function e(){t(c&&document[c]?document[c]:document[o]?"hidden":"visible")}"addEventListener"in document&&a&&document.addEventListener(a,e,i(!1))}var i=t(3);e.exports=r;var o,a,c;"undefined"!=typeof document.hidden?(o="hidden",a="visibilitychange",c="visibilityState"):"undefined"!=typeof document.msHidden?(o="msHidden",a="msvisibilitychange"):"undefined"!=typeof document.webkitHidden&&(o="webkitHidden",a="webkitvisibilitychange",c="webkitVisibilityState")},{}],9:[function(t,e,n){function r(t,e){var n=[],r="",o=0;for(r in t)i.call(t,r)&&(n[o]=e(r,t[r]),o+=1);return n}var i=Object.prototype.hasOwnProperty;e.exports=r},{}],10:[function(t,e,n){function r(t,e,n){e||(e=0),"undefined"==typeof n&&(n=t?t.length:0);for(var r=-1,i=n-e||0,o=Array(i<0?0:i);++r<i;)o[r]=t[e+r];return o}e.exports=r},{}],11:[function(t,e,n){e.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(t,e,n){function r(){}function i(t){function e(t){return t&&t instanceof r?t:t?u(t,f,a):a()}function n(n,r,i,o,a){if(a!==!1&&(a=!0),!l.aborted||o){t&&a&&t(n,r,i);for(var c=e(i),f=m(n),u=f.length,s=0;s<u;s++)f[s].apply(c,r);var p=d[w[n]];return p&&p.push([b,n,r,c]),c}}function o(t,e){h[t]=m(t).concat(e)}function v(t,e){var n=h[t];if(n)for(var r=0;r<n.length;r++)n[r]===e&&n.splice(r,1)}function m(t){return h[t]||[]}function g(t){return p[t]=p[t]||i(n)}function y(t,e){l.aborted||s(t,function(t,n){e=e||"feature",w[n]=e,e in d||(d[e]=[])})}var h={},w={},b={on:o,addEventListener:o,removeEventListener:v,emit:n,get:g,listeners:m,context:e,buffer:y,abort:c,aborted:!1};return b}function o(t){return u(t,f,a)}function a(){return new r}function c(){(d.api||d.feature)&&(l.aborted=!0,d=l.backlog={})}var f="nr@context",u=t("gos"),s=t(9),d={},p={},l=e.exports=i();e.exports.getOrSetContext=o,l.backlog=d},{}],gos:[function(t,e,n){function r(t,e,n){if(i.call(t,e))return t[e];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(t,e,{value:r,writable:!0,enumerable:!1}),r}catch(o){}return t[e]=r,r}var i=Object.prototype.hasOwnProperty;e.exports=r},{}],handle:[function(t,e,n){function r(t,e,n,r){i.buffer([t],r),i.emit(t,e,n)}var i=t("ee").get("handle");e.exports=r,r.ee=i},{}],id:[function(t,e,n){function r(t){var e=typeof t;return!t||"object"!==e&&"function"!==e?-1:t===window?0:a(t,o,function(){return i++})}var i=1,o="nr@id",a=t("gos");e.exports=r},{}],loader:[function(t,e,n){function r(){if(!M++){var t=T.info=NREUM.info,e=m.getElementsByTagName("script")[0];if(setTimeout(u.abort,3e4),!(t&&t.licenseKey&&t.applicationID&&e))return u.abort();f(x,function(e,n){t[e]||(t[e]=n)});var n=a();c("mark",["onload",n+T.offset],null,"api"),c("timing",["load",n]);var r=m.createElement("script");0===t.agent.indexOf("http://")||0===t.agent.indexOf("https:///")?r.src=t.agent:r.src=l+"://"+t.agent,e.parentNode.insertBefore(r,e)}}function i(){"complete"===m.readyState&&o()}function o(){c("mark",["domContent",a()+T.offset],null,"api")}var a=t(5),c=t("handle"),f=t(9),u=t("ee"),s=t(7),d=t(2),p=t(3),l=d.getConfiguration("ssl")===!1?"http":"https",v=window,m=v.document,g="addEventListener",y="attachEvent",h=v.XMLHttpRequest,w=h&&h.prototype,b=!1;NREUM.o={ST:setTimeout,SI:v.setImmediate,CT:clearTimeout,XHR:h,REQ:v.Request,EV:v.Event,PR:v.Promise,MO:v.MutationObserver};var E=""+location,x={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1216.min.js"},O=h&&w&&w[g]&&!/CriOS/.test(navigator.userAgent),T=e.exports={offset:a.getLastTimestamp(),now:a,origin:E,features:{},xhrWrappable:O,userAgent:s,disabled:b};if(!b){t(1),t(6),m[g]?(m[g]("DOMContentLoaded",o,p(!1)),v[g]("load",r,p(!1))):(m[y]("onreadystatechange",i),v[y]("onload",r)),c("mark",["firstbyte",a.getLastTimestamp()],null,"api");var M=0}},{}],"wrap-function":[function(t,e,n){function r(t,e){function n(e,n,r,f,u){function nrWrapper(){var o,a,s,p;try{a=this,o=d(arguments),s="function"==typeof r?r(o,a):r||{}}catch(l){i([l,"",[o,a,f],s],t)}c(n+"start",[o,a,f],s,u);try{return p=e.apply(a,o)}catch(v){throw c(n+"err",[o,a,v],s,u),v}finally{c(n+"end",[o,a,p],s,u)}}return a(e)?e:(n||(n=""),nrWrapper[p]=e,o(e,nrWrapper,t),nrWrapper)}function r(t,e,r,i,o){r||(r="");var c,f,u,s="-"===r.charAt(0);for(u=0;u<e.length;u++)f=e[u],c=t[f],a(c)||(t[f]=n(c,s?f+r:r,i,f,o))}function c(n,r,o,a){if(!v||e){var c=v;v=!0;try{t.emit(n,r,o,e,a)}catch(f){i([f,n,r,o],t)}v=c}}return t||(t=s),n.inPlace=r,n.flag=p,n}function i(t,e){e||(e=s);try{e.emit("internal-error",t)}catch(n){}}function o(t,e,n){if(Object.defineProperty&&Object.keys)try{var r=Object.keys(t);return r.forEach(function(n){Object.defineProperty(e,n,{get:function(){return t[n]},set:function(e){return t[n]=e,e}})}),e}catch(o){i([o],n)}for(var a in t)l.call(t,a)&&(e[a]=t[a]);return e}function a(t){return!(t&&t instanceof Function&&t.apply&&!t[p])}function c(t,e){var n=e(t);return n[p]=t,o(t,n,s),n}function f(t,e,n){var r=t[e];t[e]=c(r,n)}function u(){for(var t=arguments.length,e=new Array(t),n=0;n<t;++n)e[n]=arguments[n];return e}var s=t("ee"),d=t(10),p="nr@original",l=Object.prototype.hasOwnProperty,v=!1;e.exports=r,e.exports.wrapFunction=c,e.exports.wrapInPlace=f,e.exports.argsToArray=u},{}]},{},["loader"]);</script>
+<meta property="og:site_name" content="Mitsubishi Heavy Industries, Ltd." />
+<link rel="shortcut icon" href="https://www.mhi.com/themes/custom/mhi_base_theme/favicons/en/favicon.ico" />
+<link rel="canonical" href="https://www.mhi.com/network" />
+<meta property="og:type" content="Top page" />
+<meta name="description" content="The Mitsubishi Heavy Industries, Ltd. group is an enterprise group consisting of about 300 companies. You can search group companies and view information thereof." />
+<meta property="og:url" content="https://www.mhi.com/network" />
+<meta name="keywords" content="network, Search, Company Search, ragion, products, business" />
+<meta property="og:title" content="Mitsubishi Heavy Industries, Ltd. Global Website | GLOBAL NETWORK" />
+<meta property="og:description" content="The Mitsubishi Heavy Industries, Ltd. group is an enterprise group consisting of about 300 companies. You can search group companies and view information thereof." />
+<link rel="apple-touch-icon" href="https://www.mhi.com/themes/custom/mhi_base_theme/favicons/en/apple_touch_icon.png" />
+<meta property="og:image" content="https://www.mhi.com/themes/custom/mhi/src/img/ogp_sns.png" />
+<meta property="og:image:type" content="image/jpeg" />
+<link rel="apple-touch-icon-precomposed" href="https://www.mhi.com/themes/custom/mhi_base_theme/favicons/en/apple_touch_icon.png" />
+<meta name="Generator" content="Drupal 9 (https://www.drupal.org)" />
+<meta name="MobileOptimized" content="width" />
+<meta name="HandheldFriendly" content="true" />
+<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+<meta name="twitter:card" content="summary_large_image" />
+<link rel="alternate" hreflang="en" href="https://www.mhi.com/network" />
+<link rel="alternate" hreflang="ja" href="https://www.mhi.com/jp/network" />
+<script src="https://www.mhi.com/sites/g/files/jwhtju111/files/google_tag/google_tag/mhi/google_tag.script.js?rjc08r" defer></script>
+
+    <title>Mitsubishi Heavy Industries, Ltd. Global Website | GLOBAL NETWORK</title>
+    <link rel="stylesheet" media="all" href="https://www.mhi.com/sites/g/files/jwhtju111/files/css/css_qZhehVHps-C2ODhZqVOWvxncdTCdWE47iigcmEV2MVM.css" />
+<link rel="stylesheet" media="all" href="https://www.mhi.com/sites/g/files/jwhtju111/files/css/css_CkI3LmNJ7q5u7vgPlbGRpHze6RUqW2r6fTiA6GvkBQo.css" />
+<link rel="stylesheet" media="print" href="https://www.mhi.com/sites/g/files/jwhtju111/files/css/css_npYYriCqvk444NEOIIcVTaL2youfsF04to-0pVnMrvo.css" />
+<link rel="stylesheet" media="all" href="https://www.mhi.com/sites/g/files/jwhtju111/files/css/css_WKR2LOFgTC73WxilVNCHFRmZjGJmhI-0HHQwdO6FV54.css" />
+
+    <script src="https://www.mhi.com/core/assets/vendor/modernizr/modernizr.min.js?v=3.11.7"></script>
+<script src="https://www.mhi.com/core/misc/modernizr-additional-tests.js?v=3.11.7"></script>
+
+          <script type="text/javascript" src="https://www.mhi.com/modules/contrib/seckit/js/seckit.document_write.js"></script>
+        <link type="text/css" rel="stylesheet" id="seckit-clickjacking-no-body" media="all" href="https://www.mhi.com/modules/contrib/seckit/css/seckit.no_body.css" />
+        <!-- stop SecKit protection -->
+        <noscript>
+        <link type="text/css" rel="stylesheet" id="seckit-clickjacking-noscript-tag" media="all" href="https://www.mhi.com/modules/contrib/seckit/css/seckit.noscript_tag.css" />
+        <div id="seckit-noscript-tag">
+          Sorry, you need to enable JavaScript to visit this website.
+        </div>
+        </noscript></head>
+  <body class="path-node page-node-type-landing-page">
+        <a href="#main-content" class="visually-hidden focusable skip-link">
+      Skip to main content
+    </a>
+    <noscript aria-hidden="true"><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PPKXH83" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+      <div class="dialog-off-canvas-main-canvas" data-off-canvas-main-canvas>
+    <div class="comHeaderFollow">
+    <header id="comHeader" role="banner">
+    <div id="block-sitebranding" data-block-plugin-id="system_branding_block" class="block block-system block-system-branding-block">
+  
+    
+    <div id="headLogo">
+      <a href="https://www.mhi.com/" title="Home" rel="home" class="site-logo">
+      <img src="https://www.mhi.com/themes/custom/mhi/logo_en.svg" alt="Home" />
+    </a>
+        </div>
+</div>
+<div id="headGroupLogo" data-block-plugin-id="block_content:96769913-b3b8-42f7-a711-29d68ddbf08a" class="block block-block-content block-block-content96769913-b3b8-42f7-a711-29d68ddbf08a">
+  
+    
+      
+            <div class="clearfix text-formatted field field--name-body field--type-text-with-summary field--label-hidden field__item"><p><a href="https://www.mhi.com/network/text_version.html"><img alt="MHI Group" src="https://www.mhi.com/themes/custom/mhi/src/img/head_mhigroup_logo.svg" /></a></p>
+</div>
+      
+  </div>
+<div id="block-mhi-search-box" data-block-plugin-id="mhi_search_box" class="block block-mhi-marsflag block-mhi-search-box">
+  
+    
+      <div class="searchArea">
+  <form id="search_form" action="https://www.mhi.com/search" onsubmit="return mysearch();">
+    <input class="searchTxt" type="text" name="q" value="" tabindex="0" placeholder="Search">
+    <input type="hidden" name="ie" value="u">
+  </form>
+</div>
+
+  </div>
+<div role="navigation" aria-labelledby="block-headermenu-menu" id="headMenu" data-block-plugin-id="system_menu_block:header-menu" class="block block-menu navigation menu--header-menu search-container">
+            
+  <h2 class="visually-hidden" id="block-headermenu-menu">Header Menu</h2>
+  
+
+        
+        <div class="hnav">
+      <nav>
+                  <ul block="block-headermenu" class="menu">
+                                    <li class="menu-item">
+            <a href="https://www.mhi.com/news" hreflang="en" data-drupal-link-system-path="news">NEWS</a>
+                      </li>
+                            <li class="menu-item">
+            <a href="https://www.mhi.com/recruit" hreflang="en" data-drupal-link-system-path="node/107561">CAREERS</a>
+                      </li>
+                            <li class="menu-item">
+            <a href="https://www.mhi.com/" class="lang-switch" hreflang="en" data-drupal-link-system-path="&lt;front&gt;">JAPANESE CORPORATE SITE</a>
+                      </li>
+                </ul>
+      </nav>
+    </div>
+  
+
+
+  </div>
+<div id="gnav">
+  <nav role="navigation" aria-labelledby="block-mainnavigation-menu" id="block-mainnavigation" data-block-plugin-id="menu_item_fields:main" class="block block-menu navigation menu--main">
+                      
+    <h2 class="visually-hidden" id="block-mainnavigation-menu">Main navigation</h2>
+    
+
+              
+  
+      <ul block="block-mainnavigation" class="menu">
+                      <li class="menu-item--expanded menu-item">
+          <p><a href="https://www.mhi.com/company" hreflang="en" data-drupal-link-system-path="node/29551">About US</a></p>
+          <ul class="megaDrop" id="md">
+            <div class="inner">
+              <div class="catTl">
+                <p>About US</p>
+              </div>
+              <div class="detail">
+                  
+      <ul>
+                      <li class="menu-item--expanded menu-item menu-item--hide--comSubNv">
+                        <a href="https://www.mhi.com/company/aboutmhi" title="" data-drupal-link-system-path="node/5486">About MHI group</a>
+                  </li>
+                      <li class="menu-item menu-item--hide--comSubNv">
+                        <a href="https://www.mhi.com/company/message" title="" data-drupal-link-system-path="node/73176">CEO Message</a>
+                  </li>
+                      <li class="menu-item--expanded menu-item menu-item--hide--comSubNv">
+                        <a href="https://www.mhi.com/company/technology" title="" data-drupal-link-system-path="node/73181">Technology</a>
+                  </li>
+                      <li class="menu-item--expanded menu-item menu-item--hide--comSubNv">
+                        <a href="https://www.mhi.com/company/location" title="" data-drupal-link-system-path="node/29516">NETWORK</a>
+                  </li>
+                      <li class="menu-item--expanded menu-item menu-item--hide--comSubNv">
+                        <a href="https://www.mhi.com/company/procurement" title="" data-drupal-link-system-path="node/73186">PROCUREMENT</a>
+                  </li>
+                      <li class="menu-item--expanded menu-item menu-item--hide--comSubNv">
+                        <a href="https://www.mhi.com/company/regions" title="" data-drupal-link-system-path="node/50986">REGIONS</a>
+                  </li>
+                      <li class="menu-item--expanded menu-item">
+                        
+      <ul class="comSubNv">
+                      <li>
+            <a href="https://www.mhi.com/company/aboutmhi/introduction" title="" data-drupal-link-system-path="node/29506">OUTLINE OF MHI GROUP</a>
+            
+  
+
+        </li>
+                      <li>
+            <a href="https://www.mhi.com/recruit" title="">Careers</a>
+            
+  
+
+        </li>
+          </ul>
+  
+
+                  </li>
+          </ul>
+  
+
+              </div>
+            </div>
+            <div class="close">CLOSE</div>
+          </ul>
+        </li>
+                      <li class="menu-item--expanded menu-item">
+          <p><a href="https://www.mhi.com/expertise" hreflang="en" data-drupal-link-system-path="node/104466">Our Expertise</a></p>
+          <ul class="megaDrop" id="md">
+            <div class="inner">
+              <div class="catTl">
+                <p>Our Expertise</p>
+              </div>
+              <div class="detail">
+                  
+      <ul>
+                      <li class="menu-item--expanded menu-item menu-item--hide--comSubNv">
+                        <a href="https://www.mhi.com/expertise#showcase" title="" data-drupal-link-system-path="node/104466">Stories</a>
+                  </li>
+                      <li class="menu-item--expanded menu-item menu-item--hide--comSubNv">
+                        <a href="https://www.mhi.com/expertise/museum" title="" data-drupal-link-system-path="node/107546">Exhibition Facilities</a>
+                  </li>
+                      <li class="menu-item menu-item--hide--comSubNv">
+                        <a href="https://www.mhi.com/expertise/event" title="" data-drupal-link-system-path="node/104726">Event &amp; Exhibition</a>
+                  </li>
+                      <li class="menu-item--expanded menu-item">
+                        
+      <ul class="comSubNv">
+                      <li>
+            <a href="https://www.mhi.com/expertise/carbon-neutral" title="" data-drupal-link-system-path="node/136976">MHI Group’s Declaration to achieve Carbon Neutral by 2040</a>
+            
+  
+
+        </li>
+                      <li>
+            <a href="https://www.mhi.com/expertise/museum/minatomirai" title="" data-drupal-link-system-path="node/103256">MITSUBISHI MINATOMIRAI INDUSTRIAL MUSEUM</a>
+            
+  
+
+        </li>
+          </ul>
+  
+
+                  </li>
+          </ul>
+  
+
+              </div>
+            </div>
+            <div class="close">CLOSE</div>
+          </ul>
+        </li>
+                      <li class="menu-item--expanded menu-item">
+          <p><a href="https://www.mhi.com/products" hreflang="en" data-drupal-link-system-path="node/6181">Products</a></p>
+          <ul class="megaDrop" id="md">
+            <div class="inner">
+              <div class="catTl">
+                <p>Products</p>
+              </div>
+              <div class="detail">
+                  
+      <ul>
+                      <li class="menu-item menu-item--hide--comSubNv">
+                        <a href="https://www.mhi.com/products/energy" title="" data-drupal-link-system-path="taxonomy/term/1436">Energy</a>
+                  </li>
+                      <li class="menu-item menu-item--hide--comSubNv">
+                        <a href="https://www.mhi.com/products/air" title="" data-drupal-link-system-path="taxonomy/term/1491"> Aircraft</a>
+                  </li>
+                      <li class="menu-item menu-item--hide--comSubNv">
+                        <a href="https://www.mhi.com/products/space" title="" data-drupal-link-system-path="taxonomy/term/1516">Space</a>
+                  </li>
+                      <li class="menu-item menu-item--hide--comSubNv">
+                        <a href="https://www.mhi.com/products/ship" title="" data-drupal-link-system-path="taxonomy/term/1561">Ship &amp; Ocean</a>
+                  </li>
+                      <li class="menu-item menu-item--hide--comSubNv">
+                        <a href="https://www.mhi.com/products/transport" title="" data-drupal-link-system-path="taxonomy/term/1636">Transportation</a>
+                  </li>
+                      <li class="menu-item menu-item--hide--comSubNv">
+                        <a href="https://www.mhi.com/products/material_handling" title="" data-drupal-link-system-path="taxonomy/term/1646">Material handling</a>
+                  </li>
+                      <li class="menu-item menu-item--hide--comSubNv">
+                        <a href="https://www.mhi.com/products/environment" title="" data-drupal-link-system-path="taxonomy/term/1656">Environment</a>
+                  </li>
+                      <li class="menu-item menu-item--hide--comSubNv">
+                        <a href="https://www.mhi.com/products/automobile" title="" data-drupal-link-system-path="taxonomy/term/1686"> Automotive</a>
+                  </li>
+                      <li class="menu-item menu-item--hide--comSubNv">
+                        <a href="https://www.mhi.com/products/industry" title="" data-drupal-link-system-path="taxonomy/term/1711">Industrial machinery</a>
+                  </li>
+                      <li class="menu-item menu-item--hide--comSubNv">
+                        <a href="https://www.mhi.com/products/infrastructure" title="" data-drupal-link-system-path="taxonomy/term/1806">Infrastructure</a>
+                  </li>
+                      <li class="menu-item menu-item--hide--comSubNv">
+                        <a href="https://www.mhi.com/products/living" title="" data-drupal-link-system-path="taxonomy/term/1841">Living &amp; leisure</a>
+                  </li>
+                      <li class="menu-item menu-item--hide--comSubNv">
+                        <a href="https://www.mhi.com/products/defense" title="" data-drupal-link-system-path="taxonomy/term/1856">Defense</a>
+                  </li>
+                      <li class="menu-item menu-item--hide--comSubNv">
+                        <a href="https://www.mhi.com/products/engineering" title="" data-drupal-link-system-path="taxonomy/term/1891">Engineering</a>
+                  </li>
+          </ul>
+  
+
+              </div>
+            </div>
+            <div class="close">CLOSE</div>
+          </ul>
+        </li>
+                      <li class="menu-item--expanded menu-item">
+          <p><a href="https://www.mhi.com/sustainability" hreflang="en" data-drupal-link-system-path="node/6311"><span class="hypher">SUSTAINABILITY</span></a></p>
+          <ul class="megaDrop" id="md">
+            <div class="inner">
+              <div class="catTl">
+                <p><span class="hypher">SUSTAINABILITY</span></p>
+              </div>
+              <div class="detail">
+                  
+      <ul>
+                      <li class="menu-item--expanded menu-item menu-item--hide--comSubNv">
+                        <a href="https://www.mhi.com/sustainability/management" title="" data-drupal-link-system-path="node/6256">Management</a>
+                  </li>
+                      <li class="menu-item menu-item--hide--comSubNv">
+                        <a href="https://www.mhi.com/sustainability/library" title="" data-drupal-link-system-path="node/73526">Library</a>
+                  </li>
+                      <li class="menu-item--expanded menu-item menu-item--hide--comSubNv">
+                        <a href="https://www.mhi.com/sustainability/environment" title="" data-drupal-link-system-path="node/6161">Environment</a>
+                  </li>
+                      <li class="menu-item--expanded menu-item menu-item--hide--comSubNv">
+                        <a href="https://www.mhi.com/sustainability/social" title="" data-drupal-link-system-path="node/101">Society</a>
+                  </li>
+                      <li class="menu-item--expanded menu-item menu-item--hide--comSubNv">
+                        <a href="https://www.mhi.com/sustainability/governance" title="" data-drupal-link-system-path="node/6166">Governance</a>
+                  </li>
+          </ul>
+  
+
+              </div>
+            </div>
+            <div class="close">CLOSE</div>
+          </ul>
+        </li>
+                      <li class="menu-item--expanded menu-item">
+          <p><a href="https://www.mhi.com/finance" hreflang="en" data-drupal-link-system-path="node/50956">Investors</a></p>
+          <ul class="megaDrop" id="md">
+            <div class="inner">
+              <div class="catTl">
+                <p>Investors</p>
+              </div>
+              <div class="detail">
+                  
+      <ul>
+                      <li class="menu-item--expanded menu-item menu-item--hide--comSubNv">
+                        <a href="https://www.mhi.com/finance/management" title="" data-drupal-link-system-path="node/50981">Management Policy</a>
+                  </li>
+                      <li class="menu-item--expanded menu-item menu-item--hide--comSubNv">
+                        <a href="https://www.mhi.com/finance/finance" title="" data-drupal-link-system-path="node/73271">Financial Data</a>
+                  </li>
+                      <li class="menu-item--expanded menu-item menu-item--hide--comSubNv">
+                        <a href="https://www.mhi.com/finance/library" title="" data-drupal-link-system-path="node/125896">IR Library</a>
+                  </li>
+                      <li class="menu-item--expanded menu-item menu-item--hide--comSubNv">
+                        <a href="https://www.mhi.com/finance/stock" title="" data-drupal-link-system-path="node/73276">Stock and Bond Information</a>
+                  </li>
+                      <li class="menu-item--expanded menu-item">
+                        
+      <ul class="comSubNv">
+                      <li>
+            <a href="https://www.mhi.com/finance/calendar" title="">IR Calendar</a>
+            
+  
+
+        </li>
+                      <li>
+            <a href="https://www.mhi.com/finance/faq" title="">FAQs</a>
+            
+  
+
+        </li>
+                      <li>
+            <a href="https://www.mhi.com/finance/disclaimer.html" title="" data-drupal-link-system-path="node/125911">IR INFORMATION DISCLAIMER</a>
+            
+  
+
+        </li>
+                      <li>
+            <a href="https://www.mhi.com/finance/sitemap.html" title="">IR Sitemap</a>
+            
+  
+
+        </li>
+          </ul>
+  
+
+                  </li>
+          </ul>
+  
+
+              </div>
+            </div>
+            <div class="close">CLOSE</div>
+          </ul>
+        </li>
+                      <li class="menu-item--active-trail menu-item--expanded menu-item">
+          <p><a href="https://www.mhi.com/network" hreflang="en" data-drupal-link-system-path="node/109476" class="is-active">Global Network</a></p>
+          <ul class="megaDrop" id="md">
+            <div class="inner">
+              <div class="catTl">
+                <p>Global Network</p>
+              </div>
+              <div class="detail">
+                  
+      <ul>
+                      <li class="menu-item menu-item--hide--comSubNv">
+                        <a href="https://www.mhi.com/network" title="">Global Network Map</a>
+                  </li>
+                      <li class="menu-item--expanded menu-item menu-item--hide--comSubNv">
+                        <a href="https://www.mhi.com/network/area" title="" data-drupal-link-system-path="node/114001">Region</a>
+                  </li>
+                      <li class="menu-item--expanded menu-item menu-item--hide--comSubNv">
+                        <a href="https://www.mhi.com/network/products" title="" data-drupal-link-system-path="node/113986">Products</a>
+                  </li>
+                      <li class="menu-item--expanded menu-item menu-item--hide--comSubNv">
+                        <a href="https://www.mhi.com/network/business" title="" data-drupal-link-system-path="node/114006">Business</a>
+                  </li>
+                      <li class="menu-item menu-item--hide--comSubNv">
+                        <a href="https://www.mhi.com/network/alphabetize" title="" data-drupal-link-system-path="node/114011">Alphabetical Order</a>
+                  </li>
+          </ul>
+  
+
+              </div>
+            </div>
+            <div class="close">CLOSE</div>
+          </ul>
+        </li>
+          </ul>
+  
+
+
+
+      </nav>
+</div>
+
+  </header>
+
+</div>
+
+
+
+
+  <div class="region region-breadcrumb">
+    <div id="block-mhi-breadcrumbs" data-block-plugin-id="system_breadcrumb_block" class="block block-system block-system-breadcrumb-block">
+  
+    
+        <nav id="comBreadcrumb" role="navigation" aria-labelledby="system-breadcrumb">
+    <h2 id="system-breadcrumb" class="visually-hidden">Breadcrumb</h2>
+    <ul id="breadcrumb"><li><a href="https://www.mhi.com/">Home</a>&nbsp;-&nbsp;</li><li>Global Network</li></ul>
+  </nav>
+
+  </div>
+
+  </div>
+
+
+  <div class="region region-highlighted">
+    <div data-drupal-messages-fallback class="hidden"></div>
+
+  </div>
+
+
+
+
+<main role="main">
+  <a id="main-content" tabindex="-1"></a>
+        <div class="region region-content">
+    <div id="block-mhi-content" data-block-plugin-id="system_main_block" class="block block-system block-system-main-block">
+  
+    
+      
+<article role="article" about="/network" class="node node--type-landing-page node--view-mode-full">
+  
+  <div class="node__content">
+      <div class="layout layout--onecol">
+    <div  class="layout__region layout__region--content">
+      <div data-block-plugin-id="field_block:node:landing_page:body" class="block block-layout-builder block-field-blocknodelanding-pagebody">
+  
+    
+      
+            <div class="clearfix text-formatted field field--name-body field--type-text-with-summary field--label-hidden field__item"><div id="comContent" class="comGlobalnetworks">
+  <div id="comConPosi">
+
+    <div id="comMainConPosi">
+      <div class="comNetworkH1">
+        <h1 class="comSecH1">GLOBAL NETWORK</h1>
+        <p class="comHdDay">MHI Group is a corporate group consisting of about 300 companies – both domestic and overseas – centered on Mitsubishi Heavy Industries, Ltd. (MHI).</p>
+        <p class="txtVersionBtn"><a href="https://www.mhi.com/network/text_version.html">TEXT VERSION</a></p>
+        <div class="comGlobalnetworksSPBtn">Show Filters</div>
+      </div>
+
+      <section class="comNetwork">
+
+        <div class="comGlobalnetworks">
+          <div class="comGlobalnetworksMap">
+            <div id="gMap" class="comGlobalnetworksMapIframe"></div>
+
+            <div class="comGlobalnetworksSidebar">
+              <div class="comGlobalnetworksSidebarInnr">
+                <div class="comGlobalnetworksSidebarTitle">Showing <span class="comGlobalnetworksSidebarCount">　</span> companies</div>
+                <div class="comGlobalnetworksSidebarList">
+
+                </div>
+              </div>
+              <div class="comGlobalnetworksSidebarClose"><span>&lt;</span></div>
+            </div>
+
+            <div class="comGlobalnetworksSpMenu">
+              <div class="comGlobalnetworksSpMenuBg">
+                <div class="comGlobalnetworksSpMenuInnr">
+                  <div class="comGlobalnetworksSpMenuCloseBtn"></div>
+                  <div class="comGlobalnetworksSelect comForm">
+                    <ul class="comGlobalnetworksSelectList">
+                      <li>
+                        <div class="selectTitle">REGION:</div>
+                        <div class="selectBox">
+                          <label>
+                            <select id="region-picker" tabindex="0" value="1">
+                              <option value="" selected="selected">All</option>
+                            </select>
+                          </label>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="selectTitle">BUSINESS:</div>
+                        <div class="selectBox">
+                          <label>
+                            <select id="business-picker" tabindex="0">
+                              <option value="" selected="selected">All</option>
+                            </select>
+                          </label>
+                        </div>
+                      </li>
+                    </ul>
+
+                  </div>
+
+                  <div class="comGlobalnetworksFilter">
+                    <div class="comGlobalnetworksFilterInnr">
+                      <ul class="comGlobalnetworksFilterTitle">
+                        <li>FILTERS:</li>
+                        <li class="comGlobalnetworksFilterBtn isActive">
+                          <span class="">ALL</span>
+                        </li>
+                      </ul>
+                      <ul class="comGlobalnetworksFilterList">
+                        <li class="comGlobalnetworksFilterBtn">
+                          <p class="comGlobalnetworksIcon01"><span>ENERGY</span></p>
+                          <div class="comGlobalnetworksFilterPop">
+                            <span class="comGlobalnetworksIconQ">　</span>
+                            <div class="comGlobalnetworksFilterPopup">Energy-related products, such as natural energy, thermal power, and nuclear energy.</div>
+                          </div>
+                        </li>
+                        <li class="comGlobalnetworksFilterBtn">
+                          <p class="comGlobalnetworksIcon02"><span>AIRCRAFT</span></p>
+                          <div class="comGlobalnetworksFilterPop">
+                            <span class="comGlobalnetworksIconQ">　</span>
+                            <div class="comGlobalnetworksFilterPopup">Aircraft products, such as commercial aircraft and aero engines.</div>
+                          </div>
+                        </li>
+                        <li class="comGlobalnetworksFilterBtn">
+                          <p class="comGlobalnetworksIcon03"><span>SPACE</span></p>
+                          <div class="comGlobalnetworksFilterPop">
+                            <span class="comGlobalnetworksIconQ">　</span>
+                            <div class="comGlobalnetworksFilterPopup">Space systems, such as H-IIA rocket and the products related to international space station program.</div>
+                          </div>
+                        </li>
+                        <li class="comGlobalnetworksFilterBtn">
+                          <p class="comGlobalnetworksIcon04"><span>SHIP &amp; OCEAN</span></p>
+                          <div class="comGlobalnetworksFilterPop">
+                            <span class="comGlobalnetworksIconQ">　</span>
+                            <div class="comGlobalnetworksFilterPopup">Products related to shipbuilding and ocean development, such as tankers, cargo ships, passenger ships, and marine engines.</div>
+                          </div>
+                        </li>
+                        <li class="comGlobalnetworksFilterBtn">
+                          <p class="comGlobalnetworksIcon05"><span>TRANSPORTATION</span></p>
+                          <div class="comGlobalnetworksFilterPop">
+                            <span class="comGlobalnetworksIconQ">　</span>
+                            <div class="comGlobalnetworksFilterPopup">Various systems for transportation, such as APMs (automated people movers) and ETC (Electric Toll Collection) system.</div>
+                          </div>
+                        </li>
+                        <li class="comGlobalnetworksFilterBtn">
+                          <p class="comGlobalnetworksIcon06"><span>MATERIAL HANDLING</span></p>
+                          <div class="comGlobalnetworksFilterPop">
+                            <span class="comGlobalnetworksIconQ">　</span>
+                            <div class="comGlobalnetworksFilterPopup">HANDLING Material handling systems, such as crane and forklift trucks.</div>
+                          </div>
+                        </li>
+                        <li class="comGlobalnetworksFilterBtn">
+                          <p class="comGlobalnetworksIcon07"><span>ENVIRONMENT</span></p>
+                          <div class="comGlobalnetworksFilterPop">
+                            <span class="comGlobalnetworksIconQ">　</span>
+                            <div class="comGlobalnetworksFilterPopup">Wide range of products related to environmental plants and equipment to prevent global warming and pollution.</div>
+                          </div>
+                        </li>
+                        <li class="comGlobalnetworksFilterBtn">
+                          <p class="comGlobalnetworksIcon08"><span>AUTOMOTIVE</span></p>
+                          <div class="comGlobalnetworksFilterPop">
+                            <span class="comGlobalnetworksIconQ">　</span>
+                            <div class="comGlobalnetworksFilterPopup">Vehicle-related products, such as turbochargers and machinery for motor vehicle industry.</div>
+                          </div>
+                        </li>
+                        <li class="comGlobalnetworksFilterBtn">
+                          <p class="comGlobalnetworksIcon09"><span>INDUSTRIAL MACHINERY</span></p>
+                          <div class="comGlobalnetworksFilterPop">
+                            <span class="comGlobalnetworksIconQ">　</span>
+                            <div class="comGlobalnetworksFilterPopup">Products used in various industries, such as printing machinery, machine tools, chemical plants, and air-conditioning &amp; refrigeration systems.</div>
+                          </div>
+                        </li>
+                        <li class="comGlobalnetworksFilterBtn">
+                          <p class="comGlobalnetworksIcon10"><span>INFRASTRUCTURE</span></p>
+                          <div class="comGlobalnetworksFilterPop">
+                            <span class="comGlobalnetworksIconQ">　</span>
+                            <div class="comGlobalnetworksFilterPopup">Machinery and equipment for infrastructure building, such as construction machinery.</div>
+                          </div>
+                        </li>
+                        <li class="comGlobalnetworksFilterBtn">
+                          <p class="comGlobalnetworksIcon11"><span>LIVING &amp; LEISURE</span></p>
+                          <div class="comGlobalnetworksFilterPop">
+                            <span class="comGlobalnetworksIconQ">　</span>
+                            <div class="comGlobalnetworksFilterPopup">Products related to our living and leisure, such as air-conditioners and passenger ships.</div>
+                          </div>
+                        </li>
+                        <li class="comGlobalnetworksFilterBtn">
+                          <p class="comGlobalnetworksIcon12"><span>OTHERS</span></p>
+                          <div class="comGlobalnetworksFilterPop">
+                            <span class="comGlobalnetworksIconQ">　</span>
+                            <div class="comGlobalnetworksFilterPopup">Other Services.</div>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </section>
+
+    </div>
+
+  </div>
+</div></div>
+      
+  </div>
+
+    </div>
+  </div>
+
+  </div>
+</article>
+
+  </div>
+
+  </div>
+
+  </main>
+
+  <footer id="comFooter" role="contentinfo">
+    
+  <div id="block-footermovetotop" class="footerMoveToTop block block-block-content block-block-content6e6aad79-adfe-4c83-816b-eac594acd83d" data-block-plugin-id="block_content:6e6aad79-adfe-4c83-816b-eac594acd83d">
+  
+    
+      
+            <div class="clearfix text-formatted field field--name-body field--type-text-with-summary field--label-hidden field__item"><div id="pageTop"><a>Go to the top of this page</a></div></div>
+      
+  </div>
+<div id="block-footer-group-logo" class="footerGroupLogo block block-block-content block-block-content96ae1c39-c05b-4e67-9ca0-3129dee83e92" data-block-plugin-id="block_content:96ae1c39-c05b-4e67-9ca0-3129dee83e92">
+  
+    
+      
+            <div class="clearfix text-formatted field field--name-body field--type-text-with-summary field--label-hidden field__item"><div id="footGroupLogo"><a href="https://www.mhi.com/network/text_version.html"><img src="https://www.mhi.com/themes/custom/mhi/src/img/foot_mhigroup_logo.svg" alt="MOVE THE WORLD FORWARD MHI Group" /></a></div>
+</div>
+      
+  </div>
+<div id="block-cookiedisclaimerpopup" data-block-plugin-id="simple_block:cookie_disclaimer_pop_up" class="block block-simple-block block-simple-blockcookie-disclaimer-pop-up">
+  
+    
+      <div class="cookieAlertBox"><div class="inner"><p>This site (www.mhi.com) uses cookies in order to improve your experience and to provide content of your interest upon revisiting the site. For more information about the use of cookies on this site, please review our cookie policy in our Terms of Use. And please confirm that you agree to use of cookies by clicking Yes.<br><a href="https://www.mhi.com/conditions.html#cookie">Terms of Use</a></p><div class="cookieApprovalBtn"><span>Yes</span></div><div class="closeBtn"></div></div></div>
+  </div>
+<div id="block-footer-social-media" data-block-plugin-id="fixed_block_content:footer_social_media" class="block block-fixed-block-content block-fixed-block-contentfooter-social-media">
+  
+    
+      
+            <div class="clearfix text-formatted field field--name-body field--type-text-with-summary field--label-hidden field__item"><div id="followUs">
+<p>FOLLOW US<span class="inFtFollowColon"> :</span></p>
+
+<div class="youtube"><a href="https://www.youtube.com/user/DiscoverMHI" target="_blank"><img alt="YouTube" data-entity-type="" data-entity-uuid="" height="18" src="https://www.mhi.com/themes/custom/mhi/src/img/youtube_ico.svg" width="23" /></a></div>
+
+<div class="linkedin"><a href="https://www.linkedin.com/company/mitsubishi-heavy-industries" target="_blank"><img alt="Linkedin" data-entity-type="" data-entity-uuid="" height="18" src="https://www.mhi.com/themes/custom/mhi/src/img/linkedin_ico.svg" width="18" /></a></div>
+
+<div class="linkedin"><a href="https://twitter.com/MHI_Group" target="_blank"><img alt="twitter" data-entity-type="" data-entity-uuid="" src="https://www.mhi.com/themes/custom/mhi/src/img/twitter_ico.svg" width="18" /></a></div>
+
+<div class="feed"><a href="https://www.mhi.com/rss/" target="_blank"><img alt="RSS" data-entity-type="" data-entity-uuid="" height="15" src="https://www.mhi.com/themes/custom/mhi/src/img/feed_ico.svg" width="15" /></a></div>
+</div>
+</div>
+      
+  </div>
+<nav role="navigation" id="footerLink" aria-labelledby="block-footer-menu" id="block-footer" data-block-plugin-id="system_menu_block:footer" class="block block-menu navigation menu--footer">
+            
+  <h2 class="visually-hidden" id="block-footer-menu">Footer</h2>
+  
+
+        
+        <ul block="block-footer" class="menu"><li class="menu-item"><a href="https://www.mhi.com/sitemap.html" hreflang="en" data-drupal-link-system-path="node/107566">SITE MAP</a></li><li class="menu-item"><a href="https://www.mhi.com/conditions.html" hreflang="en" data-drupal-link-system-path="node/111361">TERMS OF USE</a></li><li class="menu-item"><a href="https://www.mhi.com/privacy.html" hreflang="en" data-drupal-link-system-path="node/111391">PRIVACY POLICY</a></li><li class="menu-item"><a href="https://www.mhi.com/inquiry" hreflang="en" data-drupal-link-system-path="node/104561">CONTACT</a></li><li class="menu-item"><a href="https://spectra.mhi.com/" hreflang="en">SPECTRA</a></li></ul>  
+
+
+  </nav>
+<div id="block-footer-copyright" data-block-plugin-id="block_content:7f80591d-954a-4a5e-85cc-7af69bc0faf9" class="footer-copyright block block-block-content block-block-content7f80591d-954a-4a5e-85cc-7af69bc0faf9">
+  
+    
+      
+            <div class="clearfix text-formatted field field--name-body field--type-text-with-summary field--label-hidden field__item"><p><small id="copyright">© MITSUBISHI HEAVY INDUSTRIES, LTD.</small></p></div>
+      
+  </div>
+
+
+  </footer>
+
+  </div>
+
+    
+    <script type="application/json" data-drupal-selector="drupal-settings-json">{"path":{"baseUrl":"\/","scriptPath":null,"pathPrefix":"","currentPath":"node\/109476","currentPathIsAdmin":false,"isFront":false,"currentLanguage":"en"},"pluralDelimiter":"\u0003","suppressDeprecationErrors":true,"data":{"extlink":{"extTarget":true,"extTargetNoOverride":false,"extNofollow":false,"extNoreferrer":false,"extFollowNoOverride":false,"extClass":"ext","extLabel":"(link is external)","extImgClass":false,"extSubdomains":false,"extExclude":"","extInclude":"","extCssExclude":".comNewsDetail #comMainConPosi, .product-business-contact-list, .comImportantNoticeDetail #comMainConPosi, .comContactLkWrap, .noextlink, .view-id-home_notice_list","extCssExplicit":"","extAlert":false,"extAlertText":"This link will take you to an external web site. We are not responsible for their content.","mailtoClass":"0","mailtoLabel":"(link sends email)","extUseFontAwesome":false,"extIconPlacement":"append","extFaLinkClasses":"fa fa-external-link","extFaMailtoClasses":"fa fa-envelope-o","whitelistedDomains":[]}},"mhi_base":{"outline":{"title":"Outline of MHI GROUP","link":"\/company\/aboutmhi\/introduction\/","description":"Find out how we bring people and businesses around the globe together to pave the way to a future of shared success.","mobile_thumb_url":"https:\/\/www.mhi.com\/sites\/g\/files\/jwhtju111\/files\/mhi-base\/bnr_introduction_3.png"}},"googlemapkey":"AIzaSyD1BlDDhdPrHa5OrOGxexsWRdwlMI5FJbY","mhi":{"mhiJS":{"theme_path":"themes\/custom\/mhi"}},"ajax":[],"user":{"uid":0,"permissionsHash":"e18ddaad7ecb67086f012a0eab07bb949fa25dbae047d062749f931dd04e0ed3"}}</script>
+<script src="https://www.mhi.com/sites/g/files/jwhtju111/files/js/js_ka2i-4mlmalzyG3BYxlyBZJIWPXD8_8hvjedOAknp5s.js"></script>
+<script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyD1BlDDhdPrHa5OrOGxexsWRdwlMI5FJbY"></script>
+<script src="https://www.mhi.com/sites/g/files/jwhtju111/files/js/js_OFFS9-yfSDdxB9AkNzYJvSg4o89Tf92KlXZl9QDG1wk.js"></script>
+<script src="http://c.marsflag.com/mf/mfx/1.0/js/mfx-sbox.js"></script>
+<script src="https://www.mhi.com/sites/g/files/jwhtju111/files/js/js_vP7hGGqFR3B-tul9xV7bNbHG36hr4teVOMG4-WnNULY.js"></script>
+
+  <script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"3d90739b94","applicationID":"945003000,756406217","transactionName":"M1VVZRQACBYDAkdQCwofdlISCAkLTSVBTBQFXGtfCQUDOSEOXU0WC1xbVBQ9KAoGBGVQARNzWF8SEwkJDgRBFFoSWVJG","queueTime":0,"applicationTime":2196,"atts":"HxJWE1waGxg=","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+
+<!-- Mirrored from www.mhi.com/network by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 14 Oct 2022 17:07:46 GMT -->
+</html>

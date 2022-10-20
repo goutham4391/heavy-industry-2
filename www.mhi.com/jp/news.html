@@ -1,0 +1,1856 @@
+<!DOCTYPE html>
+<html lang="ja" dir="ltr" prefix="content: http://purl.org/rss/1.0/modules/content/  dc: http://purl.org/dc/terms/  foaf: http://xmlns.com/foaf/0.1/  og: http://ogp.me/ns#  rdfs: http://www.w3.org/2000/01/rdf-schema#  schema: http://schema.org/  sioc: http://rdfs.org/sioc/ns#  sioct: http://rdfs.org/sioc/types#  skos: http://www.w3.org/2004/02/skos/core#  xsd: http://www.w3.org/2001/XMLSchema# ">
+  
+<!-- Mirrored from www.mhi.com/jp/news by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 14 Oct 2022 17:07:48 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+    <meta charset="utf-8" /><script type="text/javascript">(window.NREUM||(NREUM={})).init={ajax:{deny_list:["bam.nr-data.net"]}};(window.NREUM||(NREUM={})).loader_config={licenseKey:"3d90739b94",applicationID:"945003000"};window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){var i=e[n]={exports:{}};t[n][0].call(i.exports,function(e){var i=t[n][1][e];return r(i||e)},i,i.exports)}return e[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var i=0;i<n.length;i++)r(n[i]);return r}({1:[function(t,e,n){function r(){}function i(t,e,n,r){return function(){return s.recordSupportability("API/"+e+"/called"),o(t+e,[u.now()].concat(c(arguments)),n?null:this,r),n?void 0:this}}var o=t("handle"),a=t(9),c=t(10),f=t("ee").get("tracer"),u=t("loader"),s=t(4),d=NREUM;"undefined"==typeof window.newrelic&&(newrelic=d);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],l="api-",v=l+"ixn-";a(p,function(t,e){d[e]=i(l,e,!0,"api")}),d.addPageAction=i(l,"addPageAction",!0),d.setCurrentRouteName=i(l,"routeName",!0),e.exports=newrelic,d.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(t,e){var n={},r=this,i="function"==typeof e;return o(v+"tracer",[u.now(),t,n],r),function(){if(f.emit((i?"":"no-")+"fn-start",[u.now(),r,i],n),i)try{return e.apply(this,arguments)}catch(t){throw f.emit("fn-err",[arguments,this,t],n),t}finally{f.emit("fn-end",[u.now()],n)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(t,e){m[e]=i(v,e)}),newrelic.noticeError=function(t,e){"string"==typeof t&&(t=new Error(t)),s.recordSupportability("API/noticeError/called"),o("err",[t,u.now(),!1,e])}},{}],2:[function(t,e,n){function r(t){if(NREUM.init){for(var e=NREUM.init,n=t.split("."),r=0;r<n.length-1;r++)if(e=e[n[r]],"object"!=typeof e)return;return e=e[n[n.length-1]]}}e.exports={getConfiguration:r}},{}],3:[function(t,e,n){var r=!1;try{var i=Object.defineProperty({},"passive",{get:function(){r=!0}});window.addEventListener("testPassive",null,i),window.removeEventListener("testPassive",null,i)}catch(o){}e.exports=function(t){return r?{passive:!0,capture:!!t}:!!t}},{}],4:[function(t,e,n){function r(t,e){var n=[a,t,{name:t},e];return o("storeMetric",n,null,"api"),n}function i(t,e){var n=[c,t,{name:t},e];return o("storeEventMetrics",n,null,"api"),n}var o=t("handle"),a="sm",c="cm";e.exports={constants:{SUPPORTABILITY_METRIC:a,CUSTOM_METRIC:c},recordSupportability:r,recordCustom:i}},{}],5:[function(t,e,n){function r(){return c.exists&&performance.now?Math.round(performance.now()):(o=Math.max((new Date).getTime(),o))-a}function i(){return o}var o=(new Date).getTime(),a=o,c=t(11);e.exports=r,e.exports.offset=a,e.exports.getLastTimestamp=i},{}],6:[function(t,e,n){function r(t,e){var n=t.getEntries();n.forEach(function(t){"first-paint"===t.name?l("timing",["fp",Math.floor(t.startTime)]):"first-contentful-paint"===t.name&&l("timing",["fcp",Math.floor(t.startTime)])})}function i(t,e){var n=t.getEntries();if(n.length>0){var r=n[n.length-1];if(u&&u<r.startTime)return;var i=[r],o=a({});o&&i.push(o),l("lcp",i)}}function o(t){t.getEntries().forEach(function(t){t.hadRecentInput||l("cls",[t])})}function a(t){var e=navigator.connection||navigator.mozConnection||navigator.webkitConnection;if(e)return e.type&&(t["net-type"]=e.type),e.effectiveType&&(t["net-etype"]=e.effectiveType),e.rtt&&(t["net-rtt"]=e.rtt),e.downlink&&(t["net-dlink"]=e.downlink),t}function c(t){if(t instanceof y&&!w){var e=Math.round(t.timeStamp),n={type:t.type};a(n),e<=v.now()?n.fid=v.now()-e:e>v.offset&&e<=Date.now()?(e-=v.offset,n.fid=v.now()-e):e=v.now(),w=!0,l("timing",["fi",e,n])}}function f(t){"hidden"===t&&(u=v.now(),l("pageHide",[u]))}if(!("init"in NREUM&&"page_view_timing"in NREUM.init&&"enabled"in NREUM.init.page_view_timing&&NREUM.init.page_view_timing.enabled===!1)){var u,s,d,p,l=t("handle"),v=t("loader"),m=t(8),g=t(3),y=NREUM.o.EV;if("PerformanceObserver"in window&&"function"==typeof window.PerformanceObserver){s=new PerformanceObserver(r);try{s.observe({entryTypes:["paint"]})}catch(h){}d=new PerformanceObserver(i);try{d.observe({entryTypes:["largest-contentful-paint"]})}catch(h){}p=new PerformanceObserver(o);try{p.observe({type:"layout-shift",buffered:!0})}catch(h){}}if("addEventListener"in document){var w=!1,b=["click","keydown","mousedown","pointerdown","touchstart"];b.forEach(function(t){document.addEventListener(t,c,g(!1))})}m(f)}},{}],7:[function(t,e,n){function r(t,e){if(!i)return!1;if(t!==i)return!1;if(!e)return!0;if(!o)return!1;for(var n=o.split("."),r=e.split("."),a=0;a<r.length;a++)if(r[a]!==n[a])return!1;return!0}var i=null,o=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var c=navigator.userAgent,f=c.match(a);f&&c.indexOf("Chrome")===-1&&c.indexOf("Chromium")===-1&&(i="Safari",o=f[1])}e.exports={agent:i,version:o,match:r}},{}],8:[function(t,e,n){function r(t){function e(){t(c&&document[c]?document[c]:document[o]?"hidden":"visible")}"addEventListener"in document&&a&&document.addEventListener(a,e,i(!1))}var i=t(3);e.exports=r;var o,a,c;"undefined"!=typeof document.hidden?(o="hidden",a="visibilitychange",c="visibilityState"):"undefined"!=typeof document.msHidden?(o="msHidden",a="msvisibilitychange"):"undefined"!=typeof document.webkitHidden&&(o="webkitHidden",a="webkitvisibilitychange",c="webkitVisibilityState")},{}],9:[function(t,e,n){function r(t,e){var n=[],r="",o=0;for(r in t)i.call(t,r)&&(n[o]=e(r,t[r]),o+=1);return n}var i=Object.prototype.hasOwnProperty;e.exports=r},{}],10:[function(t,e,n){function r(t,e,n){e||(e=0),"undefined"==typeof n&&(n=t?t.length:0);for(var r=-1,i=n-e||0,o=Array(i<0?0:i);++r<i;)o[r]=t[e+r];return o}e.exports=r},{}],11:[function(t,e,n){e.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(t,e,n){function r(){}function i(t){function e(t){return t&&t instanceof r?t:t?u(t,f,a):a()}function n(n,r,i,o,a){if(a!==!1&&(a=!0),!l.aborted||o){t&&a&&t(n,r,i);for(var c=e(i),f=m(n),u=f.length,s=0;s<u;s++)f[s].apply(c,r);var p=d[w[n]];return p&&p.push([b,n,r,c]),c}}function o(t,e){h[t]=m(t).concat(e)}function v(t,e){var n=h[t];if(n)for(var r=0;r<n.length;r++)n[r]===e&&n.splice(r,1)}function m(t){return h[t]||[]}function g(t){return p[t]=p[t]||i(n)}function y(t,e){l.aborted||s(t,function(t,n){e=e||"feature",w[n]=e,e in d||(d[e]=[])})}var h={},w={},b={on:o,addEventListener:o,removeEventListener:v,emit:n,get:g,listeners:m,context:e,buffer:y,abort:c,aborted:!1};return b}function o(t){return u(t,f,a)}function a(){return new r}function c(){(d.api||d.feature)&&(l.aborted=!0,d=l.backlog={})}var f="nr@context",u=t("gos"),s=t(9),d={},p={},l=e.exports=i();e.exports.getOrSetContext=o,l.backlog=d},{}],gos:[function(t,e,n){function r(t,e,n){if(i.call(t,e))return t[e];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(t,e,{value:r,writable:!0,enumerable:!1}),r}catch(o){}return t[e]=r,r}var i=Object.prototype.hasOwnProperty;e.exports=r},{}],handle:[function(t,e,n){function r(t,e,n,r){i.buffer([t],r),i.emit(t,e,n)}var i=t("ee").get("handle");e.exports=r,r.ee=i},{}],id:[function(t,e,n){function r(t){var e=typeof t;return!t||"object"!==e&&"function"!==e?-1:t===window?0:a(t,o,function(){return i++})}var i=1,o="nr@id",a=t("gos");e.exports=r},{}],loader:[function(t,e,n){function r(){if(!M++){var t=T.info=NREUM.info,e=m.getElementsByTagName("script")[0];if(setTimeout(u.abort,3e4),!(t&&t.licenseKey&&t.applicationID&&e))return u.abort();f(x,function(e,n){t[e]||(t[e]=n)});var n=a();c("mark",["onload",n+T.offset],null,"api"),c("timing",["load",n]);var r=m.createElement("script");0===t.agent.indexOf("http://")||0===t.agent.indexOf("https:///")?r.src=t.agent:r.src=l+"://"+t.agent,e.parentNode.insertBefore(r,e)}}function i(){"complete"===m.readyState&&o()}function o(){c("mark",["domContent",a()+T.offset],null,"api")}var a=t(5),c=t("handle"),f=t(9),u=t("ee"),s=t(7),d=t(2),p=t(3),l=d.getConfiguration("ssl")===!1?"http":"https",v=window,m=v.document,g="addEventListener",y="attachEvent",h=v.XMLHttpRequest,w=h&&h.prototype,b=!1;NREUM.o={ST:setTimeout,SI:v.setImmediate,CT:clearTimeout,XHR:h,REQ:v.Request,EV:v.Event,PR:v.Promise,MO:v.MutationObserver};var E=""+location,x={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1216.min.js"},O=h&&w&&w[g]&&!/CriOS/.test(navigator.userAgent),T=e.exports={offset:a.getLastTimestamp(),now:a,origin:E,features:{},xhrWrappable:O,userAgent:s,disabled:b};if(!b){t(1),t(6),m[g]?(m[g]("DOMContentLoaded",o,p(!1)),v[g]("load",r,p(!1))):(m[y]("onreadystatechange",i),v[y]("onload",r)),c("mark",["firstbyte",a.getLastTimestamp()],null,"api");var M=0}},{}],"wrap-function":[function(t,e,n){function r(t,e){function n(e,n,r,f,u){function nrWrapper(){var o,a,s,p;try{a=this,o=d(arguments),s="function"==typeof r?r(o,a):r||{}}catch(l){i([l,"",[o,a,f],s],t)}c(n+"start",[o,a,f],s,u);try{return p=e.apply(a,o)}catch(v){throw c(n+"err",[o,a,v],s,u),v}finally{c(n+"end",[o,a,p],s,u)}}return a(e)?e:(n||(n=""),nrWrapper[p]=e,o(e,nrWrapper,t),nrWrapper)}function r(t,e,r,i,o){r||(r="");var c,f,u,s="-"===r.charAt(0);for(u=0;u<e.length;u++)f=e[u],c=t[f],a(c)||(t[f]=n(c,s?f+r:r,i,f,o))}function c(n,r,o,a){if(!v||e){var c=v;v=!0;try{t.emit(n,r,o,e,a)}catch(f){i([f,n,r,o],t)}v=c}}return t||(t=s),n.inPlace=r,n.flag=p,n}function i(t,e){e||(e=s);try{e.emit("internal-error",t)}catch(n){}}function o(t,e,n){if(Object.defineProperty&&Object.keys)try{var r=Object.keys(t);return r.forEach(function(n){Object.defineProperty(e,n,{get:function(){return t[n]},set:function(e){return t[n]=e,e}})}),e}catch(o){i([o],n)}for(var a in t)l.call(t,a)&&(e[a]=t[a]);return e}function a(t){return!(t&&t instanceof Function&&t.apply&&!t[p])}function c(t,e){var n=e(t);return n[p]=t,o(t,n,s),n}function f(t,e,n){var r=t[e];t[e]=c(r,n)}function u(){for(var t=arguments.length,e=new Array(t),n=0;n<t;++n)e[n]=arguments[n];return e}var s=t("ee"),d=t(10),p="nr@original",l=Object.prototype.hasOwnProperty,v=!1;e.exports=r,e.exports.wrapFunction=c,e.exports.wrapInPlace=f,e.exports.argsToArray=u},{}]},{},["loader"]);</script>
+<meta property="og:site_name" content="三菱重工" />
+<link rel="shortcut icon" href="https://www.mhi.com/themes/custom/mhi_base_theme/favicons/ja/favicon.ico" />
+<link rel="canonical" href="https://www.mhi.com/jp/news" />
+<meta name="description" content="三菱重工の2022年度ニュースリリースをご覧いただけます。" />
+<meta property="og:title" content="三菱重工｜ニュースリリース 2022年度" />
+<link rel="apple-touch-icon" href="https://www.mhi.com/themes/custom/mhi_base_theme/favicons/ja/apple_touch_icon.png" />
+<meta property="og:image" content="https://www.mhi.com/themes/custom/mhi/src/img/ogp_sns.png" />
+<meta property="og:image:type" content="image/jpeg" />
+<link rel="apple-touch-icon-precomposed" href="https://www.mhi.com/themes/custom/mhi_base_theme/favicons/ja/apple_touch_icon.png" />
+<meta name="title" content="三菱重工｜ニュースリリース 2022年度" />
+<meta name="Generator" content="Drupal 9 (https://www.drupal.org)" />
+<meta name="MobileOptimized" content="width" />
+<meta name="HandheldFriendly" content="true" />
+<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+<meta name="twitter:card" content="summary_large_image" />
+<script src="https://www.mhi.com/sites/g/files/jwhtju111/files/google_tag/google_tag/mhi/google_tag.script.js?rjc08r" defer></script>
+
+    <title>三菱重工｜ニュースリリース 2022年度</title>
+    <link rel="stylesheet" media="all" href="https://www.mhi.com/sites/g/files/jwhtju111/files/css/css_fO9PBi6MHopVJ4xpczO6diJOK7GGobRu7UD5MvphHo0.css" />
+<link rel="stylesheet" media="all" href="https://www.mhi.com/sites/g/files/jwhtju111/files/css/css_CkI3LmNJ7q5u7vgPlbGRpHze6RUqW2r6fTiA6GvkBQo.css" />
+<link rel="stylesheet" media="print" href="https://www.mhi.com/sites/g/files/jwhtju111/files/css/css_npYYriCqvk444NEOIIcVTaL2youfsF04to-0pVnMrvo.css" />
+<link rel="stylesheet" media="all" href="https://www.mhi.com/sites/g/files/jwhtju111/files/css/css_EaeEg2hdXk9tdYT1oYG3vBWPV7veW1x5vy61-yA6_Eg.css" />
+
+    <script src="https://www.mhi.com/core/assets/vendor/modernizr/modernizr.min.js?v=3.11.7"></script>
+<script src="https://www.mhi.com/core/misc/modernizr-additional-tests.js?v=3.11.7"></script>
+
+          <script type="text/javascript" src="https://www.mhi.com/modules/contrib/seckit/js/seckit.document_write.js"></script>
+        <link type="text/css" rel="stylesheet" id="seckit-clickjacking-no-body" media="all" href="https://www.mhi.com/modules/contrib/seckit/css/seckit.no_body.css" />
+        <!-- stop SecKit protection -->
+        <noscript>
+        <link type="text/css" rel="stylesheet" id="seckit-clickjacking-noscript-tag" media="all" href="https://www.mhi.com/modules/contrib/seckit/css/seckit.noscript_tag.css" />
+        <div id="seckit-noscript-tag">
+          Sorry, you need to enable JavaScript to visit this website.
+        </div>
+        </noscript></head>
+  <body class="path-news">
+        <a href="#main-content" class="visually-hidden focusable skip-link">
+      メインコンテンツに移動
+    </a>
+    <noscript aria-hidden="true"><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PPKXH83" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+      <div class="dialog-off-canvas-main-canvas" data-off-canvas-main-canvas>
+    <div class="comHeaderFollow">
+    <header id="comHeader" role="banner">
+    <div id="block-sitebranding" data-block-plugin-id="system_branding_block" class="block block-system block-system-branding-block">
+  
+    
+    <div id="headLogo">
+      <a href="https://www.mhi.com/jp" title="ホーム" rel="home" class="site-logo">
+      <img src="https://www.mhi.com/themes/custom/mhi/logo_ja.svg" alt="ホーム" />
+    </a>
+        </div>
+</div>
+<div id="headGroupLogo" data-block-plugin-id="block_content:96769913-b3b8-42f7-a711-29d68ddbf08a" class="block block-block-content block-block-content96769913-b3b8-42f7-a711-29d68ddbf08a">
+  
+    
+      
+            <div class="clearfix text-formatted field field--name-body field--type-text-with-summary field--label-hidden field__item"><a href="https://www.mhi.com/jp/network/text_version.html"><img src="https://www.mhi.com/themes/custom/mhi/src/img/head_mhigroup_logo.svg" alt="MHI Group" /></a></div>
+      
+  </div>
+<div id="block-mhi-search-box" data-block-plugin-id="mhi_search_box" class="block block-mhi-marsflag block-mhi-search-box">
+  
+    
+      <div class="searchArea">
+  <form id="search_form" action="https://www.mhi.com/jp/search" onsubmit="return mysearch();">
+    <input class="searchTxt" type="text" name="q" value="" tabindex="0" placeholder="検索">
+    <input type="hidden" name="ie" value="u">
+  </form>
+</div>
+
+  </div>
+<div role="navigation" aria-labelledby="block-headermenu-menu" id="headMenu" data-block-plugin-id="system_menu_block:header-menu" class="block block-menu navigation menu--header-menu search-container">
+            
+  <h2 class="visually-hidden" id="block-headermenu-menu">Header Menu</h2>
+  
+
+        
+        <div class="hnav">
+      <nav>
+                  <ul block="block-headermenu" class="menu">
+                                    <li class="menu-item--active-trail menu-item">
+            <a href="https://www.mhi.com/jp/news" hreflang="ja" data-drupal-link-system-path="news" class="is-active">ニュース</a>
+                      </li>
+                            <li class="menu-item">
+            <a href="https://www.mhi.com/jp/recruit" hreflang="ja" data-drupal-link-system-path="node/107561">採用情報</a>
+                      </li>
+                            <li class="menu-item">
+            <a href="https://www.mhi.com/jp" class="lang-switch" hreflang="ja" data-drupal-link-system-path="&lt;front&gt;">GLOBAL SITE</a>
+                      </li>
+                </ul>
+      </nav>
+    </div>
+  
+
+
+  </div>
+<div id="gnav">
+  <nav role="navigation" aria-labelledby="block-mainnavigation-menu" id="block-mainnavigation" data-block-plugin-id="menu_item_fields:main" class="block block-menu navigation menu--main">
+                      
+    <h2 class="visually-hidden" id="block-mainnavigation-menu">Main navigation</h2>
+    
+
+              
+  
+      <ul block="block-mainnavigation" class="menu">
+                      <li class="menu-item--expanded menu-item">
+          <p><a href="https://www.mhi.com/jp/company" hreflang="ja" data-drupal-link-system-path="node/29551">企業情報</a></p>
+          <ul class="megaDrop" id="md">
+            <div class="inner">
+              <div class="catTl">
+                <p>企業情報</p>
+              </div>
+              <div class="detail">
+                  
+      <ul>
+                      <li class="menu-item--expanded menu-item menu-item--hide--comSubNv">
+                        <a href="https://www.mhi.com/jp/company/aboutmhi" title="" data-drupal-link-system-path="node/5486">三菱重工グループについて</a>
+                  </li>
+                      <li class="menu-item menu-item--hide--comSubNv">
+                        <a href="https://www.mhi.com/jp/company/message" title="" data-drupal-link-system-path="node/73176">社長挨拶</a>
+                  </li>
+                      <li class="menu-item--expanded menu-item menu-item--hide--comSubNv">
+                        <a href="https://www.mhi.com/jp/company/technology" title="" data-drupal-link-system-path="node/73181">技術情報</a>
+                  </li>
+                      <li class="menu-item--expanded menu-item menu-item--hide--comSubNv">
+                        <a href="https://www.mhi.com/jp/company/location" title="" data-drupal-link-system-path="node/29516">拠点一覧</a>
+                  </li>
+                      <li class="menu-item--expanded menu-item menu-item--hide--comSubNv">
+                        <a href="https://www.mhi.com/jp/company/procurement" title="" data-drupal-link-system-path="node/73186">資材調達</a>
+                  </li>
+                      <li class="menu-item--collapsed menu-item menu-item--hide--comSubNv">
+                        <a href="https://www.mhi.com/jp/company/hospital" title="" data-drupal-link-system-path="node/73291">三菱重工の病院</a>
+                  </li>
+                      <li class="menu-item--expanded menu-item">
+                        
+      <ul class="comSubNv">
+                      <li>
+            <a href="https://www.mhi.com/jp/company/aboutmhi/introduction" title="" data-drupal-link-system-path="node/29506">三菱重工グループのアウトライン</a>
+            
+  
+
+        </li>
+                      <li>
+            <a href="https://www.mhi.com/jp/company/sports" title="" data-drupal-link-system-path="node/133516">スポーツ活動</a>
+            
+  
+
+        </li>
+                      <li>
+            <a href="https://www.mhi.com/jp/recruit" title=""> 採用情報</a>
+            
+  
+
+        </li>
+          </ul>
+  
+
+                  </li>
+          </ul>
+  
+
+              </div>
+            </div>
+            <div class="close">CLOSE</div>
+          </ul>
+        </li>
+                      <li class="menu-item--expanded menu-item">
+          <p><a href="https://www.mhi.com/jp/expertise" hreflang="ja" data-drupal-link-system-path="node/104466">実績紹介</a></p>
+          <ul class="megaDrop" id="md">
+            <div class="inner">
+              <div class="catTl">
+                <p>実績紹介</p>
+              </div>
+              <div class="detail">
+                  
+      <ul>
+                      <li class="menu-item--expanded menu-item menu-item--hide--comSubNv">
+                        <a href="https://www.mhi.com/jp/expertise#showcase" title="" data-drupal-link-system-path="node/104466">ストーリー</a>
+                  </li>
+                      <li class="menu-item--expanded menu-item menu-item--hide--comSubNv">
+                        <a href="https://www.mhi.com/jp/expertise/museum" title="" data-drupal-link-system-path="node/107546">展示施設</a>
+                  </li>
+                      <li class="menu-item menu-item--hide--comSubNv">
+                        <a href="https://www.mhi.com/jp/expertise/event" title="" data-drupal-link-system-path="node/104726">イベント・展示会情報</a>
+                  </li>
+                      <li class="menu-item--expanded menu-item">
+                        
+      <ul class="comSubNv">
+                      <li>
+            <a href="https://www.mhi.com/jp/expertise/carbon-neutral" title="" data-drupal-link-system-path="node/136976">2040年カーボンニュートラル宣言</a>
+            
+  
+
+        </li>
+                      <li>
+            <a href="https://www.mhi.com/jp/expertise/museum/minatomirai" title="" data-drupal-link-system-path="node/103256">三菱みなとみらい技術館</a>
+            
+  
+
+        </li>
+          </ul>
+  
+
+                  </li>
+          </ul>
+  
+
+              </div>
+            </div>
+            <div class="close">CLOSE</div>
+          </ul>
+        </li>
+                      <li class="menu-item--expanded menu-item">
+          <p><a href="https://www.mhi.com/jp/products" hreflang="ja" data-drupal-link-system-path="node/6181">製品情報</a></p>
+          <ul class="megaDrop" id="md">
+            <div class="inner">
+              <div class="catTl">
+                <p>製品情報</p>
+              </div>
+              <div class="detail">
+                  
+      <ul>
+                      <li class="menu-item menu-item--hide--comSubNv">
+                        <a href="https://www.mhi.com/jp/products/energy" title="" data-drupal-link-system-path="taxonomy/term/1436">エネルギー</a>
+                  </li>
+                      <li class="menu-item menu-item--hide--comSubNv">
+                        <a href="https://www.mhi.com/jp/products/air" title="" data-drupal-link-system-path="taxonomy/term/1491">航空</a>
+                  </li>
+                      <li class="menu-item menu-item--hide--comSubNv">
+                        <a href="https://www.mhi.com/jp/products/space" title="" data-drupal-link-system-path="taxonomy/term/1516">宇宙開発</a>
+                  </li>
+                      <li class="menu-item menu-item--hide--comSubNv">
+                        <a href="https://www.mhi.com/jp/products/ship" title="" data-drupal-link-system-path="taxonomy/term/1561">船舶・海洋</a>
+                  </li>
+                      <li class="menu-item menu-item--hide--comSubNv">
+                        <a href="https://www.mhi.com/jp/products/transport" title="" data-drupal-link-system-path="taxonomy/term/1636">交通システム</a>
+                  </li>
+                      <li class="menu-item menu-item--hide--comSubNv">
+                        <a href="https://www.mhi.com/jp/products/material_handling" title="" data-drupal-link-system-path="taxonomy/term/1646">物流・運搬</a>
+                  </li>
+                      <li class="menu-item menu-item--hide--comSubNv">
+                        <a href="https://www.mhi.com/jp/products/environment" title="" data-drupal-link-system-path="taxonomy/term/1656">環境装置</a>
+                  </li>
+                      <li class="menu-item menu-item--hide--comSubNv">
+                        <a href="https://www.mhi.com/jp/products/automobile" title="" data-drupal-link-system-path="taxonomy/term/1686">自動車関連</a>
+                  </li>
+                      <li class="menu-item menu-item--hide--comSubNv">
+                        <a href="https://www.mhi.com/jp/products/industry" title="" data-drupal-link-system-path="taxonomy/term/1711">産業機械</a>
+                  </li>
+                      <li class="menu-item menu-item--hide--comSubNv">
+                        <a href="https://www.mhi.com/jp/products/infrastructure" title="" data-drupal-link-system-path="taxonomy/term/1806">インフラ設備</a>
+                  </li>
+                      <li class="menu-item menu-item--hide--comSubNv">
+                        <a href="https://www.mhi.com/jp/products/living" title="" data-drupal-link-system-path="taxonomy/term/1841">生活・レジャー</a>
+                  </li>
+                      <li class="menu-item menu-item--hide--comSubNv">
+                        <a href="https://www.mhi.com/jp/products/defense" title="" data-drupal-link-system-path="taxonomy/term/1856">防衛</a>
+                  </li>
+                      <li class="menu-item menu-item--hide--comSubNv">
+                        <a href="https://www.mhi.com/jp/products/engineering" title="" data-drupal-link-system-path="taxonomy/term/1891">エンジニアリング事業</a>
+                  </li>
+          </ul>
+  
+
+              </div>
+            </div>
+            <div class="close">CLOSE</div>
+          </ul>
+        </li>
+                      <li class="menu-item--expanded menu-item">
+          <p><a href="https://www.mhi.com/jp/sustainability" hreflang="ja" data-drupal-link-system-path="node/6311">サステナビリティ</a></p>
+          <ul class="megaDrop" id="md">
+            <div class="inner">
+              <div class="catTl">
+                <p>サステナビリティ</p>
+              </div>
+              <div class="detail">
+                  
+      <ul>
+                      <li class="menu-item--expanded menu-item menu-item--hide--comSubNv">
+                        <a href="https://www.mhi.com/jp/sustainability/management" title="" data-drupal-link-system-path="node/6256">マネジメント</a>
+                  </li>
+                      <li class="menu-item menu-item--hide--comSubNv">
+                        <a href="https://www.mhi.com/jp/sustainability/library" title="" data-drupal-link-system-path="node/73526">ライブラリ</a>
+                  </li>
+                      <li class="menu-item--expanded menu-item menu-item--hide--comSubNv">
+                        <a href="https://www.mhi.com/jp/sustainability/environment" title="" data-drupal-link-system-path="node/6161">環境</a>
+                  </li>
+                      <li class="menu-item--expanded menu-item menu-item--hide--comSubNv">
+                        <a href="https://www.mhi.com/jp/sustainability/social" title="" data-drupal-link-system-path="node/101">社会</a>
+                  </li>
+                      <li class="menu-item--expanded menu-item menu-item--hide--comSubNv">
+                        <a href="https://www.mhi.com/jp/sustainability/governance" title="" data-drupal-link-system-path="node/6166">ガバナンス</a>
+                  </li>
+          </ul>
+  
+
+              </div>
+            </div>
+            <div class="close">CLOSE</div>
+          </ul>
+        </li>
+                      <li class="menu-item--expanded menu-item">
+          <p><a href="https://www.mhi.com/jp/finance" hreflang="ja" data-drupal-link-system-path="node/50956">IR情報</a></p>
+          <ul class="megaDrop" id="md">
+            <div class="inner">
+              <div class="catTl">
+                <p>IR情報</p>
+              </div>
+              <div class="detail">
+                  
+      <ul>
+                      <li class="menu-item--expanded menu-item menu-item--hide--comSubNv">
+                        <a href="https://www.mhi.com/jp/finance/individual" title="" data-drupal-link-system-path="node/73261">個人投資家の皆様へ</a>
+                  </li>
+                      <li class="menu-item--expanded menu-item menu-item--hide--comSubNv">
+                        <a href="https://www.mhi.com/jp/finance/management" title="" data-drupal-link-system-path="node/50981">経営方針</a>
+                  </li>
+                      <li class="menu-item--expanded menu-item menu-item--hide--comSubNv">
+                        <a href="https://www.mhi.com/jp/finance/finance" title="" data-drupal-link-system-path="node/73271">財務・業績</a>
+                  </li>
+                      <li class="menu-item--expanded menu-item menu-item--hide--comSubNv">
+                        <a href="https://www.mhi.com/jp/finance/library" title="" data-drupal-link-system-path="node/125896">IRライブラリ</a>
+                  </li>
+                      <li class="menu-item--expanded menu-item menu-item--hide--comSubNv">
+                        <a href="https://www.mhi.com/jp/finance/stock" title="" data-drupal-link-system-path="node/73276">株式・社債</a>
+                  </li>
+                      <li class="menu-item--expanded menu-item">
+                        
+      <ul class="comSubNv">
+                      <li>
+            <a href="https://www.mhi.com/jp/finance/calendar" title="">IRカレンダー</a>
+            
+  
+
+        </li>
+                      <li>
+            <a href="https://www.mhi.com/jp/finance/publicnotice" title="" data-drupal-link-system-path="node/126166">電子公告</a>
+            
+  
+
+        </li>
+                      <li>
+            <a href="https://www.mhi.com/jp/finance/request" title="" data-drupal-link-system-path="node/126171">資料請求</a>
+            
+  
+
+        </li>
+                      <li>
+            <a href="https://www.mhi.com/jp/finance/faq" title="">よくあるご質問</a>
+            
+  
+
+        </li>
+                      <li>
+            <a href="https://www.mhi.com/jp/finance/disclaimer.html" title="" data-drupal-link-system-path="node/125911">免責事項</a>
+            
+  
+
+        </li>
+                      <li>
+            <a href="https://www.mhi.com/jp/finance/sitemap.html" title="">IRサイトマップ</a>
+            
+  
+
+        </li>
+                      <li>
+            <a href="https://www.mhi.com/jp/finance/howto" title="" data-drupal-link-system-path="node/126176">IRサイトの使い方</a>
+            
+  
+
+        </li>
+          </ul>
+  
+
+                  </li>
+          </ul>
+  
+
+              </div>
+            </div>
+            <div class="close">CLOSE</div>
+          </ul>
+        </li>
+                      <li class="menu-item--expanded menu-item">
+          <p><a href="https://www.mhi.com/jp/network" hreflang="ja" data-drupal-link-system-path="node/109476">グローバルネットワーク</a></p>
+          <ul class="megaDrop" id="md">
+            <div class="inner">
+              <div class="catTl">
+                <p>グローバルネットワーク</p>
+              </div>
+              <div class="detail">
+                  
+      <ul>
+                      <li class="menu-item menu-item--hide--comSubNv">
+                        <a href="https://www.mhi.com/jp/network" title="">地図から探す</a>
+                  </li>
+                      <li class="menu-item--expanded menu-item menu-item--hide--comSubNv">
+                        <a href="https://www.mhi.com/jp/network/area" title="" data-drupal-link-system-path="node/114001">エリア別</a>
+                  </li>
+                      <li class="menu-item--expanded menu-item menu-item--hide--comSubNv">
+                        <a href="https://www.mhi.com/jp/network/products" title="" data-drupal-link-system-path="node/113986">製品分野別</a>
+                  </li>
+                      <li class="menu-item--expanded menu-item menu-item--hide--comSubNv">
+                        <a href="https://www.mhi.com/jp/network/business" title="" data-drupal-link-system-path="node/114006">業種別</a>
+                  </li>
+                      <li class="menu-item menu-item--hide--comSubNv">
+                        <a href="https://www.mhi.com/jp/network/alphabetize" title="" data-drupal-link-system-path="node/114011">50音順</a>
+                  </li>
+          </ul>
+  
+
+              </div>
+            </div>
+            <div class="close">CLOSE</div>
+          </ul>
+        </li>
+          </ul>
+  
+
+
+
+      </nav>
+</div>
+
+  </header>
+
+</div>
+
+
+
+
+  <div class="region region-breadcrumb">
+    <div id="block-mhi-breadcrumbs" data-block-plugin-id="system_breadcrumb_block" class="block block-system block-system-breadcrumb-block">
+  
+    
+        <nav id="comBreadcrumb" role="navigation" aria-labelledby="system-breadcrumb">
+    <h2 id="system-breadcrumb" class="visually-hidden">パンくず</h2>
+    <ul id="breadcrumb"><li><a href="https://www.mhi.com/jp">Home</a>&nbsp;-&nbsp;</li><li>ニュース</li></ul>
+  </nav>
+
+  </div>
+
+  </div>
+
+
+  <div class="region region-highlighted">
+    <div data-drupal-messages-fallback class="hidden"></div>
+
+  </div>
+
+
+
+
+<main role="main">
+  <a id="main-content" tabindex="-1"></a>
+        <div class="region region-content">
+    <div id="block-mhi-content" data-block-plugin-id="system_main_block" class="block block-system block-system-main-block">
+  
+    
+        <div>
+    <div id="comContent" class="comNews">
+      <div id="comConPosi">
+                  <div id="comMainContent">
+            <div id="comMainConPosi">
+              <h1><div class="block-region-title"><div data-block-plugin-id="simple_block:news_list_title" class="block block-simple-block block-simple-blocknews-list-title">
+  
+    
+      <p><a href="https://www.mhi.com/jp/news/">ニュース</a></p>
+
+  </div>
+</div></h1>
+                            <div class="comYearSelect">
+                <div class="comSortout">
+                  <div class="block-region-year-select"><div class="facet-inactive block-facet--finance-year-dropdown block block-facets block-facet-blockfinance-year" data-block-plugin-id="facet_block:finance_year">
+  
+    
+      <div class="facets-widget-finance_year_dropdown">
+      <ul data-drupal-facet-id="finance_year" data-drupal-facet-alias="finance_year" class="facet-inactive js-facets-dropdown-links item-list__finance_year_dropdown"><li class="facet-item"><a href="https://www.mhi.com/jp/news/index.html" data-drupal-facet-item-id="finance-year-2022" data-drupal-facet-item-value="2022" data-drupal-facet-item-count="137"><span class="facet-item__value">2022</span>
+</a></li><li class="facet-item"><a href="https://www.mhi.com/jp/news/2021.html" data-drupal-facet-item-id="finance-year-2021" data-drupal-facet-item-value="2021" data-drupal-facet-item-count="261"><span class="facet-item__value">2021</span>
+</a></li><li class="facet-item"><a href="https://www.mhi.com/jp/news/2020.html" data-drupal-facet-item-id="finance-year-2020" data-drupal-facet-item-value="2020" data-drupal-facet-item-count="234"><span class="facet-item__value">2020</span>
+</a></li><li class="facet-item"><a href="https://www.mhi.com/jp/news/2019.html" data-drupal-facet-item-id="finance-year-2019" data-drupal-facet-item-value="2019" data-drupal-facet-item-count="222"><span class="facet-item__value">2019</span>
+</a></li><li class="facet-item"><a href="https://www.mhi.com/jp/news/2018.html" data-drupal-facet-item-id="finance-year-2018" data-drupal-facet-item-value="2018" data-drupal-facet-item-count="240"><span class="facet-item__value">2018</span>
+</a></li><li class="facet-item"><a href="https://www.mhi.com/jp/news/2017.html" data-drupal-facet-item-id="finance-year-2017" data-drupal-facet-item-value="2017" data-drupal-facet-item-count="221"><span class="facet-item__value">2017</span>
+</a></li><li class="facet-item"><a href="https://www.mhi.com/jp/news/2016.html" data-drupal-facet-item-id="finance-year-2016" data-drupal-facet-item-value="2016" data-drupal-facet-item-count="273"><span class="facet-item__value">2016</span>
+</a></li><li class="facet-item"><a href="https://www.mhi.com/jp/news/2015.html" data-drupal-facet-item-id="finance-year-2015" data-drupal-facet-item-value="2015" data-drupal-facet-item-count="248"><span class="facet-item__value">2015</span>
+</a></li><li class="facet-item"><a href="https://www.mhi.com/jp/news/2014.html" data-drupal-facet-item-id="finance-year-2014" data-drupal-facet-item-value="2014" data-drupal-facet-item-count="207"><span class="facet-item__value">2014</span>
+</a></li><li class="facet-item"><a href="https://www.mhi.com/jp/news/2013.html" data-drupal-facet-item-id="finance-year-2013" data-drupal-facet-item-value="2013" data-drupal-facet-item-count="213"><span class="facet-item__value">2013</span>
+</a></li><li class="facet-item"><a href="https://www.mhi.com/jp/news/2012.html" data-drupal-facet-item-id="finance-year-2012" data-drupal-facet-item-value="2012" data-drupal-facet-item-count="174"><span class="facet-item__value">2012</span>
+</a></li><li class="facet-item"><a href="https://www.mhi.com/jp/news/2011.html" data-drupal-facet-item-id="finance-year-2011" data-drupal-facet-item-value="2011" data-drupal-facet-item-count="163"><span class="facet-item__value">2011</span>
+</a></li><li class="facet-item"><a href="https://www.mhi.com/jp/news/2010.html" data-drupal-facet-item-id="finance-year-2010" data-drupal-facet-item-value="2010" data-drupal-facet-item-count="140"><span class="facet-item__value">2010</span>
+</a></li><li class="facet-item"><a href="https://www.mhi.com/jp/news/2009.html" data-drupal-facet-item-id="finance-year-2009" data-drupal-facet-item-value="2009" data-drupal-facet-item-count="125"><span class="facet-item__value">2009</span>
+</a></li><li class="facet-item"><a href="https://www.mhi.com/jp/news/2008.html" data-drupal-facet-item-id="finance-year-2008" data-drupal-facet-item-value="2008" data-drupal-facet-item-count="130"><span class="facet-item__value">2008</span>
+</a></li><li class="facet-item"><a href="https://www.mhi.com/jp/news/2007.html" data-drupal-facet-item-id="finance-year-2007" data-drupal-facet-item-value="2007" data-drupal-facet-item-count="129"><span class="facet-item__value">2007</span>
+</a></li></ul>
+</div>
+
+  </div>
+</div>
+                </div>
+              </div>
+                            <div class="block-region-content"><div class="views-element-container block block-views block-views-blocknews-release-list-current-finance-year-news-list-block" data-block-plugin-id="views_block:news_release_list-current_finance_year_news_list_block">
+  
+    
+      <div><div class="view view-news-release-list view-id-news_release_list view-display-id-current_finance_year_news_list_block js-view-dom-id-29f0028bc96213c64f4f87ca90c9636d88bc249d2566db183bc5a81ed049da1e">
+  
+    
+      <div class="view-header">
+      <div><h2><span class="finance-year">2022</span>年度 ニュースリリース</h2></div>
+    </div>
+      
+      <div class="view-content">
+          <h3>
+          10月-12月
+      </h3>
+
+<div class="comDayLi">
+  <ul>
+                <li>
+        <div class="views-row"><div><span>  
+  
+  
+  
+<a href="https://www.mhi.com/jp/news/22101302.html"><time datetime="00Z" class="datetime">2022-10-13</time>
+<span class="cateTag"><span>[ <span class="newsCategory">プレスリリース</span> ]</span><span>[ <span class="newsCategory">船舶・海洋</span> ]</span></span><span class="inTxt">三菱造船、大島商船高等専門学校向け練習船「大島丸」の命名・進水式を下関で実施</span></a></span></div></div>
+      </li>
+                <li>
+        <div class="views-row"><div><span>  
+  
+  
+  
+<a href="https://www.mhi.com/jp/news/22101301.html"><time datetime="00Z" class="datetime">2022-10-13</time>
+<span class="cateTag"><span>[ <span class="newsCategory">プレスリリース</span> ]</span><span>[ <span class="newsCategory">カーボンニュートラル</span> ]</span><span>[ <span class="newsCategory">エネルギー</span> ]</span></span><span class="inTxt">豪州・南オーストラリア州政府と水素開発事業に関する共同声明に署名　クリーンエネルギーへの移行と水素経済の発展目指す</span></a></span></div></div>
+      </li>
+                <li>
+        <div class="views-row"><div><span>  
+  
+  
+  
+<a href="https://www.mhi.com/jp/news/221012.html"><time datetime="00Z" class="datetime">2022-10-12</time>
+<span class="cateTag"><span>[ <span class="newsCategory">プレスリリース</span> ]</span><span>[ <span class="newsCategory">防衛</span> ]</span></span><span class="inTxt">防衛省向け3,000トン型潜水艦「じんげい」の命名式・進水式を神戸造船所で実施　現行潜水艦の後継に当たる「たいげい」型3番艦</span></a></span></div></div>
+      </li>
+                <li>
+        <div class="views-row"><div><span>  
+  
+  
+  
+<a href="https://www.mhi.com/jp/news/22100702.html"><time datetime="00Z" class="datetime">2022-10-07</time>
+<span class="cateTag"><span>[ <span class="newsCategory">プレスリリース</span> ]</span><span>[ <span class="newsCategory">カーボンニュートラル</span> ]</span><span>[ <span class="newsCategory">エナジートランジション</span> ]</span><span>[ <span class="newsCategory">船舶・海洋</span> ]</span></span><span class="inTxt">三菱造船、CCUSを目的とした液化CO<sub>2</sub>船舶輸送の実証試験船の起工式を下関で実施</span></a></span></div></div>
+      </li>
+                <li>
+        <div class="views-row"><div><span>  
+  
+  
+  
+<a href="https://www.mhi.com/jp/news/22100701.html"><time datetime="00Z" class="datetime">2022-10-07</time>
+<span class="cateTag"><span>[ <span class="newsCategory">プレスリリース</span> ]</span><span>[ <span class="newsCategory">原子力関連</span> ]</span></span><span class="inTxt">プラント自動巡回点検防爆ロボット「EX ROVR」“ASCENT”が「2022年度グッドデザイン・ベスト100」を受賞</span></a></span></div></div>
+      </li>
+                <li>
+        <div class="views-row"><div><span>  
+  
+  
+  
+<a href="https://www.mhi.com/jp/sustainability/news/others_221006.html"><time datetime="00Z" class="datetime">2022-10-06</time>
+<span class="cateTag"><span>[ <span class="newsCategory">サステナビリティ</span> ]</span><span>[ <span class="newsCategory">お知らせ</span> ]</span></span><span class="inTxt">三菱重工業株式会社<br />2022年度の種子島アカウミガメ保全調査を完了　産卵目的の回帰周期などデータの蓄積を重ね、生態の解明につなげる</span></a></span></div></div>
+      </li>
+                <li>
+        <div class="views-row"><div><span>  
+  
+  
+  
+<a href="https://www.mhi.com/jp/news/22100602.html"><time datetime="00Z" class="datetime">2022-10-06</time>
+<span class="cateTag"><span>[ <span class="newsCategory">プレスリリース</span> ]</span><span>[ <span class="newsCategory">エネルギー</span> ]</span></span><span class="inTxt">タイで265万kW級の超大型GTCC発電所建設プロジェクトが完成　現地IPPガルフ・グループと三井物産の合弁事業向け、M701JAC形4号機が運転開始</span></a></span></div></div>
+      </li>
+                <li>
+        <div class="views-row"><div><span>  
+  
+  
+  
+<a href="https://www.mhi.com/jp/news/22100601.html"><time datetime="00Z" class="datetime">2022-10-06</time>
+<span class="cateTag"><span>[ <span class="newsCategory">プレスリリース</span> ]</span><span>[ <span class="newsCategory">産業機械</span> ]</span></span><span class="inTxt">MHI-MS、シンガポールでV2X対応システムの開発と実証試験に成功　将来的な安全運転支援への対応で、安全で円滑な車社会の創造に貢献</span></a></span></div></div>
+      </li>
+                <li>
+        <div class="views-row"><div><span>  
+  
+  
+  
+<a href="https://www.mhi.com/jp/news/22100502.html"><time datetime="00Z" class="datetime">2022-10-05</time>
+<span class="cateTag"><span>[ <span class="newsCategory">プレスリリース</span> ]</span><span>[ <span class="newsCategory">社会インフラのスマート化</span> ]</span><span>[ <span class="newsCategory">交通システム</span> ]</span></span><span class="inTxt">高速道路での自動運転支援を目的とした路車間通信（V2I）の実証実験に参画　自動運転社会の実現に向け、三菱重工グループの多様な技術を活用</span></a></span></div></div>
+      </li>
+                <li>
+        <div class="views-row"><div><span>  
+  
+  
+  
+<a href="https://www.mhi.com/jp/news/22100501.html"><time datetime="00Z" class="datetime">2022-10-05</time>
+<span class="cateTag"><span>[ <span class="newsCategory">プレスリリース</span> ]</span><span>[ <span class="newsCategory">エネルギー</span> ]</span></span><span class="inTxt">長春人造樹脂向けに台湾初のH-25形ガスタービンを受注　大発工場（高雄市）のコージェネ（熱電併給）をガス焚き高効率化しCO<sub>2</sub>削減へ</span></a></span></div></div>
+      </li>
+                <li>
+        <div class="views-row"><div><span>  
+  
+  
+  
+<a href="https://www.mhi.com/jp/news/221004.html"><time datetime="00Z" class="datetime">2022-10-04</time>
+<span class="cateTag"><span>[ <span class="newsCategory">プレスリリース</span> ]</span><span>[ <span class="newsCategory">産業機械</span> ]</span></span><span class="inTxt">三菱重工グループ、シンガポールに大容量ターボ冷凍機2台を納入　マリーナベイエリアの大型地域冷房プラント向け</span></a></span></div></div>
+      </li>
+      </ul>
+</div>
+    <h3>
+          7月-9月
+      </h3>
+
+<div class="comDayLi">
+  <ul>
+                <li>
+        <div class="views-row"><div><span>  
+  
+  
+  
+<a href="https://www.mhi.com/jp/news/220930.html"><time datetime="00Z" class="datetime">2022-09-30</time>
+<span class="cateTag"><span>[ <span class="newsCategory">プレスリリース</span> ]</span><span>[ <span class="newsCategory">経営</span> ]</span></span><span class="inTxt">統合レポート「MHI REPORT 2022」を発行</span></a></span></div></div>
+      </li>
+                <li>
+        <div class="views-row"><div><span>  
+  
+  
+  
+<a href="https://www.mhi.com/jp/news/220929.html"><time datetime="00Z" class="datetime">2022-09-29</time>
+<span class="cateTag"><span>[ <span class="newsCategory">プレスリリース</span> ]</span><span>[ <span class="newsCategory">原子力関連</span> ]</span></span><span class="inTxt">革新軽水炉「SRZ-1200」について</span></a></span></div></div>
+      </li>
+                <li>
+        <div class="views-row"><div><span>  
+  
+  
+  
+<a href="https://www.primetals.com/fileadmin/user_upload/press-releases/2022/2022092638/PR2022092638jp.pdf"><time datetime="00Z" class="datetime">2022-09-29</time>
+<span class="cateTag"><span>[ <span class="newsCategory">プレスリリース</span> ]</span><span>[ <span class="newsCategory">産業機械</span> ]</span></span><span class="inTxt">【Primetals Technologies, Ltd.】<br />スロベニアで厚板圧延機のドライブを近代化し、信頼性とスペアパーツの供給を確保</span></a></span></div></div>
+      </li>
+                <li>
+        <div class="views-row"><div><span>  
+  
+  
+  
+<a href="https://www.mhi.com/jp/news/220928.html"><time datetime="00Z" class="datetime">2022-09-28</time>
+<span class="cateTag"><span>[ <span class="newsCategory">プレスリリース</span> ]</span><span>[ <span class="newsCategory">エネルギー</span> ]</span></span><span class="inTxt">インドネシア国立バンドン工科大学（ITB）と共同R＆Dを開始　ガスタービンによるアンモニア発電に関して</span></a></span></div></div>
+      </li>
+                <li>
+        <div class="views-row"><div><span>  
+  
+  
+  
+<a href="https://www.mhi.com/jp/news/220927.html"><time datetime="00Z" class="datetime">2022-09-27</time>
+<span class="cateTag"><span>[ <span class="newsCategory">プレスリリース</span> ]</span><span>[ <span class="newsCategory">エネルギー</span> ]</span></span><span class="inTxt">シンガポール・ジュロン島におけるアンモニア専焼GTCC発電所の開発に向け　ケッペル社、三菱重工、DNVの3社が定量的リスクアセスメント実施に関する覚書に調印</span></a></span></div></div>
+      </li>
+                <li>
+        <div class="views-row"><div><span>  
+  
+  
+  
+<a href="https://www.mhi.com/jp/news/22092005.html"><time datetime="00Z" class="datetime">2022-09-20</time>
+<span class="cateTag"><span>[ <span class="newsCategory">プレスリリース</span> ]</span><span>[ <span class="newsCategory">産業機械</span> ]</span></span><span class="inTxt">新聞輪転機自動運転機能「Auto-Pilot Printing（APP）」を新開発　～AI活用による自動運転でスキルレス化・省力化を実現～</span></a></span></div></div>
+      </li>
+                <li>
+        <div class="views-row"><div><span>  
+  
+  
+  
+<a href="https://www.mhi.com/jp/news/22092003.html"><time datetime="01Z" class="datetime">2022-09-20</time>
+<span class="cateTag"><span>[ <span class="newsCategory">プレスリリース</span> ]</span><span>[ <span class="newsCategory">人事</span> ]</span></span><span class="inTxt">人事異動</span></a></span></div></div>
+      </li>
+                <li>
+        <div class="views-row"><div><span>  
+  
+  
+  
+<a href="https://www.mhi.com/jp/news/22092004.html"><time datetime="00Z" class="datetime">2022-09-20</time>
+<span class="cateTag"><span>[ <span class="newsCategory">プレスリリース</span> ]</span><span>[ <span class="newsCategory">人事</span> ]</span></span><span class="inTxt">【三菱重工グループ】<br>人事異動</span></a></span></div></div>
+      </li>
+                <li>
+        <div class="views-row"><div><span>  
+  
+  
+  
+<a href="https://www.mhi.com/jp/news/22092002.html"><time datetime="00Z" class="datetime">2022-09-20</time>
+<span class="cateTag"><span>[ <span class="newsCategory">プレスリリース</span> ]</span><span>[ <span class="newsCategory">環境装置</span> ]</span></span><span class="inTxt">MHIEC、長崎市から一般廃棄物焼却施設の建て替え工事を受注　既存施設の老朽化に対応、20年間の運営業務も請け負う</span></a></span></div></div>
+      </li>
+                <li>
+        <div class="views-row"><div><span>  
+  
+  
+  
+<a href="https://www.mhi.com/jp/news/22092001.html"><time datetime="00Z" class="datetime">2022-09-20</time>
+<span class="cateTag"><span>[ <span class="newsCategory">プレスリリース</span> ]</span><span>[ <span class="newsCategory">カーボンニュートラル</span> ]</span><span>[ <span class="newsCategory">エナジートランジション</span> ]</span><span>[ <span class="newsCategory">エネルギー</span> ]</span></span><span class="inTxt">実機サイズのCO<sub>2</sub>固体吸収材の評価に着手　―大気中のCO<sub>2</sub>を直接回収する技術の開発が大きく前進―</span></a></span></div></div>
+      </li>
+                <li>
+        <div class="views-row"><div><span>  
+  
+  
+  
+<a href="https://www.mhi.com/jp/news/220914.html"><time datetime="00Z" class="datetime">2022-09-14</time>
+<span class="cateTag"><span>[ <span class="newsCategory">プレスリリース</span> ]</span><span>[ <span class="newsCategory">生活・レジャー</span> ]</span></span><span class="inTxt">三菱重工サーマルシステムズ、豪州市場向けエアコンの最優秀ブランドに今年も選出　現地最大消費者団体「CHOICE®」と現地大手製品レビューサイト「Canstar Blue」の調査で</span></a></span></div></div>
+      </li>
+                <li>
+        <div class="views-row"><div><span>  
+  
+  
+  
+<a href="https://www.primetals.com/fileadmin/user_upload/press-releases/2022/2022072590/PR2022072590jp.pdf"><time datetime="50Z" class="datetime">2022-09-13</time>
+<span class="cateTag"><span>[ <span class="newsCategory">プレスリリース</span> ]</span><span>[ <span class="newsCategory">産業機械</span> ]</span></span><span class="inTxt">【Primetals Technologies, Ltd.】<br />フェストアルピーネ向け溶融亜鉛めっきラインの改修と近代化を受注</span></a></span></div></div>
+      </li>
+                <li>
+        <div class="views-row"><div><span>  
+  
+  
+  
+<a href="https://www.mhi.com/jp/news/22090602.html"><time datetime="00Z" class="datetime">2022-09-06</time>
+<span class="cateTag"><span>[ <span class="newsCategory">プレスリリース</span> ]</span><span>[ <span class="newsCategory">カーボンニュートラル</span> ]</span><span>[ <span class="newsCategory">エナジートランジション</span> ]</span><span>[ <span class="newsCategory">船舶・海洋</span> ]</span></span><span class="inTxt">三菱造船と商船三井が液化CO<sub>2</sub>船の設計基本承認（AiP）を船級協会から取得</span></a></span></div></div>
+      </li>
+                <li>
+        <div class="views-row"><div><span>  
+  
+  
+  
+<a href="https://www.mhi.com/jp/news/22090601.html"><time datetime="00Z" class="datetime">2022-09-06</time>
+<span class="cateTag"><span>[ <span class="newsCategory">プレスリリース</span> ]</span><span>[ <span class="newsCategory">エネルギー</span> ]</span></span><span class="inTxt">チュニジア電力・ガス公社のラデス発電所ガス焚きGTCC設備が運転開始 　三菱重工と住友商事のコンソーシアムが完工、同国総発電容量の1割を賄う</span></a></span></div></div>
+      </li>
+                <li>
+        <div class="views-row"><div><span>  
+  
+  
+  
+<a href="https://www.primetals.com/fileadmin/user_upload/press-releases/2022/2022092588/PR2022072588jp.pdf"><time datetime="00Z" class="datetime">2022-09-06</time>
+<span class="cateTag"><span>[ <span class="newsCategory">プレスリリース</span> ]</span><span>[ <span class="newsCategory">産業機械</span> ]</span></span><span class="inTxt">【Primetals Technologies, Ltd.】<br />メキシコの鉄鋼メーカー向けツインレードル炉を受注</span></a></span></div></div>
+      </li>
+                <li>
+        <div class="views-row"><div><span>  
+  
+  
+  
+<a href="https://www.mhi.com/jp/news/220905.html"><time datetime="00Z" class="datetime">2022-09-05</time>
+<span class="cateTag"><span>[ <span class="newsCategory">プレスリリース</span> ]</span><span>[ <span class="newsCategory">エネルギー</span> ]</span></span><span class="inTxt">最新鋭ガスタービンM701JAC形が実稼働時間8,000時間を突破　強制空冷式JAC形が50Hz地区向けでも信頼性の指標を確立</span></a></span></div></div>
+      </li>
+                <li>
+        <div class="views-row"><div><span>  
+  
+  
+  
+<a href="https://www.mhi.com/jp/news/220902.html"><time datetime="00Z" class="datetime">2022-09-02</time>
+<span class="cateTag"><span>[ <span class="newsCategory">プレスリリース</span> ]</span><span>[ <span class="newsCategory">経営</span> ]</span><span>[ <span class="newsCategory">カーボンニュートラル</span> ]</span><span>[ <span class="newsCategory">エナジートランジション</span> ]</span></span><span class="inTxt"> 三菱重工、初のトランジションボンド発行条件決定のお知らせ　2040年Net Zeroを達成し、カーボンニュートラル社会の実現に貢献</span></a></span></div></div>
+      </li>
+                <li>
+        <div class="views-row"><div><span>  
+  
+  
+  
+<a href="https://www.mhi.com/jp/news/22083103.html"><time datetime="01Z" class="datetime">2022-08-31</time>
+<span class="cateTag"><span>[ <span class="newsCategory">プレスリリース</span> ]</span><span>[ <span class="newsCategory">人事</span> ]</span></span><span class="inTxt">役員人事の件</span></a></span></div></div>
+      </li>
+                <li>
+        <div class="views-row"><div><span>  
+  
+  
+  
+<a href="https://www.mhi.com/jp/news/22083102.html"><time datetime="00Z" class="datetime">2022-08-31</time>
+<span class="cateTag"><span>[ <span class="newsCategory">プレスリリース</span> ]</span><span>[ <span class="newsCategory">社会インフラのスマート化</span> ]</span><span>[ <span class="newsCategory">物流・運搬</span> ]</span></span><span class="inTxt">ΣSynXによる倉庫物流向け自動ピッキングソリューションを提供開始　YHH内に実証施設「LogiQ X Labo」を稼働</span></a></span></div></div>
+      </li>
+                <li>
+        <div class="views-row"><div><span>  
+  
+  
+  
+<a href="https://www.mhi.com/jp/news/22083101.html"><time datetime="00Z" class="datetime">2022-08-31</time>
+<span class="cateTag"><span>[ <span class="newsCategory">プレスリリース</span> ]</span><span>[ <span class="newsCategory">エネルギー</span> ]</span></span><span class="inTxt">シンガポール初の水素焚き発電所を建設へ、ケッペル社とEPC契約を締結　三菱パワーアジア・パシフィック、ジュロン・エンジニアリング社とのコンソーシアムで</span></a></span></div></div>
+      </li>
+                <li>
+        <div class="views-row"><div><span>  
+  
+  
+  
+<a href="https://www.primetals.com/fileadmin/user_upload/press-releases/2022/2022082601/PR2022082601jp.pdf"><time datetime="00Z" class="datetime">2022-08-31</time>
+<span class="cateTag"><span>[ <span class="newsCategory">プレスリリース</span> ]</span><span>[ <span class="newsCategory">産業機械</span> ]</span></span><span class="inTxt">【Primetals Technologies, Ltd.】<br />グリーンスチール実証プラントをPOSCOと共同建設</span></a></span></div></div>
+      </li>
+                <li>
+        <div class="views-row"><div><span>  
+  
+  
+  
+<a href="https://www.mhi.com/jp/news/22083002.html"><time datetime="00Z" class="datetime">2022-08-30</time>
+<span class="cateTag"><span>[ <span class="newsCategory">プレスリリース</span> ]</span><span>[ <span class="newsCategory">カーボンニュートラル</span> ]</span><span>[ <span class="newsCategory">エナジートランジション</span> ]</span><span>[ <span class="newsCategory">船舶・海洋</span> ]</span></span><span class="inTxt">三菱造船、商船三井向けLNG燃料フェリー「さんふらわあ むらさき」 命名・進水式を下関で実施</span></a></span></div></div>
+      </li>
+                <li>
+        <div class="views-row"><div><span>  
+  
+  
+  
+<a href="https://www.mhi.com/jp/news/22083001.html"><time datetime="00Z" class="datetime">2022-08-30</time>
+<span class="cateTag"><span>[ <span class="newsCategory">プレスリリース</span> ]</span><span>[ <span class="newsCategory">カーボンニュートラル</span> ]</span><span>[ <span class="newsCategory">エナジートランジション</span> ]</span><span>[ <span class="newsCategory">エネルギー</span> ]</span></span><span class="inTxt">スコットランドの発電所向け、GTCC発電設備・CO<sub>2</sub>回収プラントに関する基本設計を受注　商用規模CCS導入をサポートし、英国の2050年ネットゼロ達成に貢献</span></a></span></div></div>
+      </li>
+                <li>
+        <div class="views-row"><div><span>  
+  
+  
+  
+<a href="https://www.mhi.com/jp/group/mhims/news/topics/20220830.html"><time datetime="00Z" class="datetime">2022-08-30</time>
+<span class="cateTag"><span>[ <span class="newsCategory">プレスリリース</span> ]</span><span>[ <span class="newsCategory">人事</span> ]</span></span><span class="inTxt">【三菱重工機械システム株式会社】<br />役員人事の件</span></a></span></div></div>
+      </li>
+                <li>
+        <div class="views-row"><div><span>  
+  
+  
+  
+<a href="https://www.primetals.com/fileadmin/user_upload/press-releases/2022/2022082625/PR2022082625jp.pdf"><time datetime="25Z" class="datetime">2022-08-25</time>
+<span class="cateTag"><span>[ <span class="newsCategory">プレスリリース</span> ]</span><span>[ <span class="newsCategory">産業機械</span> ]</span></span><span class="inTxt">【Primetals Technologies, Ltd.】<br />ザルツギッターのグリーンチールプログラムの一環として電気炉大型案件を受注</span></a></span></div></div>
+      </li>
+                <li>
+        <div class="views-row"><div><span>  
+  
+  
+  
+<a href="https://www.mhi.com/jp/news/220823.html"><time datetime="00Z" class="datetime">2022-08-23</time>
+<span class="cateTag"><span>[ <span class="newsCategory">プレスリリース</span> ]</span><span>[ <span class="newsCategory">原子力関連</span> ]</span></span><span class="inTxt">三菱原子燃料　燃料加工施設に関する使用前検査合格証および使用前確認証受領について</span></a></span></div></div>
+      </li>
+                <li>
+        <div class="views-row"><div><span>  
+  
+  
+  
+<a href="https://www.mhi.com/jp/news/220822.html"><time datetime="00Z" class="datetime">2022-08-22</time>
+<span class="cateTag"><span>[ <span class="newsCategory">プレスリリース</span> ]</span><span>[ <span class="newsCategory">エネルギー</span> ]</span></span><span class="inTxt">UAE・シャルジャ首長国の天然ガス発電プロジェクト ガスタービンが商業運転を開始　あわせて長期保守契約を締結</span></a></span></div></div>
+      </li>
+                <li>
+        <div class="views-row"><div><span>  
+  
+  
+  
+<a href="https://www.mhi.com/jp/news/220818.html"><time datetime="00Z" class="datetime">2022-08-18</time>
+<span class="cateTag"><span>[ <span class="newsCategory">プレスリリース</span> ]</span><span>[ <span class="newsCategory">生活・レジャー</span> ]</span></span><span class="inTxt">豪州製品レビューサイトのスプリットシステムエアコン最高評価ブランドに2年連続で選出　三菱重工サーマルシステムズ、冷暖房性能や静音性などで高い評価を獲得</span></a></span></div></div>
+      </li>
+                <li>
+        <div class="views-row"><div><span>  
+  
+  
+  
+<a href="https://www.mhi.com/jp/news/22080802.html"><time datetime="00Z" class="datetime">2022-08-08</time>
+<span class="cateTag"><span>[ <span class="newsCategory">プレスリリース</span> ]</span><span>[ <span class="newsCategory">船舶・海洋</span> ]</span></span><span class="inTxt">東京大学に「海事デジタルエンジニアリング」社会連携講座を開設　―サステナブルな海上物流を実現するシミュレーション共通基盤の構築へ―</span></a></span></div></div>
+      </li>
+                <li>
+        <div class="views-row"><div><span>  
+  
+  
+  
+<a href="https://www.mhi.com/jp/news/22080801.html"><time datetime="00Z" class="datetime">2022-08-08</time>
+<span class="cateTag"><span>[ <span class="newsCategory">プレスリリース</span> ]</span><span>[ <span class="newsCategory">環境装置</span> ]</span></span><span class="inTxt">シンガポールで廃棄物焼却発電事業会社を完全子会社化　三菱重工グループ単独で25年間の運営・保守を実施</span></a></span></div></div>
+      </li>
+                <li>
+        <div class="views-row"><div><span>  
+  
+  
+  
+<a href="https://www.mhi.com/jp/news/22080502.html"><time datetime="01Z" class="datetime">2022-08-05</time>
+<span class="cateTag"><span>[ <span class="newsCategory">プレスリリース</span> ]</span><span>[ <span class="newsCategory">経営</span> ]</span><span>[ <span class="newsCategory">カーボンニュートラル</span> ]</span><span>[ <span class="newsCategory">エナジートランジション</span> ]</span></span><span class="inTxt">三菱重工、初のトランジションボンド発行を決定　2040年Net Zeroを達成し、カーボンニュートラル社会の実現に貢献</span></a></span></div></div>
+      </li>
+                <li>
+        <div class="views-row"><div><span>  
+  
+  
+  
+<a href="https://www.mhi.com/jp/news/22080501.html"><time datetime="00Z" class="datetime">2022-08-05</time>
+<span class="cateTag"><span>[ <span class="newsCategory">プレスリリース</span> ]</span><span>[ <span class="newsCategory">経営</span> ]</span></span><span class="inTxt">2022年度 第1四半期決算関連資料を掲載致しました。</span></a></span></div></div>
+      </li>
+                <li>
+        <div class="views-row"><div><span>  
+  
+  
+  
+<a href="https://www.mhi.com/jp/news/220804.html"><time datetime="00Z" class="datetime">2022-08-04</time>
+<span class="cateTag"><span>[ <span class="newsCategory">プレスリリース</span> ]</span><span>[ <span class="newsCategory">経営</span> ]</span><span>[ <span class="newsCategory">サステナビリティ</span> ]</span></span><span class="inTxt">タイのサッカークラブ「ムアントン・ユナイテッドFC」と協賛契約を締結　次世代選手育成などクラブチームの活動を支援し、アジア地域の発展に貢献</span></a></span></div></div>
+      </li>
+                <li>
+        <div class="views-row"><div><span>  
+  
+  
+  
+<a href="https://www.primetals.com/fileadmin/user_upload/press-releases/2022/2022012471/PR2022012471jp.pdf"><time datetime="00Z" class="datetime">2022-08-03</time>
+<span class="cateTag"><span>[ <span class="newsCategory">プレスリリース</span> ]</span><span>[ <span class="newsCategory">産業機械</span> ]</span></span><span class="inTxt">【Primetals Technologies, Ltd.】<br />フェストアルピーネ向けプロセス制御システム導入第1フェーズ完工</span></a></span></div></div>
+      </li>
+                <li>
+        <div class="views-row"><div><span>  
+  
+  
+  
+<a href="https://www.mhi.com/jp/news/220801.html"><time datetime="00Z" class="datetime">2022-08-01</time>
+<span class="cateTag"><span>[ <span class="newsCategory">プレスリリース</span> ]</span><span>[ <span class="newsCategory">その他</span> ]</span></span><span class="inTxt">三菱みなとみらい技術館、陸ゾーンを中心に展示内容をリニューアル　カーボンニュートラル社会実現に向けた三菱重工グループの取り組みなどを紹介</span></a></span></div></div>
+      </li>
+                <li>
+        <div class="views-row"><div><span>  
+  
+  
+  
+<a href="https://www.mhi.com/jp/news/22072902.html"><time datetime="00Z" class="datetime">2022-07-29</time>
+<span class="cateTag"><span>[ <span class="newsCategory">プレスリリース</span> ]</span><span>[ <span class="newsCategory">エネルギー</span> ]</span></span><span class="inTxt">香港電燈（HKE）ラマ火力発電所5・6・7号ガスタービンの設備更新工事を受注　M701DA形ガスタービンを中核に効率的再生を図る</span></a></span></div></div>
+      </li>
+                <li>
+        <div class="views-row"><div><span>  
+  
+  
+  
+<a href="https://www.mhi.com/jp/sustainability/news/others_220729.html"><time datetime="00Z" class="datetime">2022-07-29</time>
+<span class="cateTag"><span>[ <span class="newsCategory">サステナビリティ</span> ]</span><span>[ <span class="newsCategory">お知らせ</span> ]</span></span><span class="inTxt">三菱重工業株式会社<br />商船三井殿向けLNG燃料フェリー　命名・進水式見学会の参加者を募集</span></a></span></div></div>
+      </li>
+                <li>
+        <div class="views-row"><div><span>  
+  
+  
+  
+<a href="https://www.mhi.com/jp/news/22072802.html"><time datetime="00Z" class="datetime">2022-07-28</time>
+<span class="cateTag"><span>[ <span class="newsCategory">プレスリリース</span> ]</span><span>[ <span class="newsCategory">原子力関連</span> ]</span></span><span class="inTxt">関西電力美浜発電所3号機における　特定重大事故等対処施設の主要機器設置工事が完工</span></a></span></div></div>
+      </li>
+                <li>
+        <div class="views-row"><div><span>  
+  
+  
+  
+<a href="https://www.mhi.com/jp/news/22072801.html"><time datetime="00Z" class="datetime">2022-07-28</time>
+<span class="cateTag"><span>[ <span class="newsCategory">プレスリリース</span> ]</span><span>[ <span class="newsCategory">産業機械</span> ]</span></span><span class="inTxt">三菱重工機械システム、新聞用オフセット輪転機「DIAMONDSPIRIT」計3セットを受注　熊本日日新聞社からカラー印刷能力増強用、信濃毎日新聞社から既存設備更新用として</span></a></span></div></div>
+      </li>
+                <li>
+        <div class="views-row"><div><span>  
+  
+  
+  
+<a href="https://www.mhi.com/jp/news/220727.html"><time datetime="00Z" class="datetime">2022-07-27</time>
+<span class="cateTag"><span>[ <span class="newsCategory">プレスリリース</span> ]</span><span>[ <span class="newsCategory">環境装置</span> ]</span></span><span class="inTxt">MHIECが第48回優秀環境装置表彰の最高位「経済産業大臣賞」を受賞　独自開発した新型V型ストーカ炉の効率性・環境性に高い評価</span></a></span></div></div>
+      </li>
+                <li>
+        <div class="views-row"><div><span>  
+  
+  
+  
+<a href="https://www.mhi.com/jp/news/22072502.html"><time datetime="00Z" class="datetime">2022-07-25</time>
+<span class="cateTag"><span>[ <span class="newsCategory">プレスリリース</span> ]</span><span>[ <span class="newsCategory">カーボンニュートラル</span> ]</span></span><span class="inTxt">世界最大の溶接・接合国際会議「IIW2022」＆「2022国際ウエルディングショー」に参加　カーボンニュートラル社会の実現に向けた三菱重工グループの取り組みを紹介</span></a></span></div></div>
+      </li>
+                <li>
+        <div class="views-row"><div><span>  
+  
+  
+  
+<a href="https://www.mhi.com/jp/news/22072501.html"><time datetime="00Z" class="datetime">2022-07-25</time>
+<span class="cateTag"><span>[ <span class="newsCategory">プレスリリース</span> ]</span><span>[ <span class="newsCategory">カーボンニュートラル</span> ]</span><span>[ <span class="newsCategory">船舶・海洋</span> ]</span></span><span class="inTxt">「マリンエンジニアリング・オブ・ザ・イヤー2021」を受賞　三菱造船参画の洋上用CO<sub>2</sub>回収装置実証試験“CC-Ocean”プロジェクトで</span></a></span></div></div>
+      </li>
+                <li>
+        <div class="views-row"><div><span>  
+  
+  
+  
+<a href="https://www.mhi.com/jp/news/220720.html"><time datetime="00Z" class="datetime">2022-07-20</time>
+<span class="cateTag"><span>[ <span class="newsCategory">プレスリリース</span> ]</span><span>[ <span class="newsCategory">交通システム</span> ]</span></span><span class="inTxt">MHIENGの海外3プロジェクトが「エンジニアリング功労者賞」を受賞　エンジニアリング協会主催の同賞において、国際協力、産業発展への貢献面で高評価</span></a></span></div></div>
+      </li>
+                <li>
+        <div class="views-row"><div><span>  
+  
+  
+  
+<a href="https://www.primetals.com/fileadmin/user_upload/press-releases/2022/2022022496/PR2022022496jp.pdf"><time datetime="00Z" class="datetime">2022-07-20</time>
+<span class="cateTag"><span>[ <span class="newsCategory">プレスリリース</span> ]</span><span>[ <span class="newsCategory">産業機械</span> ]</span></span><span class="inTxt">【Primetals Technologies, Ltd.】<br />アルセロール ミッタル社ゲント製鉄所向けLD転炉（BOF）が稼働開始</span></a></span></div></div>
+      </li>
+                <li>
+        <div class="views-row"><div><span>  
+  
+  
+  
+<a href="https://www.mhi.com/jp/news/220719.html"><time datetime="00Z" class="datetime">2022-07-19</time>
+<span class="cateTag"><span>[ <span class="newsCategory">プレスリリース</span> ]</span><span>[ <span class="newsCategory">カーボンニュートラル</span> ]</span><span>[ <span class="newsCategory">エナジートランジション</span> ]</span><span>[ <span class="newsCategory">航空</span> ]</span></span><span class="inTxt">三菱重工、米国ボーイング社とMOUを締結　持続可能な航空産業の実現に向けた協業</span></a></span></div></div>
+      </li>
+                <li>
+        <div class="views-row"><div><span>  
+  
+  
+  
+<a href="https://www.mhi.com/jp/news/220713.html"><time datetime="00Z" class="datetime">2022-07-13</time>
+<span class="cateTag"><span>[ <span class="newsCategory">プレスリリース</span> ]</span><span>[ <span class="newsCategory">サステナビリティ</span> ]</span></span><span class="inTxt">三菱重工、MSCI ESGレーティング「AA」を初めて獲得　ESGへの取り組みで高い評価を受ける</span></a></span></div></div>
+      </li>
+                <li>
+        <div class="views-row"><div><span>  
+  
+  
+  
+<a href="https://www.mhi.com/jp/news/220711.html"><time datetime="00Z" class="datetime">2022-07-11</time>
+<span class="cateTag"><span>[ <span class="newsCategory">プレスリリース</span> ]</span><span>[ <span class="newsCategory">カーボンニュートラル</span> ]</span><span>[ <span class="newsCategory">エナジートランジション</span> ]</span><span>[ <span class="newsCategory">エネルギー</span> ]</span></span><span class="inTxt">カナダ・アルバータ州のガスタービン発電所向け、CO<sub>2</sub>回収に関する基本設計を受注　MHIENG独自のCO<sub>2</sub>回収技術で、温室効果ガス排出削減に向けた課題解決に対応</span></a></span></div></div>
+      </li>
+                <li>
+        <div class="views-row"><div><span>  
+  
+  
+  
+<a href="https://www.mhi.com/jp/news/22070801.html"><time datetime="01Z" class="datetime">2022-07-08</time>
+<span class="cateTag"><span>[ <span class="newsCategory">プレスリリース</span> ]</span><span>[ <span class="newsCategory">防衛</span> ]</span></span><span class="inTxt">三菱重工マリタイムシステムズ、水産庁向け漁業調査船「開洋丸」の命名・進水式を実施</span></a></span></div></div>
+      </li>
+                <li>
+        <div class="views-row"><div><span>  
+  
+  
+  
+<a href="https://www.mhi.com/jp/sustainability/news/others_220708.html"><time datetime="00Z" class="datetime">2022-07-08</time>
+<span class="cateTag"><span>[ <span class="newsCategory">サステナビリティ</span> ]</span><span>[ <span class="newsCategory">お知らせ</span> ]</span></span><span class="inTxt">三菱重工業株式会社<br />MHIET、朝日新聞社刊行の小・中学生向け教材「おしごと年鑑2022」に掲載　ディーゼルエンジンの仕組みや独自の発電技術などを分かりやすく説明</span></a></span></div></div>
+      </li>
+                <li>
+        <div class="views-row"><div><span>  
+  
+  
+  
+<a href="https://www.mhi.com/jp/news/220707.html"><time datetime="00Z" class="datetime">2022-07-07</time>
+<span class="cateTag"><span>[ <span class="newsCategory">プレスリリース</span> ]</span><span>[ <span class="newsCategory">経営</span> ]</span><span>[ <span class="newsCategory">サステナビリティ</span> ]</span></span><span class="inTxt">「SOMPOサステナビリティ・インデックス」の構成銘柄に11年連続で選定</span></a></span></div></div>
+      </li>
+                <li>
+        <div class="views-row"><div><span>  
+  
+  
+  
+<a href="https://www.mhi.com/jp/news/220706.html"><time datetime="00Z" class="datetime">2022-07-06</time>
+<span class="cateTag"><span>[ <span class="newsCategory">プレスリリース</span> ]</span><span>[ <span class="newsCategory">カーボンニュートラル</span> ]</span><span>[ <span class="newsCategory">原子力関連</span> ]</span></span><span class="inTxt">南フランス・ITER向け核融合ブランケットの安全実証試験装置群を納入　日本のTBM開発をサポートし、核融合エネルギーの実現に貢献</span></a></span></div></div>
+      </li>
+                <li>
+        <div class="views-row"><div><span>  
+  
+  
+  
+<a href="https://www.mhi.com/jp/news/220705.html"><time datetime="00Z" class="datetime">2022-07-05</time>
+<span class="cateTag"><span>[ <span class="newsCategory">プレスリリース</span> ]</span><span>[ <span class="newsCategory">カーボンニュートラル</span> ]</span><span>[ <span class="newsCategory">エナジートランジション</span> ]</span><span>[ <span class="newsCategory">エネルギー</span> ]</span></span><span class="inTxt">台湾電力・大潭火力発電所向けGTCC発電設備の大型改造工事を連続受注　4系列・M501G形ガスタービン8台分の環境規制対応と運用性向上へ</span></a></span></div></div>
+      </li>
+      </ul>
+</div>
+    <h3>
+          4月-6月
+      </h3>
+
+<div class="comDayLi">
+  <ul>
+                <li>
+        <div class="views-row"><div><span>  
+  
+  
+  
+<a href="https://www.mhi.com/jp/news/22063002.html"><time datetime="00Z" class="datetime">2022-06-30</time>
+<span class="cateTag"><span>[ <span class="newsCategory">プレスリリース</span> ]</span><span>[ <span class="newsCategory">船舶・海洋</span> ]</span></span><span class="inTxt">三菱造船、ヘリコプター搭載型巡視船「あさなぎ」の進水を下関で実施　海上保安庁向け巡視船「しゅんこう」型（6,000トン型）の2番船</span></a></span></div></div>
+      </li>
+                <li>
+        <div class="views-row"><div><span>  
+  
+  
+  
+<a href="https://www.mhi.com/jp/group/mco/news/2022/20220630.html"><time datetime="00Z" class="datetime">2022-06-30</time>
+<span class="cateTag"><span>[ <span class="newsCategory">プレスリリース</span> ]</span><span>[ <span class="newsCategory">人事</span> ]</span></span><span class="inTxt">【三菱重工コンプレッサ株式会社】<br />役員人事の件</span></a></span></div></div>
+      </li>
+                <li>
+        <div class="views-row"><div><span>  
+  
+  
+  
+<a href="https://www.mhi.com/jp/news/22063001.html"><time datetime="00Z" class="datetime">2022-06-30</time>
+<span class="cateTag"><span>[ <span class="newsCategory">プレスリリース</span> ]</span><span>[ <span class="newsCategory">カーボンニュートラル</span> ]</span><span>[ <span class="newsCategory">エナジートランジション</span> ]</span><span>[ <span class="newsCategory">エネルギー</span> ]</span></span><span class="inTxt">広島市のバイオマス発電所向け、商用初の小型CO<sub>2</sub>回収装置が稼働開始　初号機の実績を足掛かりに、ワンストップサービスによるお客様サポート体制を確立</span></a></span></div></div>
+      </li>
+                <li>
+        <div class="views-row"><div><span>  
+  
+  
+  
+<a href="https://www.primetals.com/fileadmin/user_upload/press-releases/2022/2022062572/PR2022062572jp.pdf"><time datetime="51Z" class="datetime">2022-06-30</time>
+<span class="cateTag"><span>[ <span class="newsCategory">プレスリリース</span> ]</span><span>[ <span class="newsCategory">産業機械</span> ]</span></span><span class="inTxt">【Primetals Technologies, Ltd.】<br />世界トップクラスの産業コンソーシアムが、グリーンスチールのマーケットリーダーとなる 「GravitHy」を設立</span></a></span></div></div>
+      </li>
+                <li>
+        <div class="views-row"><div><span>  
+  
+  
+  
+<a href="https://mth.mhi.com/news/20220630.html"><time datetime="00Z" class="datetime">2022-06-30</time>
+<span class="cateTag"><span>[ <span class="newsCategory">プレスリリース</span> ]</span><span>[ <span class="newsCategory">人事</span> ]</span></span><span class="inTxt">【三菱重工サーマルシステムズ株式会社】<br />役員人事の件</span></a></span></div></div>
+      </li>
+                <li>
+        <div class="views-row"><div><span>  
+  
+  
+  
+<a href="https://www.mhiair.co.jp/contents/13-news/20220628.html"><time datetime="00Z" class="datetime">2022-06-29</time>
+<span class="cateTag"><span>[ <span class="newsCategory">プレスリリース</span> ]</span><span>[ <span class="newsCategory">人事</span> ]</span></span><span class="inTxt">【三菱重工冷熱株式会社】<br />役員人事の件</span></a></span></div></div>
+      </li>
+                <li>
+        <div class="views-row"><div><span>  
+  
+  
+  
+<a href="https://www.primetals.com/fileadmin/user_upload/press-releases/2022/2022032521/PR2022032521jp.pdf"><time datetime="51Z" class="datetime">2022-06-28</time>
+<span class="cateTag"><span>[ <span class="newsCategory">プレスリリース</span> ]</span><span>[ <span class="newsCategory">産業機械</span> ]</span></span><span class="inTxt">【Primetals Technologies, Ltd.】<br />オウトクンプ向け連続鋳造関連設備を受注</span></a></span></div></div>
+      </li>
+                <li>
+        <div class="views-row"><div><span>  
+  
+  
+  
+<a href="https://www.mhi.com/jp/news/220627.html"><time datetime="00Z" class="datetime">2022-06-27</time>
+<span class="cateTag"><span>[ <span class="newsCategory">プレスリリース</span> ]</span><span>[ <span class="newsCategory">カーボンニュートラル</span> ]</span><span>[ <span class="newsCategory">エナジートランジション</span> ]</span><span>[ <span class="newsCategory">エネルギー</span> ]</span></span><span class="inTxt">エジプトの大手石油精製会社ANRPCと水素燃焼技術を導入する契約を締結　精油プロセスで副生する水素ガスをボイラー燃料に有効活用へ</span></a></span></div></div>
+      </li>
+                <li>
+        <div class="views-row"><div><span>  
+  
+  
+  
+<a href="https://www.mhi.com/jp/news/22062304.html"><time datetime="00Z" class="datetime">2022-06-23</time>
+<span class="cateTag"><span>[ <span class="newsCategory">プレスリリース</span> ]</span></span><span class="inTxt">「電力系統の混雑緩和のための分散型エネルギーリソース制御技術開発」の採択および事業開始について ～国内初となる「DERフレキシビリティシステム」に必要な技術開発を実施～</span></a></span></div></div>
+      </li>
+                <li>
+        <div class="views-row"><div><span>  
+  
+  
+  
+<a href="https://www.mhi.com/jp/news/22062303.html"><time datetime="00Z" class="datetime">2022-06-23</time>
+<span class="cateTag"><span>[ <span class="newsCategory">プレスリリース</span> ]</span><span>[ <span class="newsCategory">防衛</span> ]</span></span><span class="inTxt">防衛省向け3,900トン型護衛艦「やはぎ」の命名・進水式を長崎で実施</span></a></span></div></div>
+      </li>
+                <li>
+        <div class="views-row"><div><span>  
+  
+  
+  
+<a href="https://www.mhi.com/jp/news/22062302.html"><time datetime="00Z" class="datetime">2022-06-23</time>
+<span class="cateTag"><span>[ <span class="newsCategory">プレスリリース</span> ]</span><span>[ <span class="newsCategory">カーボンニュートラル</span> ]</span><span>[ <span class="newsCategory">エナジートランジション</span> ]</span><span>[ <span class="newsCategory">エネルギー</span> ]</span></span><span class="inTxt">米国の水電解装置開発会社エレクトリック・ハイドロジェン社へ出資</span></a></span></div></div>
+      </li>
+                <li>
+        <div class="views-row"><div><span>  
+  
+  
+  
+<a href="https://www.mhi.com/jp/news/22062301.html"><time datetime="00Z" class="datetime">2022-06-23</time>
+<span class="cateTag"><span>[ <span class="newsCategory">プレスリリース</span> ]</span><span>[ <span class="newsCategory">生活・レジャー</span> ]</span></span><span class="inTxt">プラグインハイブリッド輸送用冷凍ユニットが日本冷凍空調学会賞「技術賞」を受賞　三菱重工サーマルシステムズ、配送車両の品質向上に対する貢献で高い評価</span></a></span></div></div>
+      </li>
+                <li>
+        <div class="views-row"><div><span>  
+  
+  
+  
+<a href="https://www.logisnext.com/news/?mode=dl&amp;seq=1550"><time datetime="00Z" class="datetime">2022-06-22</time>
+<span class="cateTag"><span>[ <span class="newsCategory">プレスリリース</span> ]</span><span>[ <span class="newsCategory">人事</span> ]</span><span>[ <span class="newsCategory">物流・運搬</span> ]</span></span><span class="inTxt">【三菱ロジスネクスト株式会社】<br />機構改革および人事異動のお知らせ</span></a></span></div></div>
+      </li>
+                <li>
+        <div class="views-row"><div><span>  
+  
+  
+  
+<a href="https://www.mhi.com/jp/news/220622.html"><time datetime="00Z" class="datetime">2022-06-22</time>
+<span class="cateTag"><span>[ <span class="newsCategory">プレスリリース</span> ]</span><span>[ <span class="newsCategory">カーボンニュートラル</span> ]</span></span><span class="inTxt">三菱重工 三原製作所の使用電力100％再エネ化に関する基本合意書の締結について ～両社初のオンサイト・オフサイト複合型によるグリーン電力等の供給～</span></a></span></div></div>
+      </li>
+                <li>
+        <div class="views-row"><div><span>  
+  
+  
+  
+<a href="https://www.mhi.com/jp/group/mhiet/news/20220622.html"><time datetime="00Z" class="datetime">2022-06-22</time>
+<span class="cateTag"><span>[ <span class="newsCategory">プレスリリース</span> ]</span><span>[ <span class="newsCategory">自動車関連</span> ]</span></span><span class="inTxt">【三菱重工エンジン&amp;ターボチャージャ株式会社】<br />MHIETのインド拠点MVDE、産業用小型ディーゼルエンジンの累計生産台数20万台を達成　高い堅牢性や“ものづくり”品質への評価から製造・販売が堅調に推移</span></a></span></div></div>
+      </li>
+                <li>
+        <div class="views-row"><div><span>  
+  
+  
+  
+<a href="https://www.mhi.com/jp/news/220621.html"><time datetime="00Z" class="datetime">2022-06-21</time>
+<span class="cateTag"><span>[ <span class="newsCategory">プレスリリース</span> ]</span><span>[ <span class="newsCategory">航空</span> ]</span></span><span class="inTxt">ボーイング787向け複合材主翼の工程廃材を家電部品へ再利用　資源の有効活用で環境負荷低減と地球環境保護に貢献</span></a></span></div></div>
+      </li>
+                <li>
+        <div class="views-row"><div><span>  
+  
+  
+  
+<a href="https://www.primetals.com/fileadmin/user_upload/press-releases/2022/2022042536/PR2022042536jp.pdf"><time datetime="47Z" class="datetime">2022-06-21</time>
+<span class="cateTag"><span>[ <span class="newsCategory">プレスリリース</span> ]</span><span>[ <span class="newsCategory">産業機械</span> ]</span></span><span class="inTxt">【Primetals Technologies, Ltd.】<br />ブラジルCSPより安全性とプラント性能を向上させる新型リライニング設備を受注</span></a></span></div></div>
+      </li>
+                <li>
+        <div class="views-row"><div><span>  
+  
+  
+  
+<a href="https://www.mhi.com/jp/news/22062001.html"><time datetime="03Z" class="datetime">2022-06-20</time>
+<span class="cateTag"><span>[ <span class="newsCategory">プレスリリース</span> ]</span><span>[ <span class="newsCategory">社会インフラのスマート化</span> ]</span></span><span class="inTxt">“かしこく・つなぐ”でお客様のビジネスモデルを変革　「デジタルイノベーション本部」を新設</span></a></span></div></div>
+      </li>
+                <li>
+        <div class="views-row"><div><span>  
+  
+  
+  
+<a href="https://www.mhi.com/jp/news/22062002.html"><time datetime="02Z" class="datetime">2022-06-20</time>
+<span class="cateTag"><span>[ <span class="newsCategory">プレスリリース</span> ]</span><span>[ <span class="newsCategory">人事</span> ]</span></span><span class="inTxt">機構改革および人事異動</span></a></span></div></div>
+      </li>
+                <li>
+        <div class="views-row"><div><span>  
+  
+  
+  
+<a href="https://www.mhi.com/jp/news/22062003.html"><time datetime="00Z" class="datetime">2022-06-20</time>
+<span class="cateTag"><span>[ <span class="newsCategory">プレスリリース</span> ]</span><span>[ <span class="newsCategory">人事</span> ]</span></span><span class="inTxt">【三菱重工グループ】<br>人事異動</span></a></span></div></div>
+      </li>
+                <li>
+        <div class="views-row"><div><span>  
+  
+  
+  
+<a href="https://www.mhi.com/jp/news/220615.html"><time datetime="00Z" class="datetime">2022-06-15</time>
+<span class="cateTag"><span>[ <span class="newsCategory">プレスリリース</span> ]</span><span>[ <span class="newsCategory">カーボンニュートラル</span> ]</span><span>[ <span class="newsCategory">エナジートランジション</span> ]</span><span>[ <span class="newsCategory">エネルギー</span> ]</span></span><span class="inTxt">三菱重工、ジョージア・パワー、米国電力研究所が世界最大の水素燃料混焼実証　マクドノフ・アトキンソン発電所のGTCC発電設備で成功</span></a></span></div></div>
+      </li>
+                <li>
+        <div class="views-row"><div><span>  
+  
+  
+  
+<a href="https://www.mhi.com/jp/news/220614.html"><time datetime="00Z" class="datetime">2022-06-14</time>
+<span class="cateTag"><span>[ <span class="newsCategory">プレスリリース</span> ]</span><span>[ <span class="newsCategory">カーボンニュートラル</span> ]</span><span>[ <span class="newsCategory">エナジートランジション</span> ]</span><span>[ <span class="newsCategory">エネルギー</span> ]</span></span><span class="inTxt">Advanced Clean Energy Storageプロジェクトが米国エネルギー省から5億ドルの融資保証を獲得　-- ユタ州に世界最大のグリーン水素ハブを開発するため、米国エネルギー省　融資プログラム局が10年ぶりとなる融資保証を実施 --</span></a></span></div></div>
+      </li>
+                <li>
+        <div class="views-row"><div><span>  
+  
+  
+  
+<a href="https://www.mhi.com/jp/news/220613.html"><time datetime="00Z" class="datetime">2022-06-13</time>
+<span class="cateTag"><span>[ <span class="newsCategory">プレスリリース</span> ]</span><span>[ <span class="newsCategory">カーボンニュートラル</span> ]</span><span>[ <span class="newsCategory">社会インフラのスマート化</span> ]</span><span>[ <span class="newsCategory">産業機械</span> ]</span></span><span class="inTxt">アウトレットモール駐車場でAGVロボットによる自動バレーパーキング実証試験を開始　国内における自動バレーパーキングサービス事業化を目指す</span></a></span></div></div>
+      </li>
+                <li>
+        <div class="views-row"><div><span>  
+  
+  
+  
+<a href="https://www.mhi.com/jp/group/mhiael/news/202206.html"><time datetime="00Z" class="datetime">2022-06-13</time>
+<span class="cateTag"><span>[ <span class="newsCategory">プレスリリース</span> ]</span><span>[ <span class="newsCategory">人事</span> ]</span></span><span class="inTxt">【三菱重工航空エンジン株式会社】<br />役員人事の件</span></a></span></div></div>
+      </li>
+                <li>
+        <div class="views-row"><div><span>  
+  
+  
+  
+<a href="https://www.mhi.com/jp/recruit/shinsotsu/event/internship.html"><time datetime="00Z" class="datetime">2022-06-10</time>
+<span class="cateTag"><span>[ <span class="newsCategory">人事</span> ]</span><span>[ <span class="newsCategory">お知らせ</span> ]</span></span><span class="inTxt">三菱重工業株式会社<br />MHI INTERNSHIP 2022　インターンシップ募集受付中</span></a></span></div></div>
+      </li>
+                <li>
+        <div class="views-row"><div><span>  
+  
+  
+  
+<a href="https://www.mhi.com/jp/news/22060902.html"><time datetime="00Z" class="datetime">2022-06-09</time>
+<span class="cateTag"><span>[ <span class="newsCategory">プレスリリース</span> ]</span><span>[ <span class="newsCategory">カーボンニュートラル</span> ]</span><span>[ <span class="newsCategory">エナジートランジション</span> ]</span><span>[ <span class="newsCategory">船舶・海洋</span> ]</span></span><span class="inTxt">三菱造船、主燃料をLPGからアンモニアに転換可能なVLGCのコンセプト設計を完了　将来のアンモニア燃料実用化を視野に、日本海事協会からAIPを取得</span></a></span></div></div>
+      </li>
+                <li>
+        <div class="views-row"><div><span>  
+  
+  
+  
+<a href="https://www.mhi.com/jp/news/22060901.html"><time datetime="00Z" class="datetime">2022-06-09</time>
+<span class="cateTag"><span>[ <span class="newsCategory">プレスリリース</span> ]</span><span>[ <span class="newsCategory">生活・レジャー</span> ]</span></span><span class="inTxt">海外向け家庭用ルームエアコンの高級機・標準機モデルに無線LAN機能を標準搭載　三菱重工サーマルシステムズ、6月から欧州向けの量産を開始</span></a></span></div></div>
+      </li>
+                <li>
+        <div class="views-row"><div><span>  
+  
+  
+  
+<a href="https://www.primetals.com/fileadmin/user_upload/press-releases/2022/2022042530/PR2022042530jp_01.pdf"><time datetime="00Z" class="datetime">2022-06-09</time>
+<span class="cateTag"><span>[ <span class="newsCategory">プレスリリース</span> ]</span><span>[ <span class="newsCategory">産業機械</span> ]</span></span><span class="inTxt">【Primetals Technologies, Ltd.】<br /> インドでの自動車産業向け製品増産プロジェクトとしてPL-TCMを受注</span></a></span></div></div>
+      </li>
+                <li>
+        <div class="views-row"><div><span>  
+  
+  
+  
+<a href="https://www.mhi.com/jp/news/220608.html"><time datetime="00Z" class="datetime">2022-06-08</time>
+<span class="cateTag"><span>[ <span class="newsCategory">プレスリリース</span> ]</span><span>[ <span class="newsCategory">カーボンニュートラル</span> ]</span><span>[ <span class="newsCategory">エナジートランジション</span> ]</span><span>[ <span class="newsCategory">船舶・海洋</span> ]</span></span><span class="inTxt">三菱造船、LCO<sub>2</sub>船用球形カーゴタンクの基本設計承認（AIP）を仏船級協会から取得</span></a></span></div></div>
+      </li>
+                <li>
+        <div class="views-row"><div><span>  
+  
+  
+  
+<a href="https://www.mhi.com/jp/news/220606.html"><time datetime="00Z" class="datetime">2022-06-06</time>
+<span class="cateTag"><span>[ <span class="newsCategory">プレスリリース</span> ]</span><span>[ <span class="newsCategory">社会インフラのスマート化</span> ]</span><span>[ <span class="newsCategory">物流・運搬</span> ]</span></span><span class="inTxt">国内初、マイナス25℃冷凍倉庫対応レーザー誘導方式無人フォークリフトを共同開発　全国の三菱ロジスネクスト販売店で6月から販売開始</span></a></span></div></div>
+      </li>
+                <li>
+        <div class="views-row"><div><span>  
+  
+  
+  
+<a href="https://www.mhi.com/jp/news/22060302.html"><time datetime="00Z" class="datetime">2022-06-03</time>
+<span class="cateTag"><span>[ <span class="newsCategory">プレスリリース</span> ]</span><span>[ <span class="newsCategory">カーボンニュートラル</span> ]</span><span>[ <span class="newsCategory">エナジートランジション</span> ]</span><span>[ <span class="newsCategory">エネルギー</span> ]</span></span><span class="inTxt">インドネシアにおける既設火力発電所向け アンモニア利用発電の事業化調査に着手　経済産業省「質の高いエネルギーインフラの海外展開に向けた事業実施可能性調査事業委託」で2件採択</span></a></span></div></div>
+      </li>
+                <li>
+        <div class="views-row"><div><span>  
+  
+  
+  
+<a href="https://www.mhi.com/jp/news/22060301.html"><time datetime="00Z" class="datetime">2022-06-03</time>
+<span class="cateTag"><span>[ <span class="newsCategory">プレスリリース</span> ]</span><span>[ <span class="newsCategory">産業機械</span> ]</span></span><span class="inTxt">三菱重工サーマルシステムズ、「令和4年度デマンドサイドマネジメント表彰」2部門を受賞　電力負荷平準化への貢献と省エネ・環境保全性に高い評価</span></a></span></div></div>
+      </li>
+                <li>
+        <div class="views-row"><div><span>  
+  
+  
+  
+<a href="https://www.mhi.com/jp/news/220602.html"><time datetime="00Z" class="datetime">2022-06-02</time>
+<span class="cateTag"><span>[ <span class="newsCategory">プレスリリース</span> ]</span><span>[ <span class="newsCategory">カーボンニュートラル</span> ]</span><span>[ <span class="newsCategory">エナジートランジション</span> ]</span><span>[ <span class="newsCategory">エネルギー</span> ]</span></span><span class="inTxt">三菱重工グループのMHIENGとMHIETがガスエンジン向けCO<sub>2</sub>回収を共同実証　「MISSION NET ZERO」達成に向け、カーボンニュートラル社会の実現へ貢献</span></a></span></div></div>
+      </li>
+                <li>
+        <div class="views-row"><div><span>  
+  
+  
+  
+<a href="https://www.mhi.com/jp/sustainability/news/others_220601.html"><time datetime="00Z" class="datetime">2022-06-01</time>
+<span class="cateTag"><span>[ <span class="newsCategory">サステナビリティ</span> ]</span><span>[ <span class="newsCategory">お知らせ</span> ]</span></span><span class="inTxt">三菱重工業株式会社<br />小学生向け学習まんが「学研 まんがでよくわかるシリーズ」の特別編　「SDGsのひみつ 目標7 エネルギーをみんなに そしてクリーンに」を学研プラスと共同制作</span></a></span></div></div>
+      </li>
+                <li>
+        <div class="views-row"><div><span>  
+  
+  
+  
+<a href="https://www.mhi.com/jp/news/220531.html"><time datetime="01Z" class="datetime">2022-05-31</time>
+<span class="cateTag"><span>[ <span class="newsCategory">プレスリリース</span> ]</span><span>[ <span class="newsCategory">原子力関連</span> ]</span></span><span class="inTxt">日本財団－DeepStar連携技術開発助成プログラムに採択され、AIを活用するロボットシステムの研究開発を共同で実施　～海上プラットフォームの自律操業の実現に向けて～</span></a></span></div></div>
+      </li>
+                <li>
+        <div class="views-row"><div><span>  
+  
+  
+  
+<a href="https://www.mhi.com/jp/group/mhims/news/topics/20220531.html"><time datetime="00Z" class="datetime">2022-05-31</time>
+<span class="cateTag"><span>[ <span class="newsCategory">プレスリリース</span> ]</span><span>[ <span class="newsCategory">人事</span> ]</span></span><span class="inTxt">【三菱重工機械システム株式会社】<br />役員人事</span></a></span></div></div>
+      </li>
+                <li>
+        <div class="views-row"><div><span>  
+  
+  
+  
+<a href="https://dynaboars.mhi.com/news/team/20220530-1709.html"><time datetime="00Z" class="datetime">2022-05-30</time>
+<span class="cateTag"><span>[ <span class="newsCategory">お知らせ</span> ]</span></span><span class="inTxt">【三菱重工相模原ダイナボアーズ】<br />ジャパンラグビー リーグワン ディビジョン1 昇格決定のお知らせ</span></a></span></div></div>
+      </li>
+                <li>
+        <div class="views-row"><div><span>  
+  
+  
+  
+<a href="https://www.primetals.com/fileadmin/user_upload/press-releases/2022/2021102443/PR2021102443jp.pdf"><time datetime="00Z" class="datetime">2022-05-25</time>
+<span class="cateTag"><span>[ <span class="newsCategory">プレスリリース</span> ]</span><span>[ <span class="newsCategory">産業機械</span> ]</span></span><span class="inTxt">【Primetals Technologies, Ltd.】<br />世界初の連続鋳造機用サブスクリプション型プロセス最適化ソリューション導入が完工</span></a></span></div></div>
+      </li>
+                <li>
+        <div class="views-row"><div><span>  
+  
+  
+  
+<a href="https://www.mhi.com/jp/group/mco/news/2022/20220524.html"><time datetime="00Z" class="datetime">2022-05-24</time>
+<span class="cateTag"><span>[ <span class="newsCategory">プレスリリース</span> ]</span><span>[ <span class="newsCategory">エネルギー</span> ]</span></span><span class="inTxt">【三菱重工コンプレッサ株式会社】<br />コンプレッサ遠隔監視サービス 丸善石油化学向け／国内エチレンプラントでの運用開始</span></a></span></div></div>
+      </li>
+                <li>
+        <div class="views-row"><div><span>  
+  
+  
+  
+<a href="https://www.mhi.com/jp/news/220520.html"><time datetime="00Z" class="datetime">2022-05-20</time>
+<span class="cateTag"><span>[ <span class="newsCategory">プレスリリース</span> ]</span><span>[ <span class="newsCategory">人事</span> ]</span></span><span class="inTxt">【三菱重工グループ】<br>人事異動</span></a></span></div></div>
+      </li>
+                <li>
+        <div class="views-row"><div><span>  
+  
+  
+  
+<a href="https://www.mhi.com/jp/news/220518.html"><time datetime="00Z" class="datetime">2022-05-18</time>
+<span class="cateTag"><span>[ <span class="newsCategory">プレスリリース</span> ]</span><span>[ <span class="newsCategory">産業機械</span> ]</span></span><span class="inTxt">三菱重工機械システム、段ボール製函機「MC」を新開発　ベストセラー「EVOL」の技術を継承、6月から国内で本格販売</span></a></span></div></div>
+      </li>
+                <li>
+        <div class="views-row"><div><span>  
+  
+  
+  
+<a href="https://www.primetals.com/fileadmin/user_upload/press-releases/2022/2022042546/PR2022042546jp.pdf"><time datetime="00Z" class="datetime">2022-05-18</time>
+<span class="cateTag"><span>[ <span class="newsCategory">プレスリリース</span> ]</span><span>[ <span class="newsCategory">産業機械</span> ]</span></span><span class="inTxt">【Primetals Technologies, Ltd.】<br />グリーンスチールへの移行タスクフォースを新設</span></a></span></div></div>
+      </li>
+                <li>
+        <div class="views-row"><div><span>  
+  
+  
+  
+<a href="https://www.mhi.com/jp/news/220517.html"><time datetime="00Z" class="datetime">2022-05-17</time>
+<span class="cateTag"><span>[ <span class="newsCategory">プレスリリース</span> ]</span><span>[ <span class="newsCategory">カーボンニュートラル</span> ]</span><span>[ <span class="newsCategory">エナジートランジション</span> ]</span></span><span class="inTxt">バーレーンの大手国営アルミニウム精錬会社・アルバ社とEPC契約を締結　第5発電所の第4ブロック建設に向けて、三菱重工およびSEPCO IIIが </span></a></span></div></div>
+      </li>
+                <li>
+        <div class="views-row"><div><span>  
+  
+  
+  
+<a href="https://www.mhi.com/jp/news/220516.html"><time datetime="00Z" class="datetime">2022-05-16</time>
+<span class="cateTag"><span>[ <span class="newsCategory">プレスリリース</span> ]</span><span>[ <span class="newsCategory">カーボンニュートラル</span> ]</span><span>[ <span class="newsCategory">エナジートランジション</span> ]</span><span>[ <span class="newsCategory">船舶・海洋</span> ]</span></span><span class="inTxt">三菱造船と日本郵船、大型LCO<sub>2</sub>船の設計基本承認（AiP）を船級協会から取得</span></a></span></div></div>
+      </li>
+                <li>
+        <div class="views-row"><div><span>  
+  
+  
+  
+<a href="https://www.mhi.com/jp/news/22051201.html"><time datetime="04Z" class="datetime">2022-05-12</time>
+<span class="cateTag"><span>[ <span class="newsCategory">プレスリリース</span> ]</span><span>[ <span class="newsCategory">経営</span> ]</span></span><span class="inTxt">2021年度 決算関連資料を掲載致しました。</span></a></span></div></div>
+      </li>
+                <li>
+        <div class="views-row"><div><span>  
+  
+  
+  
+<a href="https://www.mhi.com/jp/news/22051202.html"><time datetime="01Z" class="datetime">2022-05-12</time>
+<span class="cateTag"><span>[ <span class="newsCategory">プレスリリース</span> ]</span><span>[ <span class="newsCategory">経営</span> ]</span></span><span class="inTxt">剰余金の配当に関するお知らせ</span></a></span></div></div>
+      </li>
+                <li>
+        <div class="views-row"><div><span>  
+  
+  
+  
+<a href="https://www.mhi.com/jp/news/22051204.html"><time datetime="00Z" class="datetime">2022-05-12</time>
+<span class="cateTag"><span>[ <span class="newsCategory">プレスリリース</span> ]</span><span>[ <span class="newsCategory">経営</span> ]</span></span><span class="inTxt">当社子会社（三菱ロジスネクスト株式会社）の個別業績の前期実績値との差異に関するお知らせ</span></a></span></div></div>
+      </li>
+                <li>
+        <div class="views-row"><div><span>  
+  
+  
+  
+<a href="https://www.mhi.com/jp/news/22051102.html"><time datetime="00Z" class="datetime">2022-05-11</time>
+<span class="cateTag"><span>[ <span class="newsCategory">プレスリリース</span> ]</span><span>[ <span class="newsCategory">カーボンニュートラル</span> ]</span></span><span class="inTxt">CCUSにメタバースの世界観を取り込む検討を開始　アクセラレータープログラムを通じ、ベンチャー企業とともに</span></a></span></div></div>
+      </li>
+                <li>
+        <div class="views-row"><div><span>  
+  
+  
+  
+<a href="https://www.mhi.com/jp/news/22051101.html"><time datetime="00Z" class="datetime">2022-05-11</time>
+<span class="cateTag"><span>[ <span class="newsCategory">プレスリリース</span> ]</span><span>[ <span class="newsCategory">カーボンニュートラル</span> ]</span><span>[ <span class="newsCategory">エナジートランジション</span> ]</span><span>[ <span class="newsCategory">エネルギー</span> ]</span></span><span class="inTxt">三菱重工エンジニアリング、カナダに脱炭素事業の営業拠点を設立　世界トップシェアのCO<sub>2</sub>回収技術をグローバルに展開し、CCUSビジネスを加速</span></a></span></div></div>
+      </li>
+                <li>
+        <div class="views-row"><div><span>  
+  
+  
+  
+<a href="https://www.primetals.com/fileadmin/user_upload/press-releases/2022/2022022504/PR2022022504jp.pdf"><time datetime="00Z" class="datetime">2022-05-11</time>
+<span class="cateTag"><span>[ <span class="newsCategory">プレスリリース</span> ]</span><span>[ <span class="newsCategory">産業機械</span> ]</span></span><span class="inTxt">【Primetals Technologies, Ltd.】<br />トスヤル向けスラブ連鋳機2基目を受注</span></a></span></div></div>
+      </li>
+                <li>
+        <div class="views-row"><div><span>  
+  
+  
+  
+<a href="https://www.mhi.com/jp/news/220510.html"><time datetime="00Z" class="datetime">2022-05-10</time>
+<span class="cateTag"><span>[ <span class="newsCategory">プレスリリース</span> ]</span></span><span class="inTxt">「Clarivate Top 100 グローバル・イノベーター2022」を受賞　“世界のイノベーション・エコシステムの頂点に立つ組織”に10年連続で選出</span></a></span></div></div>
+      </li>
+                <li>
+        <div class="views-row"><div><span>  
+  
+  
+  
+<a href="https://www.primetals.com/fileadmin/user_upload/press-releases/2022/2022022508/PR2022022508jp.pdf"><time datetime="00Z" class="datetime">2022-05-03</time>
+<span class="cateTag"><span>[ <span class="newsCategory">プレスリリース</span> ]</span><span>[ <span class="newsCategory">産業機械</span> ]</span></span><span class="inTxt">【Primetals Technologies, Ltd.】<br /> トルコ、チョラコール社向けプラントがステンレス製鋼において 2 つの世界記録を更新</span></a></span></div></div>
+      </li>
+                <li>
+        <div class="views-row"><div><span>  
+  
+  
+  
+<a href="https://www.mhi.com/jp/news/220428.html"><time datetime="00Z" class="datetime">2022-04-28</time>
+<span class="cateTag"><span>[ <span class="newsCategory">プレスリリース</span> ]</span><span>[ <span class="newsCategory">防衛</span> ]</span></span><span class="inTxt">防衛省向け3,900トン型護衛艦「もがみ」引渡式　ネームシップがいよいよ就役</span></a></span></div></div>
+      </li>
+                <li>
+        <div class="views-row"><div><span>  
+  
+  
+  
+<a href="https://www.mhi.com/jp/news/220426.html"><time datetime="00Z" class="datetime">2022-04-26</time>
+<span class="cateTag"><span>[ <span class="newsCategory">プレスリリース</span> ]</span><span>[ <span class="newsCategory">エネルギー</span> ]</span></span><span class="inTxt">MHIETが日本ガス協会「2022年度技術大賞・技術賞」の技術大賞を初受賞　東邦ガスと共同開発の高効率ガスコージェネレーションシステムで</span></a></span></div></div>
+      </li>
+                <li>
+        <div class="views-row"><div><span>  
+  
+  
+  
+<a href="https://www.mhi.com/jp/news/22042502.html"><time datetime="00Z" class="datetime">2022-04-25</time>
+<span class="cateTag"><span>[ <span class="newsCategory">プレスリリース</span> ]</span><span>[ <span class="newsCategory">エネルギー</span> ]</span></span><span class="inTxt">NTTと三菱重工が光イジングマシンLASOLVを活用したリソース計画技術を開発　～大型プロジェクトのリソース計画の工数を大幅削減～</span></a></span></div></div>
+      </li>
+                <li>
+        <div class="views-row"><div><span>  
+  
+  
+  
+<a href="https://www.mhi.com/jp/news/22042501.html"><time datetime="00Z" class="datetime">2022-04-25</time>
+<span class="cateTag"><span>[ <span class="newsCategory">プレスリリース</span> ]</span><span>[ <span class="newsCategory">カーボンニュートラル</span> ]</span><span>[ <span class="newsCategory">エナジートランジション</span> ]</span><span>[ <span class="newsCategory">エネルギー</span> ]</span></span><span class="inTxt">イタリアの天然ガス供給設備向けにCO<sub>2</sub>回収技術ライセンス契約を締結　三菱重工エンジニアリング、伊Eni社が推進するCCUS実証プロジェクト向け</span></a></span></div></div>
+      </li>
+                <li>
+        <div class="views-row"><div><span>  
+  
+  
+  
+<a href="https://www.mhi.com/jp/news/22042203.html"><time datetime="00Z" class="datetime">2022-04-22</time>
+<span class="cateTag"><span>[ <span class="newsCategory">プレスリリース</span> ]</span><span>[ <span class="newsCategory">カーボンニュートラル</span> ]</span><span>[ <span class="newsCategory">エナジートランジション</span> ]</span><span>[ <span class="newsCategory">原子力関連</span> ]</span></span><span class="inTxt">カーボンニュートラル実現に向けたＨＴＴＲによる水素製造実証事業の開始</span></a></span></div></div>
+      </li>
+                <li>
+        <div class="views-row"><div><span>  
+  
+  
+  
+<a href="https://www.mhi.com/jp/news/22042202.html"><time datetime="00Z" class="datetime">2022-04-22</time>
+<span class="cateTag"><span>[ <span class="newsCategory">プレスリリース</span> ]</span><span>[ <span class="newsCategory">カーボンニュートラル</span> ]</span><span>[ <span class="newsCategory">エナジートランジション</span> ]</span><span>[ <span class="newsCategory">エネルギー</span> ]</span></span><span class="inTxt">カーボンリサイクル燃料「エレクトロフューエル」の日本市場への展開を検討　米インフィニウム社と協働し、日本国内の脱炭素ソリューションを加速</span></a></span></div></div>
+      </li>
+                <li>
+        <div class="views-row"><div><span>  
+  
+  
+  
+<a href="https://www.mhi.com/jp/news/22042201.html"><time datetime="00Z" class="datetime">2022-04-22</time>
+<span class="cateTag"><span>[ <span class="newsCategory">プレスリリース</span> ]</span><span>[ <span class="newsCategory">航空</span> ]</span></span><span class="inTxt">航空エンジン向け燃焼器製造の「MHIAEL長崎工場」拡張計画を決定　内製力・コスト競争力を一層強化し、アフターコロナの再成長に対応</span></a></span></div></div>
+      </li>
+                <li>
+        <div class="views-row"><div><span>  
+  
+  
+  
+<a href="https://www.mhi.com/jp/news/220420.html"><time datetime="00Z" class="datetime">2022-04-20</time>
+<span class="cateTag"><span>[ <span class="newsCategory">プレスリリース</span> ]</span><span>[ <span class="newsCategory">人事</span> ]</span></span><span class="inTxt">【三菱重工グループ】<br>人事異動</span></a></span></div></div>
+      </li>
+                <li>
+        <div class="views-row"><div><span>  
+  
+  
+  
+<a href="https://www.primetals.com/fileadmin/user_upload/press-releases/2022/2022012469/PR2022012469jp.pdf"><time datetime="00Z" class="datetime">2022-04-20</time>
+<span class="cateTag"><span>[ <span class="newsCategory">プレスリリース</span> ]</span><span>[ <span class="newsCategory">産業機械</span> ]</span></span><span class="inTxt">【Primetals Technologies, Ltd.】<br /> 中国向け3ストランド式スラブ連鋳機を受注</span></a></span></div></div>
+      </li>
+                <li>
+        <div class="views-row"><div><span>  
+  
+  
+  
+<a href="https://www.mhi.com/jp/news/22041802.html"><time datetime="00Z" class="datetime">2022-04-18</time>
+<span class="cateTag"><span>[ <span class="newsCategory">プレスリリース</span> ]</span><span>[ <span class="newsCategory">カーボンニュートラル</span> ]</span><span>[ <span class="newsCategory">エナジートランジション</span> ]</span><span>[ <span class="newsCategory">エネルギー</span> ]</span></span><span class="inTxt">欧州の製糖最大手 独ジュートツッカー社（Südzucker）のボイラーを天然ガス化改修　三菱パワーヨーロッパ、先進的な燃料転換ソリューションでクリーン・エネルギーを実現へ</span></a></span></div></div>
+      </li>
+                <li>
+        <div class="views-row"><div><span>  
+  
+  
+  
+<a href="https://www.mhi.com/jp/news/22041801.html"><time datetime="00Z" class="datetime">2022-04-18</time>
+<span class="cateTag"><span>[ <span class="newsCategory">プレスリリース</span> ]</span><span>[ <span class="newsCategory">カーボンニュートラル</span> ]</span><span>[ <span class="newsCategory">エナジートランジション</span> ]</span><span>[ <span class="newsCategory">船舶・海洋</span> ]</span></span><span class="inTxt">三菱造船、「アンモニア・液化CO<sub>2</sub>兼用輸送船」のコンセプトスタディーを完了　アンモニアとLCO<sub>2</sub>の輸送需要増に対応</span></a></span></div></div>
+      </li>
+                <li>
+        <div class="views-row"><div><span>  
+  
+  
+  
+<a href="https://www.mhi.com/jp/news/220415.html"><time datetime="00Z" class="datetime">2022-04-15</time>
+<span class="cateTag"><span>[ <span class="newsCategory">プレスリリース</span> ]</span><span>[ <span class="newsCategory">産業機械</span> ]</span></span><span class="inTxt">三菱重工冷熱、「第39回優良省エネルギー設備顕彰」の最高位を初受賞　熱回収型ターボヒートポンプを用いた既設暖房設備の省エネ化で</span></a></span></div></div>
+      </li>
+                <li>
+        <div class="views-row"><div><span>  
+  
+  
+  
+<a href="https://www.mhi.com/jp/news/22041403.html"><time datetime="00Z" class="datetime">2022-04-14</time>
+<span class="cateTag"><span>[ <span class="newsCategory">プレスリリース</span> ]</span><span>[ <span class="newsCategory">産業機械</span> ]</span></span><span class="inTxt">三菱重工グループ、高速道路事業者向け簡易型料金自動収受機を新開発　通行料金収受業務のさらなる自動化、効率化に向け製品ラインアップを拡充</span></a></span></div></div>
+      </li>
+                <li>
+        <div class="views-row"><div><span>  
+  
+  
+  
+<a href="https://www.mhi.com/jp/news/22041402.html"><time datetime="00Z" class="datetime">2022-04-14</time>
+<span class="cateTag"><span>[ <span class="newsCategory">プレスリリース</span> ]</span><span>[ <span class="newsCategory">交通システム</span> ]</span></span><span class="inTxt">全自動無人運転車両システム（AGT）採用のマカオLRT延伸プロジェクトを受注　三菱重工グループの豊富な知見を生かし、地域経済発展と渋滞緩和に貢献</span></a></span></div></div>
+      </li>
+                <li>
+        <div class="views-row"><div><span>  
+  
+  
+  
+<a href="https://www.mhi.com/jp/news/22041401.html"><time datetime="00Z" class="datetime">2022-04-14</time>
+<span class="cateTag"><span>[ <span class="newsCategory">プレスリリース</span> ]</span><span>[ <span class="newsCategory">生活・レジャー</span> ]</span></span><span class="inTxt">三菱重工サーマルシステムズ、女優・北川 景子さんを起用したエアコンTV-CMを刷新　15日から全国で順次放送開始</span></a></span></div></div>
+      </li>
+                <li>
+        <div class="views-row"><div><span>  
+  
+  
+  
+<a href="https://www.mhi.com/jp/news/220413.html"><time datetime="00Z" class="datetime">2022-04-13</time>
+<span class="cateTag"><span>[ <span class="newsCategory">プレスリリース</span> ]</span><span>[ <span class="newsCategory">原子力関連</span> ]</span></span><span class="inTxt">原子力発電所の使用済燃料を輸送・貯蔵可能な「乾式キャスク」の製造を開始　四国電力伊方発電所向けに計15基を順次製造</span></a></span></div></div>
+      </li>
+                <li>
+        <div class="views-row"><div><span>  
+  
+  
+  
+<a href="https://www.mhi.com/jp/news/220411.html"><time datetime="00Z" class="datetime">2022-04-11</time>
+<span class="cateTag"><span>[ <span class="newsCategory">プレスリリース</span> ]</span><span>[ <span class="newsCategory">原子力関連</span> ]</span></span><span class="inTxt">プラント巡回点検防爆ロボット「EX ROVR」第二世代機の開発を完了　“ASCENT”の製品名で4月から市場投入へ</span></a></span></div></div>
+      </li>
+                <li>
+        <div class="views-row"><div><span>  
+  
+  
+  
+<a href="https://www.mhi.com/jp/news/220407.html"><time datetime="00Z" class="datetime">2022-04-07</time>
+<span class="cateTag"><span>[ <span class="newsCategory">プレスリリース</span> ]</span><span>[ <span class="newsCategory">カーボンニュートラル</span> ]</span><span>[ <span class="newsCategory">エナジートランジション</span> ]</span><span>[ <span class="newsCategory">エネルギー</span> ]</span></span><span class="inTxt">タイの超大型複合火力発電所プロジェクトでM701JAC形GTCCの3号機が運転を開始　現地IPPガルフ・グループと三井物産の合弁企業向け、2ヵ所の総出力530万kW規模</span></a></span></div></div>
+      </li>
+                <li>
+        <div class="views-row"><div><span>  
+  
+  
+  
+<a href="https://www.primetals.com/fileadmin/user_upload/press-releases/2022/2022032520/PR2022032520jp.pdf"><time datetime="00Z" class="datetime">2022-04-06</time>
+<span class="cateTag"><span>[ <span class="newsCategory">プレスリリース</span> ]</span><span>[ <span class="newsCategory">産業機械</span> ]</span></span><span class="inTxt">【Primetals Technologies, Ltd.】<br /> 東京製鐵岡山工場向け連続酸洗設備の更新工事完工</span></a></span></div></div>
+      </li>
+                <li>
+        <div class="views-row"><div><span>  
+  
+  
+  
+<a href="https://www.mhi.com/jp/news/220405.html"><time datetime="00Z" class="datetime">2022-04-05</time>
+<span class="cateTag"><span>[ <span class="newsCategory">プレスリリース</span> ]</span><span>[ <span class="newsCategory">産業機械</span> ]</span></span><span class="inTxt">三菱重工サーマルシステムズ、低GWP冷媒採用の大容量ターボ冷凍機　新シリーズ「JHT-Y／JHT-YI」を6月から発売</span></a></span></div></div>
+      </li>
+                <li>
+        <div class="views-row"><div><span>  
+  
+  
+  
+<a href="https://www.mhi.com/jp/news/220401.html"><time datetime="00Z" class="datetime">2022-04-01</time>
+<span class="cateTag"><span>[ <span class="newsCategory">プレスリリース</span> ]</span><span>[ <span class="newsCategory">人事</span> ]</span></span><span class="inTxt">2022年度の入社式　泉澤社長・CEOが新入社員に激励の言葉</span></a></span></div></div>
+      </li>
+                <li>
+        <div class="views-row"><div><span>  
+  
+  
+  
+<a href="https://www.mhiair.co.jp/contents/13-news/20220401.html"><time datetime="00Z" class="datetime">2022-04-01</time>
+<span class="cateTag"><span>[ <span class="newsCategory">プレスリリース</span> ]</span><span>[ <span class="newsCategory">人事</span> ]</span></span><span class="inTxt">【三菱重工冷熱株式会社】<br />役員人事の件</span></a></span></div></div>
+      </li>
+      </ul>
+</div>
+
+    </div>
+  
+          </div>
+</div>
+
+  </div>
+</div>
+            </div>
+          </div>
+          <div id="comSide">
+            <h2><div class="block-region-menu-title"><div data-block-plugin-id="simple_block:news_list_title" class="block block-simple-block block-simple-blocknews-list-title">
+  
+    
+      <p><a href="https://www.mhi.com/jp/news/">ニュース</a></p>
+
+  </div>
+</div></h2>
+            <div class="block-region-sidemenu"><nav role="navigation" id="lnavMenu" aria-labelledby="-menu" data-block-plugin-id="system_menu_block:news-navigation" class="block block-menu navigation menu--news-navigation">
+            
+  <h2 class="visually-hidden" id="-menu">News</h2>
+  
+
+        
+        <div class="comNews">
+    <nav id="lnavMenu">
+                    <ul class="menu">
+                          <li class="menu-item--active-trail menu-item">
+                          <a href="https://www.mhi.com/jp/news" class="all-news-item is-active" hreflang="ja" data-drupal-link-system-path="news">ニュース総合</a>
+                      </li>
+        </ul>
+                            <ul class="menu">
+                          <li class="menu-item">
+                          <a href="https://www.mhi.com/jp/news/kind/operate.html" hreflang="ja" data-drupal-link-system-path="taxonomy/term/100">経営</a>
+                      </li>
+        </ul>
+                            <ul class="menu">
+                          <li class="menu-item">
+                          <a href="https://www.mhi.com/jp/news/kind/sustainability.html" hreflang="ja" data-drupal-link-system-path="taxonomy/term/8796">サステナビリティ</a>
+                      </li>
+        </ul>
+                            <ul class="menu">
+                          <li class="menu-item">
+                          <a href="https://www.mhi.com/jp/news/kind/personnel.html" hreflang="ja" data-drupal-link-system-path="taxonomy/term/2736">人事</a>
+                      </li>
+        </ul>
+                                          <h3>2021事業計画テーマ</h3>
+            <ul class="comNrnMenu">
+                          <li>
+              <a href="https://www.mhi.com/jp/news/plan/carbon_neutral.html" data-drupal-link-system-path="taxonomy/term/8601">カーボンニュートラル</a>
+              </li>
+                          <li>
+              <a href="https://www.mhi.com/jp/news/plan/energy_transition.html" data-drupal-link-system-path="taxonomy/term/8136">エナジートランジション</a>
+              </li>
+                          <li>
+              <a href="https://www.mhi.com/jp/news/plan/smart_infrastructure.html" data-drupal-link-system-path="taxonomy/term/8141">社会インフラのスマート化</a>
+              </li>
+                        </ul>
+                                                    <h3>製品情報</h3>
+            <ul class="comNrnMenu">
+                          <li>
+              <a href="https://www.mhi.com/jp/news/products/energy.html" data-drupal-link-system-path="taxonomy/term/103">エネルギー</a>
+              </li>
+                          <li>
+              <a href="https://www.mhi.com/jp/news/products/air.html" data-drupal-link-system-path="taxonomy/term/104">航空</a>
+              </li>
+                          <li>
+              <a href="https://www.mhi.com/jp/news/products/space.html" data-drupal-link-system-path="taxonomy/term/105">宇宙開発</a>
+              </li>
+                          <li>
+              <a href="https://www.mhi.com/jp/news/products/ship.html" data-drupal-link-system-path="taxonomy/term/106">船舶・海洋</a>
+              </li>
+                          <li>
+              <a href="https://www.mhi.com/jp/news/products/transport.html" data-drupal-link-system-path="taxonomy/term/107">交通システム</a>
+              </li>
+                          <li>
+              <a href="https://www.mhi.com/jp/news/products/material_handling.html" data-drupal-link-system-path="taxonomy/term/108">物流・運搬</a>
+              </li>
+                          <li>
+              <a href="https://www.mhi.com/jp/news/products/environment.html" data-drupal-link-system-path="taxonomy/term/109">環境装置</a>
+              </li>
+                          <li>
+              <a href="https://www.mhi.com/jp/news/products/automobile.html" data-drupal-link-system-path="taxonomy/term/110">自動車関連</a>
+              </li>
+                          <li>
+              <a href="https://www.mhi.com/jp/news/products/industry.html" data-drupal-link-system-path="taxonomy/term/111">産業機械</a>
+              </li>
+                          <li>
+              <a href="https://www.mhi.com/jp/news/products/infrastructure.html" data-drupal-link-system-path="taxonomy/term/112">インフラ設備</a>
+              </li>
+                          <li>
+              <a href="https://www.mhi.com/jp/news/products/living.html" data-drupal-link-system-path="taxonomy/term/113">生活・レジャー</a>
+              </li>
+                          <li>
+              <a href="https://www.mhi.com/jp/news/products/defense.html" data-drupal-link-system-path="taxonomy/term/114">防衛</a>
+              </li>
+                        </ul>
+                                      <ul class="menu">
+                          <li class="menu-item">
+                          <a href="https://www.mhi.com/jp/news/kind/information.html" hreflang="ja" data-drupal-link-system-path="taxonomy/term/8596">お知らせ</a>
+                      </li>
+        </ul>
+                            <ul class="menu">
+                          <li class="menu-item">
+                          <a href="https://www.mhi.com/jp/news/kind/other.html" hreflang="ja" data-drupal-link-system-path="taxonomy/term/101">その他</a>
+                      </li>
+        </ul>
+                    </ul>
+      </nav>
+  </div>
+  
+
+  </nav>
+</div>
+            <div class="block-region-secondmenu"><div data-block-plugin-id="fixed_block_content:news_list_second_side_menu" class="block block-fixed-block-content block-fixed-block-contentnews-list-second-side-menu newsSecondSideMenus">
+      
+      <div class="field field--name-field-paragraph field--type-entity-reference-revisions field--label-hidden field__items">
+              <div class="mhi__simple_link field__item">  <div class="paragraph paragraph--type--mhi-paragraph-simple-link paragraph--view-mode--default">
+            <div class="field__item simpleLink">
+    <a href="https://www.mhi.com/jp/notice">重要なお知らせ</a>
+  </div>
+
+      </div>
+</div>
+              <div class="mhi__simple_link field__item">  <div class="paragraph paragraph--type--mhi-paragraph-simple-link paragraph--view-mode--default">
+            <div class="field__item simpleLink">
+    <a href="https://www.mhi.com/jp/mailmagazine/index.html">メールマガジン</a>
+  </div>
+
+      </div>
+</div>
+          </div>
+  
+  </div>
+</div>
+          </div>
+              </div>
+    </div>
+  </div>
+
+  </div>
+
+  </div>
+
+  </main>
+
+  <footer id="comFooter" role="contentinfo">
+    
+  <div id="block-footermovetotop" class="footerMoveToTop block block-block-content block-block-content6e6aad79-adfe-4c83-816b-eac594acd83d" data-block-plugin-id="block_content:6e6aad79-adfe-4c83-816b-eac594acd83d">
+  
+    
+      
+            <div class="clearfix text-formatted field field--name-body field--type-text-with-summary field--label-hidden field__item"><div id="pageTop"><a>Go to the top of this page</a></div></div>
+      
+  </div>
+<div id="block-footer-group-logo" class="footerGroupLogo block block-block-content block-block-content96ae1c39-c05b-4e67-9ca0-3129dee83e92" data-block-plugin-id="block_content:96ae1c39-c05b-4e67-9ca0-3129dee83e92">
+  
+    
+      
+            <div class="clearfix text-formatted field field--name-body field--type-text-with-summary field--label-hidden field__item"><div id="footGroupLogo"><a href="https://www.mhi.com/jp/network/text_version.html"><img src="https://www.mhi.com/themes/custom/mhi/src/img/foot_mhigroup_logo.svg" alt="MOVE THE WORLD FORWARD MHI Group" /></a></div></div>
+      
+  </div>
+<div id="block-cookiedisclaimerpopup" data-block-plugin-id="simple_block:cookie_disclaimer_pop_up" class="block block-simple-block block-simple-blockcookie-disclaimer-pop-up">
+  
+    
+      <div class="cookieAlertBox"><div class="inner"><p>本サイト（www.mhi.com）は、お客様が再訪問された際に、最適な情報を提供するなど、快適にご利用いただくためにクッキー（Cookie）を使用しています。詳しくはサイトのご利用条件をご覧ください。本サイトをご利用になる場合、お客様はクッキーの使用に同意下さい。<br><a href="https://www.mhi.com/jp/conditions.html#cookie">サイトのご利用条件</a></p><div class="cookieApprovalBtn"><span>同意しました</span></div><div class="closeBtn"></div></div></div>
+  </div>
+<div id="block-footer-social-media" data-block-plugin-id="fixed_block_content:footer_social_media" class="block block-fixed-block-content block-fixed-block-contentfooter-social-media">
+  
+    
+      
+            <div class="clearfix text-formatted field field--name-body field--type-text-with-summary field--label-hidden field__item"><div id="followUs">
+<p>FOLLOW US<span class="inFtFollowColon"> :</span></p>
+
+<div class="youtube"><a href="https://www.youtube.com/user/DiscoverMHI" target="_blank"><img alt="YouTube" data-entity-type="" data-entity-uuid="" height="18" src="https://www.mhi.com/themes/custom/mhi/src/img/youtube_ico.svg" width="23" /></a></div>
+
+<div class="linkedin"><a href="https://www.linkedin.com/company/mitsubishi-heavy-industries" target="_blank"><img alt="Linkedin" data-entity-type="" data-entity-uuid="" height="18" src="https://www.mhi.com/themes/custom/mhi/src/img/linkedin_ico.svg" /></a></div>
+
+<div class="linkedin"><a href="https://twitter.com/MHI_GroupJP" target="_blank"><img alt="RSS" data-entity-type="" data-entity-uuid="" height="15" src="https://www.mhi.com/themes/custom/mhi/src/img/twitter_ico.svg" width="20" /></a></div>
+
+<div class="feed"><a href="https://www.mhi.com/jp/rss/" target="_blank"><img alt="RSS" data-entity-type="" data-entity-uuid="" height="15" src="https://www.mhi.com/themes/custom/mhi/src/img/feed_ico.svg" width="15" /></a></div>
+</div>
+</div>
+      
+  </div>
+<nav role="navigation" id="footerLink" aria-labelledby="block-footer-menu" id="block-footer" data-block-plugin-id="system_menu_block:footer" class="block block-menu navigation menu--footer">
+            
+  <h2 class="visually-hidden" id="block-footer-menu">Footer</h2>
+  
+
+        
+        <ul block="block-footer" class="menu"><li class="menu-item"><a href="https://www.mhi.com/jp/sitemap.html" hreflang="ja" data-drupal-link-system-path="node/107566">サイトマップ</a></li><li class="menu-item"><a href="https://www.mhi.com/jp/conditions.html" hreflang="ja" data-drupal-link-system-path="node/111361">サイトのご利用条件</a></li><li class="menu-item"><a href="https://www.mhi.com/jp/privacy.html" hreflang="ja" data-drupal-link-system-path="node/111391">個人情報保護方針</a></li><li class="menu-item"><a href="https://www.mhi.com/jp/inquiry" hreflang="ja" data-drupal-link-system-path="node/104561">お問い合わせ</a></li><li class="menu-item"><a href="https://spectra.mhi.com/" hreflang="ja">SPECTRA(英語)</a></li></ul>  
+
+
+  </nav>
+<div id="block-footer-copyright" data-block-plugin-id="block_content:7f80591d-954a-4a5e-85cc-7af69bc0faf9" class="footer-copyright block block-block-content block-block-content7f80591d-954a-4a5e-85cc-7af69bc0faf9">
+  
+    
+      
+            <div class="clearfix text-formatted field field--name-body field--type-text-with-summary field--label-hidden field__item"><p><small id="copyright">© MITSUBISHI HEAVY INDUSTRIES, LTD.</small></p></div>
+      
+  </div>
+
+
+  </footer>
+
+  </div>
+
+    
+    <script type="application/json" data-drupal-selector="drupal-settings-json">{"path":{"baseUrl":"\/","scriptPath":null,"pathPrefix":"jp\/","currentPath":"news","currentPathIsAdmin":false,"isFront":false,"currentLanguage":"ja"},"pluralDelimiter":"\u0003","suppressDeprecationErrors":true,"data":{"extlink":{"extTarget":true,"extTargetNoOverride":false,"extNofollow":false,"extNoreferrer":false,"extFollowNoOverride":false,"extClass":"ext","extLabel":"(link is external)","extImgClass":false,"extSubdomains":false,"extExclude":"","extInclude":"","extCssExclude":".comNewsDetail #comMainConPosi, .product-business-contact-list, .comImportantNoticeDetail #comMainConPosi, .comContactLkWrap, .noextlink, .view-id-home_notice_list","extCssExplicit":"","extAlert":false,"extAlertText":"This link will take you to an external web site. We are not responsible for their content.","mailtoClass":"0","mailtoLabel":"(link sends email)","extUseFontAwesome":false,"extIconPlacement":"append","extFaLinkClasses":"fa fa-external-link","extFaMailtoClasses":"fa fa-envelope-o","whitelistedDomains":[]}},"facets":{"finance_year_dropdown_widget":{"finance_year_text":"Lists by Year","finance_year_value_suffix":"FY","finance_year_text_jp":"\u5e74\u5ea6\u4e00\u89a7","finance_year_value_suffix_jp":"\u5e74\u5ea6"}},"mhi_base":{"outline":{"title":"\u4e09\u83f1\u91cd\u5de5\u30b0\u30eb\u30fc\u30d7\u306e\u30a2\u30a6\u30c8\u30e9\u30a4\u30f3","link":"\/jp\/company\/aboutmhi\/introduction\/","description":"\u4e09\u83f1\u91cd\u5de5\u30b0\u30eb\u30fc\u30d7\u306e\u6982\u8981\u30fb\u6d3b\u52d5\u5185\u5bb9\u306e\u3054\u7d39\u4ecb\u3067\u3059\u3002","mobile_thumb_url":"https:\/\/www.mhi.com\/sites\/g\/files\/jwhtju111\/files\/mhi-base\/bnr_introduction_3.png"}},"googlemapkey":"AIzaSyD1BlDDhdPrHa5OrOGxexsWRdwlMI5FJbY","mhi":{"mhiJS":{"theme_path":"themes\/custom\/mhi"}},"ajax":[],"user":{"uid":0,"permissionsHash":"e18ddaad7ecb67086f012a0eab07bb949fa25dbae047d062749f931dd04e0ed3"}}</script>
+<script src="https://www.mhi.com/sites/g/files/jwhtju111/files/js/js_f0WXK3jy-aHxHYlLP2G4Z7w6TAMI4wk5FN6UkzGI7sQ.js"></script>
+<script src="http://c.marsflag.com/mf/mfx/1.0/js/mfx-sbox.js"></script>
+<script src="https://www.mhi.com/sites/g/files/jwhtju111/files/js/js_xsxlqMO56JBwyKDi901Y0qIR39OQ4rWnhbgLwPzdREg.js"></script>
+
+  <script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"3d90739b94","applicationID":"945003000,756406217","transactionName":"M1VVZRQACBYDAkdQCwofdlISCAkLTSVBTBQFXGtyCRMDOScPR1AQHWx0XggVFAoODVZLOCFeQ1gSGDAMBxZwVgoQQlhdCgQUSFwXWlwT","queueTime":0,"applicationTime":2014,"atts":"HxJWE1waGxg=","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+
+<!-- Mirrored from www.mhi.com/jp/news by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 14 Oct 2022 17:07:48 GMT -->
+</html>
